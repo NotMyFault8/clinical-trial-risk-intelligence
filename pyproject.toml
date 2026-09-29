@@ -1,0 +1,9 @@
+[project]
+name = "clinical-trial-risk-intelligence"
+version = "0.1.0"
+description = "Leakage-controlled clinical-trial early-termination risk research using AACT / ClinicalTrials.gov"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
