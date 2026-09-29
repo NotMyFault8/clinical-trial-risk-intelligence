@@ -1,0 +1,3 @@
+-- Phase 1 schema audit placeholder.
+-- Populate only after confirming the current AACT PostgreSQL schema.
+-- Goal: inspect table grain, keys, cardinalities, relevant timestamps, and nullability.
