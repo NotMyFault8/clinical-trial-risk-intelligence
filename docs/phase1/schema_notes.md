@@ -1,30 +1,64 @@
 # AACT / ClinicalTrials.gov Schema Notes
 
-Status: **not yet audited**.
+Status: **documentation reviewed; empirical SQL audit still required**.
 
-## Trial-level grain
+## Database structure
 
-The final analytical cohort is intended to have one row per ClinicalTrials.gov trial (`nct_id`). AACT is relational, so one-to-many tables must be aggregated carefully before trial-level joins.
+AACT is a PostgreSQL relational representation of ClinicalTrials.gov with 40+ connected tables. The final analytical cohort will have one row per `nct_id`, but most source entities are not trial-level and therefore must be aggregated before joining.
 
-## Candidate source entities to verify
+AACT documentation explicitly describes `studies.txt` as one record per study with `nct_id` as the unique identifier. All other cardinalities below remain subject to direct SQL verification on the snapshots we actually use.
 
-- studies
-- designs / design information
-- eligibilities
-- sponsors
-- conditions
-- interventions
-- facilities
-- countries / geographic information
-- outcomes, only where temporally appropriate
+## Core candidate tables
+
+| Table | Important fields / role | Cardinality expectation |
+|---|---|---|
+| `studies` | `nct_id`, study type, overall status, phase, enrollment, enrollment type, first-posted/submitted dates, start date/type, completion fields, number of arms, why stopped | one per trial |
+| `designs` | allocation, masking, intervention model, observational model, primary purpose, time perspective | verify uniqueness by `nct_id` |
+| `eligibilities` | criteria text, minimum/maximum age, sex/gender field, healthy volunteers | verify uniqueness by `nct_id` |
+| `sponsors` | sponsor name/class and lead-versus-collaborator role | one-to-many |
+| `conditions` | condition names | one-to-many |
+| `interventions` | intervention name/type | one-to-many |
+| `facilities` | facility, city/state/country, latitude/longitude, site status | one-to-many |
+| `study_records` | current schema exposes JSON content, SHA, created/updated timestamps | semantics/history behavior not documented sufficiently; audit before use |
+
+## Fields already confirmed in the current AACT data dictionary
+
+- `studies.study_first_posted_date`
+- `studies.study_first_submitted_date`
+- `studies.start_date`
+- `studies.start_date_type`
+- `studies.completion_date`
+- `studies.enrollment`
+- `studies.enrollment_type`
+- `studies.why_stopped`
+- `designs.primary_purpose`
+- masking-role fields in `designs`
+- `eligibilities.minimum_age`
+- `eligibilities.maximum_age`
+- eligibility sex/gender field
+- `eligibilities.healthy_volunteers`
+- `sponsors.agency_class`
+- `sponsors.lead_or_collaborator`
+- `interventions.name`
+- `interventions.intervention_type`
+- `facilities.country`
+
+## Point-in-time warning
+
+A field being conceptually 'baseline' does **not** prove the current value was available before study start. Planned enrollment, eligibility text, facilities, sponsors, interventions, dates, and design fields can be revised. Their predictor values must come from the selected historical snapshot itself.
+
+`studies.created_at` and `updated_at` are AACT/database timestamps and must not be assumed to represent ClinicalTrials.gov field-level availability without validation.
 
 ## Schema-audit questions
 
-- What is the primary key / grain of each table?
-- Which tables contain repeated rows per `nct_id`?
-- Which fields correspond to planned versus actual quantities?
-- Which fields can be revised after study start?
-- Which timestamps/version fields allow reconstruction of point-in-time state?
-- Which current AACT fields differ from historical snapshot schemas?
+1. Is `studies.nct_id` unique in every selected historical snapshot?
+2. Are `designs` and `eligibilities` actually one row per trial in every schema era?
+3. Which one-to-many tables contain duplicate semantic entities?
+4. Is exactly one lead sponsor normally present?
+5. How do field names/types change between 2018-2026 archives?
+6. Are pre-start `enrollment_type` values consistently anticipated?
+7. How often is `start_date_type` anticipated versus actual in candidate snapshots?
+8. What exactly does `study_records` contain and is it one row or multiple rows per trial?
+9. Which fields disappear, appear, or change coding across the ClinicalTrials.gov modernization period?
 
-No field is approved for modeling until its availability time is documented.
+No field is approved for modeling until its availability time and historical-snapshot representation are documented.
