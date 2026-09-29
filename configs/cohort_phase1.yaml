@@ -1,0 +1,24 @@
+# Phase 1 working specification. Values remain provisional until audited.
+cohort:
+  unit: trial
+  id: nct_id
+  source: AACT
+  prediction_timestamp: TBD
+  outcome_ascertainment_cutoff: TBD
+  inclusion_rules: TBD
+  exclusion_rules: TBD
+
+target:
+  primary_exploratory:
+    completed: 0
+    terminated: 1
+  excluded_statuses_pending_justification:
+    - Withdrawn
+    - Suspended
+    - Unknown
+
+validation:
+  primary_design: temporal
+  train_window: TBD
+  validation_window: TBD
+  final_holdout_window: TBD
