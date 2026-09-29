@@ -2,20 +2,41 @@
 cohort:
   unit: trial
   id: nct_id
-  source: AACT
-  prediction_timestamp: TBD
-  outcome_ascertainment_cutoff: TBD
-  inclusion_rules: TBD
-  exclusion_rules: TBD
+  source: AACT_historical_snapshots
+  primary_study_type: Interventional
+  prediction_rule: first_eligible_historical_snapshot
+  prediction_window_days_candidates:
+    - 30
+    - 60
+    - 90
+  require_start_date_type: Anticipated
+  require_snapshot_before_planned_start: true
+  study_years: TBD_after_snapshot_audit
+
+outcome:
+  source: AACT_frozen_snapshot
+  candidate_ascertainment_cutoff: 2026-09-01
+  minimum_followup: TBD_after_maturity_audit
 
 target:
   primary_exploratory:
-    completed: 0
-    terminated: 1
-  excluded_statuses_pending_justification:
+    Completed: 0
+    Terminated: 1
+  keep_separate_until_justified:
     - Withdrawn
     - Suspended
     - Unknown
+    - Recruiting
+    - Not yet recruiting
+    - Active, not recruiting
+    - Enrolling by invitation
+
+data:
+  feature_source: historical_flat_file_snapshots
+  live_aact_role: schema_discovery_only
+  raw_data_committed_to_git: false
+  require_snapshot_manifest: true
+  require_archive_sha256: true
 
 validation:
   primary_design: temporal
