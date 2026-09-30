@@ -43,6 +43,8 @@ HAVING COUNT(*) > 1
 ORDER BY n DESC, nct_id
 LIMIT 100;
 
+-- the current ctgov.studies table contains 604,729 trials, with exactly one row per NCT ID.
+
 -- 4. Measure actual rows per trial in every candidate table.
 -- Run each table explicitly so a missing historical table fails loudly.
 SELECT 'designs' AS table_name,

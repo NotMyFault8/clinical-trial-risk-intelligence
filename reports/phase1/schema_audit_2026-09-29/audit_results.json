@@ -1,0 +1,1489 @@
+{
+  "provenance": [
+    {
+      "database": "aact",
+      "observed_at_utc": "2026-09-29T21:24:58.35717+00:00",
+      "observed_at_toronto": "2026-09-29T17:24:58.35717",
+      "read_only": "on",
+      "isolation": "repeatable read",
+      "diagnostic_reference_date": "2026-09-29",
+      "source_kind": "current_live_database_not_historical_snapshot"
+    }
+  ],
+  "table_inventory": [
+    {
+      "table_name": "all_browse_conditions",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_browse_interventions",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_cities",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_conditions",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_countries",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_design_outcomes",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_facilities",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_group_types",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_id_information",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_intervention_types",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_interventions",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_keywords",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_overall_official_affiliations",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_overall_officials",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_primary_outcome_measures",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_secondary_outcome_measures",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_sponsors",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "all_states",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "baseline_counts",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "baseline_measurements",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "brief_summaries",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "browse_conditions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "browse_interventions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "calculated_values",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "categories",
+      "table_type": "VIEW"
+    },
+    {
+      "table_name": "central_contacts",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "conditions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "countries",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "design_group_interventions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "design_groups",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "design_outcomes",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "designs",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "detailed_descriptions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "documents",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "drop_withdrawals",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "eligibilities",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "facilities",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "facility_contacts",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "facility_investigators",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "id_information",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "intervention_other_names",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "interventions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "ipd_information_types",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "keywords",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "links",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "mesh_headings",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "mesh_terms",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "milestones",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "outcome_analyses",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "outcome_analysis_groups",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "outcome_counts",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "outcome_measurements",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "outcomes",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "overall_officials",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "participant_flows",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "pending_results",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "provided_documents",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "reported_event_totals",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "reported_events",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "responsible_parties",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "result_agreements",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "result_contacts",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "result_groups",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "retractions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "search_results",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "search_term_results",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "search_terms",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "sponsors",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "studies",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "study_references",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "study_searches",
+      "table_type": "BASE TABLE"
+    }
+  ],
+  "column_inventory": [
+    {
+      "table_name": "conditions",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "conditions",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "conditions",
+      "ordinal_position": 3,
+      "column_name": "name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "conditions",
+      "ordinal_position": 4,
+      "column_name": "downcase_name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 3,
+      "column_name": "allocation",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 4,
+      "column_name": "intervention_model",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 5,
+      "column_name": "observational_model",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 6,
+      "column_name": "primary_purpose",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 7,
+      "column_name": "time_perspective",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 8,
+      "column_name": "masking",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 9,
+      "column_name": "masking_description",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 10,
+      "column_name": "intervention_model_description",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 11,
+      "column_name": "subject_masked",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 12,
+      "column_name": "caregiver_masked",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 13,
+      "column_name": "investigator_masked",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "designs",
+      "ordinal_position": 14,
+      "column_name": "outcomes_assessor_masked",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 3,
+      "column_name": "sampling_method",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 4,
+      "column_name": "gender",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 5,
+      "column_name": "minimum_age",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 6,
+      "column_name": "maximum_age",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 7,
+      "column_name": "healthy_volunteers",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 8,
+      "column_name": "population",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 9,
+      "column_name": "criteria",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 10,
+      "column_name": "gender_description",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 11,
+      "column_name": "gender_based",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 12,
+      "column_name": "adult",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 13,
+      "column_name": "child",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "eligibilities",
+      "ordinal_position": 14,
+      "column_name": "older_adult",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 3,
+      "column_name": "status",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 4,
+      "column_name": "name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 5,
+      "column_name": "city",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 6,
+      "column_name": "state",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 7,
+      "column_name": "zip",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 8,
+      "column_name": "country",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 9,
+      "column_name": "latitude",
+      "data_type": "numeric",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "facilities",
+      "ordinal_position": 10,
+      "column_name": "longitude",
+      "data_type": "numeric",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "interventions",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "interventions",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "interventions",
+      "ordinal_position": 3,
+      "column_name": "intervention_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "interventions",
+      "ordinal_position": 4,
+      "column_name": "name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "interventions",
+      "ordinal_position": 5,
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "sponsors",
+      "ordinal_position": 1,
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "sponsors",
+      "ordinal_position": 2,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "sponsors",
+      "ordinal_position": 3,
+      "column_name": "agency_class",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "sponsors",
+      "ordinal_position": 4,
+      "column_name": "lead_or_collaborator",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "sponsors",
+      "ordinal_position": 5,
+      "column_name": "name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 1,
+      "column_name": "nct_id",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 2,
+      "column_name": "nlm_download_date_description",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 3,
+      "column_name": "study_first_submitted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 4,
+      "column_name": "results_first_submitted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 5,
+      "column_name": "disposition_first_submitted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 6,
+      "column_name": "last_update_submitted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 7,
+      "column_name": "study_first_submitted_qc_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 8,
+      "column_name": "study_first_posted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 9,
+      "column_name": "study_first_posted_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 10,
+      "column_name": "results_first_submitted_qc_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 11,
+      "column_name": "results_first_posted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 12,
+      "column_name": "results_first_posted_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 13,
+      "column_name": "disposition_first_submitted_qc_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 14,
+      "column_name": "disposition_first_posted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 15,
+      "column_name": "disposition_first_posted_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 16,
+      "column_name": "last_update_submitted_qc_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 17,
+      "column_name": "last_update_posted_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 18,
+      "column_name": "last_update_posted_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 19,
+      "column_name": "start_month_year",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 20,
+      "column_name": "start_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 21,
+      "column_name": "start_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 22,
+      "column_name": "verification_month_year",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 23,
+      "column_name": "verification_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 24,
+      "column_name": "completion_month_year",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 25,
+      "column_name": "completion_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 26,
+      "column_name": "completion_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 27,
+      "column_name": "primary_completion_month_year",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 28,
+      "column_name": "primary_completion_date_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 29,
+      "column_name": "primary_completion_date",
+      "data_type": "date",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 30,
+      "column_name": "target_duration",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 31,
+      "column_name": "study_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 32,
+      "column_name": "acronym",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 33,
+      "column_name": "baseline_population",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 34,
+      "column_name": "brief_title",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 35,
+      "column_name": "official_title",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 36,
+      "column_name": "overall_status",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 37,
+      "column_name": "last_known_status",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 38,
+      "column_name": "phase",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 39,
+      "column_name": "enrollment",
+      "data_type": "integer",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 40,
+      "column_name": "enrollment_type",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 41,
+      "column_name": "source",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 42,
+      "column_name": "limitations_and_caveats",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 43,
+      "column_name": "number_of_arms",
+      "data_type": "integer",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 44,
+      "column_name": "number_of_groups",
+      "data_type": "integer",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 45,
+      "column_name": "why_stopped",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 46,
+      "column_name": "has_expanded_access",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 47,
+      "column_name": "expanded_access_type_individual",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 48,
+      "column_name": "expanded_access_type_intermediate",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 49,
+      "column_name": "expanded_access_type_treatment",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 50,
+      "column_name": "has_dmc",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 51,
+      "column_name": "is_fda_regulated_drug",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 52,
+      "column_name": "is_fda_regulated_device",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 53,
+      "column_name": "is_unapproved_device",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 54,
+      "column_name": "is_ppsd",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 55,
+      "column_name": "is_us_export",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 56,
+      "column_name": "biospec_retention",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 57,
+      "column_name": "biospec_description",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 58,
+      "column_name": "ipd_time_frame",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 59,
+      "column_name": "ipd_access_criteria",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 60,
+      "column_name": "ipd_url",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 61,
+      "column_name": "plan_to_share_ipd",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 62,
+      "column_name": "plan_to_share_ipd_description",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 63,
+      "column_name": "created_at",
+      "data_type": "timestamp without time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 64,
+      "column_name": "updated_at",
+      "data_type": "timestamp without time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 65,
+      "column_name": "source_class",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 66,
+      "column_name": "delayed_posting",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 67,
+      "column_name": "expanded_access_nctid",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 68,
+      "column_name": "expanded_access_status_for_nctid",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 69,
+      "column_name": "fdaaa801_violation",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 70,
+      "column_name": "baseline_type_units_analyzed",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "studies",
+      "ordinal_position": 71,
+      "column_name": "patient_registry",
+      "data_type": "boolean",
+      "is_nullable": "YES"
+    }
+  ],
+  "study_records_presence": [],
+  "studies_uniqueness": [
+    {
+      "total_rows": 604729,
+      "distinct_nct_ids": 604729,
+      "null_nct_ids": 0,
+      "extra_nonnull_id_rows": 0,
+      "original_duplicate_rows_metric": 0
+    }
+  ],
+  "studies_duplicate_ids": [],
+  "cardinality_designs": [
+    {
+      "table_name": "designs",
+      "source_rows": 599938,
+      "distinct_trial_ids": 599938,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 1,
+      "mean_rows_per_present_trial": 1.0,
+      "ids_with_multiple_rows": 0,
+      "studies_without_rows": 4791,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "cardinality_eligibilities": [
+    {
+      "table_name": "eligibilities",
+      "source_rows": 603748,
+      "distinct_trial_ids": 603748,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 1,
+      "mean_rows_per_present_trial": 1.0,
+      "ids_with_multiple_rows": 0,
+      "studies_without_rows": 981,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "cardinality_sponsors": [
+    {
+      "table_name": "sponsors",
+      "source_rows": 963830,
+      "distinct_trial_ids": 604729,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 180,
+      "mean_rows_per_present_trial": 1.594,
+      "ids_with_multiple_rows": 190809,
+      "studies_without_rows": 0,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "cardinality_conditions": [
+    {
+      "table_name": "conditions",
+      "source_rows": 1087552,
+      "distinct_trial_ids": 603710,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 343,
+      "mean_rows_per_present_trial": 1.801,
+      "ids_with_multiple_rows": 221232,
+      "studies_without_rows": 1019,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "cardinality_interventions": [
+    {
+      "table_name": "interventions",
+      "source_rows": 1022931,
+      "distinct_trial_ids": 543426,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 97,
+      "mean_rows_per_present_trial": 1.882,
+      "ids_with_multiple_rows": 286892,
+      "studies_without_rows": 61303,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "cardinality_facilities": [
+    {
+      "table_name": "facilities",
+      "source_rows": 3533271,
+      "distinct_trial_ids": 544000,
+      "null_id_rows": 0,
+      "min_rows_per_present_trial": 1,
+      "max_rows_per_present_trial": 3510,
+      "mean_rows_per_present_trial": 6.495,
+      "ids_with_multiple_rows": 144488,
+      "studies_without_rows": 60729,
+      "orphan_trial_ids": 0
+    }
+  ],
+  "distribution_study_type": [
+    {
+      "value": "INTERVENTIONAL",
+      "trials": 461518,
+      "percent_of_all_studies": 76.3182
+    },
+    {
+      "value": "OBSERVATIONAL",
+      "trials": 141162,
+      "percent_of_all_studies": 23.343
+    },
+    {
+      "value": "EXPANDED_ACCESS",
+      "trials": 1068,
+      "percent_of_all_studies": 0.1766
+    },
+    {
+      "value": null,
+      "trials": 981,
+      "percent_of_all_studies": 0.1622
+    }
+  ],
+  "distribution_start_date_type": [
+    {
+      "value": "ACTUAL",
+      "trials": 356016,
+      "percent_of_all_studies": 58.872
+    },
+    {
+      "value": null,
+      "trials": 186225,
+      "percent_of_all_studies": 30.7948
+    },
+    {
+      "value": "ESTIMATED",
+      "trials": 62488,
+      "percent_of_all_studies": 10.3332
+    }
+  ],
+  "distribution_enrollment_type": [
+    {
+      "value": "ACTUAL",
+      "trials": 375829,
+      "percent_of_all_studies": 62.1483
+    },
+    {
+      "value": "ESTIMATED",
+      "trials": 211769,
+      "percent_of_all_studies": 35.0188
+    },
+    {
+      "value": null,
+      "trials": 17131,
+      "percent_of_all_studies": 2.8328
+    }
+  ],
+  "distribution_overall_status": [
+    {
+      "value": "COMPLETED",
+      "trials": 330415,
+      "percent_of_all_studies": 54.6385
+    },
+    {
+      "value": "UNKNOWN",
+      "trials": 96829,
+      "percent_of_all_studies": 16.012
+    },
+    {
+      "value": "RECRUITING",
+      "trials": 65069,
+      "percent_of_all_studies": 10.76
+    },
+    {
+      "value": "TERMINATED",
+      "trials": 34387,
+      "percent_of_all_studies": 5.6863
+    },
+    {
+      "value": "NOT_YET_RECRUITING",
+      "trials": 29967,
+      "percent_of_all_studies": 4.9554
+    },
+    {
+      "value": "ACTIVE_NOT_RECRUITING",
+      "trials": 22146,
+      "percent_of_all_studies": 3.6621
+    },
+    {
+      "value": "WITHDRAWN",
+      "trials": 16817,
+      "percent_of_all_studies": 2.7809
+    },
+    {
+      "value": "ENROLLING_BY_INVITATION",
+      "trials": 5268,
+      "percent_of_all_studies": 0.8711
+    },
+    {
+      "value": "SUSPENDED",
+      "trials": 1782,
+      "percent_of_all_studies": 0.2947
+    },
+    {
+      "value": "WITHHELD",
+      "trials": 981,
+      "percent_of_all_studies": 0.1622
+    },
+    {
+      "value": "NO_LONGER_AVAILABLE",
+      "trials": 536,
+      "percent_of_all_studies": 0.0886
+    },
+    {
+      "value": "AVAILABLE",
+      "trials": 254,
+      "percent_of_all_studies": 0.042
+    },
+    {
+      "value": "APPROVED_FOR_MARKETING",
+      "trials": 242,
+      "percent_of_all_studies": 0.04
+    },
+    {
+      "value": "TEMPORARILY_NOT_AVAILABLE",
+      "trials": 36,
+      "percent_of_all_studies": 0.006
+    }
+  ],
+  "interventional_status_distribution": [
+    {
+      "value": "COMPLETED",
+      "trials": 258624,
+      "percent_of_interventional": 56.0377
+    },
+    {
+      "value": "UNKNOWN",
+      "trials": 66971,
+      "percent_of_interventional": 14.511
+    },
+    {
+      "value": "RECRUITING",
+      "trials": 47520,
+      "percent_of_interventional": 10.2965
+    },
+    {
+      "value": "TERMINATED",
+      "trials": 29850,
+      "percent_of_interventional": 6.4678
+    },
+    {
+      "value": "NOT_YET_RECRUITING",
+      "trials": 22615,
+      "percent_of_interventional": 4.9001
+    },
+    {
+      "value": "ACTIVE_NOT_RECRUITING",
+      "trials": 17177,
+      "percent_of_interventional": 3.7218
+    },
+    {
+      "value": "WITHDRAWN",
+      "trials": 13855,
+      "percent_of_interventional": 3.002
+    },
+    {
+      "value": "ENROLLING_BY_INVITATION",
+      "trials": 3450,
+      "percent_of_interventional": 0.7475
+    },
+    {
+      "value": "SUSPENDED",
+      "trials": 1456,
+      "percent_of_interventional": 0.3155
+    }
+  ],
+  "lead_sponsor_original": [
+    {
+      "lead_count": 1,
+      "trials": 604729
+    }
+  ],
+  "lead_sponsor_all_studies": [
+    {
+      "lead_count": 1,
+      "trials": 604729,
+      "trials_without_any_sponsor_rows": 0
+    }
+  ],
+  "sponsor_role_distribution": [
+    {
+      "value": "lead",
+      "rows": 604729
+    },
+    {
+      "value": "collaborator",
+      "rows": 359101
+    }
+  ],
+  "current_candidate_original_anticipated": [
+    {
+      "within_30d": 0,
+      "within_60d": 0,
+      "within_90d": 0,
+      "all_future_planned": 0
+    }
+  ],
+  "current_candidate_anticipated_or_estimated": [
+    {
+      "within_30d": 2198,
+      "within_60d": 3160,
+      "within_90d": 3601,
+      "all_future_planned": 5035
+    }
+  ],
+  "date_completeness_current": [
+    {
+      "interventional_trials": 461518,
+      "missing_start_date": 2889,
+      "missing_first_posted_date": 0,
+      "date_comparable_trials": 458629,
+      "first_posted_after_current_start_date": 222903,
+      "minimum_first_posted": "1999-09-20",
+      "maximum_first_posted": "2026-09-28"
+    }
+  ],
+  "manifest": {
+    "original_sql_sha256": "72cc7d8f8687c21aa3f5be99963aa900a4858494f6ccbf34db074c733715c372",
+    "executed_sql_sha256": "f33e5a732b63265ba4ad10d07bb211b7a6951549cd31f8959ac0b396c4b84814",
+    "original_sql_name": "schema_audit.sql",
+    "section_7_historical_status": "not_measured_no_historical_snapshot_supplied",
+    "section_8_status": "not_measured_if_relation_absent_see_study_records_presence"
+  }
+}
