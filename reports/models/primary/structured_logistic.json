@@ -1,0 +1,37 @@
+{
+  "family": "structured_logistic",
+  "variant": "primary",
+  "candidates": [
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "tuning_AP": [
+    0.32999183004919896,
+    0.3199921233242307,
+    0.32056005009037913,
+    0.3089290910958695
+  ],
+  "chosen_candidate": 0.03,
+  "chosen_tuning_AP": 0.32999183004919896,
+  "platt_slope": 1.5191287316525428,
+  "platt_intercept": 0.7290290802879373,
+  "fit_seconds": 0.08921970799565315,
+  "split_counts": {
+    "count": {
+      "calibrate": 341,
+      "test": 632,
+      "train": 1107,
+      "tune": 332
+    },
+    "sum": {
+      "calibrate": 69.0,
+      "test": 116.0,
+      "train": 217.0,
+      "tune": 47.0
+    }
+  },
+  "protocol_sha256": "8efe91f9745af04dbec21d6a307407f87e2ed938b7a83018f870ffb40ea9902c",
+  "model_sha256": "7a78f60e249b1f0b2de7d35676c3ee85068bd70669b1b48838c028c4d6a38f9a"
+}

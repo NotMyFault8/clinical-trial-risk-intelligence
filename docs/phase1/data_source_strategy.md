@@ -47,7 +47,7 @@ Primary working rule for an interventional study:
 1. Scan historical snapshots chronologically.
 2. The trial must already exist in the snapshot.
 3. `study_type = 'Interventional'`.
-4. `start_date_type = 'Anticipated'`.
+4. The source-specific planned-start value is present: the live audit observed `ESTIMATED`; verify whether each historical archive uses `Anticipated` or `ESTIMATED` before mapping it.
 5. The start date recorded in that snapshot must be in the future.
 6. The then-recorded planned start must be within a predeclared window after the snapshot; candidate window: 90 days.
 7. Select the **first** snapshot satisfying the rule. That snapshot date becomes the prediction timestamp for the trial.
@@ -78,7 +78,8 @@ If feasibility passes, expand to the monthly snapshots needed for the final pred
 | `conditions` | condition counts/names; later therapeutic-area mapping | one-to-many |
 | `interventions` | intervention types/counts/names | one-to-many |
 | `facilities` | site count and geography | one-to-many |
-| `study_records` | raw JSON/provenance candidate | unknown; audit before use |
+
+`study_records` and `study_references` are excluded from the current scope by the user’s 2026-09-30 decision. Historical provenance will come from verified archives and manifests.
 
 Derived AACT tables such as calculated counts should not be preferred automatically when the same value can be reproduced transparently from source entity tables.
 
@@ -108,6 +109,6 @@ The following still require measured evidence:
 ## Public source references
 
 - AACT: https://aact.ctti-clinicaltrials.org/
-- AACT snapshots: https://aact.ctti-clinicaltrials.org/downloads/snapshots
+- AACT snapshots: https://aact.ctti-clinicaltrials.org/snapshots/flat
 - AACT data dictionary: https://aact.ctti-clinicaltrials.org/documentation
 - ClinicalTrials.gov: https://clinicaltrials.gov/

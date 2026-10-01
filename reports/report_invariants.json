@@ -1,0 +1,9 @@
+{
+  "reports_checked": 632,
+  "exact_evidence_spans_checked": 822,
+  "attribution_reconstruction_failures": 0,
+  "typed_probability_mismatches": 0,
+  "forbidden_outcome_field_violations": 0,
+  "seconds": 8.731113541987725,
+  "scope": "Finite frozen portfolio checks, not independent semantic or prospective validation"
+}

@@ -1,0 +1,131 @@
+{
+  "split": "development",
+  "benchmark_sha256": "1c37c722126e079073b9f0c12a772effa7ec84a318559700344edb3b322b7a76",
+  "llm": {
+    "records": 100,
+    "trials": 50,
+    "per_type": {
+      "Measurement": {
+        "tp": 13,
+        "fp": 81,
+        "fn": 169,
+        "precision": 0.13829787234042554,
+        "recall": 0.07142857142857142,
+        "f1": 0.09420289855072464
+      },
+      "Value": {
+        "tp": 19,
+        "fp": 40,
+        "fn": 176,
+        "precision": 0.3220338983050847,
+        "recall": 0.09743589743589744,
+        "f1": 0.1496062992125984
+      },
+      "Temporal": {
+        "tp": 7,
+        "fp": 58,
+        "fn": 149,
+        "precision": 0.1076923076923077,
+        "recall": 0.04487179487179487,
+        "f1": 0.06334841628959276
+      }
+    },
+    "micro": {
+      "tp": 39,
+      "fp": 179,
+      "fn": 494,
+      "precision": 0.17889908256880735,
+      "recall": 0.07317073170731707,
+      "f1": 0.10386151797603196
+    },
+    "schema_valid_rate": 0.75,
+    "failure_rate": 0.25,
+    "rejected_span_rate": 0.2922077922077922,
+    "raw_spans": 308,
+    "retained_spans": 218,
+    "gold_spans_outside_prefix": 28,
+    "gold_discontinuous_inside_prefix": 24,
+    "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+    "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples",
+    "amortized_seconds": {
+      "p50": 0.44636821874883026,
+      "p95": 0.5245770573128539
+    },
+    "input_tokens": 38216,
+    "output_tokens": 7161,
+    "hosted_api_cost": 0,
+    "local_energy_cost": "not measured"
+  },
+  "rules": {
+    "records": 100,
+    "trials": 50,
+    "per_type": {
+      "Measurement": {
+        "tp": 15,
+        "fp": 45,
+        "fn": 167,
+        "precision": 0.25,
+        "recall": 0.08241758241758242,
+        "f1": 0.12396694214876033
+      },
+      "Value": {
+        "tp": 24,
+        "fp": 54,
+        "fn": 171,
+        "precision": 0.3076923076923077,
+        "recall": 0.12307692307692308,
+        "f1": 0.17582417582417584
+      },
+      "Temporal": {
+        "tp": 13,
+        "fp": 124,
+        "fn": 143,
+        "precision": 0.0948905109489051,
+        "recall": 0.08333333333333333,
+        "f1": 0.08873720136518772
+      }
+    },
+    "micro": {
+      "tp": 52,
+      "fp": 223,
+      "fn": 481,
+      "precision": 0.1890909090909091,
+      "recall": 0.0975609756097561,
+      "f1": 0.12871287128712872
+    },
+    "schema_valid_rate": 1.0,
+    "failure_rate": 0.0,
+    "rejected_span_rate": 0.0,
+    "raw_spans": 275,
+    "retained_spans": 275,
+    "gold_spans_outside_prefix": 28,
+    "gold_discontinuous_inside_prefix": 24,
+    "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+    "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+  },
+  "version": {
+    "model": {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "path": "artifacts/pretrained/qwen",
+      "documented_training_cutoff": null,
+      "contamination_status": "cannot_exclude"
+    },
+    "quantization": "mlx affine 4-bit group64",
+    "quantized_weights_sha256": {
+      "model.safetensors": "5b6abb3e8bbb783216a1a034fe742de5f25a836f3c642910ce327199c51217e7"
+    },
+    "prompt_sha256": "74e5b8af3ca4302faef92bb83d0a06d3b549ec412b5f4d30ccf40afef0576a8b",
+    "schema": "span-v1",
+    "max_characters": 1800,
+    "max_output_tokens": 384,
+    "decoding": "greedy",
+    "implementation_sha256": "8d6237cfd8b8eefd3ee437601f57fc12d1be8f6e5e8ec4c251b0d7619fec60d8"
+  },
+  "limitations": [
+    "external Phase-IV domain",
+    "no local clinician adjudication",
+    "prefix budget",
+    "entity spans do not establish complete eligibility logic"
+  ]
+}

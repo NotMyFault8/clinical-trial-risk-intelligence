@@ -1,0 +1,24 @@
+[
+  {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "path": "artifacts/pretrained/qwen",
+    "documented_training_cutoff": null,
+    "contamination_status": "cannot_exclude"
+  },
+  {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "path": "artifacts/pretrained/minilm",
+    "documented_training_cutoff": null,
+    "contamination_status": "cannot_exclude"
+  },
+  {
+    "id": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+    "revision": "c26a38f6a37d0a51b4e9a1eb3026530fa35d9fed",
+    "path": "artifacts/pretrained/qwen7-4bit",
+    "documented_training_cutoff": null,
+    "contamination_status": "cannot_exclude",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct"
+  }
+]

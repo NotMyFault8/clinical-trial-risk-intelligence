@@ -1,0 +1,38 @@
+{
+  "schema": "environment-v1",
+  "python": "3.12.14",
+  "source_archives": 8,
+  "source_manifest_sha256": "9fc4d83a52bb5b9502b15456d0f6435edfe0f4ae73446ba291fe390cdf423ecd",
+  "protocol_sha256": "8efe91f9745af04dbec21d6a307407f87e2ed938b7a83018f870ffb40ea9902c",
+  "extraction_prompt_sha256": "74e5b8af3ca4302faef92bb83d0a06d3b549ec412b5f4d30ccf40afef0576a8b",
+  "model_revisions": [
+    {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "path": "artifacts/pretrained/qwen",
+      "documented_training_cutoff": null,
+      "contamination_status": "cannot_exclude"
+    },
+    {
+      "id": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "path": "artifacts/pretrained/minilm",
+      "documented_training_cutoff": null,
+      "contamination_status": "cannot_exclude"
+    },
+    {
+      "id": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+      "revision": "c26a38f6a37d0a51b4e9a1eb3026530fa35d9fed",
+      "path": "artifacts/pretrained/qwen7-4bit",
+      "documented_training_cutoff": null,
+      "contamination_status": "cannot_exclude",
+      "base_model": "Qwen/Qwen2.5-7B-Instruct"
+    }
+  ],
+  "lockfiles": {
+    "requirements-core.lock": "5754e15d27c1f57343911ef0b14437ccbaa54e977cfa03178d85e38aed81c48d",
+    "requirements-macos.lock": "3e4cb9542e4e94b204acd18e076eafabe3a86dab0cf36e66359513fa1099e1db",
+    "requirements-linux.lock": "c98c1173a1003260e9fe541de35474b9ab421ca289809da924f2366184b0fc04"
+  },
+  "execution_timestamps_recorded": false
+}

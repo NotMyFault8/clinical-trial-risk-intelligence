@@ -1,0 +1,131 @@
+{
+  "split": "test",
+  "benchmark_sha256": "1c37c722126e079073b9f0c12a772effa7ec84a318559700344edb3b322b7a76",
+  "llm": {
+    "records": 310,
+    "trials": 155,
+    "per_type": {
+      "Measurement": {
+        "tp": 59,
+        "fp": 315,
+        "fn": 491,
+        "precision": 0.15775401069518716,
+        "recall": 0.10727272727272727,
+        "f1": 0.12770562770562768
+      },
+      "Value": {
+        "tp": 81,
+        "fp": 112,
+        "fn": 599,
+        "precision": 0.41968911917098445,
+        "recall": 0.11911764705882352,
+        "f1": 0.18556701030927833
+      },
+      "Temporal": {
+        "tp": 30,
+        "fp": 159,
+        "fn": 423,
+        "precision": 0.15873015873015872,
+        "recall": 0.06622516556291391,
+        "f1": 0.09345794392523364
+      }
+    },
+    "micro": {
+      "tp": 170,
+      "fp": 586,
+      "fn": 1513,
+      "precision": 0.22486772486772486,
+      "recall": 0.10101010101010101,
+      "f1": 0.13940139401394014
+    },
+    "schema_valid_rate": 0.7903225806451613,
+    "failure_rate": 0.20967741935483872,
+    "rejected_span_rate": 0.31272727272727274,
+    "raw_spans": 1100,
+    "retained_spans": 756,
+    "gold_spans_outside_prefix": 104,
+    "gold_discontinuous_inside_prefix": 36,
+    "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+    "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples",
+    "amortized_seconds": {
+      "p50": 0.4214268463110784,
+      "p95": 0.49897074737236835
+    },
+    "input_tokens": 116530,
+    "output_tokens": 19757,
+    "hosted_api_cost": 0,
+    "local_energy_cost": "not measured"
+  },
+  "rules": {
+    "records": 310,
+    "trials": 155,
+    "per_type": {
+      "Measurement": {
+        "tp": 68,
+        "fp": 153,
+        "fn": 482,
+        "precision": 0.3076923076923077,
+        "recall": 0.12363636363636364,
+        "f1": 0.17639429312581065
+      },
+      "Value": {
+        "tp": 112,
+        "fp": 233,
+        "fn": 568,
+        "precision": 0.32463768115942027,
+        "recall": 0.16470588235294117,
+        "f1": 0.21853658536585369
+      },
+      "Temporal": {
+        "tp": 32,
+        "fp": 343,
+        "fn": 421,
+        "precision": 0.08533333333333333,
+        "recall": 0.0706401766004415,
+        "f1": 0.07729468599033816
+      }
+    },
+    "micro": {
+      "tp": 212,
+      "fp": 729,
+      "fn": 1471,
+      "precision": 0.2252922422954304,
+      "recall": 0.1259655377302436,
+      "f1": 0.16158536585365854
+    },
+    "schema_valid_rate": 1.0,
+    "failure_rate": 0.0,
+    "rejected_span_rate": 0.0,
+    "raw_spans": 941,
+    "retained_spans": 941,
+    "gold_spans_outside_prefix": 104,
+    "gold_discontinuous_inside_prefix": 36,
+    "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+    "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+  },
+  "version": {
+    "model": {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "path": "artifacts/pretrained/qwen",
+      "documented_training_cutoff": null,
+      "contamination_status": "cannot_exclude"
+    },
+    "quantization": "mlx affine 4-bit group64",
+    "quantized_weights_sha256": {
+      "model.safetensors": "5b6abb3e8bbb783216a1a034fe742de5f25a836f3c642910ce327199c51217e7"
+    },
+    "prompt_sha256": "74e5b8af3ca4302faef92bb83d0a06d3b549ec412b5f4d30ccf40afef0576a8b",
+    "schema": "span-v1",
+    "max_characters": 1800,
+    "max_output_tokens": 384,
+    "decoding": "greedy",
+    "implementation_sha256": "8d6237cfd8b8eefd3ee437601f57fc12d1be8f6e5e8ec4c251b0d7619fec60d8"
+  },
+  "limitations": [
+    "external Phase-IV domain",
+    "no local clinician adjudication",
+    "prefix budget",
+    "entity spans do not establish complete eligibility logic"
+  ]
+}

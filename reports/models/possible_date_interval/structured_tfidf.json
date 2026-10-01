@@ -1,0 +1,37 @@
+{
+  "family": "structured_tfidf",
+  "variant": "possible_date_interval",
+  "candidates": [
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "tuning_AP": [
+    0.33602135625211704,
+    0.3451982102731841,
+    0.3520581021061845,
+    0.3564380014475682
+  ],
+  "chosen_candidate": 1.0,
+  "chosen_tuning_AP": 0.3564380014475682,
+  "platt_slope": 0.9730443881586389,
+  "platt_intercept": 0.05876392792739065,
+  "fit_seconds": 1.8745302080060355,
+  "split_counts": {
+    "count": {
+      "calibrate": 527,
+      "test": 966,
+      "train": 1655,
+      "tune": 502
+    },
+    "sum": {
+      "calibrate": 108.0,
+      "test": 180.0,
+      "train": 333.0,
+      "tune": 74.0
+    }
+  },
+  "protocol_sha256": "8efe91f9745af04dbec21d6a307407f87e2ed938b7a83018f870ffb40ea9902c",
+  "model_sha256": "dce9c29d55334703a84eefdf59f930321e6989c52c61bdbe4684cf407aad3e4c"
+}

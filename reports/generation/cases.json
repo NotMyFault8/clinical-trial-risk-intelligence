@@ -1,0 +1,3716 @@
+[
+  {
+    "nct_id": "NCT05025462",
+    "packet": {
+      "nct_id": "NCT05025462",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "5.5%",
+      "percentile_display": "14.4",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.9295930373793779,
+        "displayed_contributions_sum": -1.1614353470682706,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.8162586749985514,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.3688005496983815,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.27779606954739106,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.23758962825091803,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.18532719750194637,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__primary_purpose_prevention",
+            "contribution": -0.17455385458479913,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca10",
+            "contribution": 0.14817218690825223,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 5.5%\n**Percentile Display:** 14.4%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the calibration of log-odds.\n**Evidence:** None provided.\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 771,
+    "output_tokens": 150,
+    "template_seconds": 2.7875008527189493e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT04952532",
+    "packet": {
+      "nct_id": "NCT04952532",
+      "phase": "N/A",
+      "sponsor_class": "U.S. Fed",
+      "probability_display": "18.8%",
+      "percentile_display": "61.3",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.46026741506758334,
+        "displayed_contributions_sum": 0.1354670147840165,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.4745033709490494,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.22731548249388936,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.22204702214314273,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca20",
+            "contribution": -0.17702331404133412,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.1473054942418062,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 18.8%\n**Percentile Display:** 61.3%\n**Overview:** The study estimates a 18.8% chance of a positive outcome for the trial, placing it at the 61.3th percentile of all trials.\n**Associations:** The model associations are based on the contribution of various features to the log-odds of the outcome, with higher values indicating a higher likelihood of the event occurring.\n**Evidence:** The source ID and excerpt are not provided.\n**Limitations:** The research estimate is conditional on the trial being reported completed or terminated at a specific snapshot, not a termination probability for all new trials. It is a retrospective analysis without clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 778,
+    "output_tokens": 149,
+    "template_seconds": 1.3959011994302273e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT04452981",
+    "packet": {
+      "nct_id": "NCT04452981",
+      "phase": "N/A",
+      "sponsor_class": "Industry",
+      "probability_display": "8.8%",
+      "percentile_display": "29.3",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.4112670086060863,
+        "displayed_contributions_sum": -0.12247909635696011,
+        "factors": [
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.307934572146008,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.16896182793619013,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.14610357870762886,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.13163116764798458,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 8.8%\n**Percentile Display:** 29.3%\n**Overview:** The study estimates a 8.8% chance of a trial being completed or terminated at the five-year snapshot.\n**Associations:** The model associations are derived from the calibrated log-odds of the trial's success, attributing the success to higher values of PCA features and categorical indicators.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Analyst Check:** The missing information and source context are not provided.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 772,
+    "output_tokens": 153,
+    "template_seconds": 9.207986295223236e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT05013112",
+    "packet": {
+      "nct_id": "NCT05013112",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "14.8%",
+      "percentile_display": "51.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.16934974739121408,
+        "displayed_contributions_sum": 0.3401385588705649,
+        "factors": [
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.4152163267679976,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.2938458968144642,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.22291018700594986,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.2110894964499459,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "eGFR level"
+        },
+        {
+          "source_id": "E2",
+          "quote": "ALT"
+        },
+        {
+          "source_id": "E3",
+          "quote": "AST"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 14.8%\n**Percentile Display:** 51.0%\n**Overview:** The study estimates a 14.8% probability of a trial being completed or terminated within the five-year snapshot period, placing it at the 51st percentile of all trials.\n**Associations:** The model associations are derived from the logistic regression coefficients, scaled to the calibrated log-odds, where the base log odds are -1.9215116307842313. The contributions of various features are -0.4152163267679976 for condition count, -0.2938458968144642 for PCA3, 0.22291018700594986 for PCA0, 0.2110894964499459 for PCA1, 0.1937209032973959 for has_drug, 0.14065090014202594 for healthy_volunteers_no, 0.14060324624788562 for primary_purpose_treatment, and 0.14022604930982335 for masking_none (open label).\n**Evidence:** The study uses exact logistic coefficient contributions, scaled to the calibrated log-odds, with the base log odds being -1.9215116307842313. The evidence includes E1: eGFR level, E2: ALT, and E3: AST.\n**Limitations:** The research estimate is conditional on a trial being reported as completed or terminated within the five-year snapshot period, not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Analyst Check:** To verify the associations, one should check the feature's direction (lower/higher) and the feature's contribution to the log-odds.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 840,
+    "output_tokens": 465,
+    "template_seconds": 1.5666009858250618e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT04992949",
+    "packet": {
+      "nct_id": "NCT04992949",
+      "phase": "Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "48.2%",
+      "percentile_display": "91.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.8510841419532782,
+        "displayed_contributions_sum": 0.6222021166577665,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.5492186676997922,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.3109924235977749,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__facility_count",
+            "contribution": -0.19237483806665573,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": -0.14752869556530707,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "Serum creatinine"
+        },
+        {
+          "source_id": "E2",
+          "quote": "Serum total bilirubin"
+        },
+        {
+          "source_id": "E3",
+          "quote": "ASAT"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 48.2%\n**Percentile Display:** 91.2%\n**Overview:** The study's phase II trial has a 48.2% probability of success, placing it in the 91.2th percentile of all trials.\n**Associations:** The model associations are not causes or effects of changing the trial but rather attributes of the trial's characteristics.\n**Evidence:** The study uses specific biomarkers like serum creatinine, total bilirubin, and aspartate aminotransferase (ASAT) as reference values.\n**Limitations:** The research estimate is conditional on the trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation without clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 822,
+    "output_tokens": 164,
+    "template_seconds": 1.2749980669468641e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT04775264",
+    "packet": {
+      "nct_id": "NCT04775264",
+      "phase": "N/A",
+      "sponsor_class": "Industry",
+      "probability_display": "24.9%",
+      "percentile_display": "73.6",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.8164820528255308,
+        "displayed_contributions_sum": 1.3871722764437737,
+        "factors": [
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.6412415935231485,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.19370000688299865,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": 0.13258481249936258,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "between 18 and 70 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 24.9%  \n**Percentile Display:** 73.6  \n**Overview:** The study estimates a 24.9% chance of a trial being completed or terminated within five years.  \n**Associations:** The model associations are derived from the calibrated log-odds of the trial's success, attributing higher odds to features like having a drug, being a healthy volunteer, having multiple arms, and being open-label.  \n**Evidence:**  \n- **Source ID:** E1  \n- **Quote:** \"between 18 and 70 years\"  \n**Limitations:** The estimate is conditional on a trial being reported completed or terminated at a five-year snapshot, not a termination probability for all newly starting trials.  \n**Analyst Check:** To verify the associations, one should check the feature's direction of impact on the trial's success.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 821,
+    "output_tokens": 182,
+    "template_seconds": 1.0040996130555868e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT05016583",
+    "packet": {
+      "nct_id": "NCT05016583",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "21.3%",
+      "percentile_display": "67.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.6128044786990106,
+        "displayed_contributions_sum": -0.1805426001618194,
+        "factors": [
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.4555177772691958,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.3000376002659274,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.15493327891930628,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.14092844877582567,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "LARS score"
+        },
+        {
+          "source_id": "E2",
+          "quote": "21 or higher"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 21.3%\n**Percentile Display:** 67.2%\n**Overview:** The study's findings are based on a calibrated log-odds model, attributing the observed effect to the interaction between the presence of a US site, PCA components, and the type of mask used in the trial. The model's associations are not causal but rather predictive of the trial's outcome.\n**Associations:** The model's associations are not causal but rather predictive of the trial's outcome.\n**Evidence:** The study's findings are based on a calibrated log-odds model, attributing the observed effect to the interaction between the presence of a US site, PCA components, and the type of mask used in the trial.\n**Limitations:** The study's findings are based on a calibrated log-odds model, attributing the observed effect to the interaction between the presence of a US site, PCA components, and the type of mask used in the trial. The model's associations are not causal but rather predictive of the trial's outcome.\n**Analyst Check:** To verify the associations, one should check the calibrated log-odds model's contributions to the trial's outcome, focusing on the interaction between the presence of a US site, PCA components, and the type of mask used.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 805,
+    "output_tokens": 265,
+    "template_seconds": 7.750000804662704e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT05028816",
+    "packet": {
+      "nct_id": "NCT05028816",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "9.5%",
+      "percentile_display": "34.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.32803489040403977,
+        "displayed_contributions_sum": -0.028059329711203063,
+        "factors": [
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.3212159943574322,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": 0.31832498214206595,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.24990845764517428,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.22676370229728668,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.19466255933128798,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca20",
+            "contribution": -0.15540427781130917,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__intervention_model_crossover assignment",
+            "contribution": -0.15355573253989438,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 9.5%  \n**Percentile Display:** 34.0  \n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials.  \n**Associations:** The associations described are model-driven, not causal or beneficial to the trial.  \n**Evidence:**  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:  \n- Source ID:",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 9.366371291980613,
+    "batch_size": 8,
+    "amortized_seconds": 1.1707964114975766,
+    "input_tokens": 802,
+    "output_tokens": 700,
+    "template_seconds": 7.292022928595543e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6403,
+      "prompt_tps": 1860.3768263017985,
+      "prompt_time": 3.4417758324416354,
+      "generation_tokens": 2235,
+      "generation_tps": 377.31133252433,
+      "generation_time": 5.923490251530893,
+      "peak_memory": 1.891179424
+    }
+  },
+  {
+    "nct_id": "NCT05008731",
+    "packet": {
+      "nct_id": "NCT05008731",
+      "phase": "Phase 3",
+      "sponsor_class": "Other",
+      "probability_display": "26.9%",
+      "percentile_display": "75.1",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.9196689857624509,
+        "displayed_contributions_sum": 0.17503160913222204,
+        "factors": [
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.38461050965816707,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": -0.23122699576901215,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.15817218702763836,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": -0.14943722617874447,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "over 18 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 26.9%  \n**Percentile Display:** 75.1  \n**Overview:** The study is a Phase 3 trial.  \n**Associations:** The model associations are derived from the logistic regression analysis, attributing the effect to the features of the trial.  \n**Evidence:**  \n- Source ID: E1  \n- Quote: \"over 18 years\"  \n**Limitations:** The estimate is conditional on the trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials.  \n**Missing Information:** None.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 794,
+    "output_tokens": 123,
+    "template_seconds": 2.8915994334965944e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04941404",
+    "packet": {
+      "nct_id": "NCT04941404",
+      "phase": "Phase 1/Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "35.0%",
+      "percentile_display": "80.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.3040975480339325,
+        "displayed_contributions_sum": 0.4882164458750023,
+        "factors": [
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.34475913141617337,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca10",
+            "contribution": -0.1422666817445302,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": 0.13258481249936258,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "ANC"
+        },
+        {
+          "source_id": "E2",
+          "quote": "PLT"
+        },
+        {
+          "source_id": "E3",
+          "quote": ">1×109/L"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 35.0%\n**Percentile Display:** 80.9%\n**Overview:** The study is a Phase 1/Phase 2 trial sponsored by industry, with a 35.0% probability of success.\n**Associations:** The model attributes success to higher numbers of arms, a primary purpose of treatment, and a higher number of healthy volunteers. It also suggests that the presence of a US site and the use of PCA10 have positive impacts.\n**Evidence:** The study includes blood cell counts (ANC) and platelet counts (PLT) as positive factors, with platelet counts exceeding 109/L being a significant factor.\n**Limitations:** The research estimate is conditional on the trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation is used without clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 833,
+    "output_tokens": 186,
+    "template_seconds": 1.5665951650589705e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT03739645",
+    "packet": {
+      "nct_id": "NCT03739645",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "17.1%",
+      "percentile_display": "57.5",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.3405601105288871,
+        "displayed_contributions_sum": 0.017757056365374974,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.314825444815323,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.25509262211498795,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_behavioral",
+            "contribution": -0.24665579860253203,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.20240761827065046,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.18430790303648634,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca20",
+            "contribution": 0.18373301675826031,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": 0.1505567261744549,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__collaborator_count",
+            "contribution": -0.14770942589930736,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 17.1%\n**Percentile Display:** 57.5%\n**Overview:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the trial's characteristics.\n**Evidence:** None provided.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 773,
+    "output_tokens": 142,
+    "template_seconds": 1.0207993909716606e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04934137",
+    "packet": {
+      "nct_id": "NCT04934137",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "9.0%",
+      "percentile_display": "30.5",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.3871545806897989,
+        "displayed_contributions_sum": -0.7681057920246939,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.4608242909232772,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.2819149218909485,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_behavioral",
+            "contribution": -0.24665579860253203,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.1961693449944152,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.1929747135666511,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_prevention",
+            "contribution": -0.17455385458479913,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.16025474795569108,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__intervention_model_crossover assignment",
+            "contribution": -0.15355573253989438,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 9.0%\n**Percentile Display:** 30.5%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the calibration of log-odds.\n**Evidence:** No evidence provided.\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 771,
+    "output_tokens": 151,
+    "template_seconds": 9.457988198846579e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04911127",
+    "packet": {
+      "nct_id": "NCT04911127",
+      "phase": "Phase 1/Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "12.6%",
+      "percentile_display": "45.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.01163711164266798,
+        "displayed_contributions_sum": 0.44247691088790314,
+        "factors": [
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.3073917016305214,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.18026914826538157,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.1704450462878716,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.14571901578977584,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "Age"
+        },
+        {
+          "source_id": "E2",
+          "quote": ">= 18"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 12.6%  \n**Percentile Display:** 45.2  \n**Overview:** The study is a Phase 1/Phase 2 trial.  \n**Associations:** The model associations are attributed to the features of the trial, not causes or benefits.  \n**Evidence:**  \n- **Source ID:** E1  \n- **Quote:** \"Age\"  \n- **Source ID:** E2  \n- **Quote:** \">= 18\"  \n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 831,
+    "output_tokens": 148,
+    "template_seconds": 1.0624993592500687e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04988308",
+    "packet": {
+      "nct_id": "NCT04988308",
+      "phase": "Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "31.0%",
+      "percentile_display": "78.3",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.1191126758551486,
+        "displayed_contributions_sum": -0.37305286288999867,
+        "factors": [
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.5389695387731461,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.2302492632446523,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": -0.2213034836898558,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__facility_count",
+            "contribution": -0.21948078456224565,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.21522085571607247,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.20720658521643076,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": 0.1907450480928424,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "2 distinct anatomic areas"
+        },
+        {
+          "source_id": "E2",
+          "quote": "2 months"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 31.0%\n**Percentile Display:** 78.3%\n**Overview:** The study is a Phase 2 trial sponsored by industry, with a 31.0% probability of success based on the logistic regression model.\n**Associations:** The model associations are calculated from the calibrated log-odds, where the base log odds is -1.9215116307842313, and the sum of all contributions is 1.1191126758551486.\n**Evidence:** The study uses an exact logistic coefficient contribution method, with a reference to the zero-transformed design vector and scaled numeric zero as the training mean, categorical indicators all zero.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.\n**Analyst Check:** The model associations are not causes or effects of changing the trial, but rather associations derived from the data.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 802,
+    "output_tokens": 232,
+    "template_seconds": 1.070898724719882e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04894903",
+    "packet": {
+      "nct_id": "NCT04894903",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "13.4%",
+      "percentile_display": "46.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.05309516656432384,
+        "displayed_contributions_sum": 0.23300134840852724,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.3192946745055048,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.2696572928328985,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": 0.15850149239971412,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca15",
+            "contribution": -0.14683639216496094,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": 0.13215706186582538,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 13.4%  \n**Percentile Display:** 46.9  \n**Overview:** The study estimates a 13.4% risk of a trial being completed or terminated within five years.  \n**Associations:** The model associations are calculated based on the calibrated log-odds, where higher values indicate higher associations.  \n**Evidence:**  \n- Source ID:  \n  - \"facility_count\": \"The number of facilities is not available.\"\n  - \"country_count\": \"The number of countries is not available.\"\n  - \"has_us_site\": \"The presence of US sites is not available.\"\n- Quote: \"Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\"\n**Limitations:**  \n- The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 796,
+    "output_tokens": 226,
+    "template_seconds": 7.957976777106524e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04871529",
+    "packet": {
+      "nct_id": "NCT04871529",
+      "phase": "Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "58.1%",
+      "percentile_display": "95.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 2.2502716188080996,
+        "displayed_contributions_sum": 1.246152022093156,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.3790969892429052,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.2819149218909485,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.23184815833696004,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.20360876598859307,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": 0.14955655613034968,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 58.1%\n**Percentile Display:** 95.0%\n**Overview:** The study assesses the probability of a Phase 2 trial being completed within five years, based on logistic regression analysis.\n**Associations:** The model attributes associations between trial characteristics and the probability of completion, not causative factors.\n**Evidence:** None provided.\n**Limitations:** The estimate is conditional on a trial being reported or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective analysis without clinical validation.\n**Analyst Check:** The model attributes associations between trial characteristics and the probability of completion, not causative factors. The source list is missing, but the model attributes associations between trial characteristics and the probability of completion.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.415938874997664,
+    "batch_size": 8,
+    "amortized_seconds": 0.801992359374708,
+    "input_tokens": 793,
+    "output_tokens": 158,
+    "template_seconds": 8.917006198316813e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6385,
+      "prompt_tps": 1870.3984492824445,
+      "prompt_time": 3.4137111279414967,
+      "generation_tokens": 1374,
+      "generation_tps": 457.82500966110297,
+      "generation_time": 3.0011466630385257,
+      "peak_memory": 1.900010328
+    }
+  },
+  {
+    "nct_id": "NCT04831684",
+    "packet": {
+      "nct_id": "NCT04831684",
+      "phase": "Phase 1/Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "10.8%",
+      "percentile_display": "37.5",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.19147412066404262,
+        "displayed_contributions_sum": 0.4666625455669882,
+        "factors": [
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.47996372496784623,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.25766410656777,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.19953098962561638,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": 0.13215706186582538,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.11609633998265043,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 10.8%  \n**Percentile Display:** 37.5  \n**Overview:** The study is a Phase 1/Phase 2 trial.  \n**Associations:** The model associations are derived from the calibration of log-odds, where higher values indicate higher probabilities.  \n**Evidence:**  \n- Source ID:  \n  - \"facility list unavailable; not proof of zero sites\"  \n**Limitations:**  \n- The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials.  \n- Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 797,
+    "output_tokens": 140,
+    "template_seconds": 2.6541005354374647e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT03634839",
+    "packet": {
+      "nct_id": "NCT03634839",
+      "phase": "Phase 1",
+      "sponsor_class": "Other",
+      "probability_display": "6.8%",
+      "percentile_display": "19.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.7031127551461229,
+        "displayed_contributions_sum": -1.4334831951935842,
+        "factors": [
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": -0.4703657370434958,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.23664375617772535,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__phase_phase 1",
+            "contribution": -0.20977268348302716,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": -0.2004348043296614,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.19367597969172112,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.16275540522545487,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__intervention_model_crossover assignment",
+            "contribution": -0.15355573253989438,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 6.8%\n**Percentile Display:** 19.9%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n\n**Associations:** The associations are based on the calibrated log-odds of the trial's features, where higher values indicate a higher probability of success.\n\n**Evidence:** None provided.\n\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 775,
+    "output_tokens": 152,
+    "template_seconds": 1.1458003427833319e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT04647786",
+    "packet": {
+      "nct_id": "NCT04647786",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "7.9%",
+      "percentile_display": "24.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.5376799210099613,
+        "displayed_contributions_sum": -0.3205954555406887,
+        "factors": [
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.2819457049782745,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": -0.27095896452068996,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.2572101703076335,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.21746871081521027,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": -0.2088162081057472,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca6",
+            "contribution": -0.17651466340982183,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__age_width",
+            "contribution": 0.1652764648680181,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.15126924884314555,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 7.9%\n**Percentile Display:** 24.9%\n**Overview:** The study estimates a 7.9% risk of a trial being completed or terminated within five years, placing it at the 24.9th percentile among all trials.\n**Associations:** The model associations are based on the calibrated log-odds of the trial's outcome, with higher values indicating a higher likelihood of completion or termination.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported as completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation without clinical or prospective validation is used.\n**Analyst Check:** To verify the associations, one should check the calibrated log-odds of the trial's outcome against the feature values.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 791,
+    "output_tokens": 181,
+    "template_seconds": 1.0999967344105244e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT04991935",
+    "packet": {
+      "nct_id": "NCT04991935",
+      "phase": "Phase 3",
+      "sponsor_class": "Industry",
+      "probability_display": "25.2%",
+      "percentile_display": "73.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.8351209707979997,
+        "displayed_contributions_sum": 0.4158967425688551,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.4264379689007543,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.2834735153517925,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": -0.20171845504161823,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.14055035493561926,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 25.2%  \n**Percentile Display:** 73.9%  \n**Overview:** The Phase 3 trial is sponsored by an industry entity, with a conditional probability of 25.2% of completion or termination at the five-year snapshot. The model associations are not causative or beneficial to the trial's outcome.  \n**Associations:** The model associations are attributed to the features of the trial, such as the presence of drug, the type of volunteers, the primary purpose of the trial, and the masking type.  \n**Evidence:**  \n- Source ID: **N/A**  \n- Source: **N/A**  \n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials.  \n**Analyst Check:** To verify the associations, one should check the feature's impact on the trial's success rate.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 799,
+    "output_tokens": 195,
+    "template_seconds": 9.583949577063322e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT05005429",
+    "packet": {
+      "nct_id": "NCT05005429",
+      "phase": "Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "58.4%",
+      "percentile_display": "95.3",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 2.26094159421871,
+        "displayed_contributions_sum": 1.1204825275884667,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.5279296049849935,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.24146353366924797,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.14945625513832914,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 58.4%\n**Percentile Display:** 95.3%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the trial's characteristics.\n\n**Evidence:** None provided.\n\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 772,
+    "output_tokens": 148,
+    "template_seconds": 9.417010005563498e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT04874194",
+    "packet": {
+      "nct_id": "NCT04874194",
+      "phase": "Phase 1/Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "53.1%",
+      "percentile_display": "92.7",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 2.0446416340490634,
+        "displayed_contributions_sum": 0.4974283296162425,
+        "factors": [
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.6959869056477223,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.4659234301882036,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": 0.1920499172675398,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.18643259491470346,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.1794100725046514,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": 0.15318289051459585,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": ">= 18 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 53.1%\n**Percentile Display:** 92.7%\n**Overview:** The study is a Phase 1/Phase 2 trial.\n**Associations:** The model associations are derived from the logistic regression analysis, attributing the success to the condition count, drug presence, therapeutic area cancer, and PCA components.\n**Evidence:** The source ID is \"E1\" with the quote \">= 18 years\".\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 790,
+    "output_tokens": 139,
+    "template_seconds": 1.0957999620586634e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT05026593",
+    "packet": {
+      "nct_id": "NCT05026593",
+      "phase": "Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "69.6%",
+      "percentile_display": "99.1",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 2.7483546726593233,
+        "displayed_contributions_sum": 1.5032136015314448,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.6457509554229108,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.355162502967967,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.300667009344671,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "over 18 years"
+        },
+        {
+          "source_id": "E2",
+          "quote": "within 2 weeks"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 69.6%  \n**Percentile Display:** 99.1%  \n**Overview:** The study's Phase 2 trial is sponsored by industry, with a high probability of success.  \n**Associations:** The model attributes success to higher PCA3 embeddings, lower numeric US site presence, higher PCA1 embeddings, higher PCA0 embeddings, higher numeric drug presence, higher phase 2 status, higher healthy volunteers, higher primary purpose, and higher primary purpose.  \n**Evidence:**  \n- **E1:** Over 18 years of research experience.  \n- **E2:** Within 2 weeks of reporting.  \n**Limitations:** The estimate is conditional on reporting completion or termination, not for all new trials.  \n**Analyst Check:** The model attributes success to various factors, not causes or effects.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 804,
+    "output_tokens": 172,
+    "template_seconds": 1.0624993592500687e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT05008445",
+    "packet": {
+      "nct_id": "NCT05008445",
+      "phase": "Phase 1/Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "38.1%",
+      "percentile_display": "83.6",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.4365208850387858,
+        "displayed_contributions_sum": 0.7980332326506163,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.4357842699357151,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.4332283047324709,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__number_of_arms",
+            "contribution": -0.3139724985136103,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.19251359793510545,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__intervention_model_sequential assignment",
+            "contribution": 0.157506394054387,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__collaborator_count",
+            "contribution": -0.14770942589930736,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "between 18 to 75 years old"
+        },
+        {
+          "source_id": "E2",
+          "quote": "6 months"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 38.1%\n**Percentile Display:** 83.6%\n**Overview:** The study is a Phase 1/Phase 2 trial sponsored by an industry entity.\n**Associations:** The trial's associations are attributed to the trial's design, not to the changing of the trial itself.\n**Evidence:** The study's participants are between 18 to 75 years old, and the duration is 6 months.\n**Limitations:** The research estimate is conditional on the trial's completion or termination at a five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation is used without clinical or prospective validation.\n**Analyst Check:** The missing information on facility count, country count, and the availability of the facility list are not provided. The source context for the facility list is not specified.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.137123749998864,
+    "batch_size": 8,
+    "amortized_seconds": 0.767140468749858,
+    "input_tokens": 837,
+    "output_tokens": 176,
+    "template_seconds": 1.1500029359012842e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6357,
+      "prompt_tps": 1888.3880317305782,
+      "prompt_time": 3.3663632120005786,
+      "generation_tokens": 1311,
+      "generation_tps": 473.34913110187796,
+      "generation_time": 2.769625872024335,
+      "peak_memory": 1.905551156
+    }
+  },
+  {
+    "nct_id": "NCT04766086",
+    "packet": {
+      "nct_id": "NCT04766086",
+      "phase": "Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "5.5%",
+      "percentile_display": "14.4",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.9263539482289505,
+        "displayed_contributions_sum": -0.27960797850873614,
+        "factors": [
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.44382318417297545,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_prevention",
+            "contribution": -0.17455385458479913,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.17392890131625152,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.16511265817954918,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.1571662571384759,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.1425320280258641,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "age"
+        },
+        {
+          "source_id": "E2",
+          "quote": "≥18 and ≤49 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 5.5%\n**Percentile Display:** 14.4%\n**Overview:** The study is a Phase 2 trial sponsored by industry, with a conditional probability of 5.5% of being completed or terminated at the five-year snapshot.\n**Associations:** The model associations are attributed to the features of the trial, such as the primary purpose being prevention, the embedding PCA1 and PCA28 contributing positively, and the numeric variable \"has_drug\" contributing negatively.\n**Evidence:** The source IDs are \"E1\" for \"age\" and \"E2\" for \"age greater than or equal to 18 and less than or equal to 49 years.\"\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Analyst Check:** To verify the associations, one should check the feature's direction of contribution to the model's log-odds.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 840,
+    "output_tokens": 218,
+    "template_seconds": 2.6291992980986834e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04780802",
+    "packet": {
+      "nct_id": "NCT04780802",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "32.2%",
+      "percentile_display": "79.5",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.17679443876951,
+        "displayed_contributions_sum": 0.2971560705643628,
+        "factors": [
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.5073156537340491,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.32387640618108554,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": -0.2655841560526261,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.24829846230579616,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.23248613211069102,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca18",
+            "contribution": 0.17906272835449477,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 32.2%\n**Percentile Display:** 79.5%\n**Overview:** The study estimates a 32.2% probability of a positive outcome for the trial, placing it in the 79.5th percentile of similar trials.\n**Associations:** The model associations are based on the contribution of various features to the log-odds of the outcome, indicating that higher values in \"embedding__pca1\" and \"numeric__has_us_site\" are associated with a higher probability of a positive outcome, while \"embedding__pca9\" and \"embedding__pca27\" are associated with a lower probability.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, and it does not provide clinical or prospective validation.\n**Analyst Check:** The missing information is not available.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 770,
+    "output_tokens": 195,
+    "template_seconds": 1.087499549612403e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04871893",
+    "packet": {
+      "nct_id": "NCT04871893",
+      "phase": "N/A",
+      "sponsor_class": "Industry",
+      "probability_display": "10.6%",
+      "percentile_display": "37.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.208603973788504,
+        "displayed_contributions_sum": -0.8723167736330009,
+        "factors": [
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.4873281086065079,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.4152163267679976,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.35858457658628684,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.2356027124626923,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.20632657345049626,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": -0.1673913042845144,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 10.6%\n**Percentile Display:** 37.0%\n**Overview:** The study estimates a 10.6% chance of a trial being completed or terminated at the five-year snapshot, placing it in the 37th percentile of all trials.\n**Associations:** The model associations are based on the contribution of various features to the log-odds of the trial's outcome, with the base log odds set at -1.9215116307842313.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.\n**Analyst Check:** To verify the associations, one should check the feature's contribution to the log-odds of the trial's outcome.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 766,
+    "output_tokens": 200,
+    "template_seconds": 9.124982170760632e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04837001",
+    "packet": {
+      "nct_id": "NCT04837001",
+      "phase": "Phase 3",
+      "sponsor_class": "Industry",
+      "probability_display": "25.7%",
+      "percentile_display": "74.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.8612961064453725,
+        "displayed_contributions_sum": 0.5396768322832166,
+        "factors": [
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.37747733538887696,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.34268038883193475,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.2819149218909485,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.2420952955139307,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": -0.2180968377289842,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.21108738568167534,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca15",
+            "contribution": 0.15681787421719703,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "Age"
+        },
+        {
+          "source_id": "E2",
+          "quote": "≥ 2 mm"
+        },
+        {
+          "source_id": "E3",
+          "quote": "≥ 2.5 mm"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 25.7%  \n**Percentile Display:** 74.2  \n**Overview:** The study is a Phase 3 trial sponsored by industry, with a 25.7% probability of success.  \n**Associations:** The model associations are not causes or effects of changing the trial but rather attributes of the trial setup.  \n**Evidence:**  \n- **Source ID:** E1  \n- **Quote:** \"Age\"  \n- **Source ID:** E2  \n- **Quote:** \"\\u2265 2 mm\"  \n- **Source ID:** E3  \n- **Quote:** \"\\u2265 2.5 mm\"  \n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.  \n**Analyst Check:** To verify the associations, one should check the feature contributions of the model, focusing on the direction of the change rather than the cause.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 849,
+    "output_tokens": 224,
+    "template_seconds": 1.3499986380338669e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04991623",
+    "packet": {
+      "nct_id": "NCT04991623",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "9.3%",
+      "percentile_display": "32.3",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.3617245559331551,
+        "displayed_contributions_sum": -1.1711933638744045,
+        "factors": [
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": -0.46206191529313423,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.44481461575699205,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.37722656127435844,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.2819149218909485,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__min_age_years",
+            "contribution": 0.20385664328682956,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.18362682448904918,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.16315407772944351,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__max_age_years",
+            "contribution": -0.1558128951642935,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "age"
+        },
+        {
+          "source_id": "E2",
+          "quote": "between 4 and 14 years"
+        },
+        {
+          "source_id": "E3",
+          "quote": "last 6 months"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 9.3%  \n**Percentile Display:** 32.3  \n**Overview:** The model suggests a 9.3% chance of the trial being completed or terminated at the five-year snapshot, placing it in the 32.3 percentile.  \n**Associations:** The model attributes associations to the trial's age range, last six months, and the PCA components, indicating these factors influence the trial's outcome.  \n**Evidence:**  \n- **E1:** Age range of 4 to 14 years  \n- **E2:** Last six months  \n- **E3:** Between 4 and 14 years  \n**Limitations:** The estimate is conditional on a trial being reported or terminated at the five-year snapshot, not a termination probability for all newly starting trials.  \n**Analyst Check:** To verify the associations, one could check if the trial's age range, last six months, and PCA components significantly impact the trial's outcome.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 819,
+    "output_tokens": 202,
+    "template_seconds": 1.0750023648142815e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04884243",
+    "packet": {
+      "nct_id": "NCT04884243",
+      "phase": "Phase 2",
+      "sponsor_class": "Industry",
+      "probability_display": "9.0%",
+      "percentile_display": "29.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.39561471939951354,
+        "displayed_contributions_sum": -0.471759805721368,
+        "factors": [
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.5568367574638559,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.47684338189488606,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca15",
+            "contribution": -0.24077336447050776,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 9.0%\n**Percentile Display:** 29.9%\n**Overview:** The study suggests a 9.0% chance of a Phase 2 trial being completed within the five-year snapshot, placing it at the 29.9th percentile among all trials.\n**Associations:** The model attributes associations between certain features of the trial, such as the presence of drug, the phase of the trial, the type of volunteers, and the location of the site, without indicating causality or effect.\n**Evidence:** None provided.\n**Limitations:** The estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation without clinical or prospective validation.\n**Analyst Check:** To verify the associations, one should check the specific feature values of the trial in question against the model's contribution table.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 797,
+    "output_tokens": 187,
+    "template_seconds": 8.374976459890604e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04851873",
+    "packet": {
+      "nct_id": "NCT04851873",
+      "phase": "Phase 3",
+      "sponsor_class": "Industry",
+      "probability_display": "17.0%",
+      "percentile_display": "57.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.33452475764291906,
+        "displayed_contributions_sum": -0.05512406634806713,
+        "factors": [
+          {
+            "feature": "embedding__pca5",
+            "contribution": -0.31500873548181274,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__min_age_years",
+            "contribution": 0.25157610825100923,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.19590672102301998,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.1824313286234673,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__max_age_years",
+            "contribution": -0.1455879967264057,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "gene mutation analysis"
+        },
+        {
+          "source_id": "E2",
+          "quote": "deletion or point mutations"
+        },
+        {
+          "source_id": "E3",
+          "quote": "within 4 weeks"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 17.0%\n**Percentile Display:** 57.2%\n**Overview:** The study is a Phase 3 trial sponsored by industry, with a 17.0% probability of success.\n**Associations:** The model associations are attributed to the features of the trial, not causes or benefits of interventions.\n**Evidence:** The source IDs and excerpts are provided, but no specific evidence is cited.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at a five-year snapshot, not a termination probability for all newly starting trials.\n**Analyst Check:** The missing information on facility count, country count, and has US site are not provided. The source list is unavailable for the facility list, not proof of zero sites.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 849,
+    "output_tokens": 161,
+    "template_seconds": 9.874987881630659e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT05025345",
+    "packet": {
+      "nct_id": "NCT05025345",
+      "phase": "N/A",
+      "sponsor_class": "Industry",
+      "probability_display": "15.0%",
+      "percentile_display": "51.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.1899717478423475,
+        "displayed_contributions_sum": -0.8443331098126474,
+        "factors": [
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.5751492080574339,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca15",
+            "contribution": -0.24060661610653108,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": -0.22354080352703778,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.20810812690974811,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": -0.19754365091129172,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca20",
+            "contribution": 0.1656546038184026,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.15957741924181848,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 15.0%\n**Percentile Display:** 51.0%\n**Overview:** The study estimates a 15.0% chance of a trial being completed or terminated within five years, placing it at the 51st percentile of all trials.\n**Associations:** The model associations are based on the contribution of various features to the log-odds of the trial's outcome, with the base log odds being -1.9215116307842313.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.783473291958217,
+    "batch_size": 8,
+    "amortized_seconds": 0.8479341614947771,
+    "input_tokens": 773,
+    "output_tokens": 169,
+    "template_seconds": 1.4332996215671301e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6455,
+      "prompt_tps": 1853.3177258219735,
+      "prompt_time": 3.4829430000390857,
+      "generation_tokens": 1564,
+      "generation_tps": 474.04413255466363,
+      "generation_time": 3.2992708749952726,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT05025423",
+    "packet": {
+      "nct_id": "NCT05025423",
+      "phase": "Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "34.5%",
+      "percentile_display": "80.4",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.2813069220835773,
+        "displayed_contributions_sum": 0.18379766163277134,
+        "factors": [
+          {
+            "feature": "numeric__min_age_years",
+            "contribution": -0.508754033511587,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.43841354656694187,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.2563386423283404,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.22907669881142648,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca5",
+            "contribution": 0.17559701543188694,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 34.5%\n**Percentile Display:** 80.4%\n**Overview:** The study assesses the probability of a Phase 2 trial being completed within the next five years.\n**Associations:** The model associations are derived from the logistic regression analysis, attributing the success to certain features while not indicating causality or benefits.\n**Evidence:** None provided.\n**Limitations:** The estimate is conditional on a trial being reported or terminated within the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation without clinical or prospective validation.\n**Analyst Check:** The model's associations are derived from the logistic regression analysis, attributing the success to certain features without indicating causality or benefits. The source list is missing, and the facility list is unavailable, making it difficult to verify the zero-site condition.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 794,
+    "output_tokens": 176,
+    "template_seconds": 2.0249979570508003e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04826484",
+    "packet": {
+      "nct_id": "NCT04826484",
+      "phase": "Phase 4",
+      "sponsor_class": "Other",
+      "probability_display": "25.4%",
+      "percentile_display": "73.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.8415330134249532,
+        "displayed_contributions_sum": 0.2207516786060454,
+        "factors": [
+          {
+            "feature": "numeric__condition_count",
+            "contribution": -0.6162179760631362,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.2894631773060206,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": 0.23973166103052074,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.19760246462410475,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__min_age_years",
+            "contribution": 0.17840626197260037,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.17027910818519076,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": 0.14669243286538974,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 25.4%\n**Percentile Display:** 73.9%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the calibration of log-odds.\n**Evidence:** None provided.\n**Limitations:** Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 794,
+    "output_tokens": 149,
+    "template_seconds": 9.167008101940155e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04485637",
+    "packet": {
+      "nct_id": "NCT04485637",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "4.0%",
+      "percentile_display": "8.2",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -1.267831006654296,
+        "displayed_contributions_sum": -1.1264932373308703,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.49465613443001916,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.4139143778101126,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.328215942548203,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": -0.16068041238891584,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_us_site",
+            "contribution": 0.13899864901885117,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__condition_count",
+            "contribution": 0.13215706186582538,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 4.0%\n**Percentile Display:** 8.2%\n**Overview:** The study estimates a 4.0% risk of a trial being completed or terminated within the five-year period, placing it at the 8.2% percentile.\n**Associations:** The model associations are derived from the calibrated log-odds of the trial's completion or termination, with the base log odds at -1.9215116307842313. The associations are not causal but rather predictive of the trial's outcome.\n**Evidence:** The source IDs and excerpts are not provided.\n**Limitations:** The research estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. It is a retrospective temporal evaluation without clinical or prospective validation.\n**Analyst Check:** To verify the associations, one should check the calibrated log-odds against the trial's outcome.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 789,
+    "output_tokens": 202,
+    "template_seconds": 8.459028322249651e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04941950",
+    "packet": {
+      "nct_id": "NCT04941950",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "2.7%",
+      "percentile_display": "2.6",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -1.6667678402893649,
+        "displayed_contributions_sum": -1.5241712389883655,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.3947586963679125,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca23",
+            "contribution": -0.32542224857508195,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_behavioral",
+            "contribution": -0.24665579860253203,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": -0.21779238240915527,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.19378841629024113,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__primary_purpose_prevention",
+            "contribution": -0.17455385458479913,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.17218292077890068,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__age_width",
+            "contribution": -0.1433827629375443,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 2.7%\n**Percentile Display:** 2.6\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the calibrated log-odds of the trial's features.\n**Evidence:** None provided.\n**Limitations:** Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 793,
+    "output_tokens": 151,
+    "template_seconds": 8.000002708286047e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT05004038",
+    "packet": {
+      "nct_id": "NCT05004038",
+      "phase": "Phase 2",
+      "sponsor_class": "Other",
+      "probability_display": "19.6%",
+      "percentile_display": "63.9",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 0.5129498972521134,
+        "displayed_contributions_sum": 0.35696425992488123,
+        "factors": [
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.5078503943861853,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": 0.3548298396258062,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": 0.27841323144747704,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.2721823823089842,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": -0.2291487174346276,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "Age"
+        },
+        {
+          "source_id": "E2",
+          "quote": "≥18 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 19.6%  \n**Percentile Display:** 63.9  \n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials.  \n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the trial's characteristics.  \n**Evidence:**  \n- **Source ID:** E1  \n- **Quote:** Age  \n- **Source ID:** E2  \n- **Quote:** ≥18 years  \n**Limitations:**  \n- **Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot.**  \n- **Not a termination probability for all newly starting trials.**  \n- **Retrospective temporal evaluation; no clinical or prospective validation.**",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 829,
+    "output_tokens": 176,
+    "template_seconds": 1.1749973054975271e-05,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT05007925",
+    "packet": {
+      "nct_id": "NCT05007925",
+      "phase": "N/A",
+      "sponsor_class": "Industry",
+      "probability_display": "29.6%",
+      "percentile_display": "77.1",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 1.0532333188753122,
+        "displayed_contributions_sum": 0.8561483013256942,
+        "factors": [
+          {
+            "feature": "embedding__pca2",
+            "contribution": 0.4295309019872457,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.3717983711532257,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca1",
+            "contribution": 0.3516701964953891,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": 0.16609835947687238,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__primary_purpose_treatment",
+            "contribution": 0.14060324624788562,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__masking_none (open label)",
+            "contribution": 0.14022604930982335,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [
+        "facility_count",
+        "country_count",
+        "has_us_site",
+        "facility list unavailable; not proof of zero sites"
+      ],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "Age"
+        },
+        {
+          "source_id": "E2",
+          "quote": "≥ 18"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 29.6%\n**Percentile Display:** 77.1%\n**Overview:** The study estimates a 29.6% probability of a trial being completed or terminated within the next five years, placing it in the 77.1th percentile of all trials.\n**Associations:** The model associations are based on the contributions of various features, where higher values indicate a higher likelihood of the trial's completion or termination.\n**Evidence:** The source IDs and excerpts are provided for reference, but the exact source information is not available.\n**Limitations:** The research estimate is conditional on a trial being reported as completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation is used without clinical or prospective validation.\n**Analyst Check:** To verify the associations, one could check the feature's contribution to the model's log-odds, ensuring that higher values indicate a higher likelihood of the trial's completion or termination.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 832,
+    "output_tokens": 205,
+    "template_seconds": 8.957984391599894e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT05029362",
+    "packet": {
+      "nct_id": "NCT05029362",
+      "phase": "N/A",
+      "sponsor_class": "Other",
+      "probability_display": "8.7%",
+      "percentile_display": "29.0",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": -0.4243024067469575,
+        "displayed_contributions_sum": -1.3438993545629616,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": -0.285123242294101,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": -0.25959865765614387,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_behavioral",
+            "contribution": -0.24665579860253203,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca2",
+            "contribution": -0.24532706620321312,
+            "direction": "lower"
+          },
+          {
+            "feature": "embedding__pca28",
+            "contribution": 0.19825690880803185,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca9",
+            "contribution": -0.19006466284988235,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__primary_purpose_prevention",
+            "contribution": -0.17455385458479913,
+            "direction": "lower"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": -0.14083298118032214,
+            "direction": "lower"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": []
+    },
+    "raw_generation": "**Risk Display:** 8.7%\n**Percentile Display:** 29.0%\n**Overview:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.\n**Associations:** The model associations are not causes or effects of changing the trial; they are based on the calibrated log-odds of the trial's features.\n**Evidence:** None provided.\n**Limitations:** The research estimate is conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 772,
+    "output_tokens": 154,
+    "template_seconds": 7.0420210249722e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  },
+  {
+    "nct_id": "NCT04896073",
+    "packet": {
+      "nct_id": "NCT04896073",
+      "phase": "Phase 2",
+      "sponsor_class": "NIH",
+      "probability_display": "73.9%",
+      "percentile_display": "99.7",
+      "attributions": {
+        "method": "exact logistic coefficient contributions",
+        "scale": "calibrated log-odds",
+        "reference": "zero transformed design vector; scaled numeric zero is the training mean, categorical indicators all zero",
+        "base_log_odds": -1.9215116307842313,
+        "all_contributions_sum": 2.9616789865396638,
+        "displayed_contributions_sum": 1.4211504343539074,
+        "factors": [
+          {
+            "feature": "embedding__pca0",
+            "contribution": 0.5473640373651776,
+            "direction": "higher"
+          },
+          {
+            "feature": "numeric__has_drug",
+            "contribution": 0.1937209032973959,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__phase_phase 2",
+            "contribution": 0.18871999940172288,
+            "direction": "higher"
+          },
+          {
+            "feature": "category__therapeutic_area_cancer",
+            "contribution": 0.1815155715861776,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca13",
+            "contribution": 0.1664843797207043,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca3",
+            "contribution": 0.15014870417217566,
+            "direction": "higher"
+          },
+          {
+            "feature": "embedding__pca27",
+            "contribution": -0.14745406133147243,
+            "direction": "lower"
+          },
+          {
+            "feature": "category__healthy_volunteers_no",
+            "contribution": 0.14065090014202594,
+            "direction": "higher"
+          }
+        ],
+        "interpretation": "model associations; not causes or effects of changing the trial"
+      },
+      "missing_information": [],
+      "limitations": "Research estimate conditional on a trial being reported Completed or Terminated at the five-year snapshot. It is not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+      "evidence": [
+        {
+          "source_id": "E1",
+          "quote": "hemoglobin"
+        },
+        {
+          "source_id": "E2",
+          "quote": ">18 years"
+        }
+      ]
+    },
+    "raw_generation": "**Risk Display:** 73.9%  \n**Percentile Display:** 99.7th percentile  \n**Overview:** The study is Phase 2, sponsored by the NIH, with a high probability of success.  \n**Associations:** The model associations are derived from the calibration of log-odds, where higher values indicate a higher probability of success.  \n**Evidence:**  \n- Source ID: E1  \n- Quote: \"hemoglobin\"  \n- Source ID: E2  \n- Quote: \" >18 years\"  \n**Limitations:** The estimate is conditional on a trial being reported completed or terminated at the five-year snapshot, not a termination probability for all newly starting trials. Retrospective temporal evaluation; no clinical or prospective validation.",
+    "checks": {
+      "schema_valid": false,
+      "released": false,
+      "reason": "invalid_schema"
+    },
+    "batch_seconds": 6.267325416964013,
+    "batch_size": 8,
+    "amortized_seconds": 0.7834156771205016,
+    "input_tokens": 805,
+    "output_tokens": 156,
+    "template_seconds": 6.999995093792677e-06,
+    "template_risk_match": true,
+    "batch_stats": {
+      "prompt_tokens": 6400,
+      "prompt_tps": 1912.696653330809,
+      "prompt_time": 3.3460611691116355,
+      "generation_tokens": 1377,
+      "generation_tps": 471.56765835073446,
+      "generation_time": 2.920047580904793,
+      "peak_memory": 1.91692088
+    }
+  }
+]

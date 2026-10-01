@@ -1,3 +1,5 @@
+> Historical Phase-1 working notes. The audited cohort is now locked in [research_protocol.md](../research_protocol.md), with the approved [feature dictionary](../feature_dictionary.md). Earlier proposals below are retained as research history.
+
 # Prediction Cohort Specification
 
 Status: **working point-in-time proposal — not locked**.
@@ -22,7 +24,7 @@ Working forward-selection rule:
 
 1. Traverse selected historical snapshots in chronological order.
 2. Trial exists in the snapshot and is interventional.
-3. Snapshot contains `start_date_type = 'Anticipated'`.
+3. Snapshot contains a planned start-date type under a verified source-specific mapping. The live audit uses `ESTIMATED`; historical archives must be checked for `Anticipated` versus `ESTIMATED` before locking a mapping.
 4. The snapshot-recorded start date is later than the snapshot date.
 5. The snapshot-recorded start date is within the candidate prediction window.
 6. Choose the **first** snapshot satisfying the rule for that `nct_id`.
@@ -74,3 +76,21 @@ Final status, `why_stopped`, actual completion information, realized enrollment,
 - binary resolved-outcome versus fixed-horizon/time-to-event primary estimand;
 - handling of status corrections;
 - exact status vocabulary across historical schema eras.
+
+## Open decisions from the 2018 pilot
+
+The September 2018 snapshot yields 2,033 provisional 90-day candidates under
+the normalized-date rule. This count is not a locked cohort:
+
+- Month-only start dates are normalized to month end in the inspected records.
+  Interval-based definite eligibility gives 1,360 candidates; possible eligibility
+  gives 2,033. Preserve original date precision and predeclare a primary rule.
+- Eleven normalized candidates were already Withdrawn and six Suspended at the
+  snapshot. Define baseline status eligibility without using later outcomes.
+- Twelve have Actual rather than Anticipated enrollment. Decide whether planned
+  enrollment is missing for these trials; do not silently use actual as planned.
+- 842 have no listed facility records. Preserve missing coverage rather than
+  interpreting it as proof of zero future sites.
+
+These sets may overlap. Their counts cannot be subtracted independently.
+See `snapshot_audit.md` for measurements and the reproducible archive inspector.

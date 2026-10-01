@@ -1,0 +1,37 @@
+{
+  "family": "structured_llm",
+  "variant": "primary",
+  "candidates": [
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "tuning_AP": [
+    0.34468056860041707,
+    0.3423110379643833,
+    0.32986767720461324,
+    0.33303124608642515
+  ],
+  "chosen_candidate": 0.03,
+  "chosen_tuning_AP": 0.34468056860041707,
+  "platt_slope": 1.18254838398646,
+  "platt_intercept": 0.28377590521827817,
+  "fit_seconds": 0.09026658401126042,
+  "split_counts": {
+    "count": {
+      "calibrate": 341,
+      "test": 632,
+      "train": 1107,
+      "tune": 332
+    },
+    "sum": {
+      "calibrate": 69.0,
+      "test": 116.0,
+      "train": 217.0,
+      "tune": 47.0
+    }
+  },
+  "protocol_sha256": "8efe91f9745af04dbec21d6a307407f87e2ed938b7a83018f870ffb40ea9902c",
+  "model_sha256": "e5735bdfa5240154892836fcf30d6d4c2da12cd337182ea125d07db5372c6401"
+}

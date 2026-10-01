@@ -1,3 +1,5 @@
+> Historical Phase-1 working notes. The audited cohort is now locked in [research_protocol.md](../research_protocol.md), with the approved [feature dictionary](../feature_dictionary.md). Earlier proposals below are retained as research history.
+
 # Feature Availability Dictionary
 
 Status: **template — no feature is approved yet**.

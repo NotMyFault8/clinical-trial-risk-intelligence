@@ -1,0 +1,37 @@
+{
+  "family": "structured_tfidf",
+  "variant": "no_facilities",
+  "candidates": [
+    0.03,
+    0.1,
+    0.3,
+    1.0
+  ],
+  "tuning_AP": [
+    0.3684900216617049,
+    0.3794305041724718,
+    0.3944636591858557,
+    0.4155832444148698
+  ],
+  "chosen_candidate": 1.0,
+  "chosen_tuning_AP": 0.4155832444148698,
+  "platt_slope": 1.2760814446180224,
+  "platt_intercept": 0.4613838826936089,
+  "fit_seconds": 1.3584046670002863,
+  "split_counts": {
+    "count": {
+      "calibrate": 341,
+      "test": 632,
+      "train": 1107,
+      "tune": 332
+    },
+    "sum": {
+      "calibrate": 69.0,
+      "test": 116.0,
+      "train": 217.0,
+      "tune": 47.0
+    }
+  },
+  "protocol_sha256": "8efe91f9745af04dbec21d6a307407f87e2ed938b7a83018f870ffb40ea9902c",
+  "model_sha256": "b0035ff84a194510440cf2570f150b9443c0cd8a42812cccad7fa7af89a94e4a"
+}

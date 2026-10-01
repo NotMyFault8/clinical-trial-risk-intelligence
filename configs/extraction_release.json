@@ -1,0 +1,15 @@
+{
+  "version": "span-release-v1",
+  "frozen_before_test": true,
+  "selected_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "prompt": "prompts/extract_v1.txt",
+  "selection_basis": "Small development model had higher exact-span micro F1 than 7B and lower latency; both failed semantic release criteria. Strict duplicate-key validation is applied to all final outputs.",
+  "test_min_schema_valid_rate": 0.98,
+  "test_min_micro_precision": 0.90,
+  "test_min_micro_f1": 0.65,
+  "retained_evidence_must_match_exactly": true,
+  "target_cohort_human_semantic_review_required": true,
+  "target_cohort_human_semantic_review_completed": false,
+  "downstream_comparison": "Exploratory research only, with failures retained as flags; not eligible for deployed model selection unless extraction gates pass.",
+  "no_test_driven_prompt_changes": true
+}

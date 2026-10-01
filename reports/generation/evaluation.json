@@ -1,0 +1,29 @@
+{
+  "n": 40,
+  "schema_valid_rate": 0.0,
+  "risk_value_mismatches_among_schema_valid": 0,
+  "schema_valid_denominator": 0,
+  "exact_citation_support_rate": null,
+  "citation_denominator": 0,
+  "automated_all_checks_pass_rate": 0.0,
+  "template_risk_match_rate": 1.0,
+  "generated_amortized_seconds_p50": 0.801992359374708,
+  "generated_amortized_seconds_p95": 1.1707964114975766,
+  "template_seconds_p50": 1.0624993592500687e-05,
+  "input_tokens": 32040,
+  "output_tokens": 7822,
+  "hosted_api_cost": 0,
+  "local_energy_cost": "not measured",
+  "semantic_faithfulness": "not independently reviewed; automated checks are insufficient",
+  "usefulness_improvement": "not measured; blinded review form prepared, not completed",
+  "release": "withheld; deterministic template is served",
+  "prompt_sha256": "a2b849cf239a02d480da0d338cb713b085ca6df9545c01b4c494cee941d64260",
+  "release_gate_sha256": "7eaab1cad1336b2a69bbd5b366c5f9e42f627f2f434afdc5ec16171b5239e846",
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "path": "artifacts/pretrained/qwen",
+    "documented_training_cutoff": null,
+    "contamination_status": "cannot_exclude"
+  }
+}

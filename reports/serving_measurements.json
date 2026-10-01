@@ -1,0 +1,16 @@
+{
+  "requests": 30,
+  "successful": 30,
+  "measurement": "in-process FastAPI TestClient; warm model; includes packet computation and serialization, excludes network/browser rendering",
+  "seconds_p50": 0.024193979508709162,
+  "seconds_p95": 0.02688866247772239,
+  "monitoring": {
+    "requests": 31,
+    "errors": 0,
+    "latency_seconds_p50": 0.02365504202316515,
+    "latency_seconds_p95": 0.026265637634787706,
+    "stored_request_bodies": false,
+    "stored_trial_identifiers": false,
+    "generation_mode": "deterministic; experimental LLM generation is not served"
+  }
+}

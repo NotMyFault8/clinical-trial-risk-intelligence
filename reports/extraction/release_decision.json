@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "schema": false,
+    "precision": false,
+    "f1": false,
+    "human_semantic_review": false
+  },
+  "released": false,
+  "decision": "Withhold semantic extraction release; retain as an explicitly experimental research component."
+}

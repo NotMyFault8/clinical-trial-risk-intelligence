@@ -1,0 +1,14 @@
+{
+  "version": "report-release-v1",
+  "sample": "40 held-out trial IDs sorted by SHA256('report-v1:' + nct_id), plus missing/conflicting evidence fixtures",
+  "risk_value_fabrications_allowed": 0,
+  "known_future_information_violations_allowed": 0,
+  "minimum_schema_valid_rate": 0.98,
+  "minimum_exact_citation_support_rate": 1.0,
+  "independent_semantic_review_required": true,
+  "independent_semantic_review_completed": false,
+  "blinded_usefulness_review_required": true,
+  "blinded_usefulness_review_completed": false,
+  "default_when_gate_fails": "deterministic template",
+  "no_claim_of_improved_usefulness_without_review": true
+}

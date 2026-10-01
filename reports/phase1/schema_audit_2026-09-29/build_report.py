@@ -3,8 +3,14 @@ from pathlib import Path
 import json
 from collections import Counter
 
-root = Path(__file__).parent
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--results-dir', type=Path, default=Path(__file__).parent)
+args = parser.parse_args()
+root = args.results_dir
 d = json.loads((root/'audit_results.json').read_text())
+if d['manifest'].get('source_kind', 'current_live_database') != 'current_live_database':
+    raise SystemExit('This report template is for live audits only; historical results need a snapshot-specific interpretation.')
 u = d['studies_uniqueness'][0]
 n = u['total_rows']
 cards = [d['cardinality_'+t][0] for t in ['designs','eligibilities','sponsors','conditions','interventions','facilities']]
@@ -36,7 +42,9 @@ for key in ['current_candidate_original_anticipated','current_candidate_anticipa
 
 prov=d['provenance'][0]
 para('# AACT schema audit report')
-para('**Phase 1 — current live database audit | 29 September 2026**')
+source_kind = d['manifest'].get('source_kind', 'current_live_database')
+reference_date = d['manifest'].get('reference_date', '2026-09-29')
+para(f'**Phase 1 — {source_kind} audit | reference date {reference_date}**')
 para(f"Measured at **{prov['observed_at_toronto']} America/Toronto** ({prov['observed_at_utc']} UTC offset included). Database: `aact`; schema: `ctgov`. All report queries ran in one **read-only, repeatable-read transaction**. This preserves a consistent database view during this run; it does not create a reusable historical AACT archive.")
 para('## Findings at a glance')
 para(f"The database contains **{n:,} study rows** and **{u['distinct_nct_ids']:,} distinct NCT IDs**, with **{u['null_nct_ids']:,} missing IDs** and **{u['extra_nonnull_id_rows']:,} excess rows for repeated non-null IDs**. The measurements below describe the live database, not the final prediction cohort.")
@@ -51,7 +59,7 @@ table(['Audit section','Outcome'],[
     ['5. Type/status distributions','Measured; exact database vocabulary retained'],
     ['6. Lead-sponsor cardinality','Measured with all studies as the denominator'],
     ['7. Historical pre-start candidate counts','NOT MEASURED: historical snapshot/date not supplied; current-date diagnostic reported separately'],
-    ['8. study_records','UNAVAILABLE in queried database catalog' if not d['study_records_presence'] else 'Catalog entries found; review raw results'],
+    ['8. study_records', 'Outside scope by project decision' if 'excluded_tables' in d['manifest'] else ('UNAVAILABLE in queried database catalog' if not d.get('study_records_presence') else 'Catalog entries found; review raw results')],
 ])
 para('## 1. Table inventory')
 types=Counter(x['table_type'] for x in d['table_inventory'])
@@ -59,7 +67,7 @@ table(['Relation type','Count'],[(k,v) for k,v in sorted(types.items())])
 para('The original `information_schema.tables` query includes visible tables and views. These counts describe schema objects, not trials. The complete relation list is in Appendix A.')
 para('## 2. Core columns and field types')
 counts=Counter(x['table_name'] for x in d['column_inventory'])
-table(['Candidate table','Visible columns'],[(t,counts.get(t,'Absent')) for t in ['studies','designs','eligibilities','sponsors','conditions','interventions','facilities','study_records']])
+table(['Candidate table','Visible columns'],[(t,counts.get(t,'Absent')) for t in ['studies','designs','eligibilities','sponsors','conditions','interventions','facilities']])
 para('The full column names, types, positions, and schema nullability are in Appendix B. `is_nullable = YES` means the schema permits NULL; it does not establish that any observed values are missing. This audit measures key-ID and selected date missingness, not every feature’s completeness.')
 para('Current field details: `studies.start_date` and `study_first_posted_date` are dates; `enrollment` is integer; `eligibilities.minimum_age` and `maximum_age` are strings requiring later unit-aware parsing; `healthy_volunteers` is boolean; `criteria` is text; the eligibility sex/gender field is named `gender` in this database.')
 para('## 3. One row per study')
@@ -98,7 +106,7 @@ table(['Lead count','Trials in original grouped query'],[(x['lead_count'],fmt(x[
 para('The all-studies left join is needed to detect zero-coverage trials. If the two distributions agree, the correction has no numerical effect for this database version, but still makes the audit robust.')
 para('## 7. Prediction-window diagnostic — current records only')
 para('**Historical cohort result: not available.** The original query contains `DATE \'YYYY-MM-DD\'`, which is a placeholder, not a valid date. A valid historical result requires that archive’s actual data and date. Substituting an old date into today’s live database does not reconstruct what was known then.')
-para('For a separate live diagnostic, the reference date is **2026-09-29**. Both variants require interventional study type, a non-null future start date, and first-posted date no later than that reference date. The first preserves the script’s `anticipated` test; the second explicitly includes `estimated` as an additional candidate spelling, without approving a historical crosswalk.')
+para(f'For a separate live diagnostic, the reference date is **{reference_date}**. Both variants require interventional study type, a non-null future start date, and first-posted date no later than that reference date. The first preserves the script’s `anticipated` test; the second explicitly includes `estimated` as an additional candidate spelling, without approving a historical crosswalk.')
 table(['Start-date-type filter','Within 30 days','Within 60 days','Within 90 days','All future planned starts'],[
     [label,*[fmt(d[key][0][k]) for k in ['within_30d','within_60d','within_90d','all_future_planned']]]
     for label,key in [('anticipated only (original)','current_candidate_original_anticipated'),('anticipated or estimated (diagnostic)','current_candidate_anticipated_or_estimated')]])
@@ -107,7 +115,9 @@ dates=d['date_completeness_current'][0]
 table(['Additional current-record date audit','Value'],[(k,fmt(v)) for k,v in dates.items()])
 para(f"The current-record first-posted-after-start comparison is **{pct(dates['first_posted_after_current_start_date'],dates['date_comparable_trials'])}** of interventional trials with both dates present. This is a late-public-posting diagnostic using the currently recorded start date; it is not a verified historical late-registration exclusion count. First posting differs from first submission, dates can change, and date precision needs separate audit.")
 para('## 8. study_records availability')
-if not d['study_records_presence']:
+if 'excluded_tables' in d['manifest']:
+    para('study_records and study_references are excluded by the project scope decision. Neither table is required for this audit.')
+elif not d.get('study_records_presence'):
     para('**No relation named `study_records` was found in the database catalog in any schema.** It is also absent from the visible column inventory. Therefore both original section-8 queries are unavailable here; counts and duplicate listings must be reported as **N/A, not zero**. There is no evidence from this audit that this database provides a historical-version table under that name.')
 else:
     para('Catalog entries are recorded in `audit_results.json`; row-level semantics and counts require follow-up.')

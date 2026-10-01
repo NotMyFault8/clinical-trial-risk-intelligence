@@ -1,0 +1,422 @@
+{
+  "snapshots": {
+    "2018-09-01": {
+      "source_rows": 283078,
+      "first_exclusion_counts": {
+        "start_not_planned": 214815,
+        "non_interventional": 58282,
+        "ambiguous_window": 667,
+        "definite": 1349,
+        "outside_window": 7397,
+        "baseline_status_ineligible": 568
+      },
+      "start_type_vocabulary": {
+        "Actual": 64179,
+        "Anticipated": 12499,
+        "NULL": 206400
+      },
+      "eligible_baseline_statuses": {
+        "Not yet recruiting": 1868,
+        "Enrolling by invitation": 17,
+        "Recruiting": 131
+      },
+      "selected": 2016,
+      "tables": {
+        "designs": {
+          "source_rows": 283078,
+          "selected_rows": 2016,
+          "selected_trials": 2016,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "eligibilities": {
+          "source_rows": 283078,
+          "selected_rows": 2016,
+          "selected_trials": 2016,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "sponsors": {
+          "source_rows": 447563,
+          "selected_rows": 3340,
+          "selected_trials": 2016,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 22,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "conditions": {
+          "source_rows": 461548,
+          "selected_rows": 3635,
+          "selected_trials": 2016,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 24,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "interventions": {
+          "source_rows": 491855,
+          "selected_rows": 4138,
+          "selected_trials": 2016,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 16,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "facilities": {
+          "source_rows": 2037073,
+          "selected_rows": 4484,
+          "selected_trials": 1181,
+          "missing_trials": 835,
+          "max_rows_per_selected_trial": 222,
+          "null_keys": 0,
+          "orphans": 0
+        }
+      },
+      "outcome_source_rows": 464529,
+      "primary_status_counts": {
+        "completed": 434,
+        "recruiting": 247,
+        "unknown_status": 199,
+        "withdrawn": 157,
+        "active_not_recruiting": 154,
+        "terminated": 108,
+        "not_yet_recruiting": 23,
+        "suspended": 15,
+        "enrolling_by_invitation": 8,
+        "missing_record": 3,
+        "no_longer_available": 1
+      },
+      "primary_trials": 1349,
+      "resolved_primary_trials": 542
+    },
+    "2019-09-01": {
+      "source_rows": 315240,
+      "first_exclusion_counts": {
+        "definite": 1431,
+        "non_interventional": 66211,
+        "start_not_planned": 235246,
+        "outside_window": 10031,
+        "ambiguous_window": 708,
+        "baseline_status_ineligible": 1613,
+        "repeat_candidate_skipped": 116
+      },
+      "start_type_vocabulary": {
+        "Anticipated": 17467,
+        "Actual": 98588,
+        "NULL": 199185
+      },
+      "eligible_baseline_statuses": {
+        "Not yet recruiting": 2004,
+        "Recruiting": 123,
+        "Enrolling by invitation": 12
+      },
+      "selected": 2023,
+      "tables": {
+        "designs": {
+          "source_rows": 315240,
+          "selected_rows": 2023,
+          "selected_trials": 2023,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "eligibilities": {
+          "source_rows": 315240,
+          "selected_rows": 2023,
+          "selected_trials": 2023,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "sponsors": {
+          "source_rows": 501501,
+          "selected_rows": 3344,
+          "selected_trials": 2023,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 19,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "conditions": {
+          "source_rows": 522852,
+          "selected_rows": 3918,
+          "selected_trials": 2023,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 51,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "interventions": {
+          "source_rows": 545695,
+          "selected_rows": 3966,
+          "selected_trials": 2023,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 20,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "facilities": {
+          "source_rows": 2206551,
+          "selected_rows": 3351,
+          "selected_trials": 1188,
+          "missing_trials": 835,
+          "max_rows_per_selected_trial": 150,
+          "null_keys": 0,
+          "orphans": 0
+        }
+      },
+      "outcome_source_rows": 507584,
+      "primary_status_counts": {
+        "completed": 456,
+        "recruiting": 232,
+        "unknown": 205,
+        "withdrawn": 178,
+        "active_not_recruiting": 123,
+        "terminated": 109,
+        "not_yet_recruiting": 36,
+        "enrolling_by_invitation": 11,
+        "suspended": 11,
+        "missing_record": 4
+      },
+      "primary_trials": 1365,
+      "resolved_primary_trials": 565
+    },
+    "2020-09-01": {
+      "source_rows": 350374,
+      "first_exclusion_counts": {
+        "definite": 1622,
+        "non_interventional": 75937,
+        "outside_window": 12897,
+        "start_not_planned": 255672,
+        "ambiguous_window": 893,
+        "baseline_status_ineligible": 3353,
+        "repeat_candidate_skipped": 177
+      },
+      "start_type_vocabulary": {
+        "Anticipated": 24128,
+        "Actual": 131488,
+        "NULL": 194758
+      },
+      "eligible_baseline_statuses": {
+        "Not yet recruiting": 2354,
+        "Recruiting": 142,
+        "Enrolling by invitation": 19
+      },
+      "selected": 2338,
+      "tables": {
+        "designs": {
+          "source_rows": 350374,
+          "selected_rows": 2338,
+          "selected_trials": 2338,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "eligibilities": {
+          "source_rows": 350374,
+          "selected_rows": 2338,
+          "selected_trials": 2338,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "sponsors": {
+          "source_rows": 559067,
+          "selected_rows": 3968,
+          "selected_trials": 2338,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 19,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "conditions": {
+          "source_rows": 588720,
+          "selected_rows": 4566,
+          "selected_trials": 2338,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 103,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "interventions": {
+          "source_rows": 602568,
+          "selected_rows": 4618,
+          "selected_trials": 2338,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 15,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "facilities": {
+          "source_rows": 2369489,
+          "selected_rows": 5644,
+          "selected_trials": 1352,
+          "missing_trials": 986,
+          "max_rows_per_selected_trial": 643,
+          "null_keys": 0,
+          "orphans": 0
+        }
+      },
+      "outcome_source_rows": 551240,
+      "primary_status_counts": {
+        "completed": 557,
+        "recruiting": 229,
+        "unknown": 214,
+        "active_not_recruiting": 183,
+        "withdrawn": 150,
+        "terminated": 116,
+        "not_yet_recruiting": 43,
+        "suspended": 15,
+        "enrolling_by_invitation": 10
+      },
+      "primary_trials": 1517,
+      "resolved_primary_trials": 673
+    },
+    "2021-09-01": {
+      "source_rows": 388427,
+      "first_exclusion_counts": {
+        "non_interventional": 86541,
+        "start_not_planned": 279818,
+        "outside_window": 15017,
+        "baseline_status_ineligible": 4542,
+        "definite": 1611,
+        "ambiguous_window": 898,
+        "repeat_candidate_skipped": 257
+      },
+      "start_type_vocabulary": {
+        "Actual": 168124,
+        "NULL": 191604,
+        "Anticipated": 28699
+      },
+      "eligible_baseline_statuses": {
+        "Not yet recruiting": 2295,
+        "Recruiting": 198,
+        "Enrolling by invitation": 16
+      },
+      "selected": 2252,
+      "tables": {
+        "designs": {
+          "source_rows": 388427,
+          "selected_rows": 2252,
+          "selected_trials": 2252,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "eligibilities": {
+          "source_rows": 388427,
+          "selected_rows": 2252,
+          "selected_trials": 2252,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 1,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "sponsors": {
+          "source_rows": 622178,
+          "selected_rows": 3623,
+          "selected_trials": 2252,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 11,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "conditions": {
+          "source_rows": 660558,
+          "selected_rows": 4408,
+          "selected_trials": 2252,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 52,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "interventions": {
+          "source_rows": 664346,
+          "selected_rows": 4449,
+          "selected_trials": 2252,
+          "missing_trials": 0,
+          "max_rows_per_selected_trial": 16,
+          "null_keys": 0,
+          "orphans": 0
+        },
+        "facilities": {
+          "source_rows": 2562265,
+          "selected_rows": 4478,
+          "selected_trials": 1324,
+          "missing_trials": 928,
+          "max_rows_per_selected_trial": 187,
+          "null_keys": 0,
+          "orphans": 0
+        }
+      },
+      "outcome_source_rows": 600941,
+      "primary_status_counts": {
+        "completed": 516,
+        "recruiting": 235,
+        "unknown": 229,
+        "withdrawn": 182,
+        "active_not_recruiting": 145,
+        "terminated": 116,
+        "not_yet_recruiting": 22,
+        "suspended": 16,
+        "enrolling_by_invitation": 8,
+        "missing_record": 3
+      },
+      "primary_trials": 1472,
+      "resolved_primary_trials": 632
+    }
+  },
+  "feature_missing_counts": {
+    "nct_id": 0,
+    "snapshot_date": 0,
+    "phase": 0,
+    "planned_enrollment": 1,
+    "planned_enrollment_missing": 0,
+    "number_of_arms": 45,
+    "has_dmc": 1356,
+    "allocation": 0,
+    "intervention_model": 0,
+    "primary_purpose": 0,
+    "masking": 0,
+    "gender": 0,
+    "minimum_age": 0,
+    "maximum_age": 0,
+    "healthy_volunteers": 0,
+    "eligibility_text": 0,
+    "sponsor_class": 0,
+    "sponsor_group": 0,
+    "lead_count": 0,
+    "collaborator_count": 0,
+    "condition_count": 0,
+    "condition_terms": 0,
+    "intervention_count": 0,
+    "intervention_type_count": 0,
+    "has_drug": 0,
+    "has_device": 0,
+    "has_behavioral": 0,
+    "facility_count": 3584,
+    "country_count": 3584,
+    "has_us_site": 3584,
+    "facilities_unlisted": 0
+  },
+  "rows": 8629,
+  "primary_trials": 5703,
+  "source_manifest_sha256": "9fc4d83a52bb5b9502b15456d0f6435edfe0f4ae73446ba291fe390cdf423ecd",
+  "pipeline_sha256": "528b9c6f8a22903a8d101a9dfd5fa663a94ad73c799bbd0f063bbf95c6975870",
+  "aggregation_sha256": "dd3dcf5a6b2e7a4acbdcc198b3a91ed4111f4a14c4e3415443990e79837517e5",
+  "outputs": {
+    "outcomes.parquet": "0387a704203cd923519f7bec8db944f0b481819c917cacf61a47ced19f644d8f",
+    "baseline_features.parquet": "fadd5e644d7426719429d91594798847f54a76ea0d234a68d144363ede009283",
+    "cohort_metadata.parquet": "e8a0af327f11af2216bff3f5079579c4669695872380428ee893bd8d15ff3d07"
+  }
+}

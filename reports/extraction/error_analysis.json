@@ -1,0 +1,360 @@
+{
+  "strata": {
+    "length": {
+      "short_<500": {
+        "records": 206,
+        "trials": 120,
+        "per_type": {
+          "Measurement": {
+            "tp": 35,
+            "fp": 213,
+            "fn": 163,
+            "precision": 0.14112903225806453,
+            "recall": 0.17676767676767677,
+            "f1": 0.15695067264573992
+          },
+          "Value": {
+            "tp": 59,
+            "fp": 69,
+            "fn": 226,
+            "precision": 0.4609375,
+            "recall": 0.20701754385964913,
+            "f1": 0.28571428571428575
+          },
+          "Temporal": {
+            "tp": 20,
+            "fp": 118,
+            "fn": 104,
+            "precision": 0.14492753623188406,
+            "recall": 0.16129032258064516,
+            "f1": 0.15267175572519084
+          }
+        },
+        "micro": {
+          "tp": 114,
+          "fp": 400,
+          "fn": 493,
+          "precision": 0.22178988326848248,
+          "recall": 0.18780889621087316,
+          "f1": 0.2033898305084746
+        },
+        "schema_valid_rate": 0.8592233009708737,
+        "failure_rate": 0.1407766990291262,
+        "rejected_span_rate": 0.2636103151862464,
+        "raw_spans": 698,
+        "retained_spans": 514,
+        "gold_spans_outside_prefix": 0,
+        "gold_discontinuous_inside_prefix": 9,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      },
+      "medium_500_999": {
+        "records": 58,
+        "trials": 48,
+        "per_type": {
+          "Measurement": {
+            "tp": 19,
+            "fp": 66,
+            "fn": 118,
+            "precision": 0.2235294117647059,
+            "recall": 0.1386861313868613,
+            "f1": 0.17117117117117117
+          },
+          "Value": {
+            "tp": 19,
+            "fp": 27,
+            "fn": 161,
+            "precision": 0.41304347826086957,
+            "recall": 0.10555555555555556,
+            "f1": 0.168141592920354
+          },
+          "Temporal": {
+            "tp": 6,
+            "fp": 24,
+            "fn": 90,
+            "precision": 0.2,
+            "recall": 0.0625,
+            "f1": 0.09523809523809523
+          }
+        },
+        "micro": {
+          "tp": 44,
+          "fp": 117,
+          "fn": 369,
+          "precision": 0.2732919254658385,
+          "recall": 0.10653753026634383,
+          "f1": 0.15331010452961671
+        },
+        "schema_valid_rate": 0.6724137931034483,
+        "failure_rate": 0.3275862068965517,
+        "rejected_span_rate": 0.3611111111111111,
+        "raw_spans": 252,
+        "retained_spans": 161,
+        "gold_spans_outside_prefix": 0,
+        "gold_discontinuous_inside_prefix": 8,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      },
+      "long_1000plus": {
+        "records": 46,
+        "trials": 35,
+        "per_type": {
+          "Measurement": {
+            "tp": 5,
+            "fp": 36,
+            "fn": 210,
+            "precision": 0.12195121951219512,
+            "recall": 0.023255813953488372,
+            "f1": 0.0390625
+          },
+          "Value": {
+            "tp": 3,
+            "fp": 16,
+            "fn": 212,
+            "precision": 0.15789473684210525,
+            "recall": 0.013953488372093023,
+            "f1": 0.025641025641025637
+          },
+          "Temporal": {
+            "tp": 4,
+            "fp": 17,
+            "fn": 229,
+            "precision": 0.19047619047619047,
+            "recall": 0.017167381974248927,
+            "f1": 0.031496062992125984
+          }
+        },
+        "micro": {
+          "tp": 12,
+          "fp": 69,
+          "fn": 651,
+          "precision": 0.14814814814814814,
+          "recall": 0.01809954751131222,
+          "f1": 0.03225806451612904
+        },
+        "schema_valid_rate": 0.6304347826086957,
+        "failure_rate": 0.3695652173913043,
+        "rejected_span_rate": 0.46,
+        "raw_spans": 150,
+        "retained_spans": 81,
+        "gold_spans_outside_prefix": 104,
+        "gold_discontinuous_inside_prefix": 19,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      }
+    },
+    "negation": {
+      "no_negation_terms": {
+        "records": 224,
+        "trials": 137,
+        "per_type": {
+          "Measurement": {
+            "tp": 47,
+            "fp": 233,
+            "fn": 237,
+            "precision": 0.16785714285714284,
+            "recall": 0.16549295774647887,
+            "f1": 0.16666666666666666
+          },
+          "Value": {
+            "tp": 62,
+            "fp": 82,
+            "fn": 306,
+            "precision": 0.4305555555555556,
+            "recall": 0.16847826086956522,
+            "f1": 0.2421875
+          },
+          "Temporal": {
+            "tp": 20,
+            "fp": 119,
+            "fn": 191,
+            "precision": 0.14388489208633093,
+            "recall": 0.0947867298578199,
+            "f1": 0.1142857142857143
+          }
+        },
+        "micro": {
+          "tp": 129,
+          "fp": 434,
+          "fn": 734,
+          "precision": 0.2291296625222025,
+          "recall": 0.14947856315179606,
+          "f1": 0.18092566619915848
+        },
+        "schema_valid_rate": 0.8169642857142857,
+        "failure_rate": 0.18303571428571427,
+        "rejected_span_rate": 0.28553299492385786,
+        "raw_spans": 788,
+        "retained_spans": 563,
+        "gold_spans_outside_prefix": 3,
+        "gold_discontinuous_inside_prefix": 16,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      },
+      "negation_terms": {
+        "records": 86,
+        "trials": 68,
+        "per_type": {
+          "Measurement": {
+            "tp": 12,
+            "fp": 82,
+            "fn": 254,
+            "precision": 0.1276595744680851,
+            "recall": 0.045112781954887216,
+            "f1": 0.06666666666666667
+          },
+          "Value": {
+            "tp": 19,
+            "fp": 30,
+            "fn": 293,
+            "precision": 0.3877551020408163,
+            "recall": 0.060897435897435896,
+            "f1": 0.10526315789473684
+          },
+          "Temporal": {
+            "tp": 10,
+            "fp": 40,
+            "fn": 232,
+            "precision": 0.2,
+            "recall": 0.04132231404958678,
+            "f1": 0.0684931506849315
+          }
+        },
+        "micro": {
+          "tp": 41,
+          "fp": 152,
+          "fn": 779,
+          "precision": 0.21243523316062177,
+          "recall": 0.05,
+          "f1": 0.08094768015794669
+        },
+        "schema_valid_rate": 0.7209302325581395,
+        "failure_rate": 0.27906976744186046,
+        "rejected_span_rate": 0.3814102564102564,
+        "raw_spans": 312,
+        "retained_spans": 193,
+        "gold_spans_outside_prefix": 101,
+        "gold_discontinuous_inside_prefix": 20,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      }
+    },
+    "section": {
+      "exc": {
+        "records": 155,
+        "trials": 155,
+        "per_type": {
+          "Measurement": {
+            "tp": 25,
+            "fp": 183,
+            "fn": 233,
+            "precision": 0.1201923076923077,
+            "recall": 0.09689922480620156,
+            "f1": 0.10729613733905578
+          },
+          "Value": {
+            "tp": 23,
+            "fp": 37,
+            "fn": 256,
+            "precision": 0.38333333333333336,
+            "recall": 0.08243727598566308,
+            "f1": 0.13569321533923304
+          },
+          "Temporal": {
+            "tp": 20,
+            "fp": 63,
+            "fn": 301,
+            "precision": 0.24096385542168675,
+            "recall": 0.06230529595015576,
+            "f1": 0.09900990099009901
+          }
+        },
+        "micro": {
+          "tp": 68,
+          "fp": 283,
+          "fn": 790,
+          "precision": 0.19373219373219372,
+          "recall": 0.07925407925407925,
+          "f1": 0.11248966087675764
+        },
+        "schema_valid_rate": 0.7290322580645161,
+        "failure_rate": 0.2709677419354839,
+        "rejected_span_rate": 0.2994011976047904,
+        "raw_spans": 501,
+        "retained_spans": 351,
+        "gold_spans_outside_prefix": 104,
+        "gold_discontinuous_inside_prefix": 17,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      },
+      "inc": {
+        "records": 155,
+        "trials": 155,
+        "per_type": {
+          "Measurement": {
+            "tp": 34,
+            "fp": 132,
+            "fn": 258,
+            "precision": 0.20481927710843373,
+            "recall": 0.11643835616438356,
+            "f1": 0.148471615720524
+          },
+          "Value": {
+            "tp": 58,
+            "fp": 75,
+            "fn": 343,
+            "precision": 0.43609022556390975,
+            "recall": 0.14463840399002495,
+            "f1": 0.2172284644194757
+          },
+          "Temporal": {
+            "tp": 10,
+            "fp": 96,
+            "fn": 122,
+            "precision": 0.09433962264150944,
+            "recall": 0.07575757575757576,
+            "f1": 0.08403361344537814
+          }
+        },
+        "micro": {
+          "tp": 102,
+          "fp": 303,
+          "fn": 723,
+          "precision": 0.2518518518518518,
+          "recall": 0.12363636363636364,
+          "f1": 0.16585365853658535
+        },
+        "schema_valid_rate": 0.8516129032258064,
+        "failure_rate": 0.14838709677419354,
+        "rejected_span_rate": 0.32387312186978295,
+        "raw_spans": 599,
+        "retained_spans": 405,
+        "gold_spans_outside_prefix": 0,
+        "gold_discontinuous_inside_prefix": 19,
+        "scope": "exact type plus full span offsets inside budgeted prefix; discontinuous gold retained as false negatives",
+        "normalized_value_accuracy": "not evaluated: corpus entity spans are not adjudicated normalized operator/unit tuples"
+      }
+    }
+  },
+  "error_pattern_counts": {
+    "unmatched_prediction": 398,
+    "boundary_overlap": 121,
+    "type_overlap": 67,
+    "invalid_schema_records": 65,
+    "ambiguous_repeated_span": 72,
+    "not_found": 272
+  },
+  "annotation_integrity": {
+    "all_entities": 48870,
+    "text_matches_offsets": 48849,
+    "mismatched_entities": 21
+  },
+  "test_target_annotation_mismatches": [
+    {
+      "record_id": "NCT02590822_inc",
+      "entity_id": "T5",
+      "kind": "Measurement"
+    }
+  ],
+  "interpretation": "Post-test descriptive analysis; no prompts, models or gold changed. Offset mismatches are disclosed; exact scoring retained published offsets."
+}

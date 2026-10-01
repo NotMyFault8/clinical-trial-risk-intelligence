@@ -1,0 +1,55 @@
+{
+  "local_tests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "container_tests": {
+    "passed": 23,
+    "failed": 0,
+    "excluded": "Temporal cohort test needs outcome labels; those are intentionally absent from the serving bundle."
+  },
+  "dashboard_javascript_syntax": "passed with bundled Node.js",
+  "figures_visually_reviewed": [
+    "model_comparison.png",
+    "calibration.png",
+    "outcome_selection.png"
+  ],
+  "browser_visual_review": {
+    "status": "blocked",
+    "reason": "Browser tool could not verify admin-enforced policy; no bypass attempted."
+  },
+  "git_whitespace_check": "passed",
+  "github_actions": "configured, not executed remotely",
+  "report_invariants": {
+    "reports_checked": 632,
+    "exact_evidence_spans_checked": 822,
+    "attribution_reconstruction_failures": 0,
+    "typed_probability_mismatches": 0,
+    "forbidden_outcome_field_violations": 0,
+    "seconds": 8.731113541987725,
+    "scope": "Finite frozen portfolio checks, not independent semantic or prospective validation"
+  },
+  "api_measurements": {
+    "requests": 30,
+    "successful": 30,
+    "measurement": "in-process FastAPI TestClient; warm model; includes packet computation and serialization, excludes network/browser rendering",
+    "seconds_p50": 0.024193979508709162,
+    "seconds_p95": 0.02688866247772239,
+    "monitoring": {
+      "requests": 31,
+      "errors": 0,
+      "latency_seconds_p50": 0.02365504202316515,
+      "latency_seconds_p95": 0.026265637634787706,
+      "stored_request_bodies": false,
+      "stored_trial_identifiers": false,
+      "generation_mode": "deterministic; experimental LLM generation is not served"
+    }
+  },
+  "container_image_id": "sha256:eda962b88a79d61c67ca8a0f3d4bcbb629a354a0dd2883f0e1d517d9f93291e4",
+  "dockerfile_sha256": "9330fd57eabb089430c074ccc722da6e46313a2271ba58be212c3c512857f5f6",
+  "release_bundle_manifest_sha256": "e2bbea23f331e931e25afbee7d6689a16080e185c0e67df66f0f964434cb4115",
+  "research_report_sha256": "c8cd02f80451d875c9c6ed09f86bffe51addf5bd9178cd8df983ee33533ede94",
+  "full_original_release_gate": "not passed: extraction/generation quality and independent review remain unmet",
+  "local_app_url": "http://127.0.0.1:8000",
+  "execution_timestamps_recorded": false
+}

@@ -1,3 +1,4 @@
+# Historical Phase-1 proposal; active locked settings are in analysis_protocol.json.
 # Phase 1 working specification. Values remain provisional until audited.
 cohort:
   unit: trial
@@ -9,7 +10,9 @@ cohort:
     - 30
     - 60
     - 90
-  require_start_date_type: Anticipated
+  # Candidate aliases only; verify meanings and vocabulary per archive before use.
+  planned_start_date_type_candidates: [Anticipated, ESTIMATED]
+  require_source_vocabulary_audit: true
   require_snapshot_before_planned_start: true
   study_years: TBD_after_snapshot_audit
 

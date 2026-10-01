@@ -1,6 +1,6 @@
 # AACT / ClinicalTrials.gov Schema Notes
 
-Status: **documentation reviewed; empirical SQL audit still required**.
+Status: **initial live-database audit complete (2026-09-29); historical snapshot audit still required**.
 
 ## Database structure
 
@@ -19,7 +19,8 @@ AACT documentation explicitly describes `studies.txt` as one record per study wi
 | `conditions` | condition names | one-to-many |
 | `interventions` | intervention name/type | one-to-many |
 | `facilities` | facility, city/state/country, latitude/longitude, site status | one-to-many |
-| `study_records` | current schema exposes JSON content, SHA, created/updated timestamps | semantics/history behavior not documented sufficiently; audit before use |
+
+The live audit found one row per study, at most one design and eligibility row per NCT ID, and one-to-many sponsor/condition/intervention/facility tables. See the dated report for measured coverage. Historical sources must be checked independently. `study_records` was absent from the live database; both it and `study_references` are outside scope following the 2026-09-30 project decision.
 
 ## Fields already confirmed in the current AACT data dictionary
 
@@ -56,9 +57,8 @@ A field being conceptually 'baseline' does **not** prove the current value was a
 3. Which one-to-many tables contain duplicate semantic entities?
 4. Is exactly one lead sponsor normally present?
 5. How do field names/types change between 2018-2026 archives?
-6. Are pre-start `enrollment_type` values consistently anticipated?
-7. How often is `start_date_type` anticipated versus actual in candidate snapshots?
-8. What exactly does `study_records` contain and is it one row or multiple rows per trial?
-9. Which fields disappear, appear, or change coding across the ClinicalTrials.gov modernization period?
+6. Which planned-enrollment vocabulary (Anticipated or ESTIMATED) appears in each source era?
+7. How often is `start_date_type` planned (source-specific Anticipated/ESTIMATED), actual, or missing in candidate snapshots?
+8. Which fields disappear, appear, or change coding across the ClinicalTrials.gov modernization period?
 
 No field is approved for modeling until its availability time and historical-snapshot representation are documented.

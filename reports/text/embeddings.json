@@ -1,0 +1,17 @@
+{
+  "model": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "path": "artifacts/pretrained/minilm",
+    "documented_training_cutoff": null,
+    "contamination_status": "cannot_exclude"
+  },
+  "rows": 8629,
+  "chunks": 31892,
+  "word_chunk_size": 100,
+  "token_limit": 256,
+  "token_truncated_chunks": 42,
+  "seconds": 217.91147466702387,
+  "source_sha256": "fadd5e644d7426719429d91594798847f54a76ea0d234a68d144363ede009283",
+  "training_cutoff": "undocumented; contamination cannot be excluded"
+}
