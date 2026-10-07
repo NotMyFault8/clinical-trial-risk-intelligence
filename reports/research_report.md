@@ -102,7 +102,7 @@ Measured generation amortized p50/p95 latency: 0.802/1.171 seconds per report in
 
 The implementation includes streamed archive ingestion, pre-join SQL aggregation, source checksums, physically separate outcomes, explicit feature allowlists, temporal evaluation, model/prompt/source registries, a local read-only FastAPI dashboard, container packaging, unit/integration checks and descriptive monitoring. API requests never query the live registry or mutate trial records.
 
-The local demonstrator is suitable for research inspection and learning. It is not a production clinical system. Full project release remains gated on independent target-domain extraction/report review, demonstrated analyst usefulness and genuinely prospective evaluation where required. Negative component results are retained rather than relabeled as successful deployment.
+The local demonstrator is suitable for research inspection. It is not a production clinical system. Full project release remains gated on independent target-domain extraction/report review, demonstrated analyst usefulness and genuinely prospective evaluation where required. Negative component results are retained rather than relabeled as successful deployment.
 
 Reproduce with [the runbook](../docs/reproducibility.md). See [the locked protocol](../docs/research_protocol.md), [feature dictionary](../docs/feature_dictionary.md), [annotation manual](../docs/annotation_manual.md), and raw JSON result tables under this reports directory.
 

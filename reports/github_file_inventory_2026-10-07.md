@@ -1,6 +1,6 @@
 # GitHub repository file inventory — 7 October 2026
 
-Pinned commit: `a0f2fd9183197b16340de9f3834f7bb3a6ab43e0`. All 117 tracked files are listed. Every retrieved file matched its Git blob hash.
+Pinned commit: `a0f2fd9183197b16340de9f3834f7bb3a6ab43e0`. The audited revision contains 117 tracked files; the retired personal study document is omitted from this inventory. Every retrieved file matched its Git blob hash.
 
 This inventory lists the tracked files at commit a0f2fd9183197b16340de9f3834f7bb3a6ab43e0 and records their repository role and audit disposition. File-level descriptions are based on the repository review; raw data and model artifacts are excluded from Git and were not available for independent execution.
 
@@ -21,7 +21,6 @@ This inventory lists the tracked files at commit a0f2fd9183197b16340de9f3834f7bb
 | `configs/snapshots.json` | 33,481 | Machine-readable source, experiment or release definitions; JSON parsed where applicable. |
 | `docs/annotation_manual.md` | 4,225 | Research definition, reference material, limitations or reproduction documentation. |
 | `docs/feature_dictionary.md` | 4,872 | Research definition, reference material, limitations or reproduction documentation. |
-| `docs/learning_guide.md` | 3,068 | Research definition, reference material, limitations or reproduction documentation. |
 | `docs/limitations.md` | 3,069 | Research definition, reference material, limitations or reproduction documentation. |
 | `docs/phase1/README.md` | 2,907 | Historical schema/cohort planning; reconcile with active research protocol. |
 | `docs/phase1/cohort_spec.md` | 4,683 | Historical schema/cohort planning; reconcile with active research protocol. |

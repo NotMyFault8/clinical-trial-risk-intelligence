@@ -1,5 +1,10 @@
 # Reproducing the local research project
 
+**Repository readiness:** the [repository audit](../reports/github_repository_audit_2026-10-07.md)
+identifies unresolved blockers, including the missing data package and the
+holdout output guard. The commands below describe the intended workflow; a clean
+checkout cannot yet execute it end to end.
+
 Use Python 3.12. The measured environment is pinned in `requirements-macos.lock`;
 the tested container has its separate Linux lock. Mac text generation uses Apple
 Silicon and MLX. The serving container uses cached features and needs no GPU.

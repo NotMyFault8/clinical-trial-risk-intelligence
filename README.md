@@ -1,78 +1,97 @@
-# Clinical Trial Risk Intelligence — local research demonstrator
+# Clinical Trial Risk Intelligence
 
-A reproducible public-data research project studying whether historical trial
-metadata and eligibility text distinguish **reported Terminated versus Completed
-status at five years**. It includes relational SQL, leakage controls, temporal
-model comparisons, calibration, extraction benchmarks, evidence reports and a
-read-only local dashboard.
+A public-data research system for studying early trial termination using historical
+AACT / ClinicalTrials.gov metadata and eligibility text. The repository contains
+relational data processing, temporal model comparisons, extraction experiments,
+evidence reports, and a read-only FastAPI dashboard.
 
-**This is a conditional retrospective research task.** Most eligible trials are
-excluded from the two-status comparison. Scores are not termination probabilities
-for all newly starting trials. Training labels matured after the historical test
-landmark; no historically deployable, prospective or clinical validation is claimed.
+## Research scope
 
-## Status and evidence
+The primary analysis distinguishes **reported Terminated versus Completed status
+at a five-year snapshot**, conditional on observing one of those statuses in the
+selected cohort. Scores do not estimate termination probability for all newly
+starting trials. Training outcomes matured after the historical test landmark;
+the evaluation measures retrospective temporal generalization.
 
-The pipeline and local application are implemented. Completed automated verification
-is recorded in `reports/verification.json` (24 local tests, 23 container tests,
-and 632 checked report packets). The LLM extractor failed
-its release thresholds; free-form generation requires independent semantic and
-usefulness review and is not served. Negative experiments are part of the result.
+## Project status
 
-- [Research report](reports/research_report.md): measured comparisons and limits.
-- [Locked protocol](docs/research_protocol.md): population, labels and temporal splits.
-- [Reproduction runbook](docs/reproducibility.md): commands from archives to app.
-- [Feature dictionary](docs/feature_dictionary.md): sources, transformations and leakage risks.
-- [Annotation manual](docs/annotation_manual.md): external human-labeled benchmark.
-- [Limitations](docs/limitations.md): unresolved validation and unsupported claims.
-- [Learning guide](docs/learning_guide.md): a route through the implemented code.
+Research results and local verification records are available. The
+[repository audit](reports/github_repository_audit_2026-10-07.md) identifies
+unresolved clean-checkout reproduction blockers, including a missing data package
+and a failed GitHub Actions run. Historical local test results are not evidence
+that the current checkout passes. See [project status](docs/project_status.md)
+for release gates and outstanding work.
 
-## Local application
+The LLM extractor failed its release thresholds. Free-form report generation is
+withheld; the local application uses deterministic evidence reports. Independent
+semantic review and analyst-usefulness review remain incomplete.
 
-From the project directory, after reproducing or retaining the local artifacts:
+## System architecture
+
+```text
+Historical AACT archives
+  -> source validation and trial-level SQL aggregation
+  -> baseline features + separate outcome tables
+  -> temporal model fitting, calibration and evaluation
+  -> verified evidence packets and deterministic reports
+  -> read-only local API and dashboard
+```
+
+- **Data:** eight pinned archives, source manifests, interval-based pre-start
+  selection, child-table aggregation, and separate baseline/outcome interfaces.
+- **Prediction:** logistic regression, XGBoost, simple text counts, TF-IDF,
+  frozen embeddings, and an experimental LLM-feature comparison.
+- **Evaluation:** train/tune/calibration/test separation, sponsor-cluster
+  intervals, top-K prioritization, subgroup analysis, drift, and sensitivities.
+- **Extraction and reporting:** CHIA benchmark comparisons, evidence-span checks,
+  versioned prompts, attribution checks, and explicit component release decisions.
+- **Application:** local FastAPI dashboard, dependency locks, container packaging,
+  test definitions, CI configuration, and basic monitoring.
+
+## Setup and local operation
+
+The [reproduction runbook](docs/reproducibility.md) documents the Python 3.12
+environment, pinned dependencies, archive preparation, research commands, and
+container workflow. Resolve the documented reproduction blockers before expecting
+a clean checkout to run end to end. Raw archives and fitted artifacts are external
+to Git and must be obtained or reproduced separately.
+
+With the required package and local artifacts available:
 
 ```sh
 .venv/bin/python -m uvicorn clinical_trial_risk.api.app:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-Open `http://127.0.0.1:8000`. The app serves the frozen 2021 resolved-outcome
-portfolio. Select a trial to inspect its baseline source, conditional score,
-verified model contributions and missing fields. The app does not accept live
-clinical records or make trial-management decisions. `/docs` describes its read-
-only API. The Docker recipe and data-free image are covered in the runbook.
+Open `http://127.0.0.1:8000`; API documentation is at `/docs`. The application
+serves the frozen 2021 resolved-outcome portfolio, with baseline source evidence,
+conditional scores, model contributions, and missing fields.
 
-## What is implemented
+## Documentation
 
-1. Eight pinned AACT ZIP snapshots: four baseline years and matched five-year
-   outcome sources. Strict parsing, unique keys, child references, CRC checking
-   of consumed members, checksums and source-specific schema manifests.
-2. Conservative interval-based pre-start cohort; SQL aggregates each child table
-   before joining. Outcomes are stored separately from approved baseline fields.
-3. Structured logistic regression, XGBoost, simple counts, TF-IDF, frozen MiniLM
-   embeddings and an explicitly experimental LLM-feature comparison. Train/tune/
-   calibration/test separation, paired sponsor-cluster intervals, calibration,
-   top-K prioritization, drift/subgroups and prespecified sensitivity analyses.
-4. Rules and local pretrained extraction tested against published CHIA annotations.
-   Exact evidence checks, cache/version provenance, error analysis and failed
-   release decisions. No fine-tuning or hosted LLM API calls.
-5. Typed evidence packets, additive attribution checks, deterministic reports and
-   a separate experimental generation/fidelity evaluation. Independent review
-   forms are prepared; unperformed human reviews are not claimed.
-6. A local FastAPI dashboard, model registry, reproducible commands, dependency
-   locks, a non-root container, tests, CI configuration and basic monitoring.
+- [Research protocol](docs/research_protocol.md): population, labels and splits.
+- [Research report](reports/research_report.md): measured comparisons and findings.
+- [Feature dictionary](docs/feature_dictionary.md): sources and leakage controls.
+- [Annotation manual](docs/annotation_manual.md): benchmark definitions.
+- [Report review rubric](docs/report_review_rubric.md): outstanding review criteria.
+- [Limitations](docs/limitations.md): validity and interpretation boundaries.
 
-## File map and data policy
+## Repository layout
 
-`src/clinical_trial_risk/` contains reusable Python modules. `sql/phase2/` contains
-the trial aggregation. `configs/`, `prompts/`, `tests/`, `docs/` and `reports/`
-hold the reviewable research definitions and evidence. Earlier DBeaver/PostgreSQL
-schema-audit work remains under `sql/phase1/` and `reports/phase1/`.
+| Path | Responsibility |
+|---|---|
+| `src/clinical_trial_risk/` | Feature, model, evaluation, extraction, reporting and API modules |
+| `sql/` | Schema audits and trial-level aggregation |
+| `configs/` | Cohort, source, model and release definitions |
+| `prompts/` | Versioned extraction and report prompts |
+| `scripts/` | Source preparation, release packaging and report utilities |
+| `tests/` | Data, feature, evaluation, reporting and API checks |
+| `docs/` | Research specifications, operational documentation and limitations |
+| `reports/` | Saved research results, audits and release evidence |
 
-Large `data/`, local `artifacts/` and `.venv/` are ignored by Git. The environment
-contains third-party libraries; raw ZIPs contain the source data; neither is
-handwritten project code. No new execution dates/times are added to manifests.
-Historical snapshot dates, model revisions, hashes and measured durations remain
-necessary for reproducibility. Synced ChatGPT `sources/` files are read-only.
+Raw data, model weights, caches, credentials and local environments must remain
+outside version control. Historical snapshot dates, hashes and model revisions
+provide provenance. The missing `clinical_trial_risk.data` source package and its
+ignore-rule conflict are tracked in the repository audit.
 
-No claim of Caidya employment, clinical validation, causal impact, production
-deployment, cost savings, RAG or fine-tuning is made by this independent project.
+This is an independent research project. Clinical validation, causal effects,
+prospective deployment and operational cost savings have not been established.

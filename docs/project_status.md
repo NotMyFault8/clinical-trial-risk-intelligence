@@ -1,7 +1,8 @@
 # Project status and remaining gates
 
-The local research implementation and automated evaluation are complete. The full
-original release standard is **not** met: failed LLM components are withheld and
+Saved local research results are available, but clean-checkout reproducibility is
+blocked by the findings in the [repository audit](../reports/github_repository_audit_2026-10-07.md).
+The full release standard is **not** met: failed LLM components are withheld and
 independent report review remains unperformed. No clinical or prospective
 validation is claimed.
 
@@ -14,18 +15,36 @@ validation is claimed.
 | 5. Reports | Typed packets, deterministic templates, 40 generated-report test cases, review forms | Templates verified; free-form generation failed; human review pending |
 | 6. Local packaging | API/dashboard, source/model checksums, container, dependency locks, CI configuration and monitoring | 24 local tests and 23 serving-container tests passed |
 
-All 632 portfolio report packets passed attribution reconstruction, typed-score
-and exact-evidence checks. Thirty API requests were measured in-process. Browser
-visual review was blocked because the tool could not verify its admin policy;
-the dashboard script passed syntax checks. Remote GitHub Actions was not run.
+## Verification and repository readiness
 
-The local app runs at http://127.0.0.1:8000 with access logs disabled. Changes are
-local and uncommitted; nothing was pushed or publicly deployed. Earlier user
-changes and synced references were preserved. Raw data, weights, caches and the
-virtual environment remain ignored by Git. No execution date/time was added to
-new project manifests.
+Historical local records report 632 verified evidence packets, 24 local tests,
+23 serving-container tests and 30 in-process API measurements. These records are
+preserved in `reports/verification.json`; they are not a fresh verification of the
+published checkout. The phase table above summarizes those saved results.
 
-Start with reports/research_report.md, docs/reproducibility.md and
- docs/learning_guide.md. The remaining human work is described in
- docs/report_review_rubric.md. A new generator/extractor would need development
-work and a fresh held-out benchmark, not repeated tuning on these published tests.
+The repository audit of commit `a0f2fd9183197b16340de9f3834f7bb3a6ab43e0`
+confirmed seven GitHub Actions test-collection failures caused by the missing
+`clinical_trial_risk.data` package. The root ignore rule also matches that source
+directory. Other outstanding findings include non-placeholder credentials in the
+example configuration, incomplete input-hash enforcement, and an existing-output
+guard that blocks the documented holdout reproduction workflow. See the audit for
+evidence and remediation details. This documentation update does not resolve those
+implementation findings or establish passing CI.
+
+## Release gates
+
+- Resolve the repository audit findings and verify a clean-checkout workflow.
+- Complete independent semantic and analyst-usefulness review using
+  [the report review rubric](report_review_rubric.md).
+- Evaluate any revised extractor or generator on a fresh held-out benchmark after
+  development; published tests must not become a repeated tuning target.
+- Establish prospective validity before claiming deployment on new trials.
+
+## Operational references
+
+The local application is served at `http://127.0.0.1:8000` when its required
+package and artifacts are available. Raw data, weights, caches and the virtual
+environment are excluded from version control. No public deployment is established.
+
+See the [research report](../reports/research_report.md) for measured results and
+the [reproduction runbook](reproducibility.md) for environment and execution steps.
