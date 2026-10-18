@@ -15,12 +15,15 @@ the evaluation measures retrospective temporal generalization.
 
 ## Project status
 
-Research results and local verification records are available. The
-[repository audit](reports/github_repository_audit_2026-10-07.md) identifies
-unresolved clean-checkout reproduction blockers, including a missing data package
-and a failed GitHub Actions run. Historical local test results are not evidence
-that the current checkout passes. See [project status](docs/project_status.md)
-for release gates and outstanding work.
+Research results and local verification records are available. The October 7
+[repository audit](reports/github_repository_audit_2026-10-07.md) is historical:
+the missing data package was subsequently restored on `main`. The new
+[neural extension verification](reports/neural_extension_verification.json)
+records local engineering checks, including both optional frameworks. Raw-data
+end-to-end reproduction and neural clinical performance remain unverified in
+this checkout. See [project status](docs/project_status.md) for the original
+research release gates and [neural experiments](docs/neural_experiments.md) for
+the extension's scope.
 
 The LLM extractor failed its release thresholds. Free-form report generation is
 withheld; the local application uses deterministic evidence reports. Independent
@@ -48,11 +51,25 @@ Historical AACT archives
 - **Application:** local FastAPI dashboard, dependency locks, container packaging,
   test definitions, CI configuration, and basic monitoring.
 
+## Trainable Transformer extension
+
+Native **PyTorch** and **TensorFlow/Keras** fusion Transformers extend the existing
+models with train-only text preprocessing, attention masking, early stopping,
+separate calibration, serialization, and comparative evaluation. See the
+[experiment runbook](docs/neural_experiments.md) for installation, commands,
+architecture and limitations. Dedicated CI exercises both frameworks.
+
+These are supervised encoders, not pretrained LLM fine-tuning. Engineering tests
+use synthetic fixtures; real-data incremental performance is not yet established.
+The existing 2021 holdout has already been inspected, so new comparisons are
+exploratory and cannot establish confirmatory improvement. The API continues to
+use its existing frozen model registry.
+
 ## Setup and local operation
 
 The [reproduction runbook](docs/reproducibility.md) documents the Python 3.12
 environment, pinned dependencies, archive preparation, research commands, and
-container workflow. Resolve the documented reproduction blockers before expecting
+container workflow. Prepare and verify the external data and fitted artifacts before expecting
 a clean checkout to run end to end. Raw archives and fitted artifacts are external
 to Git and must be obtained or reproduced separately.
 
@@ -90,8 +107,8 @@ conditional scores, model contributions, and missing fields.
 
 Raw data, model weights, caches, credentials and local environments must remain
 outside version control. Historical snapshot dates, hashes and model revisions
-provide provenance. The missing `clinical_trial_risk.data` source package and its
-ignore-rule conflict are tracked in the repository audit.
+provide provenance. The `clinical_trial_risk.data` package is tracked; root data artifacts remain
+excluded from version control.
 
 This is an independent research project. Clinical validation, causal effects,
 prospective deployment and operational cost savings have not been established.

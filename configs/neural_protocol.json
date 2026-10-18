@@ -1,0 +1,13 @@
+{
+  "version": "neural-extension-v1",
+  "seed": 731,
+  "max_length": 256,
+  "max_vocab": 12000,
+  "architecture": {"width": 32, "heads": 4, "dropout": 0.1},
+  "training": {"epochs": 20, "batch_size": 32, "learning_rate": 0.001, "patience": 4},
+  "bootstrap_replicates": 1000,
+  "primary_metric": "average_precision",
+  "primary_comparisons": ["torch versus structured_logistic", "tensorflow versus structured_logistic"],
+  "secondary_comparison": "structured_tfidf; framework results are not expected to be numerically identical",
+  "interpretation": "Exploratory extension after the 2021 holdout was already inspected. Retrospective resolved-outcome discrimination, not new confirmatory or prospective evidence. A new untouched cohort is required for confirmation. No automatic API promotion."
+}

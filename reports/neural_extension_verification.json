@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-18",
+  "base_revision": "62f5407",
+  "scope": "Local engineering verification; synthetic neural fixtures, no real-data neural performance claims",
+  "platform": "macOS arm64",
+  "python": "3.12.14",
+  "torch": "2.14.1",
+  "tensorflow": "2.21.0",
+  "checks": {
+    "non_integration_pytest": {"passed": 26, "deselected": 3},
+    "neural_pytest": {"passed": 5},
+    "compileall": "passed",
+    "pip_check": "passed",
+    "git_diff_check": "passed"
+  },
+  "exercised": [
+    "Native training and inference in both frameworks",
+    "Independent calibration and serialized prediction round-trip",
+    "Empty text and padding invariance",
+    "Future test text/label mutation leaves fitted predictions unchanged",
+    "Train-only vocabulary and feature allowlist",
+    "Temporal, sponsor and trial-key guards",
+    "Synthetic command flow: train both, freeze, compare with refitted baselines, reject overwrite"
+  ],
+  "not_verified": [
+    "Real AACT neural training and performance comparison: external data unavailable in this checkout",
+    "Three original integration tests require frozen local research artifacts",
+    "Remote CI is separate from these local checks",
+    "Prospective or clinical validation",
+    "LLM fine-tuning: not implemented by this extension"
+  ]
+}

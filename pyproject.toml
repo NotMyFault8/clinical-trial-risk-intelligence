@@ -11,6 +11,8 @@ dependencies = ["pandas>=2.2", "pyarrow>=17", "duckdb>=1.1", "scikit-learn>=1.6"
 
 [project.optional-dependencies]
 test = ["pytest>=8", "httpx2>=2.13"]
+neural-torch = ["torch>=2.6,<3"]
+neural-tensorflow = ["tensorflow>=2.18,<3"]
 text = ["sentence-transformers>=3", "huggingface-hub>=0.25"]
 local-llm = ["mlx-lm>=0.31; sys_platform == 'darwin' and platform_machine == 'arm64'"]
 
