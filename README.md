@@ -15,7 +15,7 @@ the evaluation measures retrospective temporal generalization.
 
 ## Project status
 
-Research results and local verification records are available. The October 7
+Research results and local verification records are available. The 
 [repository audit](reports/github_repository_audit_2026-10-07.md) is historical:
 the missing data package was subsequently restored on `main`. The new
 [neural extension verification](reports/neural_extension_verification.json)
