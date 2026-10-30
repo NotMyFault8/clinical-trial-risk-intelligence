@@ -88,7 +88,7 @@ The extractor failed its pre-test release thresholds. Exact copied text is not p
 
 The final extractor uses pinned Qwen2.5-1.5B-Instruct weights, 4-bit local inference, an 1,800-character prefix and at most six spans of each type. 104 gold spans lie beyond the prefix. Published development pilots include a larger model that was slower and worse under this setup. Neither model was fine-tuned.
 
-The same 2,412 primary resolved trials enter the exploratory LLM-feature risk comparison. Invalid outputs remain explicit failure flags; trials are never silently dropped. Any incremental discrimination cannot turn an inaccurate extractor into validated clinical understanding. No human adjudication of target-cohort extractions has been performed.
+The same 2,412 primary resolved trials enter the exploratory LLM-feature risk comparison. Invalid outputs remain explicit failure flags; trials are never silently dropped. Any incremental discrimination cannot turn an inaccurate extractor into validated clinical understanding. Prospective target-cohort clinical validation has not been performed.
 
 ## Revised local extractor: new CHIA holdout (2026-10-30)
 
@@ -98,7 +98,7 @@ Original versus revised document schema validity: **76.0% → 88.0%**; precision
 
 The precision difference's 95% group-bootstrap interval is [-3.52, +10.98] percentage points, which includes zero; the F1 difference interval is [+15.90, +28.26] points. Completely exact documents are 7/100 for the revised combination versus 8/100 for the original. LLM-only revised F1 is 26.5%; the union's gain cannot be attributed entirely to the LLM. The frozen combination does not outperform NER alone on this holdout.
 
-Semantic release passed: **False**. Schema validity is a format check; it does not establish clinical correctness. **AI secondary review: 12/12 cases completed by Codex (AI)**, with [per-span findings and omissions](extraction/llm_v3/ai_second_review.md). This unblinded AI review is not counted as human or clinical sign-off; real human review remains 0/12 with forms retained. The original downstream risk model and deterministic serving reports remain unchanged. See the [full V3 report](extraction/llm_v3/summary.md), including ablations, error counts, group-bootstrap intervals and full-text secondary scores.
+Semantic release passed: **False**. Schema validity is a format check; it does not establish clinical correctness. **AI secondary review: 12/12 cases completed by Codex (AI)**, with [per-span findings and omissions](extraction/llm_v3/ai_second_review.md). This unblinded AI review does not establish clinical validity or patient eligibility logic. The original downstream risk model and deterministic serving reports remain unchanged. See the [full V3 report](extraction/llm_v3/summary.md), including ablations, error counts, group-bootstrap intervals and full-text secondary scores.
 
 ## Generated reports
 

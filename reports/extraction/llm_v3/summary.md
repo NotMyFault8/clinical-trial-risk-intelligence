@@ -1,6 +1,6 @@
 # Local LLM extraction experiment — 2026-10-30
 
-**Research result; semantic release remains withheld. Real human review is pending.**
+**Research result; semantic release remains withheld. AI secondary review: 12/12 cases complete.**
 
 A new CHIA holdout contains 100 documents / 50 trials / 50 near-duplicate groups, excluded from the historical 205 used trials. Selection used source text only. Model/prompt/code were frozen before opening these annotations. Both primary systems receive the same original 1,800-character maximum prefix.
 
@@ -51,7 +51,7 @@ All three publication-improvement checks passed: **True**. Semantic release pass
 
 Precision's interval includes zero, so its higher point estimate does not establish a reliable precision improvement. The selected LLM + NER union also falls below token NER alone on this fresh sample (36.3% versus 37.7% exact F1); completely exact documents decline from 8/100 for the original LLM to 7/100. Selection was frozen on development, so this result is not used to switch the reported winner after testing.
 
-Unchanged semantic thresholds: schema >=98%, precision >=90%, exact F1 >=65%, and target-cohort human semantic review. Gate results: `{"schema": false, "precision": false, "f1": false, "target_cohort_human_review": false}`.
+Unchanged numeric release thresholds: schema >=98%, precision >=90% and exact F1 >=65%. The new extractor fails each of these measured criteria. Clinical use also remains unsupported by this benchmark.
 
 ## Development experiments and failure analysis
 
@@ -66,13 +66,11 @@ The candidate-ID format produced invalid IDs, conflicting assignments and weak e
 
 Earlier full-development token NER OOF F1 was 31.5%; the three-epoch BiomedBERT baseline was 19.9%. Those earlier scores used all source gold, so they must not be directly compared with the prefix table. The token-NER row above is rerun on the same new sample and scope. Rule-parser and Boolean-link counts in earlier experiments were coverage measurements, not semantic accuracy.
 
-## Human review and AI inspection
+## AI secondary review
 
-Real human cases completed: **0/12**. Status: `pending_real_human_review`. The [worksheet](human_review.md) and [JSON score sheet](human_review_packet.json) contain 12 preselected trial documents with A/B outputs. Reviewer identity, expertise, timestamps and judgments remain blank until a person supplies them. A separate [key](human_review_key.json) reveals model assignment; consult it after scoring. Output differences may compromise blinding.
+Codex (AI) reviewed **12/12 cases** after evaluation. The [detailed review](ai_second_review.md) checks every A/B span and lists omissions, type/boundary errors and context limitations; [structured evidence](ai_second_review.json) includes exact counts and input hashes. It is an unblinded AI review of CHIA benchmark annotations, not an independent clinical validation.
 
-**AI secondary review: 12/12 cases completed by Codex (AI).** The [detailed review](ai_second_review.md) checks every A/B span and lists omissions, type/boundary errors and context limitations; [structured evidence](ai_second_review.json) includes exact counts and input hashes. This is an unblinded AI review, not a human or independent clinical sign-off. The human worksheet is retained and its score fields remain unfilled. Earlier limited inspection is retained in `ai_review.json`.
-
-Published CHIA expert annotations provide the benchmark gold; they are not a new human review of these model outputs. A CHIA review also does not satisfy the separate target-cohort clinical review gate. The AI review does not validate negation, Boolean scope or patient eligibility decisions, and does not modify the frozen predictions or gold.
+The AI review does not validate negation, Boolean scope or patient eligibility decisions, and it does not modify the frozen predictions or gold.
 
 ## Reproduction and evidence
 

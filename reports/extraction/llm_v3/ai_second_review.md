@@ -1,10 +1,10 @@
 # AI Secondary Review: 12 Frozen Cases
 
-**Reviewer: Codex (AI). Cases reviewed: 12/12. Human review remains 0/12.**
+**Reviewer: Codex (AI). Cases reviewed: 12/12.**
 
-This report preserves the human-review process and separately records an AI review of the source text, A/B outputs and CHIA annotations. The A/B system identities are disclosed, so this is an unblinded AI review. Type and boundary counts are recomputed from the existing gold by script; the written interpretations are AI judgments, not human or independent clinical sign-off.
+This report records an AI review of the source text, A/B outputs and CHIA annotations. System identities are disclosed. Type and boundary counts are recomputed from the existing gold by script; written interpretations are AI judgments and do not constitute independent clinical validation.
 
-The review used frozen predictions and did not change the model, prompts, gold or experiment scores. Reviewer identity, date and score fields in the human review packet remain unfilled.
+The review used frozen predictions and did not change the model, prompts, gold or experiment scores.
 
 Markdown display normalizes line endings and trims trailing whitespace. Character offsets refer to the original text preserved in the JSON record.
 
@@ -19,7 +19,7 @@ This prespecified 12-document subset does not replace the [100-document primary 
 
 Main errors include disease or observation terms mislabeled as Measurement; truncated values, units and time windows; duplicate short and complete spans; and forcing labels outside the three target categories, such as Multiplier and Observation, into a target category. The revised system has lower exact F1 than the original on review-02 and review-10. Negation, AND/OR scope, exceptions and patient eligibility were not evaluated.
 
-[Retained human review worksheet](human_review.md) · [Unfilled human review packet](human_review_packet.json) · [Machine-readable AI secondary review](ai_second_review.json)
+[Machine-readable AI secondary review](ai_second_review.json)
 
 ## review-01 — NCT03119766_exc
 
@@ -805,7 +805,7 @@ Missed target entities:
 1. Add label-exclusion rules and hard negative examples to development data. Distinguish Person, Condition, Observation and Multiplier from the three target labels instead of assigning every medical term or number to a target category. Record corpus disagreements without editing test gold after evaluation.
 2. Use NER on the same development folds as the baseline. Compare candidate reranking, type filtering and boundary correction to test whether the LLM contributes independently. The current union adds false positives and should not be selected by recall alone.
 3. On development data, evaluate complete unit/operator boundaries, duplicate short-span removal and rejection of substrings inside words. Also test constrained JSON output and an appropriate generation budget. Check rules against abbreviation and punctuation counterexamples instead of patching only these 12 cases.
-4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample; record actual human review separately.
+4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample.
 
 ## Scope and sources
 

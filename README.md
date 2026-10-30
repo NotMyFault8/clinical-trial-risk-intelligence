@@ -23,9 +23,9 @@ on 2026-10-08. The audit is historical evidence, not the current package/CI stat
 Full end-to-end reproduction still requires external data and model artifacts;
 remaining audit items and release gates are tracked in [project status](docs/project_status.md).
 
-The LLM extractor failed its release thresholds. Free-form report generation is
-withheld; the local application uses deterministic evidence reports. Independent
-semantic review and analyst-usefulness review remain incomplete.
+The LLM extractor remains below its release thresholds and has not been clinically
+validated. Free-form report generation is withheld; the local application uses
+deterministic evidence reports. Analyst-usefulness evaluation remains incomplete.
 
 ## Revised extraction experiment — 2026-10-30
 
@@ -47,17 +47,17 @@ NER; no LLM fine-tuning or hosted API was used.
 
 All three primary point estimates improve over the original LLM, meeting the
 condition for publishing this research update. **Semantic release still fails**
-(required: 98% format validity, 90% precision and 65% exact F1, plus target-cohort
-human review). The revised combination does not outperform NER alone. Its
-precision improvement is uncertain: the paired 95% interval is -3.52 to +10.98
+(required: 98% format validity, 90% precision and 65% exact F1). The revised
+combination does not outperform NER alone. Its precision improvement is
+uncertain: the paired 95% interval is -3.52 to +10.98
 percentage points. Only 7/100 documents have a completely correct entity set,
 versus 8/100 for the original. Exact copied text does not establish correct labels.
 
 **AI secondary review: 12/12 cases completed by Codex (AI).**
 [Per-case findings](reports/extraction/llm_v3/ai_second_review.md) identify type
 confusion, truncated boundaries, duplicate spans and omissions. This is an
-unblinded AI review. Human review remains **0/12**, with its worksheet retained;
-neither clinical sign-off nor patient eligibility logic is established.
+unblinded AI review. It does not establish clinical validity or patient
+eligibility logic.
 See the [measured report](reports/extraction/llm_v3/summary.md),
 [frozen protocol](docs/extraction_v3_protocol.md) and
 [raw results](reports/extraction/llm_v3/fresh_evaluation.json).

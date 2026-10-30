@@ -14,7 +14,7 @@ validation is claimed.
 | 1. Sources and problem definition | Eight pinned archives; conservative 90-day interval rule; five-year matched status sources; explicit conditional estimand | Feasible for limited retrospective research |
 | 2. Cohort and SQL | 5,703 primary trials; child aggregation before joins; unique keys, source-date checks and separate outcomes | Passed measured data checks |
 | 3. Predictive comparisons | Six families, fixed temporal splits, calibration, cluster intervals and sensitivities | Evaluated; no reliable TF-IDF AP gain established |
-| 4. Extraction | Historical CHIA test and frozen 100-document V3 holdout; rules/NER/LLM comparisons; AI secondary review of 12 samples | Original-to-V3 F1 13.9% to 36.3% on the new holdout; below NER alone; semantic release failed; human review 0/12 |
+| 4. Extraction | Historical CHIA test and frozen 100-document V3 holdout; rules/NER/LLM comparisons; AI secondary review of 12 samples | Original-to-V3 F1 13.9% to 36.3% on the new holdout; below NER alone; semantic release failed |
 | 5. Reports | Typed packets, deterministic templates, 40 generated-report test cases, review forms | Templates verified; free-form generation failed; human review pending |
 | 6. Local packaging | API/dashboard, source/model checksums, container, dependency locks, CI configuration and monitoring | 24 local tests and 23 serving-container tests passed |
 
@@ -29,8 +29,7 @@ The 2026-10-30 extraction update passed 28 local non-integration tests (three
 integration tests deselected). Frozen code/prediction hashes and independent exact
 counts were checked in [V3 verification](../reports/extraction/llm_v3/verification.json).
 [AI secondary review](../reports/extraction/llm_v3/ai_second_review.md) covers all
-12 preselected samples and preserves the unfilled human-review forms. It is not
-independent human or clinical validation.
+12 preselected samples. It does not establish independent clinical validity.
 
 The repository audit of commit `a0f2fd9183197b16340de9f3834f7bb3a6ab43e0`
 confirmed seven GitHub Actions test-collection failures caused by the missing

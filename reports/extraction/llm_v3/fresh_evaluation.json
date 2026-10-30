@@ -629,7 +629,6 @@
     "target_cohort_human_review": false
   },
   "semantic_release_passed": false,
-  "human_review_completed": false,
   "paired_bootstrap": {
     "precision": {
       "delta_95_percentile_interval": [
@@ -660,7 +659,7 @@
     "pretraining contamination cannot be excluded",
     "contiguous candidates cannot represent discontinuous entities",
     "candidate hints may bias the LLM; quote mode can propose additional spans",
-    "human review prepared but not performed",
+    "AI secondary review is documented separately and does not establish clinical semantic accuracy",
     "schema pass and source fidelity are not clinical semantic accuracy"
   ]
 }

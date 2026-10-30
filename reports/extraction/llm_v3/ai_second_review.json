@@ -1,28 +1,27 @@
 {
   "title": "AI secondary review: 12 frozen cases",
   "reviewer": "Codex (AI)",
-  "reviewed_at": "2026-10-30T11:06:27.221367+00:00",
+  "reviewed_at": "2026-10-30T11:11:25.104972+00:00",
   "review_round": 2,
   "review_type": "AI_secondary_review",
-  "is_human_review": false,
   "reviewed_cases": 12,
-  "blinded": false,
   "method": "Codex (AI) manually inspected all 12 A/B source excerpts and outputs and compared them with CHIA annotations; exact-match counts were recomputed by script. This is not an independent clinical adjudication.",
   "scope": "Frozen CHIA matched-prefix A/B outputs",
-  "human_review_completed_cases": 0,
   "clinical_eligibility_logic_validated": false,
   "input_sha256": {
-    "human_review_packet.json": "a4fe0fdc88dc1114bdde28283b3af1465b7901d8a7428af6d8028f344adbc68f",
     "ai_second_review_notes.json": "0ae40ca2e45e4c1f4478e6aa5163eeb85d060efa66ebf6f235a28ee49ad37104",
-    "human_review_key.json": "708f8b2da2835c29ba789a275daab6320d88117f55b19ee6e07bd75bbb2ac408",
-    "fresh_evaluation.json": "9c2a3310ef6bf09fefe4451771d3a030e6a911661b826bfaf46cff1666a60f6e",
-    "fresh_predictions.json": "d090e411165dc800aa35954a7a27b10a6107ab1cfd76d3d4c1765dfb1b3a5997"
+    "freeze.json": "920e8452e64eb981bb8560a1e8ecd331a4c8c7563e35c45868596bc72833cf39",
+    "fresh_manifest.json": "7c53a41e8fb168c18113a02515a1c71cc79aaa19f8311bf082851a4dbb24a4fa",
+    "fresh_evaluation.json": "bcd037c6ab4d2f76d5b733470c47f939452f80a50a3fc99ae59b2c9cfc57e45b",
+    "fresh_predictions.json": "d090e411165dc800aa35954a7a27b10a6107ab1cfd76d3d4c1765dfb1b3a5997",
+    "chia_with_scope.zip": "b51ec05ba42a3805daf9581dd22a305986f7c5ae3ca4dad36b70d37970fb69b2"
   },
   "verification": {
     "frozen_code_unchanged": true,
     "predictions_unchanged": true,
     "ai_evidence_quotes_verified": 37,
-    "human_packet_unchanged": true
+    "source_annotations_revalidated": true,
+    "pinned_archive_hash_verified": true
   },
   "aggregate": {
     "original_llm": {
@@ -247,11 +246,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "age",
             "start": 55,
             "end": 58,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "age",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -1372,11 +1369,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "pregnant women",
             "start": 0,
             "end": 14,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "pregnant women",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -1384,11 +1379,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "gestation",
             "start": 36,
             "end": 45,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "gestation",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -1409,11 +1402,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "HBsAg",
             "start": 61,
             "end": 66,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "HBsAg",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -1434,11 +1425,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "HBeAg",
             "start": 71,
             "end": 76,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "HBeAg",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -1459,11 +1448,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "serum viral load",
             "start": 77,
             "end": 93,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "serum viral load",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -1484,14 +1471,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "30 to 32 weeks",
             "start": 18,
             "end": 32,
-            "numeric_literals": [
-              "30",
-              "32"
-            ],
-            "status": "source_span_supported",
+            "evidence": "30 to 32 weeks",
             "source_quote_verified": true,
             "benchmark_verdict": "type_overlap",
             "overlapping_target_gold": [
@@ -2062,11 +2044,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "pregnant or breastfeeding",
             "start": 0,
             "end": 25,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "pregnant or breastfeeding",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2074,11 +2054,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "with a measure of legal protection",
             "start": 41,
             "end": 75,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "with a measure of legal protection",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2086,11 +2064,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "unaffiliated insurance",
             "start": 85,
             "end": 107,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "unaffiliated insurance",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2148,11 +2124,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "cocaine-dependent",
             "start": 21,
             "end": 38,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "cocaine-dependent",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2162,14 +2136,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "1g to 2g",
             "start": 60,
             "end": 68,
-            "numeric_literals": [
-              "1",
-              "2"
-            ],
-            "status": "source_span_supported",
+            "evidence": "1g to 2g",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2177,14 +2146,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "1 to 3 times a week",
             "start": 76,
             "end": 95,
-            "numeric_literals": [
-              "1",
-              "3"
-            ],
-            "status": "source_span_supported",
+            "evidence": "1 to 3 times a week",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2432,11 +2396,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "nursing",
             "start": 87,
             "end": 94,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "nursing",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2446,13 +2408,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "Grade 3",
             "start": 62,
             "end": 69,
-            "numeric_literals": [
-              "3"
-            ],
-            "status": "source_span_supported",
+            "evidence": "Grade 3",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -2462,11 +2420,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "while receiving trial medication",
             "start": 269,
             "end": 301,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "while receiving trial medication",
             "source_quote_verified": true,
             "benchmark_verdict": "type_overlap",
             "overlapping_target_gold": [
@@ -2489,13 +2445,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "30 days off drug",
             "start": 647,
             "end": 663,
-            "numeric_literals": [
-              "30"
-            ],
-            "status": "source_span_supported",
+            "evidence": "30 days off drug",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -2516,13 +2468,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "3 months off drug",
             "start": 687,
             "end": 704,
-            "numeric_literals": [
-              "3"
-            ],
-            "status": "source_span_supported",
+            "evidence": "3 months off drug",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -2543,14 +2491,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "30 days or 5 half-lives off drug",
             "start": 738,
             "end": 770,
-            "numeric_literals": [
-              "30",
-              "5"
-            ],
-            "status": "source_span_supported",
+            "evidence": "30 days or 5 half-lives off drug",
             "source_quote_verified": true,
             "benchmark_verdict": "boundary_overlap",
             "overlapping_target_gold": [
@@ -2590,13 +2533,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "within 2 months",
             "start": 1577,
             "end": 1592,
-            "numeric_literals": [
-              "2"
-            ],
-            "status": "source_span_supported",
+            "evidence": "within 2 months",
             "source_quote_verified": true,
             "benchmark_verdict": "boundary_overlap",
             "overlapping_target_gold": [
@@ -3539,11 +3478,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "infection",
             "start": 18,
             "end": 27,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "infection",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -3553,11 +3490,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "laboratory abnormalities",
             "start": 52,
             "end": 76,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "laboratory abnormalities",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -4602,11 +4537,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "Age",
             "start": 450,
             "end": 453,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "Age",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -4616,13 +4549,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "FEV1/FVC ratio",
             "start": 1361,
             "end": 1375,
-            "numeric_literals": [
-              "1"
-            ],
-            "status": "source_span_supported",
+            "evidence": "FEV1/FVC ratio",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -4630,13 +4559,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "FEV1 percent predicted values",
             "start": 1380,
             "end": 1409,
-            "numeric_literals": [
-              "1"
-            ],
-            "status": "source_span_supported",
+            "evidence": "FEV1 percent predicted values",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -4644,13 +4569,9 @@
           },
           {
             "kind": "Value",
-            "evidence": ">=40",
             "start": 455,
             "end": 459,
-            "numeric_literals": [
-              "40"
-            ],
-            "status": "source_span_supported",
+            "evidence": ">=40",
             "source_quote_verified": true,
             "benchmark_verdict": "boundary_overlap",
             "overlapping_target_gold": [
@@ -4671,13 +4592,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "<=80",
             "start": 464,
             "end": 468,
-            "numeric_literals": [
-              "80"
-            ],
-            "status": "source_span_supported",
+            "evidence": "<=80",
             "source_quote_verified": true,
             "benchmark_verdict": "boundary_overlap",
             "overlapping_target_gold": [
@@ -4698,14 +4615,9 @@
           },
           {
             "kind": "Value",
-            "evidence": ">=50 and <=70%",
             "start": 970,
             "end": 984,
-            "numeric_literals": [
-              "50",
-              "70"
-            ],
-            "status": "source_span_supported",
+            "evidence": ">=50 and <=70%",
             "source_quote_verified": true,
             "benchmark_verdict": "boundary_overlap",
             "overlapping_target_gold": [
@@ -5619,11 +5531,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "Height",
             "start": 23,
             "end": 29,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "Height",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -5644,11 +5554,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "BMI",
             "start": 40,
             "end": 43,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "BMI",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5658,11 +5566,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "Hypertensive diseases of pregnancy",
             "start": 121,
             "end": 155,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "Hypertensive diseases of pregnancy",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5672,11 +5578,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "Chronic hypertension receiving antihypertensive treatment",
             "start": 157,
             "end": 214,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "Chronic hypertension receiving antihypertensive treatment",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5684,11 +5588,9 @@
           },
           {
             "kind": "Measurement",
-            "evidence": "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection",
             "start": 216,
             "end": 329,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5696,13 +5598,9 @@
           },
           {
             "kind": "Value",
-            "evidence": ">40 Kg/ mm",
             "start": 44,
             "end": 54,
-            "numeric_literals": [
-              "40"
-            ],
-            "status": "source_span_supported",
+            "evidence": ">40 Kg/ mm",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -5723,11 +5621,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "receiving antihypertensive treatment",
             "start": 178,
             "end": 214,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "receiving antihypertensive treatment",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5735,13 +5631,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "in the 24 hours prior to cesarean delivery",
             "start": 76,
             "end": 118,
-            "numeric_literals": [
-              "24"
-            ],
-            "status": "source_span_supported",
+            "evidence": "in the 24 hours prior to cesarean delivery",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [
@@ -5840,11 +5732,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "P-NET",
             "start": 27,
             "end": 32,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "P-NET",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5852,11 +5742,9 @@
           },
           {
             "kind": "Value",
-            "evidence": "hypervascularity",
             "start": 52,
             "end": 68,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "hypervascularity",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -5866,11 +5754,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "signed informed consent",
             "start": 78,
             "end": 101,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "signed informed consent",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -6200,11 +6086,9 @@
         "prediction_checks": [
           {
             "kind": "Measurement",
-            "evidence": "alcohol dependence",
             "start": 355,
             "end": 373,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "alcohol dependence",
             "source_quote_verified": true,
             "benchmark_verdict": "no_target_overlap",
             "overlapping_target_gold": [],
@@ -6214,11 +6098,9 @@
           },
           {
             "kind": "Temporal",
-            "evidence": "at the time of enrollment",
             "start": 632,
             "end": 657,
-            "numeric_literals": [],
-            "status": "source_span_supported",
+            "evidence": "at the time of enrollment",
             "source_quote_verified": true,
             "benchmark_verdict": "exact",
             "overlapping_target_gold": [

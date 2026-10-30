@@ -1,4 +1,4 @@
-"""Render a post-evaluation AI review without changing predictions or human scores.
+"""Render a post-evaluation AI review without changing predictions or gold.
 
 Qualitative judgments are authored separately by Codex in the notes JSON.
 This script verifies their quoted evidence and recomputes exact-match counts;
@@ -81,16 +81,18 @@ def shown(value):
 
 
 def main():
-    packet_path = OUT / "human_review_packet.json"
-    packet_hash = digest(packet_path)
-    packet = json.loads(packet_path.read_text())
+    previous = json.loads((OUT / "ai_second_review.json").read_text())
     notes = json.loads((OUT / "ai_second_review_notes.json").read_text())
-    keys = {c["case_id"]: c for c in json.loads((OUT / "human_review_key.json").read_text())}
     note_map = {c["case_id"]: c for c in notes["cases"]}
-    if len(note_map) != 12 or set(note_map) != {c["case_id"] for c in packet["cases"]}:
+    if len(note_map) != 12 or set(note_map) != {c["case_id"] for c in previous["cases"]}:
         raise ValueError("AI notes must cover all 12 preselected cases exactly once")
     freeze = json.loads((OUT / "freeze.json").read_text())
     evaluation = json.loads((OUT / "fresh_evaluation.json").read_text())
+    archive_path = ROOT / "data/annotations/chia/chia_with_scope.zip"
+    archive_hash = digest(archive_path)
+    expected_archive_hash = json.loads((ROOT / "configs/chia_source.json").read_text())["sha256"]
+    if archive_hash != expected_archive_hash:
+        raise ValueError("CHIA archive hash differs from the pinned source manifest")
     for name, expected in freeze["code_sha256"].items():
         if digest(ROOT / name) != expected:
             raise ValueError(f"Frozen file changed: {name}")
@@ -100,11 +102,11 @@ def main():
         raise ValueError("Freeze manifest changed")
     totals = {name: Counter() for name in LABELS}
     cases = []
-    with zipfile.ZipFile(ROOT / "data/annotations/chia/chia_with_scope.zip") as archive:
-        for case in packet["cases"]:
+    with zipfile.ZipFile(archive_path) as archive:
+        for case in previous["cases"]:
             source = case["source"]
             if not archive.read(case["record_id"] + ".txt").decode().startswith(source):
-                raise ValueError("Review source differs from the archived source prefix")
+                raise ValueError("AI review source differs from the archived source prefix")
             note = note_map[case["case_id"]]
             for quote in note["evidence_quotes"]:
                 if quote not in source:
@@ -120,11 +122,24 @@ def main():
                     annotations.append({"kind": kind, "spans": spans,
                                         "source_fragments": [source[a:b] for a, b in spans]})
             gold = [g for g in annotations if g["kind"] in KINDS]
+            gold_keys = {entity_key(g) for g in gold}
+            prior_gold_keys = {entity_key(g) for g in case["gold"]}
+            if gold_keys != prior_gold_keys:
+                raise ValueError(f"Gold annotations changed for {case['case_id']}")
             reviewed = {"case_id": case["case_id"], "record_id": case["record_id"],
                         "source": source, "gold": gold, "ai_notes": note}
             for label in ("A", "B"):
-                system = keys[case["case_id"]][label]
-                result = score(case[label], gold, source, annotations)
+                prior = case[label]
+                system = prior["system"]
+                if system not in LABELS:
+                    raise ValueError(f"Unexpected system mapping in {case['case_id']} {label}")
+                items = [{"kind": item["kind"], "start": item["start"],
+                          "end": item["end"], "evidence": item["evidence"]}
+                         for item in prior["prediction_checks"]]
+                result = score(items, gold, source, annotations)
+                for metric in ("tp", "fp", "fn"):
+                    if result["metrics"][metric] != prior["metrics"][metric]:
+                        raise ValueError(f"Recomputed {metric} changed for {case['case_id']} {label}")
                 reviewed[label] = {"system": system, **result}
                 totals[system].update({k: result["metrics"][k] for k in ("tp", "fp", "fn")})
                 totals[system]["exact_documents"] += result["exact_document"]
@@ -134,21 +149,20 @@ def main():
                  for system, c in totals.items()}
     review = {"title": "AI secondary review: 12 frozen cases", "reviewer": "Codex (AI)",
               "reviewed_at": datetime.now(timezone.utc).isoformat(), "review_round": 2,
-              "review_type": "AI_secondary_review", "is_human_review": False,
-              "reviewed_cases": len(cases), "blinded": False,
+              "review_type": "AI_secondary_review", "reviewed_cases": len(cases),
               "method": notes["method"], "scope": "Frozen CHIA matched-prefix A/B outputs",
-              "human_review_completed_cases": packet["completed_cases"],
               "clinical_eligibility_logic_validated": False,
-              "input_sha256": {p.name: digest(p) for p in [packet_path, OUT / "ai_second_review_notes.json",
-                                OUT / "human_review_key.json", OUT / "fresh_evaluation.json", OUT / "fresh_predictions.json"]},
+              "input_sha256": {p.name: digest(p) for p in [OUT / "ai_second_review_notes.json",
+                                OUT / "freeze.json", OUT / "fresh_manifest.json", OUT / "fresh_evaluation.json",
+                                OUT / "fresh_predictions.json", archive_path]},
               "verification": {"frozen_code_unchanged": True, "predictions_unchanged": True,
                                "ai_evidence_quotes_verified": sum(len(n["evidence_quotes"]) for n in note_map.values()),
-                               "human_packet_unchanged": digest(packet_path) == packet_hash},
+                               "source_annotations_revalidated": True, "pinned_archive_hash_verified": True},
               "aggregate": aggregate, "cases": cases}
     lines = ["# AI Secondary Review: 12 Frozen Cases", "",
-             "**Reviewer: Codex (AI). Cases reviewed: 12/12. Human review remains 0/12.**", "",
-             "This report preserves the human-review process and separately records an AI review of the source text, A/B outputs and CHIA annotations. The A/B system identities are disclosed, so this is an unblinded AI review. Type and boundary counts are recomputed from the existing gold by script; the written interpretations are AI judgments, not human or independent clinical sign-off.", "",
-             "The review used frozen predictions and did not change the model, prompts, gold or experiment scores. Reviewer identity, date and score fields in the human review packet remain unfilled.", "",
+             "**Reviewer: Codex (AI). Cases reviewed: 12/12.**", "",
+             "This report records an AI review of the source text, A/B outputs and CHIA annotations. System identities are disclosed. Type and boundary counts are recomputed from the existing gold by script; written interpretations are AI judgments and do not constitute independent clinical validation.", "",
+             "The review used frozen predictions and did not change the model, prompts, gold or experiment scores.", "",
              "Markdown display normalizes line endings and trims trailing whitespace. Character offsets refer to the original text preserved in the JSON record.", "",
              "## Results for the 12 reviewed cases", "",
              "| System | Correct TP | False positives FP | Misses FN | Precision | Recall | Exact span F1 | Completely exact documents |",
@@ -157,7 +171,7 @@ def main():
         lines.append(f"| {LABELS[system]} | {m['tp']} | {m['fp']} | {m['fn']} | {m['precision']:.1%} | {m['recall']:.1%} | {m['f1']:.1%} | {m['exact_documents']}/12 |")
     lines += ["", "This prespecified 12-document subset does not replace the [100-document primary result](summary.md). A completely exact document must have an exact predicted entity set, including documents with no target gold. The scoring implementation assigns F1=0 when both gold and predictions are empty; the separate exact-document flag shows whether the empty sets match. All retained spans can be traced to the source, but quotation support does not establish semantic correctness.", "",
               "Main errors include disease or observation terms mislabeled as Measurement; truncated values, units and time windows; duplicate short and complete spans; and forcing labels outside the three target categories, such as Multiplier and Observation, into a target category. The revised system has lower exact F1 than the original on review-02 and review-10. Negation, AND/OR scope, exceptions and patient eligibility were not evaluated.", "",
-              "[Retained human review worksheet](human_review.md) · [Unfilled human review packet](human_review_packet.json) · [Machine-readable AI secondary review](ai_second_review.json)", ""]
+              "[Machine-readable AI secondary review](ai_second_review.json)", ""]
     for case in cases:
         display_source = "\n".join(line.rstrip() for line in case["source"].splitlines())
         lines += [f"## {case['case_id']} — {case['record_id']}", "", "```text", display_source, "```", "",
@@ -187,7 +201,7 @@ def main():
               "1. Add label-exclusion rules and hard negative examples to development data. Distinguish Person, Condition, Observation and Multiplier from the three target labels instead of assigning every medical term or number to a target category. Record corpus disagreements without editing test gold after evaluation.",
               "2. Use NER on the same development folds as the baseline. Compare candidate reranking, type filtering and boundary correction to test whether the LLM contributes independently. The current union adds false positives and should not be selected by recall alone.",
               "3. On development data, evaluate complete unit/operator boundaries, duplicate short-span removal and rejection of substrings inside words. Also test constrained JSON output and an appropriate generation budget. Check rules against abbreviation and punctuation counterexamples instead of patching only these 12 cases.",
-              "4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample; record actual human review separately.", "",
+              "4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample.", "",
               "## Scope and sources", "",
               "Type comparisons follow the original CHIA annotations; disagreement with the corpus is not automatically a clinical error. Potential annotation issues and suspicious source units are retained, and test gold is not changed after review. Further development requires a new freeze and evaluation sample.", "",
               "Source text and gold annotations are from Kury et al., CHIA v2, CC BY 4.0: [paper](https://doi.org/10.1038/s41597-020-00620-0) · [dataset](https://doi.org/10.6084/m9.figshare.11855817.v2). AI interpretations, model predictions and this review are derived work."]

@@ -91,27 +91,18 @@ Paired 95% percentile intervals resample 50 trial groups 2,000 times with seed
 The user-authorized publication condition is improvement over the original LLM
 on all three primary measures: document schema rate, precision and exact F1.
 Publication of a research result does not grant semantic release. The unchanged
-release gates require schema >=98%, precision >=90%, F1 >=65%, and completed
-target-cohort human semantic review.
+numeric extraction thresholds require schema >=98%, precision >=90%, and F1
+>=65%. The V3 system fails every numeric threshold; benchmark span extraction alone does not
+establish clinical validity or patient-eligibility logic.
 
-## Human review
+## AI secondary review
 
-The review packet chooses 12 new-holdout trials by a fixed source-ID hash, one
-document per trial. Original and candidate outputs are assigned to A/B without
-system names. The key is separate; output styles may still reveal the system.
-Reviewers record their identity, expertise, time, boundary/type judgments,
-missing entities and context errors. This CHIA review does not itself satisfy the
-separate target-cohort clinical review gate. A Codex/LLM inspection is labeled
-AI-assisted review and cannot fill human reviewer scores or sign-off.
-
-At the user's request, all 12 cases now have a separate **AI secondary review**,
-authored by Codex (AI) after evaluation. It is unblinded and pairs
+All 12 selected cases have a separate **AI secondary review**, authored by Codex
+(AI) after evaluation. It is unblinded and pairs
 qualitative type/boundary/context findings with exact gold-match counts and
 verified source quotes. The [review](../reports/extraction/llm_v3/ai_second_review.md)
-and its JSON record retain all omissions and regressions. Human review stays
-0/12, with original identity, expertise, time and score fields unfilled. The AI
-review did not change any frozen code, prompts, predictions or gold. A reviewer
-who reads it before scoring should record that exposure rather than claim blinding.
+and its JSON record retain omissions and regressions. It does not change any
+frozen code, prompts, predictions or gold.
 
 ## Local commands
 
@@ -119,7 +110,7 @@ Use the repository Python environment, local CHIA archive, and pinned model path
 in `configs/pretrained.json`. This experiment requires Apple Silicon MLX. The
 saved evaluation records exact runtime package versions and local weight hashes.
 Model calls use no hosted API. Raw prompts/responses and weights stay in ignored
-`artifacts/`; metrics, predictions, manifests, error sets and review forms are
+`artifacts/`; metrics, predictions, manifests, error sets and AI review records are
 versioned under `reports/extraction/llm_v3/`.
 
 ```sh

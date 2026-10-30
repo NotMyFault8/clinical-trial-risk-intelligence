@@ -25,7 +25,7 @@ maps repeated local quotations to every exact occurrence, and reports a NER-unio
 ablation. It preserves the same exact type/offset metric and release gates. V3
 uses development-only retrieved examples; the original prompt uses synthetic
 examples. Its [12-case AI secondary review](../reports/extraction/llm_v3/ai_second_review.md)
-does not fill human reviewer fields or constitute clinical sign-off.
+is an AI review of the benchmark outputs and does not establish clinical validity.
 
 Group inclusion and exclusion files by NCT ID. Before partitioning, connect trial
 texts with >=0.9 cosine similarity of fixed hashed character 4–5 grams. Keep each
