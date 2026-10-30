@@ -98,14 +98,22 @@ With the required package and local artifacts available:
 .venv/bin/python -m uvicorn clinical_trial_risk.api.app:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-Open `http://127.0.0.1:8000`; API documentation is at `/docs`. The application
-serves the frozen 2021 resolved-outcome portfolio, with baseline source evidence,
-conditional scores, model contributions, and missing fields.
+Open `http://127.0.0.1:8000`; interactive API documentation is at `/docs`.
+**API v0.3.0** opens on the latest extraction comparison and the 12-case AI
+secondary review. The Trial portfolio tab serves the frozen 2021 resolved-outcome
+portfolio, with baseline source evidence, conditional scores, model contributions
+and missing fields. Portfolio extraction provenance identifies its existing cache.
+
+The new read-only routes are `/extraction/evaluation`, `/extraction/review`,
+`/extraction/review/cases/{case_id}`, `/extraction/report` and
+`/extraction/review/report`. See [the API guide](docs/api.md) for response
+definitions, artifact requirements and error behavior.
 
 ## Documentation
 
 - [Research protocol](docs/research_protocol.md): population, labels and splits.
 - [Research report](reports/research_report.md): measured comparisons and findings.
+- [API v0.3.0 guide](docs/api.md): benchmark results, AI review and portfolio routes.
 - [Feature dictionary](docs/feature_dictionary.md): sources and leakage controls.
 - [Annotation manual](docs/annotation_manual.md): benchmark definitions.
 - [Report review rubric](docs/report_review_rubric.md): outstanding review criteria.

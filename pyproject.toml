@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "clinical-trial-risk-intelligence"
-version = "0.2.0"
+version = "0.3.0"
 description = "Point-in-time clinical trial research, evaluated text extraction and evidence reports"
 requires-python = ">=3.11"
 dependencies = ["pandas>=2.2", "pyarrow>=17", "duckdb>=1.1", "scikit-learn>=1.6", "scipy>=1.13", "numpy>=2", "joblib>=1.4", "xgboost>=2.1", "fastapi>=0.115", "uvicorn>=0.30", "pydantic>=2.9", "pyyaml>=6", "matplotlib>=3.9"]

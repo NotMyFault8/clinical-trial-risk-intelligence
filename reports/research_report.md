@@ -110,6 +110,10 @@ Measured generation amortized p50/p95 latency: 0.802/1.171 seconds per report in
 
 ## Engineering evidence and remaining gates
 
+API v0.3.0 exposes the saved V3 extraction comparisons, 12-case AI secondary review, per-case source evidence and Markdown reports. Its dashboard opens on the extraction results and retains the historical portfolio in a separate tab. Portfolio responses identify their original extraction cache; no V3 extraction inference is performed by the serving API. See the [API guide](../docs/api.md).
+
+The API update passed 37 non-integration tests. Live HTTP checks verified the new extraction routes and the existing 632-trial portfolio. Served micro scores match the recorded experiment and the serving-bundle checksums match all six V3 files; frozen inference source hashes remain unchanged. See the [API verification record](api/v0_3_verification.json).
+
 The implementation includes streamed archive ingestion, pre-join SQL aggregation, source checksums, physically separate outcomes, explicit feature allowlists, temporal evaluation, model/prompt/source registries, a local read-only FastAPI dashboard, container packaging, unit/integration checks and descriptive monitoring. API requests never query the live registry or mutate trial records.
 
 The local demonstrator is suitable for research inspection. It is not a production clinical system. Full project release remains gated on independent target-domain extraction/report review, demonstrated analyst usefulness and genuinely prospective evaluation where required. Negative component results are retained rather than relabeled as successful deployment.

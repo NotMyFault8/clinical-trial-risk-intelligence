@@ -86,7 +86,13 @@ slightly across BLAS/CPU/GPU platforms even with fixed seeds and weights.
 .venv/bin/python -m uvicorn clinical_trial_risk.api.app:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-The dashboard serves the frozen held-out research portfolio by NCT ID. It does
+API v0.3.0 opens the dashboard on the V3 extraction comparison and 12-case AI
+secondary review. The `/extraction/evaluation`, `/extraction/review` and
+`/extraction/review/cases/{case_id}` routes expose the saved measurements and
+source evidence. See [the API guide](api.md) for the complete route contract.
+Those routes need only the saved V3 reports, not model weights or raw archives.
+
+The Trial portfolio tab serves the frozen held-out research portfolio by NCT ID. It does
 not accept arbitrary live trial records, retrain automatically, claim online
 generalization, or access the live AACT database. Only deterministic evidence
 reports are served. Model-selection, feature, source and calibration provenance
@@ -101,7 +107,8 @@ docker run --rm --name clinical-trial-risk-demo -p 127.0.0.1:8000:8000 \
   clinical-trial-risk:local
 ```
 
-`prepare_release.py` excludes the outcome table, holdout labels, credentials and
+`prepare_release.py` includes the six V3 report/manifest files needed by the
+extraction API. It excludes the outcome table, holdout labels, credentials and
 raw archives. Container build context also excludes these. The container runs as
 a non-root user. Publish neither model artifacts nor source data unintentionally.
 This project has no cloud deployment or paid API dependency.

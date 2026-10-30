@@ -1,16 +1,109 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Clinical Trial Research Explorer</title>
 <style>
-:root{color-scheme:light;--ink:#163034;--green:#086d64;--line:#d8e5e3}*{box-sizing:border-box}body{margin:0;background:#f3f7f6;color:var(--ink);font:16px/1.5 system-ui,sans-serif}header{background:#123b3e;color:white;padding:36px max(24px,5vw)}header small{letter-spacing:.14em;color:#b6dfd7}h1{margin:8px 0;font-size:32px;font-weight:600}header p{max-width:870px;color:#d5e7e4;margin-bottom:0}main{padding:28px max(24px,5vw)}.notice{border-left:4px solid #b98531;padding:16px 20px;background:#fff5e4;border-radius:4px;margin-bottom:24px}.layout{display:grid;grid-template-columns:minmax(310px,1fr) minmax(450px,1.6fr);gap:24px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px;min-width:0}.toolbar{display:flex;gap:12px;margin:16px 0}input,button{font:inherit;padding:10px;border:1px solid #b6cbc6;border-radius:6px}input{width:100%}button{background:var(--green);color:white;cursor:pointer}.trial{padding:15px 0;border-bottom:1px solid var(--line);cursor:pointer}.trial:hover{background:#f0f8f5}.trial b{color:var(--green)}.trial small{color:#57716c;display:block}.score{float:right;font-weight:650}.detail-score{font-size:36px;font-weight:650;color:var(--green)}.muted{color:#5c746f;font-size:14px}h2{font-size:21px;margin:0 0 12px}h3{font-size:17px;margin:24px 0 8px}.factor{display:flex;justify-content:space-between;gap:20px;padding:6px 0;font-size:14px;border-bottom:1px solid #eff3f1}.factor span{overflow-wrap:anywhere}blockquote{margin:10px 0;padding:12px 16px;background:#f3f7f6;border-left:3px solid #5ca694;font-size:14px}summary{cursor:pointer;color:var(--green)}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 system-ui}a{color:var(--green)}.error{color:#8f3027}footer{margin-top:24px;font-size:13px;color:#5c746f}@media(max-width:900px){.layout{grid-template-columns:1fr}h1{font-size:26px}}
+:root{color-scheme:light;--ink:#163034;--green:#086d64;--line:#d8e5e3;--muted:#5c746f}
+*{box-sizing:border-box}body{margin:0;background:#f3f7f6;color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+header{background:#123b3e;color:white;padding:32px max(24px,5vw)}header small{letter-spacing:.12em;color:#b6dfd7}
+h1{margin:8px 0;font-size:32px;font-weight:600}header p{max-width:900px;color:#d5e7e4;margin-bottom:0}
+main{padding:24px max(24px,5vw)}[hidden]{display:none!important}
+.tabs{display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap}.tabs button{background:white;color:var(--green)}.tabs button[aria-selected="true"]{background:var(--green);color:white}
+.notice{border-left:4px solid #b98531;padding:14px 18px;background:#fff5e4;border-radius:4px;margin:16px 0}
+.layout{display:grid;grid-template-columns:minmax(310px,1fr) minmax(450px,1.6fr);gap:24px}
+.card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px;min-width:0;margin-bottom:24px}
+.toolbar{display:flex;gap:12px;margin:16px 0;align-items:center;flex-wrap:wrap}
+input,button,select{font:inherit;padding:10px 14px;border:1px solid #b6cbc6;border-radius:6px}input{width:100%}
+button{background:var(--green);color:white;cursor:pointer}select{max-width:100%;background:white;color:var(--ink)}
+a{color:var(--green)}.muted{color:var(--muted);font-size:14px}.error{color:#8f3027}.badge{display:inline-block;background:#edf5f2;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:13px;color:var(--green)}
+h2{font-size:22px;margin:0 0 10px}h3{font-size:17px;margin:20px 0 8px}p{margin:8px 0 14px}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;margin:16px 0}th,td{text-align:left;border-bottom:1px solid var(--line);padding:12px;vertical-align:top}thead th{color:var(--muted);font-weight:600}.numeric{text-align:right;white-space:nowrap}tr.selected{background:#edf7f3}
+.review-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}.review-output{min-width:0}.review-output th,.review-output td{padding:9px 6px}.review-output td:nth-child(2){overflow-wrap:anywhere}
+.trial{padding:15px 0;border-bottom:1px solid var(--line);cursor:pointer}.trial:hover{background:#f0f8f5}.trial b{color:var(--green)}.trial small{color:#57716c;display:block}.score{float:right;font-weight:650}.detail-score{font-size:36px;font-weight:650;color:var(--green)}
+.factor{display:flex;justify-content:space-between;gap:20px;padding:6px 0;font-size:14px;border-bottom:1px solid #eff3f1}.factor span{overflow-wrap:anywhere}
+blockquote{margin:10px 0;padding:12px 16px;background:#f3f7f6;border-left:3px solid #5ca694;font-size:14px}
+summary{cursor:pointer;color:var(--green);margin:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 system-ui}footer{margin-top:12px;font-size:13px;color:var(--muted)}
+@media(max-width:900px){.layout,.review-columns{grid-template-columns:1fr}h1{font-size:26px}.card{padding:18px}th,td{padding:10px 8px}}
+@media(max-width:650px){#extraction-results table th:nth-child(4),#extraction-results table td:nth-child(4),#extraction-results table th:nth-child(6),#extraction-results table td:nth-child(6){display:none}}
 </style>
-<header><small>PUBLIC-DATA RESEARCH · AACT</small><h1>Clinical Trial Research Explorer</h1><p>Explore a frozen historical portfolio, model associations and the registry passages behind each report.</p></header>
-<main><div class="notice"><strong>A conditional research estimate.</strong> These scores compare trials reported Completed or Terminated at five years. Most eligible trials were unresolved or had other statuses. This is a retrospective demonstration, not a clinical tool or a probability for every new trial.</div>
-<div class="layout"><section class="card"><h2>Historical review queue</h2><div class="muted" id="scope">Loading the verified portfolio…</div><div class="toolbar"><input id="search" aria-label="Search trials" placeholder="Search NCT ID or title"></div><div id="queue"></div></section>
+</head>
+<body>
+<header><small>PUBLIC-DATA RESEARCH · API v0.3.0</small><h1>Clinical Trial Research Explorer</h1><p>Compare the latest extraction experiment, inspect the AI secondary review and explore evidence from the historical trial portfolio.</p></header>
+<main>
+<nav class="tabs" role="tablist" aria-label="Research views">
+<button id="research-tab" role="tab" aria-selected="true" aria-controls="research-panel">Extraction results</button>
+<button id="portfolio-tab" role="tab" aria-selected="false" aria-controls="portfolio-panel">Trial portfolio</button>
+</nav>
+<section id="research-panel" role="tabpanel" aria-labelledby="research-tab">
+<section class="card" aria-live="polite"><span class="badge">Frozen V3 experiment</span><h2 style="margin-top:12px">Extraction performance</h2><div id="extraction-results"><p class="muted">Loading saved benchmark results…</p></div></section>
+<section class="card"><h2>AI secondary review</h2><p class="muted" id="review-scope">Loading the saved AI review…</p><div class="toolbar"><label for="review-select">Review case</label><select id="review-select" disabled><option>Loading…</option></select><a href="/extraction/review/report">Full AI review</a></div><div id="review-detail" aria-live="polite"></div></section>
+</section>
+<section id="portfolio-panel" role="tabpanel" aria-labelledby="portfolio-tab" hidden>
+<div class="notice"><strong>A conditional research estimate.</strong> These scores compare trials reported Completed or Terminated at five years. Most eligible trials were unresolved or had other statuses. This is a retrospective demonstration, not a clinical tool or a probability for every new trial.</div>
+<div class="layout"><section class="card"><h2>Historical trial queue</h2><div class="muted" id="scope">Loading the verified portfolio…</div><div class="toolbar"><input id="search" aria-label="Search trials" placeholder="Search NCT ID or title"></div><div id="queue"></div></section>
 <section class="card" id="detail"><h2>Inspect a trial</h2><p>Select a record to see its baseline evidence, research score and associated model factors.</p></section></div>
-<footer>Frozen 2021 baseline portfolio · Five-year outcome selection · Sources and model versions appear in each report · <a href="/docs">Read-only API</a></footer></main>
+</section>
+<footer>Saved research results · <a href="/docs">API documentation</a> · <a href="/extraction/report">Experiment report</a> · <a href="/monitoring">Service status</a></footer>
+</main>
 <script>
-const el=id=>document.getElementById(id);const esc=s=>String(s??'Unreported').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let trials=[];
-function draw(){let q=el('search').value.toLowerCase(),shown=trials.filter(t=>(t.nct_id+' '+t.title).toLowerCase().includes(q));el('queue').innerHTML=shown.slice(0,60).map(t=>`<div class="trial" tabindex="0" role="button" data-id="${esc(t.nct_id)}"><span class="score">${(100*t.probability).toFixed(1)}%</span><b>${esc(t.nct_id)}</b><div>${esc(t.title)}</div><small>${esc(t.phase)} · ${esc(t.sponsor_class)}</small></div>`).join('')||'<p>No matching trial.</p>';document.querySelectorAll('.trial').forEach(n=>{n.onclick=()=>show(n.dataset.id);n.onkeydown=e=>{if(e.key==='Enter')show(n.dataset.id)}})}
-async function show(id){el('detail').innerHTML='<p>Building the evidence report…</p>';try{let r=await fetch('/trials/'+encodeURIComponent(id)+'/report');if(!r.ok)throw Error('Report unavailable');let {packet:p,report_markdown:md}=await r.json();el('detail').innerHTML=`<div class="muted">${esc(p.nct_id)} · Baseline ${esc(p.prediction_date)}</div><h2>${esc(p.title)}</h2><div class="detail-score">${esc(p.probability_display)}</div><div class="muted">Conditional research estimate · ${p.percentile.toFixed(1)} percentile of the 2020 calibration reference</div><h3>Associated model factors</h3><div class="muted">${esc(p.attributions.method)} · calibrated log-odds, not causal effects. Text components are latent dimensions, not named clinical reasons.</div>${p.attributions.factors.map(f=>`<div class="factor"><span>${esc(f.feature)}</span><b>${f.contribution>=0?'+':''}${f.contribution.toFixed(3)}</b></div>`).join('')}<h3>Eligibility evidence</h3><div class="muted">Experimental entity labels; exact source quotes are verified. Read the surrounding text before interpretation.${p.extraction_truncated?' Only a budgeted prefix was extracted.':''}</div>${p.extractions.slice(0,6).map(i=>`<blockquote><b>${esc(i.kind)}</b>: ${esc(i.evidence)}<div class="muted">${esc(i.citation)} · characters ${i.start}–${i.end}</div></blockquote>`).join('')||'<p>No validated extraction available.</p>'}<h3>Missing information</h3><ul>${p.missing_information.map(m=>`<li>${esc(m)}</li>`).join('')||'<li>No missing fields among the checked inputs.</li>'}</ul><details><summary>Read full source criteria</summary><pre>${esc(p.sources[0].text)}</pre></details><details><summary>Report and provenance</summary><pre>${esc(md)}</pre></details>`}catch(e){el('detail').innerHTML='<p class="error">'+esc(e.message)+'</p>'}}
-fetch('/portfolio?limit=1000').then(r=>{if(!r.ok)throw Error('Research artifacts are unavailable');return r.json()}).then(d=>{trials=d.trials;el('scope').textContent=d.total+' trials · '+d.scope;draw();if(trials.length)show(trials[0].nct_id)}).catch(e=>{el('scope').textContent=e.message;el('scope').className='error'});el('search').oninput=draw;
-</script></html>
+const el=id=>document.getElementById(id);
+const esc=s=>String(s??'Unreported').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=n=>(100*n).toFixed(1)+'%';
+const systemNames={original_llm:'Original LLM',llm_v3:'Revised LLM + NER',llm_only:'Revised LLM alone',token_ner:'Token NER alone',rules:'Regex rules'};
+const verdictNames={exact:'Exact match',boundary_overlap:'Boundary mismatch',type_overlap:'Type mismatch',no_target_overlap:'No matching target annotation'};
+let trials=[],caseRequest=0;
+
+async function getJSON(url){const r=await fetch(url);if(!r.ok)throw Error(r.status===503?'Saved research artifacts are unavailable.':'Unable to load the requested research record.');return r.json()}
+function selectPanel(name){for(const panel of ['research','portfolio']){el(panel+'-panel').hidden=panel!==name;el(panel+'-tab').setAttribute('aria-selected',String(panel===name))}}
+el('research-tab').onclick=()=>selectPanel('research');el('portfolio-tab').onclick=()=>selectPanel('portfolio');
+
+async function loadExtraction(){
+  try{
+    const d=await getJSON('/extraction/evaluation');
+    const selected=d.systems.find(s=>s.id==='llm_v3').matched_prefix;
+    const original=d.systems.find(s=>s.id==='original_llm').matched_prefix;
+    const interval=d.paired_bootstrap.precision.delta_95_percentile_interval;
+    el('extraction-results').innerHTML=`<p class="muted">${d.dataset.records} documents · ${d.dataset.trials} trials · ${d.dataset.groups} groups · ${esc(d.dataset.name)} · Evaluated ${esc(d.evaluated_at.slice(0,10))}</p>
+      <p>Every system is scored on the same source prefix, up to ${d.dataset.primary_input_max_characters.toLocaleString()} characters. Exact span F1 requires the correct type and complete character boundaries.</p>
+      <div class="table-wrap"><table><thead><tr><th>System</th><th class="numeric">Format valid</th><th class="numeric">Precision</th><th class="numeric">Recall</th><th class="numeric">Exact span F1</th><th class="numeric">Exact documents</th></tr></thead><tbody>${d.systems.map(s=>{const m=s.matched_prefix;return `<tr class="${s.id==='llm_v3'?'selected':''}"><th>${esc(s.label)}</th><td class="numeric">${pct(m.document_schema_valid_rate)}</td><td class="numeric">${pct(m.micro.precision)}</td><td class="numeric">${pct(m.micro.recall)}</td><td class="numeric">${pct(m.micro.f1)}</td><td class="numeric">${m.exact_documents}/${m.records}</td></tr>`}).join('')}</tbody></table></div>
+      <p class="muted">Revised pipeline recall: ${pct(selected.micro.recall)}. Completely exact documents: ${selected.exact_documents}/${selected.records}, compared with ${original.exact_documents}/${original.records} for the original LLM.</p>
+      <div class="notice"><strong>Release withheld.</strong> The revised pipeline reaches ${pct(selected.micro.f1)} exact F1, compared with ${pct(original.micro.f1)} for the original LLM. It remains below the release targets of ${pct(d.release.numeric_thresholds.schema)} format validity, ${pct(d.release.numeric_thresholds.precision)} precision and ${pct(d.release.numeric_thresholds.f1)} F1. These endpoints serve saved experiment results.</div>
+      <p class="muted">The revised combination falls below token NER alone on this holdout. The precision difference's 95% interval is ${(interval[0]*100).toFixed(2)} to +${(interval[1]*100).toFixed(2)} percentage points and includes zero. Source quotation support does not establish clinical correctness.</p>
+      <p class="muted"><a href="${esc(d.links.report)}">Full experiment report</a> · <a href="/extraction/evaluation">Evaluation JSON</a> · Source: <a href="${esc(d.dataset.doi)}">${esc(d.dataset.name)}</a>, ${esc(d.dataset.license)}</p>`;
+  }catch(e){el('extraction-results').innerHTML='<p class="error">'+esc(e.message)+'</p>'}
+}
+
+function outputTable(label,out){
+  const m=out.metrics;
+  return `<section class="review-output"><h3>${esc(label)} · ${esc(systemNames[out.system]||out.system)}</h3><p class="muted">TP ${m.tp} · FP ${m.fp} · FN ${m.fn} · Exact F1 ${pct(m.f1)}</p><div class="table-wrap"><table><thead><tr><th>Type</th><th>Source text</th><th>Gold comparison</th></tr></thead><tbody>${out.prediction_checks.map(p=>`<tr><td>${esc(p.kind)}<div class="muted">${p.start}:${p.end}</div></td><td>${esc(p.evidence)}</td><td>${esc(verdictNames[p.benchmark_verdict]||p.benchmark_verdict)}</td></tr>`).join('')||'<tr><td colspan="3">No retained predictions.</td></tr>'}</tbody></table></div><details><summary>Missed target entities (${out.missing_gold.length})</summary><ul>${out.missing_gold.map(g=>`<li><b>${esc(g.kind)}</b>: ${esc(g.source_fragments.join(' … '))}</li>`).join('')||'<li>None.</li>'}</ul></details></section>`;
+}
+
+async function showCase(caseId){
+  const request=++caseRequest;el('review-detail').innerHTML='<p class="muted">Loading source evidence and AI findings…</p>';
+  try{
+    const d=await getJSON('/extraction/review/cases/'+encodeURIComponent(caseId));if(request!==caseRequest)return;
+    const c=d.case,n=c.ai_notes;
+    el('review-detail').innerHTML=`<span class="badge">${esc(c.case_id)} · ${esc(c.record_id)}</span><h3>AI findings</h3><p>${esc(n.finding)}</p><h3>Boundaries and omissions</h3><p>${esc(n.boundary_and_omissions)}</p><h3>Context and limits</h3><p>${esc(n.context)}</p><details><summary>Read the original source criteria</summary><pre>${esc(c.source)}</pre></details><div class="review-columns">${outputTable('A',c.A)}${outputTable('B',c.B)}</div><p class="muted">Reviewer: ${esc(d.reviewer)} · <a href="/extraction/review/cases/${esc(c.case_id)}">Case JSON</a> · Source: ${esc(d.source_citation.name)}, ${esc(d.source_citation.license)}</p>`;
+  }catch(e){if(request===caseRequest)el('review-detail').innerHTML='<p class="error">'+esc(e.message)+'</p>'}
+}
+
+async function loadReview(){
+  try{
+    const d=await getJSON('/extraction/review');
+    el('review-scope').textContent=`${d.reviewed_cases}/12 cases reviewed by ${d.reviewer}. Findings cover types, boundaries, omissions and source context. Clinical eligibility logic has not been validated.`;
+    el('review-select').innerHTML=d.cases.map(c=>`<option value="${esc(c.case_id)}">${esc(c.case_id)} · ${esc(c.record_id)}</option>`).join('');
+    el('review-select').disabled=false;el('review-select').onchange=e=>showCase(e.target.value);
+    if(d.cases.length)await showCase(d.cases[0].case_id);
+  }catch(e){el('review-scope').textContent=e.message;el('review-scope').className='error';el('review-select').innerHTML='<option>Unavailable</option>'}
+}
+
+function draw(){const q=el('search').value.toLowerCase(),shown=trials.filter(t=>(t.nct_id+' '+t.title).toLowerCase().includes(q));el('queue').innerHTML=shown.slice(0,60).map(t=>`<div class="trial" tabindex="0" role="button" data-id="${esc(t.nct_id)}"><span class="score">${pct(t.probability)}</span><b>${esc(t.nct_id)}</b><div>${esc(t.title)}</div><small>${esc(t.phase)} · ${esc(t.sponsor_class)}</small></div>`).join('')||'<p>No matching trial.</p>';document.querySelectorAll('.trial').forEach(n=>{n.onclick=()=>show(n.dataset.id);n.onkeydown=e=>{if(e.key==='Enter')show(n.dataset.id)}})}
+async function show(id){el('detail').innerHTML='<p>Building the evidence report…</p>';try{const {packet:p,report_markdown:md}=await getJSON('/trials/'+encodeURIComponent(id)+'/report');el('detail').innerHTML=`<div class="muted">${esc(p.nct_id)} · Baseline ${esc(p.prediction_date)}</div><h2>${esc(p.title)}</h2><div class="detail-score">${esc(p.probability_display)}</div><div class="muted">Conditional research estimate · ${p.percentile.toFixed(1)} percentile of the 2020 calibration reference</div><h3>Associated model factors</h3><div class="muted">${esc(p.attributions.method)} · calibrated log-odds, not causal effects. Text components are latent dimensions, not named clinical reasons.</div>${p.attributions.factors.map(f=>`<div class="factor"><span>${esc(f.feature)}</span><b>${f.contribution>=0?'+':''}${f.contribution.toFixed(3)}</b></div>`).join('')}<h3>Eligibility evidence</h3><div class="muted">Cached original cohort spans. The V3 CHIA benchmark is shown in the Extraction results tab. Exact source quotes are verified; entity types remain experimental.${p.extraction_truncated?' Only a budgeted prefix was extracted.':''}</div>${p.extractions.slice(0,6).map(i=>`<blockquote><b>${esc(i.kind)}</b>: ${esc(i.evidence)}<div class="muted">${esc(i.citation)} · characters ${i.start}–${i.end}</div></blockquote>`).join('')||'<p>No retained experimental spans.</p>'}<h3>Missing information</h3><ul>${p.missing_information.map(m=>`<li>${esc(m)}</li>`).join('')||'<li>No missing fields among the checked inputs.</li>'}</ul><details><summary>Read full source criteria</summary><pre>${esc(p.sources[0].text)}</pre></details><details><summary>Report and provenance</summary><pre>${esc(md)}</pre></details>`}catch(e){el('detail').innerHTML='<p class="error">'+esc(e.message)+'</p>'}}
+loadExtraction();loadReview();
+getJSON('/portfolio?limit=1000').then(d=>{trials=d.trials;el('scope').textContent=d.total+' trials · '+d.scope;draw();if(trials.length)show(trials[0].nct_id)}).catch(e=>{el('scope').textContent=e.message;el('scope').className='error'});
+el('search').oninput=draw;
+</script>
+</body>
+</html>

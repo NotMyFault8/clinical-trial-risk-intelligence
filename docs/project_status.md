@@ -50,6 +50,14 @@ own verification; this extraction experiment does not claim to resolve them.
 
 ## Operational references
 
+API v0.3.0 serves the saved V3 comparison, AI secondary review summaries, individual
+case evidence and Markdown reports. The dashboard displays these results alongside
+the historical portfolio. See [the API guide](api.md). Portfolio responses identify
+their existing cohort extraction cache; V3 benchmark results are exposed separately.
+The API update passed 37 non-integration tests and live HTTP checks against the
+632-trial portfolio and saved extraction data. The [verification record](../reports/api/v0_3_verification.json)
+also confirms the six V3 serving-bundle files and unchanged frozen inference hashes.
+
 The local application is served at `http://127.0.0.1:8000` when its required
 package and artifacts are available. Raw data, weights, caches and the virtual
 environment are excluded from version control. No public deployment is established.

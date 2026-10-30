@@ -12,6 +12,9 @@ files=['data/processed/baseline_features.parquet','data/processed/cohort_metadat
        'data/processed/embeddings.parquet','data/processed/llm_features.parquet',
        'artifacts/model_registry.json','artifacts/demo_portfolio.json','artifacts/extractions/cohort.jsonl',
        registry['model_path'],'reports/evaluation/holdout.json']
+files += ['reports/extraction/llm_v3/'+name for name in (
+    'fresh_evaluation.json','fresh_manifest.json','freeze.json',
+    'ai_second_review.json','summary.md','ai_second_review.md')]
 dest=ROOT/'artifacts/release_bundle';dest.mkdir(parents=True,exist_ok=True)
 for name in files:
     src=ROOT/name;target=dest/name;target.parent.mkdir(parents=True,exist_ok=True)

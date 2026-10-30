@@ -1,0 +1,35 @@
+{
+  "api_version": "0.3.0",
+  "verified_at": "2026-10-30T11:39:33.451289+00:00",
+  "unit_suite": {
+    "command": ".venv/bin/python -m pytest -m \"not integration\" -q -p no:cacheprovider",
+    "passed": 37,
+    "deselected": 3
+  },
+  "live_http_statuses": {
+    "/health": 200,
+    "/portfolio?limit=1": 200,
+    "/evaluation": 200,
+    "/monitoring": 200,
+    "/openapi.json": 200,
+    "/extraction/evaluation": 200,
+    "/extraction/review": 200,
+    "/extraction/review/cases/review-01": 200,
+    "/extraction/report": 200,
+    "/extraction/review/report": 200,
+    "/trials/NCT04919512/report": 200
+  },
+  "served_evaluation_matches_saved_micro_scores": true,
+  "ai_secondary_review_cases_served": 12,
+  "portfolio_trials_available": 632,
+  "portfolio_extraction_provenance": "cached_original_cohort_spans",
+  "serving_bundle_files": 15,
+  "v3_bundle_files_verified": 6,
+  "frozen_inference_code_hashes_unchanged": true,
+  "browser_checks": [
+    "Extraction comparison visible",
+    "AI case selector loads another case",
+    "Historical portfolio and original extraction provenance visible"
+  ],
+  "scope": "Local API and browser verification; no container rebuild or model rerun"
+}
