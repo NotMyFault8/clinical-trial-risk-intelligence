@@ -1,0 +1,666 @@
+{
+  "evaluated_at": "2026-10-30T10:36:02.478985+00:00",
+  "freeze_sha256": "920e8452e64eb981bb8560a1e8ecd331a4c8c7563e35c45868596bc72833cf39",
+  "predictions_sha256": "d090e411165dc800aa35954a7a27b10a6107ab1cfd76d3d4c1765dfb1b3a5997",
+  "model": "1.5b",
+  "mode": "quotes",
+  "fusion": "union",
+  "scores": {
+    "llm_v3": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 316,
+          "fp": 834,
+          "fn": 275,
+          "precision": 0.2747826086956522,
+          "recall": 0.5346869712351946,
+          "f1": 0.3630097645031591
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 95,
+            "fp": 294,
+            "fn": 86,
+            "precision": 0.2442159383033419,
+            "recall": 0.5248618784530387,
+            "f1": 0.3333333333333333
+          },
+          "Value": {
+            "tp": 127,
+            "fp": 257,
+            "fn": 101,
+            "precision": 0.3307291666666667,
+            "recall": 0.5570175438596491,
+            "f1": 0.4150326797385621
+          },
+          "Temporal": {
+            "tp": 94,
+            "fp": 283,
+            "fn": 88,
+            "precision": 0.2493368700265252,
+            "recall": 0.5164835164835165,
+            "f1": 0.3363148479427549
+          }
+        },
+        "document_schema_valid_rate": 0.88,
+        "exact_document_match_rate": 0.07,
+        "exact_documents": 7,
+        "documents_with_predictions": 93,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 353,
+          "fp": 942,
+          "fn": 313,
+          "precision": 0.2725868725868726,
+          "recall": 0.53003003003003,
+          "f1": 0.36002039775624683
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 102,
+            "fp": 345,
+            "fn": 97,
+            "precision": 0.22818791946308725,
+            "recall": 0.5125628140703518,
+            "f1": 0.3157894736842105
+          },
+          "Value": {
+            "tp": 137,
+            "fp": 285,
+            "fn": 110,
+            "precision": 0.3246445497630332,
+            "recall": 0.5546558704453441,
+            "f1": 0.40956651718983555
+          },
+          "Temporal": {
+            "tp": 114,
+            "fp": 312,
+            "fn": 106,
+            "precision": 0.2676056338028169,
+            "recall": 0.5181818181818182,
+            "f1": 0.35294117647058826
+          }
+        },
+        "document_schema_valid_rate": 0.87,
+        "exact_document_match_rate": 0.07,
+        "exact_documents": 7,
+        "documents_with_predictions": 93,
+        "gold_spans_outside_scope": 0
+      }
+    },
+    "llm_only": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 150,
+          "fp": 392,
+          "fn": 441,
+          "precision": 0.2767527675276753,
+          "recall": 0.25380710659898476,
+          "f1": 0.264783759929391
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 59,
+            "fp": 158,
+            "fn": 122,
+            "precision": 0.271889400921659,
+            "recall": 0.3259668508287293,
+            "f1": 0.2964824120603015
+          },
+          "Value": {
+            "tp": 54,
+            "fp": 122,
+            "fn": 174,
+            "precision": 0.3068181818181818,
+            "recall": 0.23684210526315788,
+            "f1": 0.26732673267326734
+          },
+          "Temporal": {
+            "tp": 37,
+            "fp": 112,
+            "fn": 145,
+            "precision": 0.2483221476510067,
+            "recall": 0.2032967032967033,
+            "f1": 0.22356495468277945
+          }
+        },
+        "document_schema_valid_rate": 0.88,
+        "exact_document_match_rate": 0.08,
+        "exact_documents": 8,
+        "documents_with_predictions": 87,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 168,
+          "fp": 426,
+          "fn": 498,
+          "precision": 0.2828282828282828,
+          "recall": 0.25225225225225223,
+          "f1": 0.26666666666666666
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 65,
+            "fp": 178,
+            "fn": 134,
+            "precision": 0.2674897119341564,
+            "recall": 0.32663316582914576,
+            "f1": 0.29411764705882354
+          },
+          "Value": {
+            "tp": 59,
+            "fp": 133,
+            "fn": 188,
+            "precision": 0.3072916666666667,
+            "recall": 0.2388663967611336,
+            "f1": 0.26879271070615035
+          },
+          "Temporal": {
+            "tp": 44,
+            "fp": 115,
+            "fn": 176,
+            "precision": 0.27672955974842767,
+            "recall": 0.2,
+            "f1": 0.23218997361477572
+          }
+        },
+        "document_schema_valid_rate": 0.87,
+        "exact_document_match_rate": 0.08,
+        "exact_documents": 8,
+        "documents_with_predictions": 88,
+        "gold_spans_outside_scope": 0
+      }
+    },
+    "original_llm": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 58,
+          "fp": 185,
+          "fn": 533,
+          "precision": 0.23868312757201646,
+          "recall": 0.09813874788494077,
+          "f1": 0.13908872901678657
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 21,
+            "fp": 99,
+            "fn": 160,
+            "precision": 0.175,
+            "recall": 0.11602209944751381,
+            "f1": 0.13953488372093023
+          },
+          "Value": {
+            "tp": 27,
+            "fp": 40,
+            "fn": 201,
+            "precision": 0.40298507462686567,
+            "recall": 0.11842105263157894,
+            "f1": 0.18305084745762712
+          },
+          "Temporal": {
+            "tp": 10,
+            "fp": 46,
+            "fn": 172,
+            "precision": 0.17857142857142858,
+            "recall": 0.054945054945054944,
+            "f1": 0.08403361344537816
+          }
+        },
+        "document_schema_valid_rate": 0.76,
+        "exact_document_match_rate": 0.08,
+        "exact_documents": 8,
+        "documents_with_predictions": 64,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 58,
+          "fp": 185,
+          "fn": 608,
+          "precision": 0.23868312757201646,
+          "recall": 0.08708708708708708,
+          "f1": 0.1276127612761276
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 21,
+            "fp": 99,
+            "fn": 178,
+            "precision": 0.175,
+            "recall": 0.10552763819095477,
+            "f1": 0.13166144200626959
+          },
+          "Value": {
+            "tp": 27,
+            "fp": 40,
+            "fn": 220,
+            "precision": 0.40298507462686567,
+            "recall": 0.10931174089068826,
+            "f1": 0.17197452229299362
+          },
+          "Temporal": {
+            "tp": 10,
+            "fp": 46,
+            "fn": 210,
+            "precision": 0.17857142857142858,
+            "recall": 0.045454545454545456,
+            "f1": 0.07246376811594203
+          }
+        },
+        "document_schema_valid_rate": 0.76,
+        "exact_document_match_rate": 0.08,
+        "exact_documents": 8,
+        "documents_with_predictions": 64,
+        "gold_spans_outside_scope": 0
+      }
+    },
+    "token_ner": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 261,
+          "fp": 533,
+          "fn": 330,
+          "precision": 0.32871536523929473,
+          "recall": 0.4416243654822335,
+          "f1": 0.3768953068592058
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 71,
+            "fp": 186,
+            "fn": 110,
+            "precision": 0.27626459143968873,
+            "recall": 0.39226519337016574,
+            "f1": 0.3242009132420091
+          },
+          "Value": {
+            "tp": 110,
+            "fp": 145,
+            "fn": 118,
+            "precision": 0.43137254901960786,
+            "recall": 0.4824561403508772,
+            "f1": 0.4554865424430642
+          },
+          "Temporal": {
+            "tp": 80,
+            "fp": 202,
+            "fn": 102,
+            "precision": 0.28368794326241137,
+            "recall": 0.43956043956043955,
+            "f1": 0.3448275862068966
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.12,
+        "exact_documents": 12,
+        "documents_with_predictions": 87,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 293,
+          "fp": 619,
+          "fn": 373,
+          "precision": 0.32127192982456143,
+          "recall": 0.43993993993993996,
+          "f1": 0.37135614702154623
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 77,
+            "fp": 223,
+            "fn": 122,
+            "precision": 0.25666666666666665,
+            "recall": 0.3869346733668342,
+            "f1": 0.30861723446893785
+          },
+          "Value": {
+            "tp": 118,
+            "fp": 164,
+            "fn": 129,
+            "precision": 0.41843971631205673,
+            "recall": 0.4777327935222672,
+            "f1": 0.44612476370510395
+          },
+          "Temporal": {
+            "tp": 98,
+            "fp": 232,
+            "fn": 122,
+            "precision": 0.296969696969697,
+            "recall": 0.44545454545454544,
+            "f1": 0.3563636363636364
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.12,
+        "exact_documents": 12,
+        "documents_with_predictions": 87,
+        "gold_spans_outside_scope": 0
+      }
+    },
+    "rules": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 75,
+          "fp": 233,
+          "fn": 516,
+          "precision": 0.2435064935064935,
+          "recall": 0.12690355329949238,
+          "f1": 0.1668520578420467
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 20,
+            "fp": 44,
+            "fn": 161,
+            "precision": 0.3125,
+            "recall": 0.11049723756906077,
+            "f1": 0.16326530612244897
+          },
+          "Value": {
+            "tp": 39,
+            "fp": 80,
+            "fn": 189,
+            "precision": 0.3277310924369748,
+            "recall": 0.17105263157894737,
+            "f1": 0.22478386167146974
+          },
+          "Temporal": {
+            "tp": 16,
+            "fp": 109,
+            "fn": 166,
+            "precision": 0.128,
+            "recall": 0.08791208791208792,
+            "f1": 0.10423452768729642
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.17,
+        "exact_documents": 17,
+        "documents_with_predictions": 71,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 92,
+          "fp": 267,
+          "fn": 574,
+          "precision": 0.2562674094707521,
+          "recall": 0.13813813813813813,
+          "f1": 0.1795121951219512
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 23,
+            "fp": 53,
+            "fn": 176,
+            "precision": 0.3026315789473684,
+            "recall": 0.11557788944723618,
+            "f1": 0.16727272727272727
+          },
+          "Value": {
+            "tp": 42,
+            "fp": 88,
+            "fn": 205,
+            "precision": 0.3230769230769231,
+            "recall": 0.1700404858299595,
+            "f1": 0.22281167108753316
+          },
+          "Temporal": {
+            "tp": 27,
+            "fp": 126,
+            "fn": 193,
+            "precision": 0.17647058823529413,
+            "recall": 0.12272727272727273,
+            "f1": 0.1447721179624665
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.17,
+        "exact_documents": 17,
+        "documents_with_predictions": 71,
+        "gold_spans_outside_scope": 0
+      }
+    },
+    "candidate_pool": {
+      "matched_prefix": {
+        "scope": "legacy_1800_character_prefix",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 335,
+          "fp": 1127,
+          "fn": 256,
+          "precision": 0.22913816689466485,
+          "recall": 0.5668358714043993,
+          "f1": 0.3263516804676084
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 82,
+            "fp": 274,
+            "fn": 99,
+            "precision": 0.2303370786516854,
+            "recall": 0.4530386740331492,
+            "f1": 0.3054003724394786
+          },
+          "Value": {
+            "tp": 143,
+            "fp": 369,
+            "fn": 85,
+            "precision": 0.279296875,
+            "recall": 0.6271929824561403,
+            "f1": 0.3864864864864865
+          },
+          "Temporal": {
+            "tp": 110,
+            "fp": 484,
+            "fn": 72,
+            "precision": 0.18518518518518517,
+            "recall": 0.6043956043956044,
+            "f1": 0.28350515463917525
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.11,
+        "exact_documents": 11,
+        "documents_with_predictions": 88,
+        "gold_spans_outside_scope": 75
+      },
+      "full_text": {
+        "scope": "full_text",
+        "records": 100,
+        "trials": 50,
+        "groups": 50,
+        "micro": {
+          "tp": 378,
+          "fp": 1307,
+          "fn": 288,
+          "precision": 0.22433234421364986,
+          "recall": 0.5675675675675675,
+          "f1": 0.3215652913653764
+        },
+        "per_type": {
+          "Measurement": {
+            "tp": 88,
+            "fp": 324,
+            "fn": 111,
+            "precision": 0.21359223300970873,
+            "recall": 0.44221105527638194,
+            "f1": 0.28805237315875615
+          },
+          "Value": {
+            "tp": 151,
+            "fp": 417,
+            "fn": 96,
+            "precision": 0.2658450704225352,
+            "recall": 0.611336032388664,
+            "f1": 0.37055214723926383
+          },
+          "Temporal": {
+            "tp": 139,
+            "fp": 566,
+            "fn": 81,
+            "precision": 0.1971631205673759,
+            "recall": 0.6318181818181818,
+            "f1": 0.3005405405405405
+          }
+        },
+        "document_schema_valid_rate": 1.0,
+        "exact_document_match_rate": 0.11,
+        "exact_documents": 11,
+        "documents_with_predictions": 88,
+        "gold_spans_outside_scope": 0
+      }
+    }
+  },
+  "operating": {
+    "matched_prefix": {
+      "requests": 129,
+      "valid_requests": 117,
+      "raw_request_schema_valid_rate": 0.9069767441860465,
+      "no_candidate_documents": 0,
+      "input_tokens": 138820,
+      "output_tokens": 11329,
+      "cached_or_original_amortized_seconds": 125.73592445778195,
+      "invalid_reasons": {
+        "Unterminated string starting at: line 1 column 1917 (char 1916)": 1,
+        "Unterminated string starting at: line 1 column 1861 (char 1860)": 1,
+        "Expecting value: line 1 column 1627 (char 1626)": 1,
+        "Unterminated string starting at: line 1 column 1772 (char 1771)": 1,
+        "Unterminated string starting at: line 1 column 2359 (char 2358)": 1,
+        "Unterminated string starting at: line 1 column 1439 (char 1438)": 1,
+        "Unterminated string starting at: line 1 column 1843 (char 1842)": 1,
+        "Unterminated string starting at: line 1 column 2367 (char 2366)": 1,
+        "Unterminated string starting at: line 1 column 2191 (char 2190)": 1,
+        "Unterminated string starting at: line 1 column 1668 (char 1667)": 1,
+        "Unterminated string starting at: line 1 column 1885 (char 1884)": 1,
+        "Unterminated string starting at: line 1 column 1851 (char 1850)": 1
+      },
+      "rejected_quote_count": 83,
+      "repeated_local_quote_count": 33,
+      "hosted_api_calls": 0
+    },
+    "full_text": {
+      "requests": 140,
+      "valid_requests": 125,
+      "raw_request_schema_valid_rate": 0.8928571428571429,
+      "no_candidate_documents": 0,
+      "input_tokens": 153856,
+      "output_tokens": 13304,
+      "cached_or_original_amortized_seconds": 140.89692883855605,
+      "invalid_reasons": {
+        "Unterminated string starting at: line 1 column 1917 (char 1916)": 1,
+        "Unterminated string starting at: line 1 column 1319 (char 1318)": 1,
+        "Unterminated string starting at: line 1 column 1861 (char 1860)": 1,
+        "Unterminated string starting at: line 1 column 1676 (char 1675)": 1,
+        "Expecting value: line 1 column 1627 (char 1626)": 1,
+        "Unterminated string starting at: line 1 column 1772 (char 1771)": 1,
+        "Unterminated string starting at: line 1 column 2359 (char 2358)": 1,
+        "Unterminated string starting at: line 1 column 1439 (char 1438)": 1,
+        "Unterminated string starting at: line 1 column 1843 (char 1842)": 1,
+        "Unterminated string starting at: line 1 column 2367 (char 2366)": 1,
+        "Unterminated string starting at: line 1 column 2191 (char 2190)": 1,
+        "Unterminated string starting at: line 1 column 1446 (char 1445)": 1,
+        "Unterminated string starting at: line 1 column 1668 (char 1667)": 1,
+        "Unterminated string starting at: line 1 column 1885 (char 1884)": 1,
+        "Unterminated string starting at: line 1 column 1851 (char 1850)": 1
+      },
+      "rejected_quote_count": 92,
+      "repeated_local_quote_count": 41,
+      "hosted_api_calls": 0
+    }
+  },
+  "improvement_checks": {
+    "schema": true,
+    "precision": true,
+    "f1": true
+  },
+  "improved_on_all_three": true,
+  "release_checks": {
+    "schema": false,
+    "precision": false,
+    "f1": false,
+    "target_cohort_human_review": false
+  },
+  "semantic_release_passed": false,
+  "human_review_completed": false,
+  "paired_bootstrap": {
+    "precision": {
+      "delta_95_percentile_interval": [
+        -0.035238709978918634,
+        0.10978627169715455
+      ]
+    },
+    "f1": {
+      "delta_95_percentile_interval": [
+        0.15898457626626397,
+        0.28255389265075537
+      ]
+    },
+    "resamples": 2000,
+    "unit": "near_duplicate_trial_group",
+    "seed": 31030
+  },
+  "gold_offset_discrepancies": [],
+  "environment": {
+    "mlx": "0.32.3",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.18.0",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1"
+  },
+  "limitations": [
+    "single newly held-out public CHIA sample, not a prospective or target-cohort clinical validation",
+    "pretraining contamination cannot be excluded",
+    "contiguous candidates cannot represent discontinuous entities",
+    "candidate hints may bias the LLM; quote mode can propose additional spans",
+    "human review prepared but not performed",
+    "schema pass and source fidelity are not clinical semantic accuracy"
+  ]
+}

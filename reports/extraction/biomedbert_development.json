@@ -1,0 +1,162 @@
+{
+  "method": "BiomedBERT token classification, five-fold grouped out-of-fold evaluation",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "training_data": "CHIA development split only; held-out trial/near-duplicate groups excluded per fold",
+  "test_split_used": false,
+  "device": "mps",
+  "max_length": 256,
+  "stride": 64,
+  "epochs": 3,
+  "batch_size": 8,
+  "training_annotation_policy": "BIO flat tags; keep longest contiguous mention in overlaps; skip discontinuous mentions",
+  "evaluation_policy": "original benchmark exact type and span; nested/overlapping and discontinuous gold retained",
+  "records": 100,
+  "trials": 50,
+  "groups": 50,
+  "folds": [
+    {
+      "fold": 1,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "steps": 36,
+      "micro": {
+        "tp": 20,
+        "fp": 51,
+        "fn": 114,
+        "precision": 0.28169014084507044,
+        "recall": 0.14925373134328357,
+        "f1": 0.19512195121951217
+      }
+    },
+    {
+      "fold": 2,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "steps": 36,
+      "micro": {
+        "tp": 24,
+        "fp": 49,
+        "fn": 80,
+        "precision": 0.3287671232876712,
+        "recall": 0.23076923076923078,
+        "f1": 0.2711864406779661
+      }
+    },
+    {
+      "fold": 3,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "steps": 36,
+      "micro": {
+        "tp": 15,
+        "fp": 34,
+        "fn": 138,
+        "precision": 0.30612244897959184,
+        "recall": 0.09803921568627451,
+        "f1": 0.1485148514851485
+      }
+    },
+    {
+      "fold": 4,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "steps": 36,
+      "micro": {
+        "tp": 8,
+        "fp": 46,
+        "fn": 58,
+        "precision": 0.14814814814814814,
+        "recall": 0.12121212121212122,
+        "f1": 0.13333333333333333
+      }
+    },
+    {
+      "fold": 5,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "steps": 36,
+      "micro": {
+        "tp": 19,
+        "fp": 36,
+        "fn": 85,
+        "precision": 0.34545454545454546,
+        "recall": 0.18269230769230768,
+        "f1": 0.2389937106918239
+      }
+    }
+  ],
+  "biomedbert": {
+    "per_type": {
+      "Measurement": {
+        "tp": 10,
+        "fp": 33,
+        "fn": 176,
+        "precision": 0.23255813953488372,
+        "recall": 0.053763440860215055,
+        "f1": 0.08733624454148473
+      },
+      "Value": {
+        "tp": 30,
+        "fp": 124,
+        "fn": 168,
+        "precision": 0.19480519480519481,
+        "recall": 0.15151515151515152,
+        "f1": 0.17045454545454544
+      },
+      "Temporal": {
+        "tp": 46,
+        "fp": 59,
+        "fn": 131,
+        "precision": 0.4380952380952381,
+        "recall": 0.2598870056497175,
+        "f1": 0.326241134751773
+      }
+    },
+    "micro": {
+      "tp": 86,
+      "fp": 216,
+      "fn": 475,
+      "precision": 0.2847682119205298,
+      "recall": 0.1532976827094474,
+      "f1": 0.19930475086906138
+    }
+  },
+  "comparison": {
+    "lightweight_token_ner_oof": {
+      "tp": 187,
+      "fp": 440,
+      "fn": 374,
+      "precision": 0.2982456140350877,
+      "recall": 0.3333333333333333,
+      "f1": 0.3148148148148148
+    },
+    "saved_zero_shot_llm_dev": {
+      "tp": 39,
+      "fp": 179,
+      "fn": 494,
+      "precision": 0.17889908256880735,
+      "recall": 0.07317073170731707,
+      "f1": 0.10386151797603196
+    },
+    "saved_rules_dev": {
+      "tp": 52,
+      "fp": 223,
+      "fn": 481,
+      "precision": 0.1890909090909091,
+      "recall": 0.0975609756097561,
+      "f1": 0.12871287128712872
+    }
+  },
+  "elapsed_seconds": 100.99223808303941,
+  "limitations": [
+    "small development set; exploratory only",
+    "BIO cannot faithfully express CHIA nested, overlapping or discontinuous annotations",
+    "not evaluated on the frozen test split and not eligible for release",
+    "base model pretraining can still overlap public biomedical source text; no label leakage from the hosted CHIA fine-tune is used"
+  ]
+}

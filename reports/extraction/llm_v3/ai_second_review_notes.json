@@ -1,0 +1,93 @@
+{
+  "title": "AI 二次复核：12 份冻结样本",
+  "reviewer": "Codex (AI)",
+  "review_round": 2,
+  "is_human_review": false,
+  "method": "AI逐条阅读12份A/B原文及输出，并核对CHIA原始标注；数值匹配由脚本复算，不作独立临床判定。",
+  "cases": [
+    {
+      "case_id": "review-01",
+      "finding": "A把gastro-oesophageal中的子串age当成Measurement；虽然字符能在原文中找到，但不是独立实体。B补回两个重复时间窗和Child-Pugh score等实体，同时把多种疾病名称、单字母或缩写片段归入Measurement，误报很多。",
+      "boundary_and_omissions": "B的> 6)多包含右括号；for 1 month prior to the enrollment in the trial比金标准多包含for；New York Heart Association等目标实体仍遗漏。",
+      "context": "这是一份排除标准。抽到疾病名或阈值并不等于已解析排除逻辑，不能据此生成患者入组结论。",
+      "evidence_quotes": ["gastro-oesophageal reflux disease (GERD)", "Child-Pugh score > 6", "within 2 months before study entry"]
+    },
+    {
+      "case_id": "review-02",
+      "finding": "A和B都保留HBsAg、HBeAg及serum viral load。B补出positive，但同时保留截断的serum viral，与完整实体重复。两组都把30 to 32 weeks标为Temporal；这条记录的金标准将其标为Value，gestation标为Measurement。",
+      "boundary_and_omissions": "B的in 30 to 32 weeks边界多了in；B漏掉gestation，两组都漏掉above 8log10 copies per mL。这条样本中新组合的精确F1低于旧模型，不能只展示改善样例。",
+      "context": "孕周在本条语料中是测量值，不是相对事件时间窗；应依据上下文和已固定的任务标签判断。",
+      "evidence_quotes": ["30 to 32 weeks of gestation", "positive HBsAg and HBeAg", "serum viral load above 8log10 copies per mL"]
+    },
+    {
+      "case_id": "review-03",
+      "finding": "A找到完整的within the past year，但又输出较短的past，并把同一时间窗重复标为Value。B没有保留实体。",
+      "boundary_and_omissions": "A把> 5 events per hour截成> 5；两组都未完整抽出apnea hypopnea index及其数值。renal function在这条记录的目标金标准中未标为Measurement，其临床合理性没有在本复核中裁定。",
+      "context": "时间窗、指数名称和单位构成不同信息；仅保留数字5会丢失每小时事件数的量纲。",
+      "evidence_quotes": ["within the past year", "apnea hypopnea index > 5 events per hour", "impaired renal function"]
+    },
+    {
+      "case_id": "review-04",
+      "finding": "金标准没有Measurement、Value、Temporal目标实体。B的空输出与本任务金标准完全一致。A将妊娠/哺乳状态、法律保护和保险相关描述当成Measurement，不符合本任务标签。",
+      "boundary_and_omissions": "B没有本任务范围内的误报或漏报；这不表示这些资格条件不存在或不重要。",
+      "context": "本轮仅评估三个实体类别，不对法律条款或妊娠状态做资格判断。",
+      "evidence_quotes": ["pregnant or breastfeeding woman", "measure of legal protection", "unaffiliated insurance"]
+    },
+    {
+      "case_id": "review-05",
+      "finding": "两组都将用量或频次当成目标实体。核对完整.ann后，1g to 2g a day和1 to 3 times a week实际标为Multiplier，cocaine-dependent标为Condition，因此本任务的目标金标准为空。",
+      "boundary_and_omissions": "B还产生明显未完成的片段between 1g to。两组在精确基准上都有3个误报；不能把金标准没有目标实体直接解释为原文没有数量信息。",
+      "context": "出现数字和时间单位并不足以决定Value或Temporal标签；药物用量/频次需要遵循语料类别范围。",
+      "evidence_quotes": ["between 1g to 2g a day", "1 to 3 times a week", "cocaine-dependent"]
+    },
+    {
+      "case_id": "review-06",
+      "finding": "B补回多个完整时间窗，召回显著高于A，但把疾病名、Live、Investigational、whichever和IV等片段误当Measurement，并输出多余的active等标签。",
+      "boundary_and_omissions": "两组输出30 days or 5 half-lives off drug，未对应金标准中的不连续30 days | off drug及另一条5 half-lives off drug。B仍漏掉while receiving trial medication和12 months off drug等完整时间片段。",
+      "context": "原文含whichever is longer以及多个不同排除条件。当前连续片段抽取不能表示取较长值的逻辑；不能把已复制的文本视为完整规则。",
+      "evidence_quotes": ["30 days or 5 half-lives off drug, whichever is longer", "while receiving trial medication", "12 months off drug"]
+    },
+    {
+      "case_id": "review-07",
+      "finding": "A正确保留Current，但把Current or recent整体作为Temporal，同时把整条感染描述、实验室异常和Pregnancy当成Value。B把infection和laboratory abnormalities当成Measurement。",
+      "boundary_and_omissions": "金标准分别标Current与recent；A漏掉独立的recent，B两者都漏掉。Clinically significant也不是这条记录的Temporal金标准。",
+      "context": "状态修饰词与其修饰的疾病/妊娠条件需要区分，不能用整条criterion替代实体。",
+      "evidence_quotes": ["Current or recent infection", "Clinically significant laboratory abnormalities", "Pregnancy"]
+    },
+    {
+      "case_id": "review-08",
+      "finding": "A恢复了多个重复的at Screening、完整年龄范围及<=0.70；B把年龄范围拆成>=40与<=80，且没有任何完整目标匹配。A仍产生age、NHANES、reference等不匹配Measurement。",
+      "boundary_and_omissions": "A把长肺功能测量名称截断；>=50 and <=70% of predicted normal缺少values；for at least 6 months prior to Visit 1漏for；score 2 or higher漏score。缩写和长复合实体仍是难点。",
+      "context": "原文同时有年龄、吸烟暴露、肺功能、给药步骤及临床评分。分段改善了覆盖，但没有可靠区分所有测量、剂量和时间描述。",
+      "evidence_quotes": [">=40 and <=80 years", ">=50 and <=70% of predicted normal values", "for at least 6 months prior to Visit 1", "score 2 or higher"]
+    },
+    {
+      "case_id": "review-09",
+      "finding": "B正确抽取hemoglobin、<8 g/dl和三个Temporal位置，比A的空输出覆盖更多。B把Human immunodeficiency virus当成Measurement，并把abnormal liver作为Value。",
+      "boundary_and_omissions": "正确边界应分为Value abnormal及Measurement liver enzymes，B两者都未精确完成。",
+      "context": "current、Previous和Current大小写及各自位置均需保留；疾病名称出现本身不能证明它是测量名称。",
+      "evidence_quotes": ["abnormal liver enzymes", "hemoglobin <8 g/dl", "Human immunodeficiency virus infection"]
+    },
+    {
+      "case_id": "review-10",
+      "finding": "A和B都保留Height及>40 Kg/ mm；A把身高阈值拆成< 4'和11\"，时间窗也截断。B完整保留时间窗，但多抽了疾病和整条排除条件。",
+      "boundary_and_omissions": "应保留完整< 4' 11\"及in the 24 hours prior to cesarean delivery。BMI在这条.ann中明确为Observation，不能因为它通常是测量指标就修改本次金标准。",
+      "context": "原文BMI单位写作Kg/ mm；本任务必须原样保留并标出可疑源文本，不能默默改成更常见单位。",
+      "evidence_quotes": ["Height < 4' 11\"", ">40 Kg/ mm", "in the 24 hours prior to cesarean delivery"]
+    },
+    {
+      "case_id": "review-11",
+      "finding": "完整标注中nonfunctional P-NET和hypervascularity属于Condition，CT/MRI属于Procedure，signed informed consent属于Informed_consent，因此三个目标类别的金标准为空。A把hypervascularity当Measurement；B将疾病/影像征象和知情同意混入Measurement、Value、Temporal。",
+      "boundary_and_omissions": "A有1个、B有3个基准误报。签署同意书的动作不是此处的Temporal实体。",
+      "context": "必须区分本次三个目标标签与完整临床信息，不应把所有医学概念强制分配到这三类。",
+      "evidence_quotes": ["nonfunctional P-NET", "hypervascularity", "signed informed consent"]
+    },
+    {
+      "case_id": "review-12",
+      "finding": "A补出完整liver aminotransferase concentrations、>5 times the upper limit of normal、Previous和at the time of enrollment，但也保留不完整短版本及无关组织名称。B只精确抽到at the time of enrollment。",
+      "boundary_and_omissions": "A漏掉Currently，并把Human Research Protection误当Measurement；Active、Acute、at、for不匹配此处的Temporal金标准。",
+      "context": "原文同时规定入组时的囚犯排除与入组后的例外，并有not including用药范围。当前输出没有解析这些否定/例外，不能据片段推断患者资格。",
+      "evidence_quotes": ["liver aminotransferase concentrations >5 times the upper limit of normal", "not including treatment of acute alcohol withdrawal syndrome", "subjects who become prisoners after being enrolled will be included"]
+    }
+  ]
+}

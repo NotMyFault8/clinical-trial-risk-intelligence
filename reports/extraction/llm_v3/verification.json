@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-30T10:40:33.135776+00:00",
+  "freeze_code_hashes_unchanged": true,
+  "prediction_hash_matches": true,
+  "independent_counts_match": true,
+  "systems": {
+    "llm_v3": {
+      "independent_exact_counts": {
+        "tp": 316,
+        "fp": 834,
+        "fn": 275
+      },
+      "source_quotes_verified": 1150,
+      "retained_items": 1150
+    },
+    "llm_only": {
+      "independent_exact_counts": {
+        "tp": 150,
+        "fp": 392,
+        "fn": 441
+      },
+      "source_quotes_verified": 542,
+      "retained_items": 542
+    },
+    "original_llm": {
+      "independent_exact_counts": {
+        "tp": 58,
+        "fp": 185,
+        "fn": 533
+      },
+      "source_quotes_verified": 243,
+      "retained_items": 243
+    },
+    "token_ner": {
+      "independent_exact_counts": {
+        "tp": 261,
+        "fp": 533,
+        "fn": 330
+      },
+      "source_quotes_verified": 794,
+      "retained_items": 794
+    }
+  },
+  "new_false_positive_patterns": {
+    "no_gold_overlap": 523,
+    "boundary_overlap": 252,
+    "type_overlap": 59
+  },
+  "unit_checks": {
+    "command": ".venv/bin/python -m pytest -m \"not integration\" -q -p no:cacheprovider",
+    "passed": 28,
+    "deselected": 3
+  },
+  "fresh_evaluation_not_retuned": true
+}

@@ -1,7 +1,10 @@
 # Project status and remaining gates
 
-Saved local research results are available, but clean-checkout reproducibility is
-blocked by the findings in the [repository audit](../reports/github_repository_audit_2026-10-07.md).
+Saved local research results are available. The missing source package and root
+ignore-rule conflict in the [historical audit](../reports/github_repository_audit_2026-10-07.md)
+were repaired by `4cb6985`; main CI passed at `62f5407` on 2026-10-08.
+End-to-end reproduction still requires external archives/models and verification
+of the remaining audit findings.
 The full release standard is **not** met: failed LLM components are withheld and
 independent report review remains unperformed. No clinical or prospective
 validation is claimed.
@@ -11,7 +14,7 @@ validation is claimed.
 | 1. Sources and problem definition | Eight pinned archives; conservative 90-day interval rule; five-year matched status sources; explicit conditional estimand | Feasible for limited retrospective research |
 | 2. Cohort and SQL | 5,703 primary trials; child aggregation before joins; unique keys, source-date checks and separate outcomes | Passed measured data checks |
 | 3. Predictive comparisons | Six families, fixed temporal splits, calibration, cluster intervals and sensitivities | Evaluated; no reliable TF-IDF AP gain established |
-| 4. Extraction | External human-annotated CHIA test, rules comparison, error analysis and operating measurements | Research experiment complete; semantic release failed |
+| 4. Extraction | Historical CHIA test and frozen 100-document V3 holdout; rules/NER/LLM comparisons; AI secondary review of 12 samples | Original-to-V3 F1 13.9% to 36.3% on the new holdout; below NER alone; semantic release failed; human review 0/12 |
 | 5. Reports | Typed packets, deterministic templates, 40 generated-report test cases, review forms | Templates verified; free-form generation failed; human review pending |
 | 6. Local packaging | API/dashboard, source/model checksums, container, dependency locks, CI configuration and monitoring | 24 local tests and 23 serving-container tests passed |
 
@@ -22,14 +25,20 @@ Historical local records report 632 verified evidence packets, 24 local tests,
 preserved in `reports/verification.json`; they are not a fresh verification of the
 published checkout. The phase table above summarizes those saved results.
 
+The 2026-10-30 extraction update passed 28 local non-integration tests (three
+integration tests deselected). Frozen code/prediction hashes and independent exact
+counts were checked in [V3 verification](../reports/extraction/llm_v3/verification.json).
+[AI secondary review](../reports/extraction/llm_v3/ai_second_review.md) covers all
+12 preselected samples and preserves the unfilled human-review forms. It is not
+independent human or clinical validation.
+
 The repository audit of commit `a0f2fd9183197b16340de9f3834f7bb3a6ab43e0`
 confirmed seven GitHub Actions test-collection failures caused by the missing
-`clinical_trial_risk.data` package. The root ignore rule also matches that source
-directory. Other outstanding findings include non-placeholder credentials in the
-example configuration, incomplete input-hash enforcement, and an existing-output
-guard that blocks the documented holdout reproduction workflow. See the audit for
-evidence and remediation details. This documentation update does not resolve those
-implementation findings or establish passing CI.
+`clinical_trial_risk.data` package. That package and the ignore rule were repaired
+on 2026-10-08. The subsequent [main-branch workflow](https://github.com/NotMyFault8/clinical-trial-risk-intelligence/actions/runs/37784370383)
+passed. Other audit findings, including example-configuration credentials,
+input-hash enforcement and the documented holdout-output workflow, require their
+own verification; this extraction experiment does not claim to resolve them.
 
 ## Release gates
 

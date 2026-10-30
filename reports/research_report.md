@@ -90,6 +90,16 @@ The final extractor uses pinned Qwen2.5-1.5B-Instruct weights, 4-bit local infer
 
 The same 2,412 primary resolved trials enter the exploratory LLM-feature risk comparison. Invalid outputs remain explicit failure flags; trials are never silently dropped. Any incremental discrimination cannot turn an inaccurate extractor into validated clinical understanding. No human adjudication of target-cohort extractions has been performed.
 
+## Revised local extractor: new CHIA holdout (2026-10-30)
+
+A separately frozen, previously unused CHIA sample contains 100 documents / 50 trials. Both primary systems receive the same maximum 1,800-character source prefix. The selected pipeline uses Qwen 1.5b, quotes output, union fusion, criterion-aware windows, development-trained NER/lexicon and two retrieved training examples. Selection and fusion use grouped development folds; fresh outputs are saved before fresh gold is read.
+
+Original versus revised document schema validity: **76.0% → 88.0%**; precision: **23.9% → 27.5%**; exact span F1: **13.9% → 36.3%**. Token NER without LLM scores 37.7% F1 on this same sample. This new sample is distinct from the historical 310-document test above.
+
+The precision difference's 95% group-bootstrap interval is [-3.52, +10.98] percentage points, which includes zero; the F1 difference interval is [+15.90, +28.26] points. Completely exact documents are 7/100 for the revised combination versus 8/100 for the original. LLM-only revised F1 is 26.5%; the union's gain cannot be attributed entirely to the LLM. The frozen combination does not outperform NER alone on this holdout.
+
+Semantic release passed: **False**. Schema validity is a format check; it does not establish clinical correctness. **AI secondary review / AI 二次复核: 12/12 completed by Codex (AI)**, with [per-span findings and omissions](extraction/llm_v3/ai_second_review.md). This unblinded AI review is not counted as human or clinical sign-off; real human review remains 0/12 with forms retained. The original downstream risk model and deterministic serving reports remain unchanged. See the [full V3 report](extraction/llm_v3/summary.md), including ablations, error counts, group-bootstrap intervals and full-text secondary scores.
+
 ## Generated reports
 
 On 40 frozen report cases, valid JSON rate was 0.0%. All generated reports failed the structured-output contract, so numeric/citation fidelity among accepted reports is not estimable. Zero accepted reports must not be interpreted as zero fabrication risk. All automated checks passed for 0.0% of cases. Deterministic templates reproduced the typed risk display in 100.0% of cases.

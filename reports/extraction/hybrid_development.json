@@ -1,0 +1,217 @@
+{
+  "method": "criterion-aware token NER, grouped five-fold out-of-fold evaluation",
+  "features": "local token context, token shape, numerical/unit/temporal cues, criterion boundaries",
+  "postprocessing": "BIO span decoding with original source character offsets; optional union with existing deterministic regex candidates",
+  "training_data": "CHIA development split only; grouped by near-duplicate cluster",
+  "records": 100,
+  "trials": 50,
+  "groups": 50,
+  "gold_segments_token_aligned": 565,
+  "folds": [
+    {
+      "fold": 1,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "micro": {
+        "tp": 37,
+        "fp": 121,
+        "fn": 97,
+        "precision": 0.23417721518987342,
+        "recall": 0.27611940298507465,
+        "f1": 0.2534246575342466
+      }
+    },
+    {
+      "fold": 2,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "micro": {
+        "tp": 37,
+        "fp": 114,
+        "fn": 67,
+        "precision": 0.24503311258278146,
+        "recall": 0.3557692307692308,
+        "f1": 0.2901960784313726
+      }
+    },
+    {
+      "fold": 3,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "micro": {
+        "tp": 54,
+        "fp": 80,
+        "fn": 99,
+        "precision": 0.40298507462686567,
+        "recall": 0.35294117647058826,
+        "f1": 0.37630662020905925
+      }
+    },
+    {
+      "fold": 4,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "micro": {
+        "tp": 28,
+        "fp": 65,
+        "fn": 38,
+        "precision": 0.3010752688172043,
+        "recall": 0.42424242424242425,
+        "f1": 0.35220125786163525
+      }
+    },
+    {
+      "fold": 5,
+      "train_records": 80,
+      "heldout_records": 20,
+      "heldout_groups": 10,
+      "micro": {
+        "tp": 31,
+        "fp": 60,
+        "fn": 73,
+        "precision": 0.34065934065934067,
+        "recall": 0.2980769230769231,
+        "f1": 0.317948717948718
+      }
+    }
+  ],
+  "token_ner": {
+    "per_type": {
+      "Measurement": {
+        "tp": 50,
+        "fp": 135,
+        "fn": 136,
+        "precision": 0.2702702702702703,
+        "recall": 0.26881720430107525,
+        "f1": 0.2695417789757413
+      },
+      "Value": {
+        "tp": 66,
+        "fp": 131,
+        "fn": 132,
+        "precision": 0.3350253807106599,
+        "recall": 0.3333333333333333,
+        "f1": 0.3341772151898734
+      },
+      "Temporal": {
+        "tp": 71,
+        "fp": 174,
+        "fn": 106,
+        "precision": 0.2897959183673469,
+        "recall": 0.4011299435028249,
+        "f1": 0.33649289099526064
+      }
+    },
+    "micro": {
+      "tp": 187,
+      "fp": 440,
+      "fn": 374,
+      "precision": 0.2982456140350877,
+      "recall": 0.3333333333333333,
+      "f1": 0.3148148148148148
+    }
+  },
+  "regex_candidates_rerun": {
+    "per_type": {
+      "Measurement": {
+        "tp": 16,
+        "fp": 45,
+        "fn": 170,
+        "precision": 0.26229508196721313,
+        "recall": 0.08602150537634409,
+        "f1": 0.12955465587044537
+      },
+      "Value": {
+        "tp": 25,
+        "fp": 57,
+        "fn": 173,
+        "precision": 0.3048780487804878,
+        "recall": 0.12626262626262627,
+        "f1": 0.17857142857142858
+      },
+      "Temporal": {
+        "tp": 15,
+        "fp": 137,
+        "fn": 162,
+        "precision": 0.09868421052631579,
+        "recall": 0.0847457627118644,
+        "f1": 0.0911854103343465
+      }
+    },
+    "micro": {
+      "tp": 56,
+      "fp": 239,
+      "fn": 505,
+      "precision": 0.18983050847457628,
+      "recall": 0.09982174688057041,
+      "f1": 0.1308411214953271
+    }
+  },
+  "hybrid_union": {
+    "per_type": {
+      "Measurement": {
+        "tp": 56,
+        "fp": 177,
+        "fn": 130,
+        "precision": 0.24034334763948498,
+        "recall": 0.3010752688172043,
+        "f1": 0.26730310262529833
+      },
+      "Value": {
+        "tp": 75,
+        "fp": 180,
+        "fn": 123,
+        "precision": 0.29411764705882354,
+        "recall": 0.3787878787878788,
+        "f1": 0.33112582781456956
+      },
+      "Temporal": {
+        "tp": 78,
+        "fp": 298,
+        "fn": 99,
+        "precision": 0.2074468085106383,
+        "recall": 0.4406779661016949,
+        "f1": 0.28209764918625674
+      }
+    },
+    "micro": {
+      "tp": 209,
+      "fp": 655,
+      "fn": 352,
+      "precision": 0.24189814814814814,
+      "recall": 0.37254901960784315,
+      "f1": 0.29333333333333333
+    }
+  },
+  "comparison": {
+    "saved_llm_dev_micro": {
+      "tp": 39,
+      "fp": 179,
+      "fn": 494,
+      "precision": 0.17889908256880735,
+      "recall": 0.07317073170731707,
+      "f1": 0.10386151797603196
+    },
+    "saved_rules_dev_micro": {
+      "tp": 52,
+      "fp": 223,
+      "fn": 481,
+      "precision": 0.1890909090909091,
+      "recall": 0.0975609756097561,
+      "f1": 0.12871287128712872
+    }
+  },
+  "elapsed_seconds": 2.0312172500416636,
+  "limitations": [
+    "small development corpus; exploratory only",
+    "character-level exact scoring penalizes token-boundary mismatches",
+    "discontinuous CHIA entities remain false negatives under the benchmark convention",
+    "no pretrained biomedical encoder; local environment has no SciSpaCy/BioBERT model",
+    "not evaluated on the frozen test split and not eligible for release"
+  ],
+  "test_split_used_for_training_or_scoring": false
+}

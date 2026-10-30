@@ -1,0 +1,57 @@
+{
+  "frozen_at": "2026-10-30T10:32:29.577618+00:00",
+  "selected_model": "1.5b",
+  "selected_mode": "quotes",
+  "selected_development_tag": "1.5b_quotes",
+  "selected_fusion": "union",
+  "fusion_development_sha256": "9d0a730a535fd813031fb91e778749e51e26dc1cc664354346c40da676ff21df",
+  "selected_model_provenance": {
+    "name": "1.5b",
+    "path": "artifacts/pretrained/qwen-4bit",
+    "weights": {
+      "model.safetensors": "5b6abb3e8bbb783216a1a034fe742de5f25a836f3c642910ce327199c51217e7"
+    },
+    "generation": "greedy; max_tokens=512; no repair or fallback"
+  },
+  "selection": "highest grouped-OOF development exact micro F1 over completed model/format variants and llm_only/union fusion, in matched legacy prefix",
+  "development_results_sha256": {
+    "1.5b": "1e434c64b12bbc87a608c218f2bea6298a40026f22544e5cdcf7f925567ebdb6",
+    "1.5b_quotes": "9b4e8a97058cd9f206dadb965fe3aeb17a3d88c639f63c9e858dfd6a1631dc84",
+    "7b_quotes": "ef68b1b416b8d26ebd9ed5fffd5a0a3f9d40d3b0e678849bf5150dc4f46979b6"
+  },
+  "fresh_manifest_sha256": "7c53a41e8fb168c18113a02515a1c71cc79aaa19f8311bf082851a4dbb24a4fa",
+  "code_sha256": {
+    "scripts/experiment_llm_v3.py": "66e5a8b0e753edeae7f97bd83b9b5b3b924baab1c6ea9d3a4601a4c4a1bc5e36",
+    "prompts/extract_candidates_v3.txt": "6443dcf900abf0ef12e0c08439791ecd5e971c6bdf204a57853089ddd9662991",
+    "prompts/extract_quotes_v3.txt": "5604ffa551634a371bbb1f9ecce14766155615031e34ecb82be6e1f867752b03",
+    "src/clinical_trial_risk/llm/candidate_protocol.py": "48c1da1b962b4ee983b7e5e61063330a95e6e67f667479372d5d67cae95873cb",
+    "src/clinical_trial_risk/llm/extract.py": "8d6237cfd8b8eefd3ee437601f57fc12d1be8f6e5e8ec4c251b0d7619fec60d8",
+    "prompts/extract_v1.txt": "74e5b8af3ca4302faef92bb83d0a06d3b549ec412b5f4d30ccf40afef0576a8b",
+    "configs/pretrained.json": "0baab0c191f9f3dd31f653b67209d802c3363a3f8ed93d650782628cb8d273b9",
+    "configs/chia_source.json": "d38ac29f63805383afd5c1db3a2057350b1997eb72e3e83347fb316d747cb16e",
+    "scripts/experimental_hybrid_ner.py": "71bfc25e95e31fbd5e678be2aa6de2b8ef8959f4ee04b7687d5ad6e23dd5468e",
+    "scripts/experimental_criterion_parser.py": "58854de91e45547f0348989ce3f80babfa5ef1a43f63548463c0d8bc8b8dd60c"
+  },
+  "development_benchmark_sha256": "1c37c722126e079073b9f0c12a772effa7ec84a318559700344edb3b322b7a76",
+  "release_thresholds": {
+    "version": "span-release-v1",
+    "frozen_before_test": true,
+    "selected_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "prompt": "prompts/extract_v1.txt",
+    "selection_basis": "Small development model had higher exact-span micro F1 than 7B and lower latency; both failed semantic release criteria. Strict duplicate-key validation is applied to all final outputs.",
+    "test_min_schema_valid_rate": 0.98,
+    "test_min_micro_precision": 0.9,
+    "test_min_micro_f1": 0.65,
+    "retained_evidence_must_match_exactly": true,
+    "target_cohort_human_semantic_review_required": true,
+    "target_cohort_human_semantic_review_completed": false,
+    "downstream_comparison": "Exploratory research only, with failures retained as flags; not eligible for deployed model selection unless extraction gates pass.",
+    "no_test_driven_prompt_changes": true
+  },
+  "publish_improvement_rule": "On the new holdout, all of document schema rate, micro precision, exact micro F1 exceed the original LLM in the same legacy prefix scope",
+  "secondary_scope": "full source; include all discontinuous and nested gold entities",
+  "primary_inputs": "Both systems receive exactly visible_text(source), maximum 1800 characters",
+  "fresh_gold_used_during_development": false,
+  "human_review_policy": "Prepare a human score sheet; AI review cannot mark human review complete",
+  "pretraining_contamination": "Public CHIA/source text may be present in pretrained weights; cannot exclude"
+}

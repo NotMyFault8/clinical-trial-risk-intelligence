@@ -1,0 +1,7708 @@
+[
+  {
+    "record_id": "NCT00943865_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 134,
+        "end": 144,
+        "evidence": "creatinine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 385,
+        "end": 388,
+        "evidence": "AST"
+      },
+      {
+        "kind": "Measurement",
+        "start": 393,
+        "end": 396,
+        "evidence": "ALT"
+      },
+      {
+        "kind": "Measurement",
+        "start": 431,
+        "end": 436,
+        "evidence": "serum"
+      },
+      {
+        "kind": "Temporal",
+        "start": 94,
+        "end": 101,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Value",
+        "start": 154,
+        "end": 171,
+        "evidence": "1,5 mg/dL or more"
+      },
+      {
+        "kind": "Value",
+        "start": 339,
+        "end": 349,
+        "evidence": "at least 3"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "284188a3db4dd791bdee40e51edd558bc53516ded899e4d47f5f7736433a2942"
+    ]
+  },
+  {
+    "record_id": "NCT00943865_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 31,
+        "end": 34,
+        "evidence": "BMI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 45,
+        "end": 50,
+        "evidence": "waist"
+      },
+      {
+        "kind": "Measurement",
+        "start": 73,
+        "end": 77,
+        "evidence": "OGTT"
+      },
+      {
+        "kind": "Measurement",
+        "start": 130,
+        "end": 161,
+        "evidence": "serum levels of HDL cholesterol"
+      },
+      {
+        "kind": "Measurement",
+        "start": 234,
+        "end": 253,
+        "evidence": "triglyceride levels"
+      },
+      {
+        "kind": "Measurement",
+        "start": 314,
+        "end": 336,
+        "evidence": "fasting plasma glucose"
+      },
+      {
+        "kind": "Measurement",
+        "start": 416,
+        "end": 420,
+        "evidence": "OGTT"
+      },
+      {
+        "kind": "Measurement",
+        "start": 442,
+        "end": 465,
+        "evidence": "systolic blood pressure"
+      },
+      {
+        "kind": "Measurement",
+        "start": 475,
+        "end": 499,
+        "evidence": "diastolic blood pressure"
+      },
+      {
+        "kind": "Temporal",
+        "start": 410,
+        "end": 415,
+        "evidence": "after"
+      },
+      {
+        "kind": "Temporal",
+        "start": 466,
+        "end": 474,
+        "evidence": "≥ 140 or"
+      },
+      {
+        "kind": "Value",
+        "start": 14,
+        "end": 25,
+        "evidence": "30-55 years"
+      },
+      {
+        "kind": "Value",
+        "start": 35,
+        "end": 40,
+        "evidence": "30-40"
+      },
+      {
+        "kind": "Value",
+        "start": 51,
+        "end": 64,
+        "evidence": "95 cm or more"
+      },
+      {
+        "kind": "Value",
+        "start": 163,
+        "end": 172,
+        "evidence": "<40 mg⁄dL"
+      },
+      {
+        "kind": "Value",
+        "start": 184,
+        "end": 195,
+        "evidence": "< 50 mg ⁄dL"
+      },
+      {
+        "kind": "Value",
+        "start": 257,
+        "end": 277,
+        "evidence": "150 mg⁄dL or greater"
+      },
+      {
+        "kind": "Value",
+        "start": 354,
+        "end": 374,
+        "evidence": "110 mg⁄dL or greater"
+      },
+      {
+        "kind": "Value",
+        "start": 389,
+        "end": 409,
+        "evidence": "140 mg⁄dL or greater"
+      },
+      {
+        "kind": "Value",
+        "start": 466,
+        "end": 471,
+        "evidence": "≥ 140"
+      },
+      {
+        "kind": "Value",
+        "start": 500,
+        "end": 508,
+        "evidence": "≥90 mmHg"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "ba8a032ace59f1a649e3f73250ef44c6bbb17e1eb7047a394bde17e9da018ef8"
+    ]
+  },
+  {
+    "record_id": "NCT01116973_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 277,
+        "end": 298,
+        "evidence": "atrial septal defects"
+      },
+      {
+        "kind": "Measurement",
+        "start": 302,
+        "end": 328,
+        "evidence": "ventricular septal defects"
+      },
+      {
+        "kind": "Measurement",
+        "start": 337,
+        "end": 360,
+        "evidence": "tricuspid valve disease"
+      },
+      {
+        "kind": "Measurement",
+        "start": 369,
+        "end": 391,
+        "evidence": "pulmonary hypertension"
+      },
+      {
+        "kind": "Measurement",
+        "start": 393,
+        "end": 410,
+        "evidence": "Ejection fraction"
+      },
+      {
+        "kind": "Value",
+        "start": 38,
+        "end": 52,
+        "evidence": "under 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 61,
+        "end": 72,
+        "evidence": "Non-English"
+      },
+      {
+        "kind": "Value",
+        "start": 262,
+        "end": 270,
+        "evidence": "abnormal"
+      },
+      {
+        "kind": "Value",
+        "start": 413,
+        "end": 416,
+        "evidence": "15%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "cc2a2e782cfb0d9919028e21d7ec03c15189f64a2f34bd8970413c2e435b2219"
+    ]
+  },
+  {
+    "record_id": "NCT01116973_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 10,
+        "end": 77,
+        "evidence": "ability to lay in a supine position with their hands at their sides"
+      },
+      {
+        "kind": "Measurement",
+        "start": 231,
+        "end": 235,
+        "evidence": "CICC"
+      },
+      {
+        "kind": "Measurement",
+        "start": 293,
+        "end": 297,
+        "evidence": "CICC"
+      },
+      {
+        "kind": "Value",
+        "start": 191,
+        "end": 196,
+        "evidence": "18-90"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "1d9b9d46923b13790a5ba1726fbf01ecbdaba2ff8fe3f1eea7434947f8ee3e89"
+    ]
+  },
+  {
+    "record_id": "NCT01117181_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 48,
+        "end": 115,
+        "evidence": "Diagnostic Statistical Manual of Mental Disorder - IV (TR) criteria"
+      },
+      {
+        "kind": "Measurement",
+        "start": 240,
+        "end": 243,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 330,
+        "end": 333,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 403,
+        "end": 406,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 534,
+        "end": 537,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 612,
+        "end": 615,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 656,
+        "end": 665,
+        "evidence": "delusions"
+      },
+      {
+        "kind": "Measurement",
+        "start": 685,
+        "end": 688,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 740,
+        "end": 754,
+        "evidence": "hallucinations"
+      },
+      {
+        "kind": "Measurement",
+        "start": 792,
+        "end": 806,
+        "evidence": "hallucinations"
+      },
+      {
+        "kind": "Measurement",
+        "start": 875,
+        "end": 889,
+        "evidence": "hallucinations"
+      },
+      {
+        "kind": "Measurement",
+        "start": 953,
+        "end": 967,
+        "evidence": "hallucinations"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1153,
+        "end": 1158,
+        "evidence": "ChEIs"
+      },
+      {
+        "kind": "Temporal",
+        "start": 605,
+        "end": 631,
+        "evidence": "by the NPI is 'Frequently'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 666,
+        "end": 715,
+        "evidence": "as assessed by the NPI is 'Moderate', or 'Marked'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 678,
+        "end": 715,
+        "evidence": "by the NPI is 'Moderate', or 'Marked'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 819,
+        "end": 850,
+        "evidence": "by the NPI is 'Very frequently'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 902,
+        "end": 928,
+        "evidence": "by the NPI is 'Frequently'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 968,
+        "end": 1017,
+        "evidence": "as assessed by the NPI is 'Moderate', or 'Marked'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 980,
+        "end": 1017,
+        "evidence": "by the NPI is 'Moderate', or 'Marked'"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1059,
+        "end": 1151,
+        "evidence": "in the 2 weeks prior to randomization with the exception of approved treatments for dementia"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1074,
+        "end": 1079,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1385,
+        "end": 1397,
+        "evidence": "for 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1667,
+        "end": 1671,
+        "evidence": "past"
+      },
+      {
+        "kind": "Value",
+        "start": 248,
+        "end": 263,
+        "evidence": "Very frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 338,
+        "end": 348,
+        "evidence": "Frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 411,
+        "end": 419,
+        "evidence": "Moderate"
+      },
+      {
+        "kind": "Value",
+        "start": 426,
+        "end": 432,
+        "evidence": "Marked"
+      },
+      {
+        "kind": "Value",
+        "start": 542,
+        "end": 557,
+        "evidence": "Very frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 620,
+        "end": 630,
+        "evidence": "Frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 693,
+        "end": 701,
+        "evidence": "Moderate"
+      },
+      {
+        "kind": "Value",
+        "start": 708,
+        "end": 714,
+        "evidence": "Marked"
+      },
+      {
+        "kind": "Value",
+        "start": 834,
+        "end": 849,
+        "evidence": "Very frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 917,
+        "end": 927,
+        "evidence": "Frequently"
+      },
+      {
+        "kind": "Value",
+        "start": 995,
+        "end": 1003,
+        "evidence": "Moderate"
+      },
+      {
+        "kind": "Value",
+        "start": 1010,
+        "end": 1016,
+        "evidence": "Marked"
+      },
+      {
+        "kind": "Value",
+        "start": 1066,
+        "end": 1073,
+        "evidence": "2 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 1389,
+        "end": 1397,
+        "evidence": "3 months"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8c33b436849337dfa2263f386be4c6e6f03d16d97fd88f362c322c449779e8a0",
+      "97b3303ad5df8c99410c1823b47fbfbba888c120c1ccf808f24ea180e2fcaa13",
+      "ced1dcdd8afb01e7ee50ff7bfb8c0f09685a946fe707c2a1b6b5afb6a2e281cf"
+    ]
+  },
+  {
+    "record_id": "NCT01117181_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 21,
+        "end": 40,
+        "evidence": "Alzheimer's disease"
+      },
+      {
+        "kind": "Measurement",
+        "start": 42,
+        "end": 195,
+        "evidence": "National Institute of Neurological and Communicative Disorders and Stroke - Alzheimer's Disease and Related Disorders Association (NINCDS-ADRDA) criteria"
+      },
+      {
+        "kind": "Measurement",
+        "start": 203,
+        "end": 232,
+        "evidence": "Mini-Mental State Exam (MMSE)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 517,
+        "end": 549,
+        "evidence": "Neuropsychiatric Inventory (NPI)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 698,
+        "end": 715,
+        "evidence": "NPI is 'Moderate'"
+      },
+      {
+        "kind": "Measurement",
+        "start": 746,
+        "end": 752,
+        "evidence": "apathy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 430,
+        "end": 453,
+        "evidence": "for at least four weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1345,
+        "end": 1385,
+        "evidence": "within the month preceding randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1560,
+        "end": 1572,
+        "evidence": "for 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1560,
+        "end": 1595,
+        "evidence": "for 3 months prior to randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1573,
+        "end": 1578,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1666,
+        "end": 1678,
+        "evidence": "for 3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 242,
+        "end": 257,
+        "evidence": "10-26 inclusive"
+      },
+      {
+        "kind": "Value",
+        "start": 1009,
+        "end": 1016,
+        "evidence": "greater"
+      },
+      {
+        "kind": "Value",
+        "start": 1553,
+        "end": 1595,
+        "evidence": "stable for 3 months prior to randomization"
+      },
+      {
+        "kind": "Value",
+        "start": 1564,
+        "end": 1572,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 1670,
+        "end": 1678,
+        "evidence": "3 months"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "cad78606469eee7d0703c13fa7b0aaccacb33a696f1075f0e8cdfc1659fcea5b",
+      "48a777c1a217a3d4628f99ea07b43c01b3655673b63ed3973506012f190dc4e4",
+      "d951fe10a1e5df4d2c9099c865958b91eb3c0557eb1115dcbfef2d0374fed3ea"
+    ]
+  },
+  {
+    "record_id": "NCT01322464_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 473,
+        "end": 496,
+        "evidence": "systolic blood pressure"
+      },
+      {
+        "kind": "Temporal",
+        "start": 497,
+        "end": 509,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 556,
+        "end": 620,
+        "evidence": "previous clinical trial within 90 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 649,
+        "end": 704,
+        "evidence": "donated plasma within 90 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 671,
+        "end": 704,
+        "evidence": "90 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 733,
+        "end": 787,
+        "evidence": "donated blood within 90 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 754,
+        "end": 787,
+        "evidence": "90 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 877,
+        "end": 917,
+        "evidence": "within 30 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 884,
+        "end": 917,
+        "evidence": "30 days prior to study initiation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1046,
+        "end": 1089,
+        "evidence": "within 30 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1053,
+        "end": 1089,
+        "evidence": "30 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1271,
+        "end": 1314,
+        "evidence": "within 14 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1278,
+        "end": 1314,
+        "evidence": "14 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1374,
+        "end": 1387,
+        "evidence": "within 7 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1374,
+        "end": 1396,
+        "evidence": "within 7 days prior to"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1374,
+        "end": 1416,
+        "evidence": "within 7 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1381,
+        "end": 1416,
+        "evidence": "7 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1388,
+        "end": 1416,
+        "evidence": "prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1480,
+        "end": 1513,
+        "evidence": "within 2 years prior to the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1480,
+        "end": 1569,
+        "evidence": "within 2 years prior to the study (subjects with a history of previous use of cannabis we"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1645,
+        "end": 1694,
+        "evidence": "within 30 days prior to study drug administration"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1645,
+        "end": 1734,
+        "evidence": "within 30 days prior to study drug administration or were unwilling to abstain for the du"
+      },
+      {
+        "kind": "Value",
+        "start": 454,
+        "end": 469,
+        "evidence": "20 mmHg or more"
+      },
+      {
+        "kind": "Value",
+        "start": 823,
+        "end": 831,
+        "evidence": "abnormal"
+      },
+      {
+        "kind": "Value",
+        "start": 877,
+        "end": 891,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 877,
+        "end": 900,
+        "evidence": "within 30 days prior to"
+      },
+      {
+        "kind": "Value",
+        "start": 1046,
+        "end": 1060,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1046,
+        "end": 1069,
+        "evidence": "within 30 days prior to"
+      },
+      {
+        "kind": "Value",
+        "start": 1046,
+        "end": 1089,
+        "evidence": "within 30 days prior to or during the study"
+      },
+      {
+        "kind": "Value",
+        "start": 1271,
+        "end": 1285,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1271,
+        "end": 1294,
+        "evidence": "within 14 days prior to"
+      },
+      {
+        "kind": "Value",
+        "start": 1271,
+        "end": 1314,
+        "evidence": "within 14 days prior to or during the study"
+      },
+      {
+        "kind": "Value",
+        "start": 1374,
+        "end": 1387,
+        "evidence": "within 7 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1374,
+        "end": 1396,
+        "evidence": "within 7 days prior to"
+      },
+      {
+        "kind": "Value",
+        "start": 1374,
+        "end": 1416,
+        "evidence": "within 7 days prior to or during the study"
+      },
+      {
+        "kind": "Value",
+        "start": 1480,
+        "end": 1494,
+        "evidence": "within 2 years"
+      },
+      {
+        "kind": "Value",
+        "start": 1645,
+        "end": 1659,
+        "evidence": "within 30 days"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8a83db8b4b3f7df3eb5e842c84fb14525a0761aab421f48bea0065bf47185326",
+      "9aa35a161f9fae9419f2f047f8c2087cfa3162d50fe313f2b8ee331b867529c8",
+      "cb083250ebe99756245a1eb598239c998b4feb3b125227ad16d724a836818f2d"
+    ]
+  },
+  {
+    "record_id": "NCT01322464_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 771,
+        "end": 776,
+        "evidence": "urine"
+      },
+      {
+        "kind": "Temporal",
+        "start": 813,
+        "end": 822,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1075,
+        "end": 1091,
+        "evidence": "during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1096,
+        "end": 1108,
+        "evidence": "for 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1096,
+        "end": 1151,
+        "evidence": "for 3 months following administration of the study drug"
+      },
+      {
+        "kind": "Value",
+        "start": 762,
+        "end": 770,
+        "evidence": "negative"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "d95b3eb0ed2a7be84ed3b87b00a8d472b3bac3983e06433b0d3dc9641d4eaa34",
+      "2071b0d1731eed6beccee120985efa46b1fdf7f4427abf1c4d37d0b7a264b94c"
+    ]
+  },
+  {
+    "record_id": "NCT01440296_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "34c1f91e22e86fe451ad0321928d81f752ede4119676d37215312179b88c3bf2"
+    ]
+  },
+  {
+    "record_id": "NCT01440296_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 34,
+        "end": 37,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 172,
+        "end": 210,
+        "evidence": "prior to any study specific procedures"
+      },
+      {
+        "kind": "Value",
+        "start": 25,
+        "end": 49,
+        "evidence": "over the age of 18 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "c474ae924c5c57b8d4b083bda5c9e288fd7ef02c30f3507c9eab314d5c430eff"
+    ]
+  },
+  {
+    "record_id": "NCT01490034_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e4c3b219432bc35a3d95a8ce8c614a764fc66dd16218aef1e353791ed8bc2ae9"
+    ]
+  },
+  {
+    "record_id": "NCT01490034_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 21,
+        "end": 27,
+        "evidence": "weight"
+      },
+      {
+        "kind": "Measurement",
+        "start": 67,
+        "end": 93,
+        "evidence": "habitual activity patterns"
+      },
+      {
+        "kind": "Measurement",
+        "start": 166,
+        "end": 188,
+        "evidence": "habitual diet patterns"
+      },
+      {
+        "kind": "Temporal",
+        "start": 35,
+        "end": 55,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 116,
+        "end": 133,
+        "evidence": "at 30 min/session"
+      },
+      {
+        "kind": "Temporal",
+        "start": 134,
+        "end": 154,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 189,
+        "end": 209,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 474,
+        "end": 486,
+        "evidence": "for one year"
+      },
+      {
+        "kind": "Value",
+        "start": 15,
+        "end": 20,
+        "evidence": "<3 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 47,
+        "end": 55,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 110,
+        "end": 115,
+        "evidence": "1x/wk"
+      },
+      {
+        "kind": "Value",
+        "start": 116,
+        "end": 133,
+        "evidence": "at 30 min/session"
+      },
+      {
+        "kind": "Value",
+        "start": 119,
+        "end": 125,
+        "evidence": "30 min"
+      },
+      {
+        "kind": "Value",
+        "start": 146,
+        "end": 154,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 201,
+        "end": 209,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 278,
+        "end": 286,
+        "evidence": "two week"
+      },
+      {
+        "kind": "Value",
+        "start": 474,
+        "end": 486,
+        "evidence": "for one year"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e56d8206322f1736067c08163f473d45b354803d2e711d57d139c9adbfdd956e"
+    ]
+  },
+  {
+    "record_id": "NCT01567605_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 30,
+        "end": 39,
+        "evidence": "currently"
+      },
+      {
+        "kind": "Temporal",
+        "start": 70,
+        "end": 76,
+        "evidence": "do not"
+      },
+      {
+        "kind": "Temporal",
+        "start": 100,
+        "end": 103,
+        "evidence": "are"
+      },
+      {
+        "kind": "Temporal",
+        "start": 157,
+        "end": 163,
+        "evidence": "do not"
+      },
+      {
+        "kind": "Temporal",
+        "start": 179,
+        "end": 182,
+        "evidence": "are"
+      },
+      {
+        "kind": "Temporal",
+        "start": 203,
+        "end": 206,
+        "evidence": "are"
+      },
+      {
+        "kind": "Temporal",
+        "start": 359,
+        "end": 368,
+        "evidence": "currently"
+      },
+      {
+        "kind": "Value",
+        "start": 183,
+        "end": 197,
+        "evidence": "under 19 years"
+      },
+      {
+        "kind": "Value",
+        "start": 207,
+        "end": 215,
+        "evidence": "pregnant"
+      },
+      {
+        "kind": "Value",
+        "start": 229,
+        "end": 246,
+        "evidence": "might be pregnant"
+      },
+      {
+        "kind": "Value",
+        "start": 238,
+        "end": 246,
+        "evidence": "pregnant"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a2fa820c6c05ba8dfa7f57f39987edae26aa56c40e5e1c60803acda813c60a83"
+    ]
+  },
+  {
+    "record_id": "NCT01567605_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 29,
+        "end": 50,
+        "evidence": "at least one year ago"
+      },
+      {
+        "kind": "Temporal",
+        "start": 80,
+        "end": 99,
+        "evidence": "at least four weeks"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "05cd25714c2a1e72978eccad5d43b45843bfaa09f48ae31af61e83d2d5721437"
+    ]
+  },
+  {
+    "record_id": "NCT01665417_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 5,
+        "evidence": "Prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 19,
+        "end": 24,
+        "evidence": "Prior"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b81696e3920ae4198cc196cda04a7703145438758c2024b4c6b9d67ec70fe1f4"
+    ]
+  },
+  {
+    "record_id": "NCT01665417_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 329,
+        "end": 353,
+        "evidence": "EGFR activating mutation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 221,
+        "end": 231,
+        "evidence": "previously"
+      },
+      {
+        "kind": "Value",
+        "start": 52,
+        "end": 70,
+        "evidence": "measurable disease"
+      },
+      {
+        "kind": "Value",
+        "start": 221,
+        "end": 241,
+        "evidence": "previously untreated"
+      },
+      {
+        "kind": "Value",
+        "start": 242,
+        "end": 278,
+        "evidence": "locally advanced or metastatic NSCLC"
+      },
+      {
+        "kind": "Value",
+        "start": 355,
+        "end": 378,
+        "evidence": "exon 19 deletion, L858R"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "d7fc322b5946fe263edc2376329f01cc92e94cb4e3a1b3f31069c939f04e619a"
+    ]
+  },
+  {
+    "record_id": "NCT01944800_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "1625ecd354269d27878239498b48b0aa7f549368f99fd28969ca38ce36904874"
+    ]
+  },
+  {
+    "record_id": "NCT01944800_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 29,
+        "end": 39,
+        "evidence": "ticagrelor"
+      },
+      {
+        "kind": "Measurement",
+        "start": 43,
+        "end": 52,
+        "evidence": "prasugrel"
+      },
+      {
+        "kind": "Measurement",
+        "start": 511,
+        "end": 525,
+        "evidence": "platelet count"
+      },
+      {
+        "kind": "Measurement",
+        "start": 579,
+        "end": 589,
+        "evidence": "hemoglobin"
+      },
+      {
+        "kind": "Temporal",
+        "start": 390,
+        "end": 425,
+        "evidence": "less than 24 h before randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 468,
+        "end": 503,
+        "evidence": "less than 48 h before randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 539,
+        "end": 563,
+        "evidence": "at the time of screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 554,
+        "end": 563,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 600,
+        "end": 624,
+        "evidence": "at the time of screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 615,
+        "end": 624,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 682,
+        "end": 711,
+        "evidence": "for the duration of the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 729,
+        "end": 770,
+        "evidence": "greater than 1.5 at the time of screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 746,
+        "end": 770,
+        "evidence": "at the time of screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 761,
+        "end": 770,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 772,
+        "end": 779,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 772,
+        "end": 818,
+        "evidence": "chronic renal insufficiency requiring dialysis"
+      },
+      {
+        "kind": "Temporal",
+        "start": 820,
+        "end": 828,
+        "evidence": "moderate"
+      },
+      {
+        "kind": "Temporal",
+        "start": 820,
+        "end": 858,
+        "evidence": "moderate or severe hepatic dysfunction"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1657,
+        "end": 1691,
+        "evidence": "within 5 days before randomisation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1775,
+        "end": 1783,
+        "evidence": "previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1775,
+        "end": 1793,
+        "evidence": "previous enrolment"
+      },
+      {
+        "kind": "Value",
+        "start": 0,
+        "end": 28,
+        "evidence": "intolerance of or allergy to"
+      },
+      {
+        "kind": "Value",
+        "start": 54,
+        "end": 127,
+        "evidence": "history of any stroke, transient ischemic attack or intracranial bleeding"
+      },
+      {
+        "kind": "Value",
+        "start": 129,
+        "end": 222,
+        "evidence": "known intracranial neoplasm, intracranial arteriovenous malformation or intracranial aneurysm"
+      },
+      {
+        "kind": "Value",
+        "start": 224,
+        "end": 239,
+        "evidence": "active bleeding"
+      },
+      {
+        "kind": "Value",
+        "start": 353,
+        "end": 425,
+        "evidence": "fibrin-specific fibrinolytic therapy less than 24 h before randomization"
+      },
+      {
+        "kind": "Value",
+        "start": 427,
+        "end": 503,
+        "evidence": "non-fibrin-specific fibrinolytic therapy less than 48 h before randomization"
+      },
+      {
+        "kind": "Value",
+        "start": 526,
+        "end": 538,
+        "evidence": "< 100.000/µL"
+      },
+      {
+        "kind": "Value",
+        "start": 590,
+        "end": 598,
+        "evidence": "<10 g/dL"
+      },
+      {
+        "kind": "Value",
+        "start": 729,
+        "end": 745,
+        "evidence": "greater than 1.5"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "4a1f5562a85d472a9fbfda04c2e5efc12e13cc7d78aae11c41c9e161456c1e10",
+      "9c885d7bc1f5beb50daea277aba3facf76df2eba49eac78475b36959f21336d2",
+      "3048d8b27b2bb16f1bf102cd9c30378311e00a44d90234753a4eb975d8ee790e"
+    ]
+  },
+  {
+    "record_id": "NCT02015494_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 248,
+        "end": 265,
+        "evidence": "influenza vaccine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 829,
+        "end": 849,
+        "evidence": "liver function tests"
+      },
+      {
+        "kind": "Measurement",
+        "start": 873,
+        "end": 891,
+        "evidence": "serology for HBsAg"
+      },
+      {
+        "kind": "Measurement",
+        "start": 886,
+        "end": 891,
+        "evidence": "HBsAg"
+      },
+      {
+        "kind": "Measurement",
+        "start": 893,
+        "end": 896,
+        "evidence": "HCV"
+      },
+      {
+        "kind": "Temporal",
+        "start": 76,
+        "end": 83,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 84,
+        "end": 195,
+        "evidence": "preceding the administration of the study vaccine or planned use within the first six weeks of the study period"
+      },
+      {
+        "kind": "Temporal",
+        "start": 273,
+        "end": 399,
+        "evidence": "3 months prior to enrollment in this study or expected receipt of any influenza vaccination before the Day 21 blood collection"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 566,
+        "evidence": "within 3 months of enrollment and throughout first 6 months of the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 769,
+        "end": 771,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 850,
+        "end": 852,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 850,
+        "end": 862,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 853,
+        "end": 862,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 932,
+        "end": 934,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 980,
+        "end": 982,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 998,
+        "end": 1016,
+        "evidence": "within three years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1083,
+        "end": 1085,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1090,
+        "end": 1105,
+        "evidence": "for three years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1187,
+        "end": 1189,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1192,
+        "end": 1194,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1205,
+        "end": 1207,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1339,
+        "end": 1348,
+        "evidence": "presently"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1400,
+        "end": 1426,
+        "evidence": "within the past six months"
+      },
+      {
+        "kind": "Value",
+        "start": 412,
+        "end": 433,
+        "evidence": "excessive alcohol use"
+      },
+      {
+        "kind": "Value",
+        "start": 435,
+        "end": 445,
+        "evidence": "drug abuse"
+      },
+      {
+        "kind": "Value",
+        "start": 449,
+        "end": 480,
+        "evidence": "significant psychiatric illness"
+      },
+      {
+        "kind": "Value",
+        "start": 864,
+        "end": 872,
+        "evidence": "Positive"
+      },
+      {
+        "kind": "Value",
+        "start": 928,
+        "end": 937,
+        "evidence": "lactating"
+      },
+      {
+        "kind": "Value",
+        "start": 1624,
+        "end": 1683,
+        "evidence": "frequently associated with significant major organ toxicity"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "f6a305eb0132103419d9b4c7631d4724010a7a9a747d1ddcc102d597da89b655",
+      "0ff1272601d62d5e4a5d3e51a1deac2ad654325db2cdd75543f7e3000e174c6d",
+      "06a86eef274b74c24e1e5da5c0727b39b37a83b6d764929d9c9ec4e01418e537"
+    ]
+  },
+  {
+    "record_id": "NCT02015494_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 18,
+        "end": 21,
+        "evidence": "age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 38,
+        "end": 41,
+        "evidence": "age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 734,
+        "end": 739,
+        "evidence": "urine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 734,
+        "end": 754,
+        "evidence": "urine pregnancy test"
+      },
+      {
+        "kind": "Temporal",
+        "start": 42,
+        "end": 56,
+        "evidence": "at the time of"
+      },
+      {
+        "kind": "Temporal",
+        "start": 584,
+        "end": 596,
+        "evidence": "for 2 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 584,
+        "end": 617,
+        "evidence": "for 2 months prior to vaccination"
+      },
+      {
+        "kind": "Temporal",
+        "start": 655,
+        "end": 702,
+        "evidence": "for a minimum of three months after vaccination"
+      },
+      {
+        "kind": "Temporal",
+        "start": 755,
+        "end": 770,
+        "evidence": "within 24 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 755,
+        "end": 795,
+        "evidence": "within 24 hours prior to receiving study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 755,
+        "end": 803,
+        "evidence": "within 24 hours prior to receiving study vaccine"
+      },
+      {
+        "kind": "Temporal",
+        "start": 811,
+        "end": 828,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 811,
+        "end": 844,
+        "evidence": "at least one year post-menopausal"
+      },
+      {
+        "kind": "Value",
+        "start": 23,
+        "end": 34,
+        "evidence": "18-40 years"
+      },
+      {
+        "kind": "Value",
+        "start": 725,
+        "end": 733,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Value",
+        "start": 811,
+        "end": 828,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Value",
+        "start": 811,
+        "end": 844,
+        "evidence": "at least one year post-menopausal"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "29ff6888f7e99d00c5471de735ebeb517fc6df7cd7e52ed4223b8759a9c7478c",
+      "48776c5731b99acad690b824c6b9c30d5455afe7d49bc637f02399d0ef6aca93"
+    ]
+  },
+  {
+    "record_id": "NCT02109081_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 54,
+        "end": 58,
+        "evidence": "MMSE"
+      },
+      {
+        "kind": "Temporal",
+        "start": 3,
+        "end": 25,
+        "evidence": "preoperative diagnosis"
+      },
+      {
+        "kind": "Temporal",
+        "start": 239,
+        "end": 288,
+        "evidence": "preoperative steroid use within 3 days of surgery"
+      },
+      {
+        "kind": "Temporal",
+        "start": 264,
+        "end": 277,
+        "evidence": "within 3 days"
+      },
+      {
+        "kind": "Value",
+        "start": 68,
+        "end": 106,
+        "evidence": "= 20 out of 30 on preoperative testing"
+      },
+      {
+        "kind": "Value",
+        "start": 108,
+        "end": 143,
+        "evidence": "more than mild cognitive impairment"
+      },
+      {
+        "kind": "Value",
+        "start": 312,
+        "end": 336,
+        "evidence": "postoperative intubation"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "5787c84c521a71d8e0639ed7bc89aa200fce140f4d7309ac354b7bbd7879b997"
+    ]
+  },
+  {
+    "record_id": "NCT02109081_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 23,
+        "end": 26,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 129,
+        "end": 142,
+        "evidence": "postoperative"
+      },
+      {
+        "kind": "Temporal",
+        "start": 156,
+        "end": 171,
+        "evidence": "at least 2 days"
+      },
+      {
+        "kind": "Value",
+        "start": 9,
+        "end": 26,
+        "evidence": "= 70 years of age"
+      },
+      {
+        "kind": "Value",
+        "start": 105,
+        "end": 125,
+        "evidence": "anticipated duration"
+      },
+      {
+        "kind": "Value",
+        "start": 156,
+        "end": 171,
+        "evidence": "at least 2 days"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b132bc01461fc997d0df5f9cef120bbe77424ec30b6e475da204aee53d24d6d7"
+    ]
+  },
+  {
+    "record_id": "NCT02226887_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 19,
+        "end": 28,
+        "evidence": "Pregnancy"
+      },
+      {
+        "kind": "Value",
+        "start": 9,
+        "end": 17,
+        "evidence": "under 18"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "09ecfcee28d0372a8689552f9b263dfda2812fdbaa5179774bfcaf527e3217fb"
+    ]
+  },
+  {
+    "record_id": "NCT02226887_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "07099988158633dd485737b5a25f67df912861bc9fbe3c26688e106ef305820b"
+    ]
+  },
+  {
+    "record_id": "NCT02245256_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 79,
+        "end": 87,
+        "evidence": "baseline"
+      },
+      {
+        "kind": "Temporal",
+        "start": 121,
+        "end": 129,
+        "evidence": "baseline"
+      },
+      {
+        "kind": "Value",
+        "start": 20,
+        "end": 34,
+        "evidence": "under 18 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "67f3d94ccd56cf39a8d5ba95fd4a10cd1d38eccdb0d7ddea204b73142d5923df"
+    ]
+  },
+  {
+    "record_id": "NCT02245256_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 80,
+        "end": 101,
+        "evidence": "liver transplantation"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "7eff4c1d9b1f8541af6b32001cabe3cbaf4104e2f6a5b3bd945e4a93bcb94dcf"
+    ]
+  },
+  {
+    "record_id": "NCT02260206_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "2b3afeffcc905367fb5157d713e737fc235eea91b00b71c96fb5aafbefc7e89a"
+    ]
+  },
+  {
+    "record_id": "NCT02260206_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 38,
+        "end": 49,
+        "evidence": "during RFCA"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a8749f4a376a00878da157f8949ff80cc6006ef9c668f9566e5e59410af64276"
+    ]
+  },
+  {
+    "record_id": "NCT02301039_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 33,
+        "end": 49,
+        "evidence": "PD-1: PD-L1 axis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 80,
+        "end": 121,
+        "evidence": "conventional multidisciplinary management"
+      },
+      {
+        "kind": "Measurement",
+        "start": 538,
+        "end": 555,
+        "evidence": "active infections"
+      },
+      {
+        "kind": "Measurement",
+        "start": 619,
+        "end": 653,
+        "evidence": "Human Immunodeficiency Virus (HIV)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 676,
+        "end": 711,
+        "evidence": "active Hepatitis B (HBsAg reactive)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 729,
+        "end": 736,
+        "evidence": "HCV RNA"
+      },
+      {
+        "kind": "Measurement",
+        "start": 800,
+        "end": 808,
+        "evidence": "antibody"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1285,
+        "end": 1293,
+        "evidence": "vitiligo"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1297,
+        "end": 1328,
+        "evidence": "resolved childhood asthma/atopy"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1481,
+        "end": 1495,
+        "evidence": "hypothyroidism"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1741,
+        "end": 1752,
+        "evidence": "pneumonitis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1787,
+        "end": 1798,
+        "evidence": "pneumonitis"
+      },
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 22,
+        "evidence": "Prior systemic therapy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 52,
+        "end": 79,
+        "evidence": "Patients who are curable by"
+      },
+      {
+        "kind": "Temporal",
+        "start": 124,
+        "end": 312,
+        "evidence": "Patients with severe and/or uncontrolled concurrent medical disease that in the opinion of the investigator could cause unacceptable safety risks or compromise compliance with the protocol"
+      },
+      {
+        "kind": "Temporal",
+        "start": 315,
+        "end": 365,
+        "evidence": "Patients who have received wide field radiotherapy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 428,
+        "end": 446,
+        "evidence": "prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 437,
+        "end": 446,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 520,
+        "end": 573,
+        "evidence": "Patients who have active infections requiring therapy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 576,
+        "end": 674,
+        "evidence": "Patients that are known to be positive for Human Immunodeficiency Virus (HIV) (HIV 1/2 antibodies)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 676,
+        "end": 711,
+        "evidence": "active Hepatitis B (HBsAg reactive)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1039,
+        "end": 1044,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1077,
+        "end": 1109,
+        "evidence": "within the following time frames"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1126,
+        "end": 1132,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1779,
+        "end": 1786,
+        "evidence": "current"
+      },
+      {
+        "kind": "Value",
+        "start": 69,
+        "end": 76,
+        "evidence": "curable"
+      },
+      {
+        "kind": "Value",
+        "start": 366,
+        "end": 369,
+        "evidence": "≤ 4"
+      },
+      {
+        "kind": "Value",
+        "start": 366,
+        "end": 375,
+        "evidence": "≤ 4 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 418,
+        "end": 427,
+        "evidence": "< 2 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 538,
+        "end": 544,
+        "evidence": "active"
+      },
+      {
+        "kind": "Value",
+        "start": 606,
+        "end": 614,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Value",
+        "start": 659,
+        "end": 673,
+        "evidence": "1/2 antibodies"
+      },
+      {
+        "kind": "Value",
+        "start": 676,
+        "end": 682,
+        "evidence": "active"
+      },
+      {
+        "kind": "Value",
+        "start": 696,
+        "end": 710,
+        "evidence": "HBsAg reactive"
+      },
+      {
+        "kind": "Value",
+        "start": 704,
+        "end": 710,
+        "evidence": "active"
+      },
+      {
+        "kind": "Value",
+        "start": 779,
+        "end": 787,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Value",
+        "start": 1753,
+        "end": 1775,
+        "evidence": "that required steroids"
+      },
+      {
+        "kind": "Value",
+        "start": 1779,
+        "end": 1786,
+        "evidence": "current"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "157ab7ccdce7b1cc29735b89fc342d624248e1b4e1dc480f622ab303455000e7",
+      "b7def0346449e11d624cdf27121725fa535b9e3ac532d5a001d11c1d65abb57d",
+      "ba2bca6b61c4983738f47826cbd47ad3bfb02bb2f34abc37d4f35b283a69b02e"
+    ]
+  },
+  {
+    "record_id": "NCT02301039_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 3,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 16,
+        "end": 19,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 152,
+        "end": 157,
+        "evidence": "grade"
+      },
+      {
+        "kind": "Measurement",
+        "start": 316,
+        "end": 321,
+        "evidence": "grade"
+      },
+      {
+        "kind": "Measurement",
+        "start": 491,
+        "end": 514,
+        "evidence": "ECOG Performance Status"
+      },
+      {
+        "kind": "Measurement",
+        "start": 548,
+        "end": 558,
+        "evidence": "measurable"
+      },
+      {
+        "kind": "Measurement",
+        "start": 570,
+        "end": 573,
+        "evidence": "CT/"
+      },
+      {
+        "kind": "Measurement",
+        "start": 597,
+        "end": 603,
+        "evidence": "RECIST"
+      },
+      {
+        "kind": "Measurement",
+        "start": 993,
+        "end": 1026,
+        "evidence": "archival tissue for PD-L1 testing"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1563,
+        "end": 1569,
+        "evidence": "condom"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1571,
+        "end": 1580,
+        "evidence": "diaphragm"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1583,
+        "end": 1601,
+        "evidence": "contraceptive coil"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1603,
+        "end": 1628,
+        "evidence": "intrauterine device (IUD)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1624,
+        "end": 1627,
+        "evidence": "IUD"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1634,
+        "end": 1644,
+        "evidence": "abstinence"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1779,
+        "end": 1791,
+        "evidence": "radiotherapy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 4,
+        "end": 14,
+        "evidence": "≥ 18 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 20,
+        "end": 30,
+        "evidence": "≥ 12 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 36,
+        "end": 38,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 142,
+        "end": 144,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 206,
+        "end": 208,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 275,
+        "end": 277,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 293,
+        "end": 295,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 346,
+        "end": 348,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 407,
+        "end": 409,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 467,
+        "end": 469,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 510,
+        "end": 512,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 527,
+        "end": 529,
+        "evidence": "At"
+      },
+      {
+        "kind": "Temporal",
+        "start": 527,
+        "end": 547,
+        "evidence": "At least one site of"
+      },
+      {
+        "kind": "Temporal",
+        "start": 589,
+        "end": 591,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 614,
+        "end": 616,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 622,
+        "end": 624,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 644,
+        "end": 658,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 644,
+        "end": 668,
+        "evidence": "within 30 days of dosing"
+      },
+      {
+        "kind": "Temporal",
+        "start": 648,
+        "end": 650,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 651,
+        "end": 658,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 665,
+        "end": 667,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 671,
+        "end": 673,
+        "evidence": "At"
+      },
+      {
+        "kind": "Temporal",
+        "start": 671,
+        "end": 691,
+        "evidence": "At least one site of"
+      },
+      {
+        "kind": "Temporal",
+        "start": 732,
+        "end": 734,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 757,
+        "end": 759,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 757,
+        "end": 768,
+        "evidence": "at least 20"
+      },
+      {
+        "kind": "Temporal",
+        "start": 770,
+        "end": 772,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 814,
+        "end": 816,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 840,
+        "end": 843,
+        "evidence": "1-3"
+      },
+      {
+        "kind": "Temporal",
+        "start": 844,
+        "end": 849,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 869,
+        "end": 871,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 882,
+        "end": 884,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 891,
+        "end": 893,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 921,
+        "end": 935,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 921,
+        "end": 945,
+        "evidence": "within 14 days of dosing"
+      },
+      {
+        "kind": "Temporal",
+        "start": 925,
+        "end": 927,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 942,
+        "end": 944,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 959,
+        "end": 961,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1023,
+        "end": 1025,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1048,
+        "end": 1050,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1101,
+        "end": 1103,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1181,
+        "end": 1183,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1204,
+        "end": 1216,
+        "evidence": "for 120 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1204,
+        "end": 1227,
+        "evidence": "for 120 days after last"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1208,
+        "end": 1216,
+        "evidence": "120 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1242,
+        "end": 1244,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1273,
+        "end": 1275,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1287,
+        "end": 1289,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1326,
+        "end": 1344,
+        "evidence": "within the first 2"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1330,
+        "end": 1332,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1396,
+        "end": 1398,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1446,
+        "end": 1456,
+        "evidence": "≤ 72 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1457,
+        "end": 1462,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1483,
+        "end": 1492,
+        "evidence": "Effective"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1518,
+        "end": 1520,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1603,
+        "end": 1605,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1612,
+        "end": 1614,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1638,
+        "end": 1640,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1666,
+        "end": 1675,
+        "evidence": ">12 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1667,
+        "end": 1675,
+        "evidence": "12 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1773,
+        "end": 1778,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Value",
+        "start": 4,
+        "end": 14,
+        "evidence": "≥ 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 20,
+        "end": 30,
+        "evidence": "≥ 12 years"
+      },
+      {
+        "kind": "Value",
+        "start": 81,
+        "end": 90,
+        "evidence": "confirmed"
+      },
+      {
+        "kind": "Value",
+        "start": 152,
+        "end": 157,
+        "evidence": "grade"
+      },
+      {
+        "kind": "Value",
+        "start": 316,
+        "end": 321,
+        "evidence": "grade"
+      },
+      {
+        "kind": "Value",
+        "start": 491,
+        "end": 514,
+        "evidence": "ECOG Performance Status"
+      },
+      {
+        "kind": "Value",
+        "start": 548,
+        "end": 558,
+        "evidence": "measurable"
+      },
+      {
+        "kind": "Value",
+        "start": 597,
+        "end": 607,
+        "evidence": "RECIST 1.1"
+      },
+      {
+        "kind": "Value",
+        "start": 766,
+        "end": 768,
+        "evidence": "20"
+      },
+      {
+        "kind": "Value",
+        "start": 840,
+        "end": 843,
+        "evidence": "1-3"
+      },
+      {
+        "kind": "Value",
+        "start": 844,
+        "end": 849,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Value",
+        "start": 928,
+        "end": 935,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1208,
+        "end": 1216,
+        "evidence": "120 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1343,
+        "end": 1350,
+        "evidence": "2 years"
+      },
+      {
+        "kind": "Value",
+        "start": 1422,
+        "end": 1430,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Value",
+        "start": 1446,
+        "end": 1450,
+        "evidence": "≤ 72"
+      },
+      {
+        "kind": "Value",
+        "start": 1448,
+        "end": 1456,
+        "evidence": "72 hours"
+      },
+      {
+        "kind": "Value",
+        "start": 1666,
+        "end": 1675,
+        "evidence": ">12 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 1667,
+        "end": 1675,
+        "evidence": "12 weeks"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b9e2aa31d1382a4c2c9216c7cab5edba5757d33577845396716498d3d869fe32",
+      "cc61c14e528256dcad5bdbdfb58cd978200c802154f472824e4d8d980a07ed5c",
+      "4c7db5de3a5fe7ee2160fc95ec39a4e46312bda383f87b190e7f9ad7d6c60eb3"
+    ]
+  },
+  {
+    "record_id": "NCT02316886_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 91,
+        "end": 97,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Measurement",
+        "start": 112,
+        "end": 118,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Measurement",
+        "start": 166,
+        "end": 180,
+        "evidence": "target lesions"
+      },
+      {
+        "kind": "Measurement",
+        "start": 173,
+        "end": 179,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Measurement",
+        "start": 184,
+        "end": 198,
+        "evidence": "target lesions"
+      },
+      {
+        "kind": "Measurement",
+        "start": 191,
+        "end": 197,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Measurement",
+        "start": 262,
+        "end": 268,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Measurement",
+        "start": 282,
+        "end": 288,
+        "evidence": "lesion"
+      },
+      {
+        "kind": "Temporal",
+        "start": 397,
+        "end": 410,
+        "evidence": "within 1 year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 428,
+        "end": 445,
+        "evidence": "less than 2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 578,
+        "end": 608,
+        "evidence": "during the course of the study"
+      },
+      {
+        "kind": "Value",
+        "start": 65,
+        "end": 77,
+        "evidence": "bypass graft"
+      },
+      {
+        "kind": "Value",
+        "start": 142,
+        "end": 165,
+        "evidence": "more than or equal to 3"
+      },
+      {
+        "kind": "Value",
+        "start": 164,
+        "end": 180,
+        "evidence": "3 target lesions"
+      },
+      {
+        "kind": "Value",
+        "start": 182,
+        "end": 198,
+        "evidence": "2 target lesions"
+      },
+      {
+        "kind": "Value",
+        "start": 428,
+        "end": 445,
+        "evidence": "less than 2 years"
+      },
+      {
+        "kind": "Value",
+        "start": 538,
+        "end": 546,
+        "evidence": "pregnant"
+      },
+      {
+        "kind": "Value",
+        "start": 569,
+        "end": 577,
+        "evidence": "pregnant"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "46618ca8f371e828cfdbf4b3b43c8d041f58a7af0dd3153b9e41b39ec7d76482"
+    ]
+  },
+  {
+    "record_id": "NCT02316886_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 3,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 89,
+        "end": 109,
+        "evidence": "minimal luminal area"
+      },
+      {
+        "kind": "Measurement",
+        "start": 117,
+        "end": 130,
+        "evidence": "plaque burden"
+      },
+      {
+        "kind": "Measurement",
+        "start": 235,
+        "end": 260,
+        "evidence": "target vulnerable lesions"
+      },
+      {
+        "kind": "Temporal",
+        "start": 4,
+        "end": 12,
+        "evidence": "18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 4,
+        "end": 21,
+        "evidence": "18 years or older"
+      },
+      {
+        "kind": "Value",
+        "start": 111,
+        "end": 114,
+        "evidence": "4mm"
+      },
+      {
+        "kind": "Value",
+        "start": 111,
+        "end": 115,
+        "evidence": "4mm2"
+      },
+      {
+        "kind": "Value",
+        "start": 131,
+        "end": 134,
+        "evidence": "70%"
+      },
+      {
+        "kind": "Value",
+        "start": 223,
+        "end": 226,
+        "evidence": "4mm"
+      },
+      {
+        "kind": "Value",
+        "start": 227,
+        "end": 230,
+        "evidence": "315"
+      },
+      {
+        "kind": "Value",
+        "start": 489,
+        "end": 491,
+        "evidence": "40"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b61469b5bfc7813decc14ccce01989f4aacbd39709206005d153cdac3ca2696e"
+    ]
+  },
+  {
+    "record_id": "NCT02339974_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 216,
+        "end": 225,
+        "evidence": "Q wave MI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 230,
+        "end": 276,
+        "evidence": "non-Q wave MI with total CK elevation of CK-MB"
+      },
+      {
+        "kind": "Measurement",
+        "start": 234,
+        "end": 243,
+        "evidence": "Q wave MI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 249,
+        "end": 276,
+        "evidence": "total CK elevation of CK-MB"
+      },
+      {
+        "kind": "Measurement",
+        "start": 255,
+        "end": 257,
+        "evidence": "CK"
+      },
+      {
+        "kind": "Measurement",
+        "start": 271,
+        "end": 273,
+        "evidence": "CK"
+      },
+      {
+        "kind": "Measurement",
+        "start": 271,
+        "end": 276,
+        "evidence": "CK-MB"
+      },
+      {
+        "kind": "Measurement",
+        "start": 439,
+        "end": 471,
+        "evidence": "mitral regurgitation or stenosis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 477,
+        "end": 509,
+        "evidence": "aortic regurgitation or stenosis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 512,
+        "end": 543,
+        "evidence": "Mean pulmonary artery pressures"
+      },
+      {
+        "kind": "Measurement",
+        "start": 556,
+        "end": 559,
+        "evidence": "PVR"
+      },
+      {
+        "kind": "Measurement",
+        "start": 563,
+        "end": 574,
+        "evidence": "woods units"
+      },
+      {
+        "kind": "Measurement",
+        "start": 977,
+        "end": 980,
+        "evidence": "WBC"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1012,
+        "end": 1015,
+        "evidence": "Hgb"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1045,
+        "end": 1048,
+        "evidence": "Plt"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1318,
+        "end": 1335,
+        "evidence": "Echocardiographic"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1516,
+        "end": 1540,
+        "evidence": "anticoagulation regimens"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1775,
+        "end": 1790,
+        "evidence": "life expectancy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 173,
+        "end": 202,
+        "evidence": "before the intended treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 714,
+        "end": 751,
+        "evidence": "within 30 days of the index procedure"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1191,
+        "end": 1205,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1191,
+        "end": 1218,
+        "evidence": "within 30 days of screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1191,
+        "end": 1229,
+        "evidence": "within 30 days of screening evaluation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1424,
+        "end": 1432,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1434,
+        "end": 1441,
+        "evidence": "90 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1443,
+        "end": 1448,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1443,
+        "end": 1461,
+        "evidence": "prior to procedure"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1602,
+        "end": 1608,
+        "evidence": "Recent"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1624,
+        "end": 1633,
+        "evidence": "confirmed"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1667,
+        "end": 1676,
+        "evidence": "confirmed"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1719,
+        "end": 1734,
+        "evidence": "within 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1793,
+        "end": 1799,
+        "evidence": "1 year"
+      },
+      {
+        "kind": "Value",
+        "start": 164,
+        "end": 171,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 279,
+        "end": 291,
+        "evidence": "twice normal"
+      },
+      {
+        "kind": "Value",
+        "start": 545,
+        "end": 546,
+        "evidence": "4"
+      },
+      {
+        "kind": "Value",
+        "start": 545,
+        "end": 551,
+        "evidence": "40mmHG"
+      },
+      {
+        "kind": "Value",
+        "start": 561,
+        "end": 562,
+        "evidence": "4"
+      },
+      {
+        "kind": "Value",
+        "start": 714,
+        "end": 728,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 721,
+        "end": 728,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 981,
+        "end": 995,
+        "evidence": "< 3000 cell/mL"
+      },
+      {
+        "kind": "Value",
+        "start": 1016,
+        "end": 1024,
+        "evidence": "< 9 g/dL"
+      },
+      {
+        "kind": "Value",
+        "start": 1049,
+        "end": 1065,
+        "evidence": "< 50,000 cell/mL"
+      },
+      {
+        "kind": "Value",
+        "start": 1311,
+        "end": 1315,
+        "evidence": "<40%"
+      },
+      {
+        "kind": "Value",
+        "start": 1443,
+        "end": 1461,
+        "evidence": "prior to procedure"
+      },
+      {
+        "kind": "Value",
+        "start": 1512,
+        "end": 1515,
+        "evidence": "all"
+      },
+      {
+        "kind": "Value",
+        "start": 1619,
+        "end": 1622,
+        "evidence": "all"
+      },
+      {
+        "kind": "Value",
+        "start": 1719,
+        "end": 1734,
+        "evidence": "within 6 months"
+      },
+      {
+        "kind": "Value",
+        "start": 1726,
+        "end": 1734,
+        "evidence": "6 months"
+      },
+      {
+        "kind": "Value",
+        "start": 1736,
+        "end": 1744,
+        "evidence": "180 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1791,
+        "end": 1794,
+        "evidence": "< 1"
+      },
+      {
+        "kind": "Value",
+        "start": 1791,
+        "end": 1799,
+        "evidence": "< 1 year"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "448393cc62e719abbf847f221d49550cfa3469975b54947d1f73b8da3f0a4338",
+      "b4dfadbdf9a635e701c14e3d4778b9e580676bcd56653764e273db92e977ff82",
+      "0ccb71d3f4f2dce824a50a8fc4b2b2ca9eab4583573aadf10e0f594bf2556c14"
+    ]
+  },
+  {
+    "record_id": "NCT02339974_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 1124,
+        "end": 1131,
+        "evidence": "Frailty"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1413,
+        "end": 1458,
+        "evidence": "At least one of the cardiac surgeon assessors"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1413,
+        "end": 1505,
+        "evidence": "At least one of the cardiac surgeon assessors must have interviewed and examined the patient"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1459,
+        "end": 1468,
+        "evidence": "must have"
+      },
+      {
+        "kind": "Value",
+        "start": 17,
+        "end": 34,
+        "evidence": "at least 21 years"
+      },
+      {
+        "kind": "Value",
+        "start": 26,
+        "end": 38,
+        "evidence": "21 years old"
+      },
+      {
+        "kind": "Value",
+        "start": 1648,
+        "end": 1661,
+        "evidence": "up to 5 years"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "d0c25953f3e831c0b45b52dd5578e20cabac910ec557ddff2e13f2d6b4fd05e8",
+      "79d4c61a42f554c2c4407654f1fdc5f278a0030b79cb89b5228f733ee32e62b2",
+      "d728c7ed1a55f14d1c09449b35aae39424d42abebf51ad61376590de59c3b455"
+    ]
+  },
+  {
+    "record_id": "NCT02348918_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 290,
+        "end": 306,
+        "evidence": "HgA1c blood test"
+      },
+      {
+        "kind": "Measurement",
+        "start": 314,
+        "end": 319,
+        "evidence": "Focal"
+      },
+      {
+        "kind": "Measurement",
+        "start": 320,
+        "end": 342,
+        "evidence": "laser photocoagulation"
+      },
+      {
+        "kind": "Measurement",
+        "start": 346,
+        "end": 378,
+        "evidence": "intravitreal/periocular steroids"
+      },
+      {
+        "kind": "Measurement",
+        "start": 725,
+        "end": 747,
+        "evidence": "vitreomacular traction"
+      },
+      {
+        "kind": "Measurement",
+        "start": 819,
+        "end": 840,
+        "evidence": "pars plana vitrectomy"
+      },
+      {
+        "kind": "Measurement",
+        "start": 950,
+        "end": 969,
+        "evidence": "YAG laser treatment"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1330,
+        "end": 1374,
+        "evidence": "cataract surgery complications/vitreous loss"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1453,
+        "end": 1478,
+        "evidence": "penetrating ocular trauma"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1597,
+        "end": 1617,
+        "evidence": "urine pregnancy test"
+      },
+      {
+        "kind": "Temporal",
+        "start": 408,
+        "end": 457,
+        "evidence": "within the last 90 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 424,
+        "end": 431,
+        "evidence": "90 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 432,
+        "end": 437,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 534,
+        "end": 583,
+        "evidence": "within the last 45 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 550,
+        "end": 557,
+        "evidence": "45 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 558,
+        "end": 563,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 810,
+        "end": 818,
+        "evidence": "Previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 950,
+        "end": 1028,
+        "evidence": "YAG laser treatment in the study eye in last 30 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1231,
+        "end": 1259,
+        "evidence": "Chronic or recurrent uveitis"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1261,
+        "end": 1315,
+        "evidence": "Ongoing ocular infection or inflammation in either eye"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1618,
+        "end": 1638,
+        "evidence": "during the screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1663,
+        "end": 1672,
+        "evidence": "Currently"
+      },
+      {
+        "kind": "Value",
+        "start": 175,
+        "end": 184,
+        "evidence": ">180 mmHg"
+      },
+      {
+        "kind": "Value",
+        "start": 175,
+        "end": 187,
+        "evidence": ">180 mmHg or"
+      },
+      {
+        "kind": "Value",
+        "start": 188,
+        "end": 198,
+        "evidence": "> 160 mmHg"
+      },
+      {
+        "kind": "Value",
+        "start": 242,
+        "end": 252,
+        "evidence": "> 100 mmHg"
+      },
+      {
+        "kind": "Value",
+        "start": 307,
+        "end": 313,
+        "evidence": "> 10.0"
+      },
+      {
+        "kind": "Value",
+        "start": 995,
+        "end": 1002,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Value",
+        "start": 1091,
+        "end": 1097,
+        "evidence": ">8.00D"
+      },
+      {
+        "kind": "Value",
+        "start": 1560,
+        "end": 1578,
+        "evidence": "less than 60 years"
+      },
+      {
+        "kind": "Value",
+        "start": 1588,
+        "end": 1596,
+        "evidence": "positive"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8c5f1b2ccb9ad71335b75e71f0a07be8ca7c8509fe68eb67667ada82097e7bd6",
+      "ab7d1f26b04ad7c8056073871851c638b2dc4720f29a4773f2b001238abc948d",
+      "bc86c98f1ec046119c7da85aa25c7b17d050cac341f230b6d69d9ed91a32c318"
+    ]
+  },
+  {
+    "record_id": "NCT02348918_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 825,
+        "end": 861,
+        "evidence": "extensive post-op evaluation regimen"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "32424f8dfbb1bb86a8fcd795b18e064c23ac5cbdf90d0e85845ba01e8efdedce",
+      "1525d2af1d5ff9863c71b27656680f4d296c704681c8c20f76c853f54088d3a6"
+    ]
+  },
+  {
+    "record_id": "NCT02399033_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "5354c5ce0949f2da2057e1d7036b2a517381a61d5bcdf97816d331bee7b7f22b"
+    ]
+  },
+  {
+    "record_id": "NCT02399033_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 112,
+        "end": 115,
+        "evidence": "HCC"
+      },
+      {
+        "kind": "Measurement",
+        "start": 186,
+        "end": 202,
+        "evidence": "Child-Pugh grade"
+      },
+      {
+        "kind": "Measurement",
+        "start": 216,
+        "end": 225,
+        "evidence": "KPS score"
+      },
+      {
+        "kind": "Measurement",
+        "start": 247,
+        "end": 264,
+        "evidence": "BCLC stage of 0-B"
+      },
+      {
+        "kind": "Measurement",
+        "start": 438,
+        "end": 450,
+        "evidence": "reproductive"
+      },
+      {
+        "kind": "Temporal",
+        "start": 5,
+        "end": 16,
+        "evidence": "20-70 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 5,
+        "end": 20,
+        "evidence": "20-70 years old"
+      },
+      {
+        "kind": "Temporal",
+        "start": 8,
+        "end": 16,
+        "evidence": "70 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 120,
+        "end": 130,
+        "evidence": "previously"
+      },
+      {
+        "kind": "Temporal",
+        "start": 175,
+        "end": 183,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 491,
+        "end": 518,
+        "evidence": "in 28 days before treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 501,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 520,
+        "end": 548,
+        "evidence": "during the treatment process"
+      },
+      {
+        "kind": "Temporal",
+        "start": 553,
+        "end": 579,
+        "evidence": "in 28 days after treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 556,
+        "end": 563,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 662,
+        "end": 690,
+        "evidence": "during the treatment process"
+      },
+      {
+        "kind": "Temporal",
+        "start": 695,
+        "end": 721,
+        "evidence": "in 28 days after treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 698,
+        "end": 705,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 765,
+        "end": 793,
+        "evidence": "during the treatment process"
+      },
+      {
+        "kind": "Temporal",
+        "start": 768,
+        "end": 770,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 798,
+        "end": 800,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 798,
+        "end": 824,
+        "evidence": "in 28 days after treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 801,
+        "end": 808,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 865,
+        "end": 867,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 885,
+        "end": 887,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 935,
+        "end": 937,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 954,
+        "end": 956,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 965,
+        "end": 967,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1013,
+        "end": 1015,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1041,
+        "end": 1043,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1067,
+        "end": 1069,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1086,
+        "end": 1088,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1152,
+        "end": 1154,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1171,
+        "end": 1173,
+        "evidence": "in"
+      },
+      {
+        "kind": "Value",
+        "start": 120,
+        "end": 149,
+        "evidence": "previously untreated patients"
+      },
+      {
+        "kind": "Value",
+        "start": 173,
+        "end": 183,
+        "evidence": "> 3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 231,
+        "end": 244,
+        "evidence": "50-100 points"
+      },
+      {
+        "kind": "Value",
+        "start": 261,
+        "end": 264,
+        "evidence": "0-B"
+      },
+      {
+        "kind": "Value",
+        "start": 466,
+        "end": 490,
+        "evidence": "completely contraception"
+      },
+      {
+        "kind": "Value",
+        "start": 494,
+        "end": 501,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Value",
+        "start": 556,
+        "end": 563,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Value",
+        "start": 594,
+        "end": 618,
+        "evidence": "completely contraception"
+      },
+      {
+        "kind": "Value",
+        "start": 623,
+        "end": 642,
+        "evidence": "prohibited donation"
+      },
+      {
+        "kind": "Value",
+        "start": 698,
+        "end": 705,
+        "evidence": "28 days"
+      },
+      {
+        "kind": "Value",
+        "start": 724,
+        "end": 727,
+        "evidence": "All"
+      },
+      {
+        "kind": "Value",
+        "start": 745,
+        "end": 764,
+        "evidence": "prohibited donation"
+      },
+      {
+        "kind": "Value",
+        "start": 801,
+        "end": 808,
+        "evidence": "28 days"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "6e88a69cc9743e1340cce47816893375d6cf932a6a0d176ef667dfc8f3afd7e9",
+      "5152660f0b6f14d8e728923b854ac01a36d2202a5e6e92418db42ae0d9663ba8"
+    ]
+  },
+  {
+    "record_id": "NCT02406495_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 56,
+        "end": 71,
+        "evidence": "CL prescription"
+      },
+      {
+        "kind": "Measurement",
+        "start": 146,
+        "end": 164,
+        "evidence": "spectacle cylinder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 289,
+        "end": 332,
+        "evidence": "contact lens best corrected distance vision"
+      },
+      {
+        "kind": "Measurement",
+        "start": 697,
+        "end": 707,
+        "evidence": "pinguecula"
+      },
+      {
+        "kind": "Measurement",
+        "start": 712,
+        "end": 725,
+        "evidence": "corneal scars"
+      },
+      {
+        "kind": "Measurement",
+        "start": 750,
+        "end": 768,
+        "evidence": "Neovascularization"
+      },
+      {
+        "kind": "Measurement",
+        "start": 802,
+        "end": 832,
+        "evidence": "Giant papillary conjunctivitis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 859,
+        "end": 875,
+        "evidence": "Anterior uveitis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 879,
+        "end": 885,
+        "evidence": "iritis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 905,
+        "end": 922,
+        "evidence": "Seborrheic eczema"
+      },
+      {
+        "kind": "Measurement",
+        "start": 924,
+        "end": 949,
+        "evidence": "Seborrheic conjunctivitis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1045,
+        "end": 1065,
+        "evidence": "corneal hypoesthesia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1101,
+        "end": 1108,
+        "evidence": "aphakia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1110,
+        "end": 1121,
+        "evidence": "keratoconus"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1134,
+        "end": 1150,
+        "evidence": "irregular cornea"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1157,
+        "end": 1167,
+        "evidence": "Presbyopia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1254,
+        "end": 1280,
+        "evidence": "corneal refractive surgery"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1321,
+        "end": 1359,
+        "evidence": "eye related clinical or research study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 252,
+        "end": 258,
+        "evidence": "5 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 271,
+        "end": 278,
+        "evidence": "8 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 271,
+        "end": 282,
+        "evidence": "8 hours/day"
+      },
+      {
+        "kind": "Value",
+        "start": 72,
+        "end": 137,
+        "evidence": "outside the range of the available parameters of the study lenses"
+      },
+      {
+        "kind": "Value",
+        "start": 165,
+        "end": 170,
+        "evidence": "≥1.00"
+      },
+      {
+        "kind": "Value",
+        "start": 165,
+        "end": 171,
+        "evidence": "≥1.00D"
+      },
+      {
+        "kind": "Value",
+        "start": 333,
+        "end": 363,
+        "evidence": "worse than 20/25 (0.10 logMAR)"
+      },
+      {
+        "kind": "Value",
+        "start": 416,
+        "end": 425,
+        "evidence": "grade 2-4"
+      },
+      {
+        "kind": "Value",
+        "start": 726,
+        "end": 748,
+        "evidence": "within the visual axis"
+      },
+      {
+        "kind": "Value",
+        "start": 769,
+        "end": 775,
+        "evidence": "> 0.75"
+      },
+      {
+        "kind": "Value",
+        "start": 769,
+        "end": 778,
+        "evidence": "> 0.75 mm"
+      },
+      {
+        "kind": "Value",
+        "start": 771,
+        "end": 778,
+        "evidence": "0.75 mm"
+      },
+      {
+        "kind": "Value",
+        "start": 839,
+        "end": 857,
+        "evidence": "worse than grade 1"
+      },
+      {
+        "kind": "Value",
+        "start": 850,
+        "end": 857,
+        "evidence": "grade 1"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8970fc1f6a898e361bf7ba2813f967eb256d584b35024cdc2cf7453d156b43f1",
+      "fcb27b60d0f95e7aecb08f8f1769b5af29437657916cd53c3b300d4e837ea6ef"
+    ]
+  },
+  {
+    "record_id": "NCT02406495_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 71,
+        "end": 82,
+        "evidence": "visual exam"
+      },
+      {
+        "kind": "Measurement",
+        "start": 196,
+        "end": 231,
+        "evidence": "contact lens spherical prescription"
+      },
+      {
+        "kind": "Measurement",
+        "start": 358,
+        "end": 380,
+        "evidence": "distance visual acuity"
+      },
+      {
+        "kind": "Measurement",
+        "start": 442,
+        "end": 464,
+        "evidence": "distance visual acuity"
+      },
+      {
+        "kind": "Measurement",
+        "start": 546,
+        "end": 559,
+        "evidence": "clear corneas"
+      },
+      {
+        "kind": "Measurement",
+        "start": 663,
+        "end": 686,
+        "evidence": "contact lens refraction"
+      },
+      {
+        "kind": "Temporal",
+        "start": 83,
+        "end": 104,
+        "evidence": "in the last two years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 155,
+        "end": 165,
+        "evidence": "at least 1"
+      },
+      {
+        "kind": "Temporal",
+        "start": 155,
+        "end": 170,
+        "evidence": "at least 1 week"
+      },
+      {
+        "kind": "Temporal",
+        "start": 567,
+        "end": 573,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 698,
+        "end": 729,
+        "evidence": "within the available parameters"
+      },
+      {
+        "kind": "Temporal",
+        "start": 797,
+        "end": 807,
+        "evidence": "at least 5"
+      },
+      {
+        "kind": "Temporal",
+        "start": 797,
+        "end": 812,
+        "evidence": "at least 5 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 797,
+        "end": 821,
+        "evidence": "at least 5 days per week"
+      },
+      {
+        "kind": "Temporal",
+        "start": 825,
+        "end": 832,
+        "evidence": "8 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 837,
+        "end": 889,
+        "evidence": "assuming there are no contraindications for doing so"
+      },
+      {
+        "kind": "Value",
+        "start": 3,
+        "end": 26,
+        "evidence": "between 18 and 40 years"
+      },
+      {
+        "kind": "Value",
+        "start": 155,
+        "end": 170,
+        "evidence": "at least 1 week"
+      },
+      {
+        "kind": "Value",
+        "start": 240,
+        "end": 256,
+        "evidence": "+ 2.25 to - 8.00"
+      },
+      {
+        "kind": "Value",
+        "start": 295,
+        "end": 306,
+        "evidence": "up to 0.75D"
+      },
+      {
+        "kind": "Value",
+        "start": 384,
+        "end": 403,
+        "evidence": "20/25 (0.10 logMAR)"
+      },
+      {
+        "kind": "Value",
+        "start": 468,
+        "end": 487,
+        "evidence": "20/30 (0.18 logMAR)"
+      },
+      {
+        "kind": "Value",
+        "start": 797,
+        "end": 807,
+        "evidence": "at least 5"
+      },
+      {
+        "kind": "Value",
+        "start": 823,
+        "end": 826,
+        "evidence": "> 8"
+      },
+      {
+        "kind": "Value",
+        "start": 823,
+        "end": 832,
+        "evidence": "> 8 hours"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "14d4125eb58d50ec2b939de9914c9ddcee96b97db532b93c98f4aaba011695ea",
+      "3d24283037c9419b1fb5dcb6d251f4a6ccac157b217d9b05d047515f07d49ee5"
+    ]
+  },
+  {
+    "record_id": "NCT02415257_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 173,
+        "end": 180,
+        "evidence": "hearing"
+      },
+      {
+        "kind": "Measurement",
+        "start": 215,
+        "end": 224,
+        "evidence": "pure tone"
+      },
+      {
+        "kind": "Measurement",
+        "start": 234,
+        "end": 260,
+        "evidence": "500, 1000, 2000, 3-4000 Hz"
+      },
+      {
+        "kind": "Measurement",
+        "start": 266,
+        "end": 287,
+        "evidence": "speech discrimination"
+      },
+      {
+        "kind": "Measurement",
+        "start": 329,
+        "end": 336,
+        "evidence": "hearing"
+      },
+      {
+        "kind": "Measurement",
+        "start": 404,
+        "end": 411,
+        "evidence": "hearing"
+      },
+      {
+        "kind": "Value",
+        "start": 184,
+        "end": 206,
+        "evidence": "better than 30 deciBel"
+      },
+      {
+        "kind": "Value",
+        "start": 288,
+        "end": 303,
+        "evidence": "better than 70%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "deb16250cc8d0b04df9c9269877f370743f121b6e6d9428b47f67426c493309d"
+    ]
+  },
+  {
+    "record_id": "NCT02415257_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 56,
+        "end": 96,
+        "evidence": "measurable remaining vestibular function"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e96f4ca89a59c0447a4a02c3ed1cd2ee3f8e1f57de9291a4833a64f0ce76b37a"
+    ]
+  },
+  {
+    "record_id": "NCT02416869_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "eb202062a94ca058a7c21ef4befd0419fa9795acca68aee7a14f4eaba673fb15"
+    ]
+  },
+  {
+    "record_id": "NCT02416869_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 91,
+        "end": 132,
+        "evidence": "Pel-Gregory's and Winter's classification"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "4eea09f2dbfc9324d95fcf9496590ac037aee2f27dc4aa42c1d289e65dbd725f"
+    ]
+  },
+  {
+    "record_id": "NCT02420015_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 60,
+        "evidence": "Have a history of myocardial infarction in the past 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 370,
+        "end": 427,
+        "evidence": "Are currently enrolled in another smoking cessation trial"
+      },
+      {
+        "kind": "Temporal",
+        "start": 429,
+        "end": 487,
+        "evidence": "Are currently imprisoned or in psychiatric hospitalization"
+      },
+      {
+        "kind": "Value",
+        "start": 69,
+        "end": 92,
+        "evidence": "contraindication to NRT"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e775ec0f45fb40bb63d356595229d84dff74964e2c503b02750bf82a74ed9ddd"
+    ]
+  },
+  {
+    "record_id": "NCT02420015_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 10,
+        "end": 15,
+        "evidence": "smoke"
+      },
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 9,
+        "evidence": "Currently"
+      },
+      {
+        "kind": "Temporal",
+        "start": 16,
+        "end": 45,
+        "evidence": "at least ten cigarettes a day"
+      },
+      {
+        "kind": "Temporal",
+        "start": 69,
+        "end": 86,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 88,
+        "end": 119,
+        "evidence": "Meet criteria for schizophrenia"
+      },
+      {
+        "kind": "Temporal",
+        "start": 287,
+        "end": 295,
+        "evidence": "70 years"
+      },
+      {
+        "kind": "Value",
+        "start": 272,
+        "end": 295,
+        "evidence": "between 18 and 70 years"
+      },
+      {
+        "kind": "Value",
+        "start": 359,
+        "end": 371,
+        "evidence": "26 or higher"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "9ded8e84f1118a28fb32817049636f97912e6284a755c5871d691190594c6eb5"
+    ]
+  },
+  {
+    "record_id": "NCT02425774_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 221,
+        "end": 296,
+        "evidence": "American Society of Anesthesiologists physical-health status classification"
+      },
+      {
+        "kind": "Temporal",
+        "start": 149,
+        "end": 156,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Value",
+        "start": 305,
+        "end": 307,
+        "evidence": ">3"
+      },
+      {
+        "kind": "Value",
+        "start": 336,
+        "end": 346,
+        "evidence": ">200 mg/dl"
+      },
+      {
+        "kind": "Value",
+        "start": 349,
+        "end": 358,
+        "evidence": "11 mmol/l"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "25dcefe1f135ddc2243fa870351d370369ec7cdce9747682e0b840b55aab3f73"
+    ]
+  },
+  {
+    "record_id": "NCT02425774_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 36,
+        "end": 61,
+        "evidence": "resection of the pancreas"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "01890baca0f062975c38882e2856e55fa521c83bf6f8a8f946e595f0753fe92b"
+    ]
+  },
+  {
+    "record_id": "NCT02429765_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 15,
+        "end": 41,
+        "evidence": "sleep disordered breathing"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "d4102fa257f936d2064b9d9c9752beaa339fef03b50c159f507ff1d674c7e781"
+    ]
+  },
+  {
+    "record_id": "NCT02429765_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 78,
+        "end": 83,
+        "evidence": "FEV1)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 258,
+        "end": 280,
+        "evidence": "Baseline Dyspnea Index"
+      },
+      {
+        "kind": "Value",
+        "start": 84,
+        "end": 99,
+        "evidence": "30-79%predicted"
+      },
+      {
+        "kind": "Value",
+        "start": 146,
+        "end": 161,
+        "evidence": ">120% predicted"
+      },
+      {
+        "kind": "Value",
+        "start": 282,
+        "end": 283,
+        "evidence": "8"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "09b3d6e362746687b33b0a9342dea28af9491b6dacffc09486e151f706987456"
+    ]
+  },
+  {
+    "record_id": "NCT02464865_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 20,
+        "evidence": "pathological obesity"
+      },
+      {
+        "kind": "Measurement",
+        "start": 60,
+        "end": 77,
+        "evidence": "metabolic disease"
+      },
+      {
+        "kind": "Measurement",
+        "start": 85,
+        "end": 112,
+        "evidence": "diseases of red blood cells"
+      },
+      {
+        "kind": "Temporal",
+        "start": 22,
+        "end": 29,
+        "evidence": "chronic"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "9519d4f10b240aa007431a5b1e7487332779ecc2e760d98891883fe271c3dccf"
+    ]
+  },
+  {
+    "record_id": "NCT02464865_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 8,
+        "end": 25,
+        "evidence": "weight for height"
+      },
+      {
+        "kind": "Value",
+        "start": 26,
+        "end": 58,
+        "evidence": "> median + 3 standard deviations"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "f3a57bebd1c6914942c818f22a5f76b4e0a077e50b9c11d5fdda6ea3f9a43016"
+    ]
+  },
+  {
+    "record_id": "NCT02469610_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 8,
+        "evidence": "Previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a08713ddc63d55e2d99335797cfeb796017a6c21156821dfe3b5fe28439b1edd"
+    ]
+  },
+  {
+    "record_id": "NCT02469610_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 34,
+        "end": 51,
+        "evidence": "Over 18 years old"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "81fa2e135eb61b346502bf717a1106708901762b49c63137f0a985f9dac27a3a"
+    ]
+  },
+  {
+    "record_id": "NCT02553226_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 99,
+        "end": 105,
+        "evidence": "> 4 cm"
+      },
+      {
+        "kind": "Value",
+        "start": 269,
+        "end": 277,
+        "evidence": "> 4500 g"
+      },
+      {
+        "kind": "Value",
+        "start": 352,
+        "end": 380,
+        "evidence": "less than 37 completed weeks"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "3d0d2d7062cc3b2e594ddc7d471eeeb6a3967c066eaa5c6766d978b7c2afecc9"
+    ]
+  },
+  {
+    "record_id": "NCT02553226_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 22,
+        "end": 42,
+        "evidence": "Syntocinon® infusion"
+      },
+      {
+        "kind": "Temporal",
+        "start": 43,
+        "end": 66,
+        "evidence": "for induction of labour"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "92237d7f342319810136d5d124923bcb9e3877e04bf24c1921613ca03dd76a4c"
+    ]
+  },
+  {
+    "record_id": "NCT02560766_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 253,
+        "end": 262,
+        "evidence": "Neurontin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 265,
+        "end": 272,
+        "evidence": "Gralise"
+      },
+      {
+        "kind": "Measurement",
+        "start": 376,
+        "end": 395,
+        "evidence": "Tourette's syndrome"
+      },
+      {
+        "kind": "Measurement",
+        "start": 397,
+        "end": 409,
+        "evidence": "tic disorder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 411,
+        "end": 442,
+        "evidence": "periodic limb movement disorder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 451,
+        "end": 466,
+        "evidence": "sleep disorders"
+      },
+      {
+        "kind": "Measurement",
+        "start": 576,
+        "end": 598,
+        "evidence": "substance use disorder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 748,
+        "end": 758,
+        "evidence": "depression"
+      },
+      {
+        "kind": "Measurement",
+        "start": 748,
+        "end": 791,
+        "evidence": "depression (treatment with antidepressants)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 793,
+        "end": 809,
+        "evidence": "bipolar disorder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 814,
+        "end": 827,
+        "evidence": "schizophrenia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 843,
+        "end": 890,
+        "evidence": "attention-deficit hyperactivity disorder (ADHD)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1253,
+        "end": 1269,
+        "evidence": "seizure disorder"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1313,
+        "end": 1328,
+        "evidence": "febrile seizure"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1356,
+        "end": 1367,
+        "evidence": "head injury"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1438,
+        "end": 1448,
+        "evidence": "absorption"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1450,
+        "end": 1462,
+        "evidence": "distribution"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1464,
+        "end": 1474,
+        "evidence": "metabolism"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1479,
+        "end": 1488,
+        "evidence": "excretion"
+      },
+      {
+        "kind": "Temporal",
+        "start": 135,
+        "end": 147,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 470,
+        "end": 477,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 470,
+        "end": 479,
+        "evidence": "Currently"
+      },
+      {
+        "kind": "Temporal",
+        "start": 620,
+        "end": 636,
+        "evidence": "within 12 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 620,
+        "end": 650,
+        "evidence": "within 12 months before dosing"
+      },
+      {
+        "kind": "Temporal",
+        "start": 653,
+        "end": 660,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 664,
+        "end": 668,
+        "evidence": "past"
+      },
+      {
+        "kind": "Temporal",
+        "start": 664,
+        "end": 676,
+        "evidence": "past history"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1086,
+        "end": 1098,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1405,
+        "end": 1420,
+        "evidence": "would interfere"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1627,
+        "end": 1642,
+        "evidence": "could interfere"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1698,
+        "end": 1722,
+        "evidence": "could potentially affect"
+      },
+      {
+        "kind": "Value",
+        "start": 124,
+        "end": 128,
+        "evidence": "< 20"
+      },
+      {
+        "kind": "Value",
+        "start": 124,
+        "end": 134,
+        "evidence": "< 20 ng/mL"
+      },
+      {
+        "kind": "Value",
+        "start": 1569,
+        "end": 1591,
+        "evidence": "clinically significant"
+      },
+      {
+        "kind": "Value",
+        "start": 1784,
+        "end": 1792,
+        "evidence": "abnormal"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "d92f31a926e65a3764c409f4010955a2be825d15aa1ccc89276b15d6b8c7a5ab",
+      "a93aee56960b3be5eb1250b6b63b10bc8628b7f51ef8a5c1d892f4a695ceef08",
+      "78d4b76e0fa3be9117ddcdb9614ddc756a68f4dc1b09fe3d6833151828c9f25d"
+    ]
+  },
+  {
+    "record_id": "NCT02560766_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 73,
+        "end": 76,
+        "evidence": "RLS"
+      },
+      {
+        "kind": "Measurement",
+        "start": 91,
+        "end": 94,
+        "evidence": "RLS"
+      },
+      {
+        "kind": "Measurement",
+        "start": 153,
+        "end": 156,
+        "evidence": "RLS"
+      },
+      {
+        "kind": "Measurement",
+        "start": 196,
+        "end": 213,
+        "evidence": "IRLS rating scale"
+      },
+      {
+        "kind": "Measurement",
+        "start": 197,
+        "end": 200,
+        "evidence": "RLS"
+      },
+      {
+        "kind": "Measurement",
+        "start": 278,
+        "end": 281,
+        "evidence": "RLS"
+      },
+      {
+        "kind": "Measurement",
+        "start": 278,
+        "end": 290,
+        "evidence": "RLS symptoms"
+      },
+      {
+        "kind": "Measurement",
+        "start": 439,
+        "end": 460,
+        "evidence": "body mass index (BMI)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 587,
+        "end": 607,
+        "evidence": "creatinine clearance"
+      },
+      {
+        "kind": "Temporal",
+        "start": 214,
+        "end": 262,
+        "evidence": "at Visit 1 (screening) and at Visit 2 (baseline)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 226,
+        "end": 235,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 291,
+        "end": 366,
+        "evidence": "for at least 4 of 7 consecutive evenings/nights during the screening period"
+      },
+      {
+        "kind": "Temporal",
+        "start": 339,
+        "end": 366,
+        "evidence": "during the screening period"
+      },
+      {
+        "kind": "Temporal",
+        "start": 350,
+        "end": 359,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 487,
+        "end": 499,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 490,
+        "end": 499,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 490,
+        "end": 512,
+        "evidence": "screening and baseline"
+      },
+      {
+        "kind": "Temporal",
+        "start": 667,
+        "end": 679,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 667,
+        "end": 684,
+        "evidence": "at screening only"
+      },
+      {
+        "kind": "Temporal",
+        "start": 670,
+        "end": 679,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 670,
+        "end": 684,
+        "evidence": "screening only"
+      },
+      {
+        "kind": "Value",
+        "start": 42,
+        "end": 56,
+        "evidence": "13 to 17 years"
+      },
+      {
+        "kind": "Value",
+        "start": 175,
+        "end": 177,
+        "evidence": "15"
+      },
+      {
+        "kind": "Value",
+        "start": 175,
+        "end": 188,
+        "evidence": "15 or greater"
+      },
+      {
+        "kind": "Value",
+        "start": 381,
+        "end": 398,
+        "evidence": "greater than 33.4"
+      },
+      {
+        "kind": "Value",
+        "start": 381,
+        "end": 401,
+        "evidence": "greater than 33.4 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 611,
+        "end": 622,
+        "evidence": "at least 60"
+      },
+      {
+        "kind": "Value",
+        "start": 620,
+        "end": 629,
+        "evidence": "60 mL/min"
+      },
+      {
+        "kind": "Value",
+        "start": 631,
+        "end": 665,
+        "evidence": "using the Cockcroft-Gault equation"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a760c320cd197e2bbd89b000419aba6e3e27631595a7eda545f52f45cc439cd6"
+    ]
+  },
+  {
+    "record_id": "NCT02570347_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 28,
+        "end": 31,
+        "evidence": "> 1"
+      },
+      {
+        "kind": "Value",
+        "start": 123,
+        "end": 134,
+        "evidence": "hypotension"
+      },
+      {
+        "kind": "Value",
+        "start": 135,
+        "end": 149,
+        "evidence": "capillary leak"
+      },
+      {
+        "kind": "Value",
+        "start": 150,
+        "end": 175,
+        "evidence": "life threatening bleeding"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "0644bb3fb961e1aa79c2cbf37dbaab84d8c796908db40a5e756cdf2cc27a8ddb"
+    ]
+  },
+  {
+    "record_id": "NCT02570347_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 3,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 146,
+        "end": 172,
+        "evidence": "prior antibiotic treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 7,
+        "end": 15,
+        "evidence": "65 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 107,
+        "end": 125,
+        "evidence": "Less than 24 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 117,
+        "end": 125,
+        "evidence": "24 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 138,
+        "end": 141,
+        "evidence": "AND"
+      },
+      {
+        "kind": "Temporal",
+        "start": 146,
+        "end": 151,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Value",
+        "start": 4,
+        "end": 15,
+        "evidence": "18-65 years"
+      },
+      {
+        "kind": "Value",
+        "start": 107,
+        "end": 119,
+        "evidence": "Less than 24"
+      },
+      {
+        "kind": "Value",
+        "start": 117,
+        "end": 125,
+        "evidence": "24 hours"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "4aec2f2eb69b4ec3b05ce4770c8d77d49930f2094ec5d30ddf83c1776b36db98"
+    ]
+  },
+  {
+    "record_id": "NCT02632266_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 15,
+        "evidence": "Newborn infants"
+      },
+      {
+        "kind": "Measurement",
+        "start": 88,
+        "end": 98,
+        "evidence": "congenital"
+      },
+      {
+        "kind": "Measurement",
+        "start": 103,
+        "end": 124,
+        "evidence": "chromosomal anomalies"
+      },
+      {
+        "kind": "Measurement",
+        "start": 126,
+        "end": 152,
+        "evidence": "gastrointestinal anomalies"
+      },
+      {
+        "kind": "Measurement",
+        "start": 156,
+        "end": 181,
+        "evidence": "necrotizing enterocolitis"
+      },
+      {
+        "kind": "Temporal",
+        "start": 17,
+        "end": 25,
+        "evidence": "28 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 31,
+        "end": 39,
+        "evidence": "34 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 16,
+        "end": 19,
+        "evidence": "<28"
+      },
+      {
+        "kind": "Value",
+        "start": 30,
+        "end": 33,
+        "evidence": ">34"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "f3c5ed78ab6969fea804d4c717d1f7aa450a99f92fc040366c89528b91a985c5"
+    ]
+  },
+  {
+    "record_id": "NCT02632266_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 60,
+        "end": 69,
+        "evidence": "gestation"
+      },
+      {
+        "kind": "Value",
+        "start": 28,
+        "end": 59,
+        "evidence": "between 28 0/7 and 34 0/7 weeks"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "11906df1f4a36039ad65275aa64ac19fa3285a6ab1521ed2ef85641d4b5c6d19"
+    ]
+  },
+  {
+    "record_id": "NCT02668978_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 237,
+        "end": 243,
+        "evidence": "active"
+      },
+      {
+        "kind": "Value",
+        "start": 88,
+        "end": 113,
+        "evidence": "more than 10 lung lesions"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "5a0e4f44f2b014762c396f6d54f9be6cff39f2aba159bc42c7a065a5875b659d"
+    ]
+  },
+  {
+    "record_id": "NCT02668978_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 18,
+        "end": 21,
+        "evidence": "age"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "89aee198d1fb5b1906d9c9beea3bd8ad97d40a6505c9514baef224f171b78e9f"
+    ]
+  },
+  {
+    "record_id": "NCT02715466_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 18,
+        "end": 21,
+        "evidence": "HES"
+      },
+      {
+        "kind": "Measurement",
+        "start": 23,
+        "end": 41,
+        "evidence": "dextrane solutions"
+      },
+      {
+        "kind": "Measurement",
+        "start": 184,
+        "end": 187,
+        "evidence": "ASA"
+      },
+      {
+        "kind": "Measurement",
+        "start": 345,
+        "end": 358,
+        "evidence": "renal support"
+      },
+      {
+        "kind": "Measurement",
+        "start": 606,
+        "end": 633,
+        "evidence": "partial thromboplastin time"
+      },
+      {
+        "kind": "Temporal",
+        "start": 75,
+        "end": 113,
+        "evidence": "within the 24 h prior to randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 91,
+        "end": 96,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 130,
+        "end": 150,
+        "evidence": "within the next 48 h"
+      },
+      {
+        "kind": "Temporal",
+        "start": 543,
+        "end": 550,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Value",
+        "start": 45,
+        "end": 53,
+        "evidence": "> 500 ml"
+      },
+      {
+        "kind": "Value",
+        "start": 75,
+        "end": 113,
+        "evidence": "within the 24 h prior to randomization"
+      },
+      {
+        "kind": "Value",
+        "start": 130,
+        "end": 150,
+        "evidence": "within the next 48 h"
+      },
+      {
+        "kind": "Value",
+        "start": 543,
+        "end": 550,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Value",
+        "start": 634,
+        "end": 638,
+        "evidence": "> 60"
+      },
+      {
+        "kind": "Value",
+        "start": 634,
+        "end": 642,
+        "evidence": "> 60 sec"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "71f21781ac2635571f33cfa764802d68aac865db2c990216d91d6d4cfc49a3af"
+    ]
+  },
+  {
+    "record_id": "NCT02715466_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 163,
+        "end": 174,
+        "evidence": "body weight"
+      },
+      {
+        "kind": "Measurement",
+        "start": 168,
+        "end": 174,
+        "evidence": "weight"
+      },
+      {
+        "kind": "Measurement",
+        "start": 200,
+        "end": 215,
+        "evidence": "body mass index"
+      },
+      {
+        "kind": "Measurement",
+        "start": 200,
+        "end": 221,
+        "evidence": "body mass index (BMI)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 677,
+        "end": 681,
+        "evidence": "mean"
+      },
+      {
+        "kind": "Measurement",
+        "start": 701,
+        "end": 704,
+        "evidence": "MAP"
+      },
+      {
+        "kind": "Measurement",
+        "start": 733,
+        "end": 736,
+        "evidence": "PLR"
+      },
+      {
+        "kind": "Temporal",
+        "start": 24,
+        "end": 43,
+        "evidence": "= 18 and = 85 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 35,
+        "end": 43,
+        "evidence": "85 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 282,
+        "end": 294,
+        "evidence": "at admission"
+      },
+      {
+        "kind": "Temporal",
+        "start": 338,
+        "end": 351,
+        "evidence": "within 90 min"
+      },
+      {
+        "kind": "Temporal",
+        "start": 352,
+        "end": 357,
+        "evidence": "after"
+      },
+      {
+        "kind": "Temporal",
+        "start": 419,
+        "end": 450,
+        "evidence": "during Intensive Care Unit stay"
+      },
+      {
+        "kind": "Temporal",
+        "start": 471,
+        "end": 484,
+        "evidence": "within 90 min"
+      },
+      {
+        "kind": "Temporal",
+        "start": 485,
+        "end": 490,
+        "evidence": "after"
+      },
+      {
+        "kind": "Temporal",
+        "start": 562,
+        "end": 584,
+        "evidence": "prior to randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 706,
+        "end": 711,
+        "evidence": "after"
+      },
+      {
+        "kind": "Value",
+        "start": 95,
+        "end": 103,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Value",
+        "start": 175,
+        "end": 182,
+        "evidence": "= 55 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 177,
+        "end": 182,
+        "evidence": "55 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 187,
+        "end": 195,
+        "evidence": "= 140 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 189,
+        "end": 195,
+        "evidence": "140 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 222,
+        "end": 232,
+        "evidence": "= 18 kg/m2"
+      },
+      {
+        "kind": "Value",
+        "start": 224,
+        "end": 229,
+        "evidence": "18 kg"
+      },
+      {
+        "kind": "Value",
+        "start": 668,
+        "end": 673,
+        "evidence": "> 10%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "390310acf1d007459b7c9ea9ae67c80f5cc79f766d4b2a19e003fb79fe1cec6f"
+    ]
+  },
+  {
+    "record_id": "NCT02754583_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 62,
+        "end": 73,
+        "evidence": "3-hour walk"
+      },
+      {
+        "kind": "Measurement",
+        "start": 83,
+        "end": 107,
+        "evidence": "farthest place reachable"
+      },
+      {
+        "kind": "Value",
+        "start": 225,
+        "end": 228,
+        "evidence": "All"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "af5153826fd1dffcdd700231c2c8fe868357a14cefad9883a3807661c712df73"
+    ]
+  },
+  {
+    "record_id": "NCT02754583_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 39,
+        "end": 55,
+        "evidence": "within the study"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "cd68916e01ae022d47b8b464bf58ae302d4d235e1eb2e5db2fb86efdc5d8ed5f"
+    ]
+  },
+  {
+    "record_id": "NCT02823808_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 11,
+        "end": 32,
+        "evidence": "weight-lowering drugs"
+      },
+      {
+        "kind": "Measurement",
+        "start": 54,
+        "end": 67,
+        "evidence": "blood-glucose"
+      },
+      {
+        "kind": "Measurement",
+        "start": 71,
+        "end": 91,
+        "evidence": "lipid-lowering agent"
+      },
+      {
+        "kind": "Temporal",
+        "start": 152,
+        "end": 160,
+        "evidence": "Previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 152,
+        "end": 170,
+        "evidence": "Previous treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 243,
+        "end": 266,
+        "evidence": "in the previous 6 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 287,
+        "end": 325,
+        "evidence": "within the 3 months prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 298,
+        "end": 325,
+        "evidence": "3 months prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 307,
+        "end": 312,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 316,
+        "end": 325,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Value",
+        "start": 142,
+        "end": 150,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 259,
+        "end": 266,
+        "evidence": "6 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 298,
+        "end": 306,
+        "evidence": "3 months"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "af6a76eb4dcc653909dfb6189aba5357605f145331cf27e242a727db63e261c1"
+    ]
+  },
+  {
+    "record_id": "NCT02823808_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 101,
+        "end": 106,
+        "evidence": "HbA1c"
+      },
+      {
+        "kind": "Measurement",
+        "start": 101,
+        "end": 113,
+        "evidence": "HbA1c levels"
+      },
+      {
+        "kind": "Temporal",
+        "start": 66,
+        "end": 95,
+        "evidence": "within the previous 12 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 77,
+        "end": 95,
+        "evidence": "previous 12 months"
+      },
+      {
+        "kind": "Value",
+        "start": 117,
+        "end": 126,
+        "evidence": "8.0-12.0%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b8cca6400c3d8aff72686f5df5e741760f1bb57a682b083d8aaaee5fbc45bf55"
+    ]
+  },
+  {
+    "record_id": "NCT02837783_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 23,
+        "end": 45,
+        "evidence": "loose or watery stools"
+      },
+      {
+        "kind": "Measurement",
+        "start": 241,
+        "end": 255,
+        "evidence": "abdominal pain"
+      },
+      {
+        "kind": "Value",
+        "start": 64,
+        "end": 86,
+        "evidence": "clinically significant"
+      },
+      {
+        "kind": "Value",
+        "start": 100,
+        "end": 149,
+        "evidence": "unexplained clinically significant alarm symptoms"
+      },
+      {
+        "kind": "Value",
+        "start": 112,
+        "end": 134,
+        "evidence": "clinically significant"
+      },
+      {
+        "kind": "Value",
+        "start": 200,
+        "end": 255,
+        "evidence": "medical condition that may contribute to abdominal pain"
+      },
+      {
+        "kind": "Value",
+        "start": 273,
+        "end": 344,
+        "evidence": "protocol-excluded or clinically significant medical or surgical history"
+      },
+      {
+        "kind": "Value",
+        "start": 294,
+        "end": 316,
+        "evidence": "clinically significant"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "be37e7f9889b32857dd04eedc212ee9aa6ef4ff03b7519e0406daa6ad39e5134"
+    ]
+  },
+  {
+    "record_id": "NCT02837783_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 14,
+        "end": 54,
+        "evidence": "protocol criteria for diagnosis of IBS-C"
+      },
+      {
+        "kind": "Measurement",
+        "start": 56,
+        "end": 70,
+        "evidence": "abdominal pain"
+      },
+      {
+        "kind": "Measurement",
+        "start": 72,
+        "end": 110,
+        "evidence": "abdominal bloating and abdominal girth"
+      },
+      {
+        "kind": "Value",
+        "start": 8,
+        "end": 13,
+        "evidence": "meets"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "14adfaafc62d85633264aa2f520b73cf3d94ed0c35cfa37504b538142025e0e4"
+    ]
+  },
+  {
+    "record_id": "NCT02872090_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 48,
+        "end": 56,
+        "evidence": "previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "4962b514f78bab28e15adcf254efd282cc5eff4880588545edf62301236c8245"
+    ]
+  },
+  {
+    "record_id": "NCT02872090_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 14,
+        "end": 24,
+        "evidence": "FEV1 / FVC"
+      },
+      {
+        "kind": "Value",
+        "start": 25,
+        "end": 29,
+        "evidence": "<70%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "fbf44a118c2c7e9a1ae78a177ab94896a17acf52b5e1c9b5cb57f9ca02f62dad"
+    ]
+  },
+  {
+    "record_id": "NCT02897856_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 247,
+        "end": 269,
+        "evidence": "level of consciousness"
+      },
+      {
+        "kind": "Value",
+        "start": 237,
+        "end": 269,
+        "evidence": "preserved level of consciousness"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "468b24f007c4a670f5a7781b5aafb8fddf3bec2af9c3f3b500fbed71fcca82e7"
+    ]
+  },
+  {
+    "record_id": "NCT02897856_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 154,
+        "end": 172,
+        "evidence": "intravenous access"
+      },
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 28,
+        "evidence": "Children 6 month to 14 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 119,
+        "end": 142,
+        "evidence": "who have active seizure"
+      },
+      {
+        "kind": "Value",
+        "start": 151,
+        "end": 172,
+        "evidence": "no intravenous access"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "424cb1cc4b17fe96dc915a8a806a474aa2eda9e42a73bbca628f1e28b654c8ce"
+    ]
+  },
+  {
+    "record_id": "NCT02900443_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 22,
+        "end": 58,
+        "evidence": "Primary Sclerosing Cholangitis (PSC)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 62,
+        "end": 95,
+        "evidence": "Primary Biliary Cholangitis (PBC)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 129,
+        "end": 164,
+        "evidence": "Anti-Mitochondrial Antibodies (AMA)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 346,
+        "end": 349,
+        "evidence": "INR"
+      },
+      {
+        "kind": "Measurement",
+        "start": 949,
+        "end": 954,
+        "evidence": "trial"
+      },
+      {
+        "kind": "Temporal",
+        "start": 17,
+        "end": 21,
+        "evidence": "with"
+      },
+      {
+        "kind": "Temporal",
+        "start": 224,
+        "end": 228,
+        "evidence": "with"
+      },
+      {
+        "kind": "Temporal",
+        "start": 256,
+        "end": 260,
+        "evidence": "with"
+      },
+      {
+        "kind": "Temporal",
+        "start": 376,
+        "end": 380,
+        "evidence": "with"
+      },
+      {
+        "kind": "Temporal",
+        "start": 589,
+        "end": 593,
+        "evidence": "with"
+      },
+      {
+        "kind": "Temporal",
+        "start": 738,
+        "end": 742,
+        "evidence": "with"
+      },
+      {
+        "kind": "Value",
+        "start": 120,
+        "end": 128,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Value",
+        "start": 166,
+        "end": 170,
+        "evidence": "past"
+      },
+      {
+        "kind": "Value",
+        "start": 261,
+        "end": 266,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Value",
+        "start": 350,
+        "end": 355,
+        "evidence": "> 1.5"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "75a75f43a40800a47609953861c0daf15b356e0b07263df9e24402f0732d1296",
+      "e2eec43ca1516a0efa5c4e244f712d1fe60689c3d0cf853dbe95b6e9bb5e3e96"
+    ]
+  },
+  {
+    "record_id": "NCT02900443_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 34,
+        "end": 54,
+        "evidence": "autoimmune hepatitis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 151,
+        "end": 154,
+        "evidence": "AIH"
+      },
+      {
+        "kind": "Temporal",
+        "start": 221,
+        "end": 231,
+        "evidence": "= 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 0,
+        "end": 30,
+        "evidence": "Probable or definite diagnosis"
+      },
+      {
+        "kind": "Value",
+        "start": 129,
+        "end": 174,
+        "evidence": "First presentation of AIH requiring treatment"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "71a8825a62944c9d1b0b7fd90042849a1ec3b65458803c26d3e71a3c5de94e83"
+    ]
+  },
+  {
+    "record_id": "NCT02908919_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 52,
+        "end": 70,
+        "evidence": "bowel inflammation"
+      },
+      {
+        "kind": "Measurement",
+        "start": 142,
+        "end": 147,
+        "evidence": "renal"
+      },
+      {
+        "kind": "Temporal",
+        "start": 45,
+        "end": 51,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 177,
+        "end": 182,
+        "evidence": "prior"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "3beac2b688885f9c6bdb38b94526e04637932f9eb3c212188eb47fc2c2d7e9ee"
+    ]
+  },
+  {
+    "record_id": "NCT02908919_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "4e2d1129e06f6e03f9d4c10fcef058897fdabf6c1212e9de7d2ddacd851f9452"
+    ]
+  },
+  {
+    "record_id": "NCT02951832_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 77,
+        "end": 92,
+        "evidence": "within 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 202,
+        "end": 218,
+        "evidence": "within one month"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "459b237dc17173e11e70228a8b64392174bc8ad0dedea34a899280d13c1de207"
+    ]
+  },
+  {
+    "record_id": "NCT02951832_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 36,
+        "end": 51,
+        "evidence": "menstrual cycle"
+      },
+      {
+        "kind": "Measurement",
+        "start": 261,
+        "end": 275,
+        "evidence": "renal function"
+      },
+      {
+        "kind": "Measurement",
+        "start": 276,
+        "end": 289,
+        "evidence": "blood routine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 294,
+        "end": 307,
+        "evidence": "urine routine"
+      },
+      {
+        "kind": "Value",
+        "start": 11,
+        "end": 16,
+        "evidence": "20-49"
+      },
+      {
+        "kind": "Value",
+        "start": 85,
+        "end": 100,
+        "evidence": "between day 3-7"
+      },
+      {
+        "kind": "Value",
+        "start": 117,
+        "end": 134,
+        "evidence": "between day 25-35"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "4054d8af96620724f3367961af46b7872b0eb34549c8634ab5c5c701c0bc63be"
+    ]
+  },
+  {
+    "record_id": "NCT02961582_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 59,
+        "end": 131,
+        "evidence": "Irritable bowel syndrome (Rome-IV criteria for irritable bowel syndrome)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 133,
+        "end": 170,
+        "evidence": "Congenital or organic bowel pathology"
+      },
+      {
+        "kind": "Temporal",
+        "start": 172,
+        "end": 187,
+        "evidence": "Rectal prolapse"
+      },
+      {
+        "kind": "Temporal",
+        "start": 300,
+        "end": 335,
+        "evidence": "Previous large bowel/rectal surgery"
+      },
+      {
+        "kind": "Temporal",
+        "start": 337,
+        "end": 342,
+        "evidence": "Stoma"
+      },
+      {
+        "kind": "Temporal",
+        "start": 344,
+        "end": 375,
+        "evidence": "Coexisting neurological disease"
+      },
+      {
+        "kind": "Temporal",
+        "start": 377,
+        "end": 460,
+        "evidence": "Significant psychological co-morbidity as assessed subjectively by the investigator"
+      },
+      {
+        "kind": "Temporal",
+        "start": 462,
+        "end": 500,
+        "evidence": "Being or attempting to become pregnant"
+      },
+      {
+        "kind": "Temporal",
+        "start": 501,
+        "end": 523,
+        "evidence": "during study follow-up"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "7959b36b527b4c07ab24f69fef03ace51b500b1884f7a2e57271d7bf21519be1"
+    ]
+  },
+  {
+    "record_id": "NCT02961582_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 11,
+        "end": 36,
+        "evidence": "defecation frequency (DF)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 273,
+        "end": 276,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 249,
+        "end": 271,
+        "evidence": "conservative treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 281,
+        "end": 289,
+        "evidence": "80 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 301,
+        "end": 307,
+        "evidence": "during"
+      },
+      {
+        "kind": "Value",
+        "start": 40,
+        "end": 42,
+        "evidence": "<3"
+      },
+      {
+        "kind": "Value",
+        "start": 40,
+        "end": 46,
+        "evidence": "<3 per"
+      },
+      {
+        "kind": "Value",
+        "start": 63,
+        "end": 69,
+        "evidence": "3-week"
+      },
+      {
+        "kind": "Value",
+        "start": 206,
+        "end": 212,
+        "evidence": "3-week"
+      },
+      {
+        "kind": "Value",
+        "start": 278,
+        "end": 289,
+        "evidence": "14-80 years"
+      },
+      {
+        "kind": "Value",
+        "start": 309,
+        "end": 312,
+        "evidence": "25%"
+      },
+      {
+        "kind": "Value",
+        "start": 354,
+        "end": 357,
+        "evidence": "25%"
+      },
+      {
+        "kind": "Value",
+        "start": 414,
+        "end": 417,
+        "evidence": "25%"
+      },
+      {
+        "kind": "Value",
+        "start": 483,
+        "end": 486,
+        "evidence": "25%"
+      },
+      {
+        "kind": "Value",
+        "start": 536,
+        "end": 539,
+        "evidence": "25%"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e6dd0b653799d9ca65b0a529a599d99bf0f85e945cb9eac8666239bf9add3340"
+    ]
+  },
+  {
+    "record_id": "NCT02970773_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 114,
+        "end": 115,
+        "evidence": "X"
+      },
+      {
+        "kind": "Measurement",
+        "start": 532,
+        "end": 563,
+        "evidence": "alanine-aminotransferase (ALAT)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 565,
+        "end": 598,
+        "evidence": "aspartate-aminotransferase (ASAT)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 600,
+        "end": 636,
+        "evidence": "gamma-glutamyl transferase (gammaGT)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 638,
+        "end": 662,
+        "evidence": "alkalic phosphatase (AP)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 664,
+        "end": 673,
+        "evidence": "bilirubin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 675,
+        "end": 682,
+        "evidence": "amylase"
+      },
+      {
+        "kind": "Measurement",
+        "start": 684,
+        "end": 690,
+        "evidence": "lipase"
+      },
+      {
+        "kind": "Measurement",
+        "start": 692,
+        "end": 702,
+        "evidence": "cystatin C"
+      },
+      {
+        "kind": "Measurement",
+        "start": 716,
+        "end": 738,
+        "evidence": "white blood cell count"
+      },
+      {
+        "kind": "Measurement",
+        "start": 728,
+        "end": 738,
+        "evidence": "cell count"
+      },
+      {
+        "kind": "Measurement",
+        "start": 740,
+        "end": 751,
+        "evidence": "haemoglobin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 753,
+        "end": 767,
+        "evidence": "platelet count"
+      },
+      {
+        "kind": "Measurement",
+        "start": 769,
+        "end": 785,
+        "evidence": "prothrombin time"
+      },
+      {
+        "kind": "Measurement",
+        "start": 772,
+        "end": 785,
+        "evidence": "thrombin time"
+      },
+      {
+        "kind": "Measurement",
+        "start": 787,
+        "end": 791,
+        "evidence": "aPTT"
+      },
+      {
+        "kind": "Measurement",
+        "start": 793,
+        "end": 803,
+        "evidence": "fibrinogen"
+      },
+      {
+        "kind": "Measurement",
+        "start": 805,
+        "end": 818,
+        "evidence": "thrombin time"
+      },
+      {
+        "kind": "Measurement",
+        "start": 820,
+        "end": 830,
+        "evidence": "factors II"
+      },
+      {
+        "kind": "Measurement",
+        "start": 831,
+        "end": 832,
+        "evidence": "V"
+      },
+      {
+        "kind": "Measurement",
+        "start": 833,
+        "end": 834,
+        "evidence": "V"
+      },
+      {
+        "kind": "Measurement",
+        "start": 833,
+        "end": 836,
+        "evidence": "VII"
+      },
+      {
+        "kind": "Measurement",
+        "start": 841,
+        "end": 842,
+        "evidence": "X"
+      },
+      {
+        "kind": "Temporal",
+        "start": 198,
+        "end": 204,
+        "evidence": "active"
+      },
+      {
+        "kind": "Value",
+        "start": 273,
+        "end": 296,
+        "evidence": "increased bleeding risk"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e4ffcaa66c9ee7683ccdf930009c282315d54449076ffefc3df0852bcd2fdfc2",
+      "12ae7e5edbbb135d4217f05f60e83c8a883d1cbb316b19588989f8cb3cbabfac"
+    ]
+  },
+  {
+    "record_id": "NCT02970773_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 26,
+        "evidence": "Motor complete tetraplegia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 75,
+        "end": 96,
+        "evidence": "Body mass index (BMI)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 27,
+        "end": 48,
+        "evidence": "for at least 3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 54,
+        "end": 73,
+        "evidence": "from 18 to 74 years"
+      },
+      {
+        "kind": "Value",
+        "start": 59,
+        "end": 73,
+        "evidence": "18 to 74 years"
+      },
+      {
+        "kind": "Value",
+        "start": 97,
+        "end": 115,
+        "evidence": "from 18 to 35kg/m2"
+      },
+      {
+        "kind": "Value",
+        "start": 102,
+        "end": 112,
+        "evidence": "18 to 35kg"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "383a0caf58c82e2e423f28ab15ecbaf4f633c8f5937ea30337fa1f1ff491b344"
+    ]
+  },
+  {
+    "record_id": "NCT03140423_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 41,
+        "end": 63,
+        "evidence": "average length of stay"
+      },
+      {
+        "kind": "Measurement",
+        "start": 86,
+        "end": 89,
+        "evidence": "HCA"
+      },
+      {
+        "kind": "Temporal",
+        "start": 77,
+        "end": 83,
+        "evidence": "2 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 221,
+        "evidence": "intervention periods"
+      },
+      {
+        "kind": "Value",
+        "start": 67,
+        "end": 78,
+        "evidence": "less than 2"
+      },
+      {
+        "kind": "Value",
+        "start": 188,
+        "end": 196,
+        "evidence": "baseline"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e15d95d43376983b564db5b24d7e3150433dce3f0e7d8c0f265be69fc6e889c1"
+    ]
+  },
+  {
+    "record_id": "NCT03140423_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 175,
+        "end": 181,
+        "evidence": "within"
+      },
+      {
+        "kind": "Temporal",
+        "start": 232,
+        "end": 240,
+        "evidence": "18 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 247,
+        "end": 255,
+        "evidence": "12 years"
+      },
+      {
+        "kind": "Value",
+        "start": 231,
+        "end": 240,
+        "evidence": "<18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 245,
+        "end": 255,
+        "evidence": ">=12 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a3c08f7f5a0b2766ab74e24319219d133a1a581cdf77c07c0ef19d1af5958d01"
+    ]
+  },
+  {
+    "record_id": "NCT03173092_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 69,
+        "end": 74,
+        "evidence": "Grade"
+      },
+      {
+        "kind": "Measurement",
+        "start": 77,
+        "end": 85,
+        "evidence": "toxicity"
+      },
+      {
+        "kind": "Measurement",
+        "start": 607,
+        "end": 619,
+        "evidence": "hypertension"
+      },
+      {
+        "kind": "Measurement",
+        "start": 634,
+        "end": 653,
+        "evidence": "cardiac arrhythmias"
+      },
+      {
+        "kind": "Measurement",
+        "start": 642,
+        "end": 653,
+        "evidence": "arrhythmias"
+      },
+      {
+        "kind": "Measurement",
+        "start": 655,
+        "end": 691,
+        "evidence": "symptomatic congestive heart failure"
+      },
+      {
+        "kind": "Measurement",
+        "start": 667,
+        "end": 691,
+        "evidence": "congestive heart failure"
+      },
+      {
+        "kind": "Measurement",
+        "start": 693,
+        "end": 708,
+        "evidence": "unstable angina"
+      },
+      {
+        "kind": "Measurement",
+        "start": 702,
+        "end": 708,
+        "evidence": "angina"
+      },
+      {
+        "kind": "Measurement",
+        "start": 713,
+        "end": 734,
+        "evidence": "myocardial infarction"
+      },
+      {
+        "kind": "Measurement",
+        "start": 762,
+        "end": 780,
+        "evidence": "Systemic treatment"
+      },
+      {
+        "kind": "Measurement",
+        "start": 864,
+        "end": 869,
+        "evidence": "CYP3A"
+      },
+      {
+        "kind": "Measurement",
+        "start": 881,
+        "end": 889,
+        "evidence": "rifampin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 891,
+        "end": 902,
+        "evidence": "rifapentine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 904,
+        "end": 913,
+        "evidence": "rifabutin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 915,
+        "end": 928,
+        "evidence": "carbamazepine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 930,
+        "end": 939,
+        "evidence": "phenytoin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 941,
+        "end": 954,
+        "evidence": "phenobarbital"
+      },
+      {
+        "kind": "Measurement",
+        "start": 967,
+        "end": 980,
+        "evidence": "Ginkgo biloba"
+      },
+      {
+        "kind": "Measurement",
+        "start": 984,
+        "end": 999,
+        "evidence": "St. John's wort"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1475,
+        "end": 1504,
+        "evidence": "Grade 2 peripheral neuropathy"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1509,
+        "end": 1516,
+        "evidence": "Grade 1"
+      },
+      {
+        "kind": "Temporal",
+        "start": 153,
+        "end": 167,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 153,
+        "end": 185,
+        "evidence": "within 14 days before enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 160,
+        "end": 167,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 215,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 233,
+        "evidence": "within 14 days before enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 265,
+        "evidence": "within 14 days before enrollment (if the involved field is small"
+      },
+      {
+        "kind": "Temporal",
+        "start": 208,
+        "end": 215,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 267,
+        "end": 367,
+        "evidence": "7 days will be considered a sufficient interval between treatment and administration of the ixazomib"
+      },
+      {
+        "kind": "Temporal",
+        "start": 483,
+        "end": 497,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 483,
+        "end": 521,
+        "evidence": "within 14 days before study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 490,
+        "end": 497,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 536,
+        "end": 543,
+        "evidence": "current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 735,
+        "end": 745,
+        "evidence": "within the"
+      },
+      {
+        "kind": "Temporal",
+        "start": 735,
+        "end": 759,
+        "evidence": "within the past 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 751,
+        "end": 759,
+        "evidence": "6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 782,
+        "end": 796,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 782,
+        "end": 830,
+        "evidence": "within 14 days before the first dose of ixazomib"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1002,
+        "end": 1019,
+        "evidence": "Ongoing or active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1013,
+        "end": 1019,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1040,
+        "end": 1046,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1174,
+        "end": 1188,
+        "evidence": "within 2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1174,
+        "end": 1212,
+        "evidence": "within 2 years before study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1216,
+        "end": 1260,
+        "evidence": "previously diagnosed with another malignancy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1551,
+        "end": 1578,
+        "evidence": "during the screening period"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1741,
+        "end": 1755,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1741,
+        "end": 1797,
+        "evidence": "within 30 days of the start of this trial and throughout"
+      },
+      {
+        "kind": "Value",
+        "start": 42,
+        "end": 63,
+        "evidence": "less than or equal to"
+      },
+      {
+        "kind": "Value",
+        "start": 544,
+        "end": 556,
+        "evidence": "uncontrolled"
+      },
+      {
+        "kind": "Value",
+        "start": 594,
+        "end": 606,
+        "evidence": "uncontrolled"
+      },
+      {
+        "kind": "Value",
+        "start": 621,
+        "end": 633,
+        "evidence": "uncontrolled"
+      },
+      {
+        "kind": "Value",
+        "start": 693,
+        "end": 701,
+        "evidence": "unstable"
+      },
+      {
+        "kind": "Value",
+        "start": 713,
+        "end": 759,
+        "evidence": "myocardial infarction within the past 6 months"
+      },
+      {
+        "kind": "Value",
+        "start": 1057,
+        "end": 1063,
+        "evidence": "B or C"
+      },
+      {
+        "kind": "Value",
+        "start": 1119,
+        "end": 1127,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Value",
+        "start": 1522,
+        "end": 1578,
+        "evidence": "pain on clinical examination during the screening period"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "1d138d3f883bfbd8b3dcabd98db58ae7f9cc3558b77cff7b9e4ec3f212c78f78",
+      "06be55c8171f54a47486f54fd0196b4547e37179742dfac0916dbd4021afd3d6",
+      "152007d0d89957e5daec4be0fc04c58b1aa4a0c8d18e16855e5937bcaf0b2a97"
+    ]
+  },
+  {
+    "record_id": "NCT03173092_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 47,
+        "end": 81,
+        "evidence": "bortezomib-based induction regimen"
+      },
+      {
+        "kind": "Measurement",
+        "start": 180,
+        "end": 193,
+        "evidence": "IMWG criteria"
+      },
+      {
+        "kind": "Measurement",
+        "start": 405,
+        "end": 416,
+        "evidence": "IRD regimen"
+      },
+      {
+        "kind": "Measurement",
+        "start": 455,
+        "end": 459,
+        "evidence": "ECOG"
+      },
+      {
+        "kind": "Temporal",
+        "start": 97,
+        "end": 104,
+        "evidence": "current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 523,
+        "end": 544,
+        "evidence": "at time of enrollment"
+      },
+      {
+        "kind": "Value",
+        "start": 33,
+        "end": 41,
+        "evidence": "3 cycles"
+      },
+      {
+        "kind": "Value",
+        "start": 512,
+        "end": 522,
+        "evidence": "0, 1, or 2"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "6db1cdff3b02c26582c1096966cb7a8230c1d49c013498c9611ffe6e88051056"
+    ]
+  },
+  {
+    "record_id": "NCT03256864_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 211,
+        "end": 241,
+        "evidence": "malignancy of any organ system"
+      },
+      {
+        "kind": "Measurement",
+        "start": 439,
+        "end": 477,
+        "evidence": "surgical, medical or mental conditions"
+      },
+      {
+        "kind": "Temporal",
+        "start": 94,
+        "end": 104,
+        "evidence": "previously"
+      },
+      {
+        "kind": "Temporal",
+        "start": 321,
+        "end": 344,
+        "evidence": "within the past 5 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 332,
+        "end": 344,
+        "evidence": "past 5 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 501,
+        "evidence": "current"
+      },
+      {
+        "kind": "Value",
+        "start": 321,
+        "end": 344,
+        "evidence": "within the past 5 years"
+      },
+      {
+        "kind": "Value",
+        "start": 377,
+        "end": 419,
+        "evidence": "evidence of local recurrence or metastases"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "6cc30fc10794f6d5f179b59cb31b19ef6c2760514ce0af8ecbea6bbad10dbd84"
+    ]
+  },
+  {
+    "record_id": "NCT03256864_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "8a75b968b1024e71b6251e56ce5ba8f79deddd4ef46699a55d9e994e3ecc0fdc"
+    ]
+  },
+  {
+    "record_id": "NCT03260881_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 91,
+        "end": 135,
+        "evidence": "Multiple Endocrine Neoplasia syndrome type 2"
+      },
+      {
+        "kind": "Measurement",
+        "start": 353,
+        "end": 368,
+        "evidence": "Type 1 diabetes"
+      },
+      {
+        "kind": "Measurement",
+        "start": 419,
+        "end": 425,
+        "evidence": "GLP-1A"
+      },
+      {
+        "kind": "Measurement",
+        "start": 451,
+        "end": 455,
+        "evidence": "DPP4"
+      },
+      {
+        "kind": "Measurement",
+        "start": 491,
+        "end": 496,
+        "evidence": "SGLT2"
+      },
+      {
+        "kind": "Measurement",
+        "start": 510,
+        "end": 535,
+        "evidence": "thiazolidinediones (TZDs)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 537,
+        "end": 548,
+        "evidence": "pramlintide"
+      },
+      {
+        "kind": "Measurement",
+        "start": 671,
+        "end": 675,
+        "evidence": "rest"
+      },
+      {
+        "kind": "Measurement",
+        "start": 735,
+        "end": 756,
+        "evidence": "diabetic ketoacidosis"
+      },
+      {
+        "kind": "Measurement",
+        "start": 758,
+        "end": 795,
+        "evidence": "pancreas or beta-cell transplantation"
+      },
+      {
+        "kind": "Measurement",
+        "start": 800,
+        "end": 852,
+        "evidence": "diabetes secondary to pancreatitis or pancreatectomy"
+      },
+      {
+        "kind": "Measurement",
+        "start": 871,
+        "end": 889,
+        "evidence": "infective diseases"
+      },
+      {
+        "kind": "Measurement",
+        "start": 891,
+        "end": 897,
+        "evidence": "cancer"
+      },
+      {
+        "kind": "Measurement",
+        "start": 901,
+        "end": 913,
+        "evidence": "chemotherapy"
+      },
+      {
+        "kind": "Measurement",
+        "start": 946,
+        "end": 960,
+        "evidence": "liver diseases"
+      },
+      {
+        "kind": "Measurement",
+        "start": 966,
+        "end": 976,
+        "evidence": "drug abuse"
+      },
+      {
+        "kind": "Temporal",
+        "start": 153,
+        "end": 158,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 398,
+        "end": 405,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 592,
+        "end": 600,
+        "evidence": "unstable"
+      },
+      {
+        "kind": "Temporal",
+        "start": 653,
+        "end": 662,
+        "evidence": "new onset"
+      },
+      {
+        "kind": "Temporal",
+        "start": 671,
+        "end": 675,
+        "evidence": "rest"
+      },
+      {
+        "kind": "Temporal",
+        "start": 684,
+        "end": 715,
+        "evidence": "rapidly increasing or crescendo"
+      },
+      {
+        "kind": "Temporal",
+        "start": 724,
+        "end": 734,
+        "evidence": "History of"
+      },
+      {
+        "kind": "Temporal",
+        "start": 854,
+        "end": 859,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 863,
+        "end": 870,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 992,
+        "end": 999,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1004,
+        "end": 1009,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1121,
+        "end": 1128,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1161,
+        "end": 1176,
+        "evidence": "in the 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1177,
+        "end": 1182,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1196,
+        "end": 1204,
+        "evidence": "Pregnant"
+      },
+      {
+        "kind": "Value",
+        "start": 1168,
+        "end": 1176,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 1168,
+        "end": 1193,
+        "evidence": "3 months prior this study"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "3d42f454fd2f49ab25ce6dc8c789ebf550f06060b1dfab90b5d20becec421f48",
+      "086ba0574ad42ea48a252e73f28f3694e392559029cd69c7e0b98f01848c6f28"
+    ]
+  },
+  {
+    "record_id": "NCT03260881_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 0,
+        "end": 4,
+        "evidence": "T2DM"
+      },
+      {
+        "kind": "Measurement",
+        "start": 19,
+        "end": 63,
+        "evidence": "American Diabetes Association (ADA) criteria"
+      },
+      {
+        "kind": "Measurement",
+        "start": 85,
+        "end": 89,
+        "evidence": "T2DM"
+      },
+      {
+        "kind": "Measurement",
+        "start": 221,
+        "end": 231,
+        "evidence": "Hemoglobin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 221,
+        "end": 243,
+        "evidence": "Hemoglobin A1c (HbA1c)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 237,
+        "end": 242,
+        "evidence": "HbA1c"
+      },
+      {
+        "kind": "Measurement",
+        "start": 237,
+        "end": 243,
+        "evidence": "HbA1c)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 250,
+        "end": 253,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 270,
+        "end": 285,
+        "evidence": "Body mass index"
+      },
+      {
+        "kind": "Measurement",
+        "start": 270,
+        "end": 291,
+        "evidence": "Body mass index (BMI)"
+      },
+      {
+        "kind": "Measurement",
+        "start": 310,
+        "end": 315,
+        "evidence": "waist"
+      },
+      {
+        "kind": "Temporal",
+        "start": 254,
+        "end": 268,
+        "evidence": "= 18 years old"
+      },
+      {
+        "kind": "Value",
+        "start": 244,
+        "end": 248,
+        "evidence": "= 9%"
+      },
+      {
+        "kind": "Value",
+        "start": 246,
+        "end": 248,
+        "evidence": "9%"
+      },
+      {
+        "kind": "Value",
+        "start": 254,
+        "end": 264,
+        "evidence": "= 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 254,
+        "end": 268,
+        "evidence": "= 18 years old"
+      },
+      {
+        "kind": "Value",
+        "start": 292,
+        "end": 302,
+        "evidence": "= 27 Kg/m2"
+      },
+      {
+        "kind": "Value",
+        "start": 332,
+        "end": 338,
+        "evidence": "102 cm"
+      },
+      {
+        "kind": "Value",
+        "start": 362,
+        "end": 367,
+        "evidence": "88 cm"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "0aff0e3d93e4f426fb5f46555d380e2c759d42722f6a22b94263931dd2225a91"
+    ]
+  },
+  {
+    "record_id": "NCT03305666_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 70,
+        "end": 73,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 76,
+        "end": 84,
+        "evidence": "18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 74,
+        "end": 84,
+        "evidence": "< 18 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "412dba942cb6d9260a1e76d3981a48ff03991ad71c1be19ddfd011d9f350d2fd"
+    ]
+  },
+  {
+    "record_id": "NCT03305666_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 20,
+        "end": 24,
+        "evidence": "SSRF"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "c109ffb7200b1f346ada31b9eb58571c019a07c9743bacd6f2e5d0b23e5822f1"
+    ]
+  },
+  {
+    "record_id": "NCT03347513_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 31,
+        "end": 41,
+        "evidence": "hemoglobin"
+      },
+      {
+        "kind": "Measurement",
+        "start": 56,
+        "end": 65,
+        "evidence": "Parasitic"
+      },
+      {
+        "kind": "Value",
+        "start": 42,
+        "end": 52,
+        "evidence": "< 8.0 g/dL"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "764a083faec9a4b4ed20a3312a9381ad11e8f919badfa1b27dc1612ab9bf7115"
+    ]
+  },
+  {
+    "record_id": "NCT03347513_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 10,
+        "end": 32,
+        "evidence": "Iron deficiency anemia"
+      },
+      {
+        "kind": "Measurement",
+        "start": 35,
+        "end": 43,
+        "evidence": "H-pylori"
+      },
+      {
+        "kind": "Temporal",
+        "start": 61,
+        "end": 77,
+        "evidence": "Second trimester"
+      },
+      {
+        "kind": "Value",
+        "start": 44,
+        "end": 52,
+        "evidence": "positive"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b75092a6792fc3e188f06c0c60f6e942976e0a9a2303fd06952a194a2ec8096d"
+    ]
+  },
+  {
+    "record_id": "NCT03479502_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 238,
+        "end": 245,
+        "evidence": "current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 275,
+        "end": 283,
+        "evidence": "previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "a60c3ef646d9b489d6d017b8f1ce46d834e9ef753c8112c68315803cf115e8ba"
+    ]
+  },
+  {
+    "record_id": "NCT03479502_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 12,
+        "end": 15,
+        "evidence": "age"
+      },
+      {
+        "kind": "Measurement",
+        "start": 43,
+        "end": 46,
+        "evidence": "age"
+      },
+      {
+        "kind": "Value",
+        "start": 0,
+        "end": 25,
+        "evidence": "18 years of age and older"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "ddc47933157e2345ab19622804669aef23f255b0029b8b0edecad82650f730f5"
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "scope": "development annotations only",
+  "checked_terms": "age|aged|gender|male|female|men|women",
+  "annotation_type_counts": {
+    "Person": 59,
+    "Value": 2
+  },
+  "examples": [
+    {
+      "record_id": "NCT00943865_inc",
+      "annotation": "T1\tPerson 0 3\tmen"
+    },
+    {
+      "record_id": "NCT00943865_inc",
+      "annotation": "T2\tPerson 8 13\twomen"
+    },
+    {
+      "record_id": "NCT00943865_inc",
+      "annotation": "T20\tPerson 177 180\tmen"
+    },
+    {
+      "record_id": "NCT00943865_inc",
+      "annotation": "T21\tPerson 200 205\twomen"
+    },
+    {
+      "record_id": "NCT01116973_exc",
+      "annotation": "T3\tPerson 56 59\tage"
+    },
+    {
+      "record_id": "NCT01116973_exc",
+      "annotation": "T32\tPerson 605 610\twomen"
+    },
+    {
+      "record_id": "NCT01116973_inc",
+      "annotation": "T6\tPerson 187 190\tage"
+    },
+    {
+      "record_id": "NCT01322464_inc",
+      "annotation": "T3\tPerson 41 44\tage"
+    },
+    {
+      "record_id": "NCT01440296_inc",
+      "annotation": "T1\tPerson 0 4\tmale"
+    },
+    {
+      "record_id": "NCT01440296_inc",
+      "annotation": "T2\tPerson 9 15\tfemale"
+    }
+  ],
+  "finding": "Among the selected development descriptor terms, 59 annotations are Person and 2 are context-dependent Value; none are Measurement. Do not instruct the extractor to label age itself as Measurement; age bounds remain Value.",
+  "reviewer_type": "automated source inspection; not human clinical review"
+}

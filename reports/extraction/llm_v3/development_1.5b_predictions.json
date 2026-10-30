@@ -1,0 +1,3483 @@
+[
+  {
+    "record_id": "NCT00943865_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "ec0fcee2fd079ce78f30aba6d6ed5fc580fd5d33533f60800483b33daf9f41e1"
+    ]
+  },
+  {
+    "record_id": "NCT00943865_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "5176784fcc2157f9445ba6ce0f269fcc4de2eff379cb4bc0fda3d2aad91963c9"
+    ]
+  },
+  {
+    "record_id": "NCT01116973_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 44,
+        "end": 52,
+        "evidence": "18 years"
+      },
+      {
+        "kind": "Measurement",
+        "start": 262,
+        "end": 275,
+        "evidence": "abnormalities"
+      },
+      {
+        "kind": "Measurement",
+        "start": 393,
+        "end": 410,
+        "evidence": "Ejection fraction"
+      },
+      {
+        "kind": "Temporal",
+        "start": 56,
+        "end": 59,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 61,
+        "end": 72,
+        "evidence": "Non-English"
+      },
+      {
+        "kind": "Temporal",
+        "start": 411,
+        "end": 416,
+        "evidence": "< 15%"
+      },
+      {
+        "kind": "Value",
+        "start": 38,
+        "end": 52,
+        "evidence": "under 18 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "3a24c4bccddf4c5644cad2f98948407a1e7fc1834fc576e6cef9dce412e5c5e3"
+    ]
+  },
+  {
+    "record_id": "NCT01116973_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 63,
+        "end": 65,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 105,
+        "end": 112,
+        "evidence": "consent"
+      },
+      {
+        "kind": "Temporal",
+        "start": 187,
+        "end": 190,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 191,
+        "end": 196,
+        "evidence": "18-90"
+      },
+      {
+        "kind": "Temporal",
+        "start": 231,
+        "end": 235,
+        "evidence": "CICC"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "925778d792a22080ddc0ad2164d16c496e8c739ce3bc058355b9296f59f2249f"
+    ]
+  },
+  {
+    "record_id": "NCT01117181_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 240,
+        "end": 243,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 330,
+        "end": 333,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 403,
+        "end": 406,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 534,
+        "end": 537,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 612,
+        "end": 615,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Measurement",
+        "start": 909,
+        "end": 912,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Temporal",
+        "start": 685,
+        "end": 688,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1389,
+        "end": 1397,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Value",
+        "start": 826,
+        "end": 829,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Value",
+        "start": 987,
+        "end": 990,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Value",
+        "start": 1385,
+        "end": 1397,
+        "evidence": "for 3 months"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e59e034c9bce910fd860af55eb14986216d0063c3e70acdcdbfcee80e0c97ae1",
+      "4b7b16cf29c412057995a4f9f1a713c28aea52dd378d2620767a35f5a279d101",
+      "9f591873689cef8a76aecdefb088e04929694b60bcac103e71a3aeca4f1a5104"
+    ]
+  },
+  {
+    "record_id": "NCT01117181_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 698,
+        "end": 701,
+        "evidence": "NPI"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1345,
+        "end": 1385,
+        "evidence": "within the month preceding randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1560,
+        "end": 1595,
+        "evidence": "for 3 months prior to randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1564,
+        "end": 1572,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1573,
+        "end": 1578,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1666,
+        "end": 1678,
+        "evidence": "for 3 months"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "7fa54fe28eb3dddc395e873c1c844879e4acd5f4a7599556eb53f3c1816c64dd",
+      "0749ecb28f80da1e0e40f61a71362d19e5dc4fb3303b3fcaf069111e904921fa",
+      "8b7fc5c16f2df002e035df136f8bcf33679e0f68a2fec4f20d883da1422db5bd"
+    ]
+  },
+  {
+    "record_id": "NCT01322464_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 437,
+        "end": 445,
+        "evidence": "postural"
+      },
+      {
+        "kind": "Temporal",
+        "start": 580,
+        "end": 594,
+        "evidence": "within 90 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1374,
+        "end": 1396,
+        "evidence": "within 7 days prior to"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1374,
+        "end": 1416,
+        "evidence": "within 7 days prior to or during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1381,
+        "end": 1387,
+        "evidence": "7 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1388,
+        "end": 1393,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1400,
+        "end": 1416,
+        "evidence": "during the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1480,
+        "end": 1494,
+        "evidence": "within 2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1480,
+        "end": 1515,
+        "evidence": "within 2 years prior to the study ("
+      },
+      {
+        "kind": "Temporal",
+        "start": 1480,
+        "end": 1569,
+        "evidence": "within 2 years prior to the study (subjects with a history of previous use of cannabis we"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1487,
+        "end": 1494,
+        "evidence": "2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1495,
+        "end": 1500,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1542,
+        "end": 1550,
+        "evidence": "previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1645,
+        "end": 1659,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1645,
+        "end": 1694,
+        "evidence": "within 30 days prior to study drug administration"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1645,
+        "end": 1734,
+        "evidence": "within 30 days prior to study drug administration or were unwilling to abstain for the du"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1652,
+        "end": 1659,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1660,
+        "end": 1665,
+        "evidence": "prior"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "60de693af5b9150d3c677666325751101b3cb8109aa0afa1ae1ee6f373f98677",
+      "8522abd4b20a1f1f1bca544a23884ea7ac09d937173623aee576851802351d8e",
+      "517800b0758a6369fd4cf6cbdab2fabad223a98bdc8fb15241109c785504aa40"
+    ]
+  },
+  {
+    "record_id": "NCT01322464_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 2,
+    "failed_requests": 2,
+    "cache_keys": [
+      "0286eb053e7a79a9e1d45da4d42f8708f8d61616368cd1e2ca717e602ddbe0b4",
+      "df2bf05c6b0f7a787ca79f9cbe68e39c25a39f5effff7964f19bbb7b6a6820db"
+    ]
+  },
+  {
+    "record_id": "NCT01440296_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT01440296_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 34,
+        "end": 37,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 4,
+        "evidence": "male"
+      },
+      {
+        "kind": "Value",
+        "start": 41,
+        "end": 49,
+        "evidence": "18 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "32521554594ce7755e3c67a48b1fe255f7eeec79c9a3304e8ebed930d62b2e1f"
+    ]
+  },
+  {
+    "record_id": "NCT01490034_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT01490034_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 15,
+        "end": 17,
+        "evidence": "<3"
+      },
+      {
+        "kind": "Temporal",
+        "start": 15,
+        "end": 20,
+        "evidence": "<3 kg"
+      },
+      {
+        "kind": "Temporal",
+        "start": 35,
+        "end": 55,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 47,
+        "end": 55,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 108,
+        "end": 111,
+        "evidence": "> 1"
+      },
+      {
+        "kind": "Temporal",
+        "start": 108,
+        "end": 113,
+        "evidence": "> 1x/"
+      },
+      {
+        "kind": "Temporal",
+        "start": 116,
+        "end": 121,
+        "evidence": "at 30"
+      },
+      {
+        "kind": "Temporal",
+        "start": 119,
+        "end": 125,
+        "evidence": "30 min"
+      },
+      {
+        "kind": "Temporal",
+        "start": 134,
+        "end": 154,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 146,
+        "end": 154,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 189,
+        "end": 209,
+        "evidence": "within last 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 209,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 257,
+        "end": 259,
+        "evidence": "at"
+      },
+      {
+        "kind": "Temporal",
+        "start": 278,
+        "end": 286,
+        "evidence": "two week"
+      },
+      {
+        "kind": "Temporal",
+        "start": 474,
+        "end": 486,
+        "evidence": "for one year"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8fd6287d7dd16a0f58521207858cb2a19a5bccf1eaa86cc1f11de091697c575f"
+    ]
+  },
+  {
+    "record_id": "NCT01567605_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "32024a0c5709d8cc3efe7d8ddc56a6a581efacaa46b2d3e9b0c89d27fa93c010"
+    ]
+  },
+  {
+    "record_id": "NCT01567605_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 29,
+        "end": 46,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 80,
+        "end": 99,
+        "evidence": "at least four weeks"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "2c42b18ff194173a20d654ac180c762adca3dfe1c2684c3628c3948b23b0be95"
+    ]
+  },
+  {
+    "record_id": "NCT01665417_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 5,
+        "evidence": "Prior"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "0a1722b3db448fad795a03334642c9163404e27abb1555963350fdb52d2d15dc"
+    ]
+  },
+  {
+    "record_id": "NCT01665417_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "391ce5162b59a234910146bfaab417887793f697173f0c83d51c12158d03196f"
+    ]
+  },
+  {
+    "record_id": "NCT01944800_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT01944800_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 772,
+        "end": 779,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 820,
+        "end": 828,
+        "evidence": "moderate"
+      },
+      {
+        "kind": "Temporal",
+        "start": 930,
+        "end": 932,
+        "evidence": "AV"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1004,
+        "end": 1009,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1024,
+        "end": 1028,
+        "evidence": "< 30"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1024,
+        "end": 1033,
+        "evidence": "< 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1026,
+        "end": 1033,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1043,
+        "end": 1054,
+        "evidence": "concomitant"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1148,
+        "end": 1151,
+        "evidence": "< 1"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1148,
+        "end": 1156,
+        "evidence": "< 1 year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1150,
+        "end": 1156,
+        "evidence": "1 year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1158,
+        "end": 1169,
+        "evidence": "concomitant"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1657,
+        "end": 1670,
+        "evidence": "within 5 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1657,
+        "end": 1691,
+        "evidence": "within 5 days before randomisation"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1664,
+        "end": 1670,
+        "evidence": "5 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1775,
+        "end": 1783,
+        "evidence": "previous"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "7441d9290be2187a003118e37e6d39b0cd439518f9e54a121a3011e25e4ac059",
+      "c5493a7c5bbee070b0e3cc7566a3b2cd76aaff150e13d55bb1fea15293bd53e5",
+      "37ef7de973acea6bec5de985a38e95d019f0576008a26cc6472bae739731159a"
+    ]
+  },
+  {
+    "record_id": "NCT02015494_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 69,
+        "end": 83,
+        "evidence": "within 30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 69,
+        "end": 125,
+        "evidence": "within 30 days preceding the administration of the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 69,
+        "end": 159,
+        "evidence": "within 30 days preceding the administration of the study vaccine or planned use within the"
+      },
+      {
+        "kind": "Temporal",
+        "start": 76,
+        "end": 83,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 149,
+        "end": 195,
+        "evidence": "within the first six weeks of the study period"
+      },
+      {
+        "kind": "Temporal",
+        "start": 166,
+        "end": 175,
+        "evidence": "six weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 266,
+        "end": 281,
+        "evidence": "within 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 266,
+        "end": 301,
+        "evidence": "within 3 months prior to enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 266,
+        "end": 356,
+        "evidence": "within 3 months prior to enrollment in this study or expected receipt of any influenza vac"
+      },
+      {
+        "kind": "Temporal",
+        "start": 273,
+        "end": 281,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 282,
+        "end": 287,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 282,
+        "end": 301,
+        "evidence": "prior to enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 509,
+        "evidence": "within 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 523,
+        "evidence": "within 3 months of enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 494,
+        "end": 566,
+        "evidence": "within 3 months of enrollment and throughout first 6 months of the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 501,
+        "end": 509,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 539,
+        "end": 566,
+        "evidence": "first 6 months of the study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 545,
+        "end": 553,
+        "evidence": "6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 635,
+        "end": 646,
+        "evidence": "concomitant"
+      },
+      {
+        "kind": "Temporal",
+        "start": 850,
+        "end": 862,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 853,
+        "end": 862,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1400,
+        "end": 1426,
+        "evidence": "within the past six months"
+      },
+      {
+        "kind": "Value",
+        "start": 1339,
+        "end": 1348,
+        "evidence": "presently"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "3f37941084c34d977fa7d9cd3adeb1ed0831112e10be9c1ff08638d5eec6d463",
+      "bb46d88ba939c15985366cc05301511210ce75ac368c162f86ea54b172f2ae7f",
+      "9158c13e7a2acdea4afe78f3687e8ccac8b7f08f73f4e8888fca96884d218fe7"
+    ]
+  },
+  {
+    "record_id": "NCT02015494_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 725,
+        "end": 733,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Measurement",
+        "start": 734,
+        "end": 739,
+        "evidence": "urine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 734,
+        "end": 754,
+        "evidence": "urine pregnancy test"
+      },
+      {
+        "kind": "Measurement",
+        "start": 755,
+        "end": 770,
+        "evidence": "within 24 hours"
+      },
+      {
+        "kind": "Measurement",
+        "start": 755,
+        "end": 795,
+        "evidence": "within 24 hours prior to receiving study"
+      },
+      {
+        "kind": "Measurement",
+        "start": 755,
+        "end": 803,
+        "evidence": "within 24 hours prior to receiving study vaccine"
+      },
+      {
+        "kind": "Measurement",
+        "start": 762,
+        "end": 770,
+        "evidence": "24 hours"
+      },
+      {
+        "kind": "Measurement",
+        "start": 771,
+        "end": 776,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Measurement",
+        "start": 811,
+        "end": 828,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 38,
+        "end": 41,
+        "evidence": "age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 42,
+        "end": 56,
+        "evidence": "at the time of"
+      },
+      {
+        "kind": "Temporal",
+        "start": 811,
+        "end": 828,
+        "evidence": "at least one year"
+      },
+      {
+        "kind": "Value",
+        "start": 23,
+        "end": 34,
+        "evidence": "18-40 years"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "547029393100784ddcba8ddd4f748e5f314ac4816931dbe6bb305cab9d0142c2",
+      "fef23b40b6dbc492dab23ebabecdd9f3b961c1329f1f57ba040390fd6bddc7e4"
+    ]
+  },
+  {
+    "record_id": "NCT02109081_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 3,
+        "end": 15,
+        "evidence": "preoperative"
+      },
+      {
+        "kind": "Temporal",
+        "start": 54,
+        "end": 58,
+        "evidence": "MMSE"
+      },
+      {
+        "kind": "Temporal",
+        "start": 54,
+        "end": 64,
+        "evidence": "MMSE score"
+      },
+      {
+        "kind": "Temporal",
+        "start": 68,
+        "end": 85,
+        "evidence": "= 20 out of 30 on"
+      },
+      {
+        "kind": "Temporal",
+        "start": 108,
+        "end": 122,
+        "evidence": "more than mild"
+      },
+      {
+        "kind": "Temporal",
+        "start": 264,
+        "end": 277,
+        "evidence": "within 3 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 264,
+        "end": 288,
+        "evidence": "within 3 days of surgery"
+      },
+      {
+        "kind": "Temporal",
+        "start": 271,
+        "end": 277,
+        "evidence": "3 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 312,
+        "end": 325,
+        "evidence": "postoperative"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "d80c4ea66a5c63401b3f45680bea29c89f8a43a5fc4e14822c409f63a4f7065b"
+    ]
+  },
+  {
+    "record_id": "NCT02109081_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "c7ccd92b99168475e15c0f436a2b5e7f187ff90c22d18b64d2d71d4f1d5ebac3"
+    ]
+  },
+  {
+    "record_id": "NCT02226887_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "ba7ce518944012811d88669974f1994285714b11f7dc2dcef9c64fc39a33c7c5"
+    ]
+  },
+  {
+    "record_id": "NCT02226887_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02245256_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 20,
+        "end": 34,
+        "evidence": "under 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 20,
+        "end": 28,
+        "evidence": "under 18"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8dc2491c431be77376ee49658eaa7b14d3baeae9358c23226af829f720b83779"
+    ]
+  },
+  {
+    "record_id": "NCT02245256_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "6d425c60f85599a095bbd3417eaf890dffbbb538ccb3336f93292fd20a54dfb5"
+    ]
+  },
+  {
+    "record_id": "NCT02260206_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02260206_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 38,
+        "end": 44,
+        "evidence": "during"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "03a00adee4748c9c1d0b4b11e13a6c7efe77e40044bd60842cf16f0b28d07943"
+    ]
+  },
+  {
+    "record_id": "NCT02301039_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 5,
+        "evidence": "Prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 39,
+        "end": 44,
+        "evidence": "PD-L1"
+      },
+      {
+        "kind": "Temporal",
+        "start": 165,
+        "end": 175,
+        "evidence": "concurrent"
+      },
+      {
+        "kind": "Temporal",
+        "start": 366,
+        "end": 369,
+        "evidence": "≤ 4"
+      },
+      {
+        "kind": "Temporal",
+        "start": 366,
+        "end": 375,
+        "evidence": "≤ 4 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 368,
+        "end": 375,
+        "evidence": "4 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 403,
+        "end": 406,
+        "evidence": "for"
+      },
+      {
+        "kind": "Temporal",
+        "start": 418,
+        "end": 421,
+        "evidence": "< 2"
+      },
+      {
+        "kind": "Temporal",
+        "start": 418,
+        "end": 427,
+        "evidence": "< 2 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 420,
+        "end": 446,
+        "evidence": "2 weeks prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 428,
+        "end": 433,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 437,
+        "end": 446,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 538,
+        "end": 544,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 606,
+        "end": 614,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Temporal",
+        "start": 655,
+        "end": 658,
+        "evidence": "HIV"
+      },
+      {
+        "kind": "Temporal",
+        "start": 659,
+        "end": 673,
+        "evidence": "1/2 antibodies"
+      },
+      {
+        "kind": "Temporal",
+        "start": 676,
+        "end": 682,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 676,
+        "end": 696,
+        "evidence": "active Hepatitis B ("
+      },
+      {
+        "kind": "Temporal",
+        "start": 696,
+        "end": 701,
+        "evidence": "HBsAg"
+      },
+      {
+        "kind": "Temporal",
+        "start": 696,
+        "end": 710,
+        "evidence": "HBsAg reactive"
+      },
+      {
+        "kind": "Temporal",
+        "start": 729,
+        "end": 736,
+        "evidence": "HCV RNA"
+      },
+      {
+        "kind": "Temporal",
+        "start": 779,
+        "end": 787,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Temporal",
+        "start": 800,
+        "end": 808,
+        "evidence": "antibody"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1779,
+        "end": 1786,
+        "evidence": "current"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "cbacc9bed0456ca04c526737d658d58facf7251f3385745770c17c27715a5427",
+      "f0d34a15728035090c682f2a6a3e8504d369b953fc5bb55e2d5488e5d4c0b12f",
+      "35871a6cd698cfd81c240af18bcf847447891745f0b43a26fac3a770fa8c7e64"
+    ]
+  },
+  {
+    "record_id": "NCT02301039_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 840,
+        "end": 843,
+        "evidence": "1-3"
+      },
+      {
+        "kind": "Temporal",
+        "start": 844,
+        "end": 849,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 869,
+        "end": 871,
+        "evidence": "in"
+      },
+      {
+        "kind": "Temporal",
+        "start": 921,
+        "end": 935,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 921,
+        "end": 945,
+        "evidence": "within 14 days of dosing"
+      },
+      {
+        "kind": "Temporal",
+        "start": 928,
+        "end": 935,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1204,
+        "end": 1216,
+        "evidence": "for 120 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1204,
+        "end": 1227,
+        "evidence": "for 120 days after last"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1204,
+        "end": 1253,
+        "evidence": "for 120 days after last study drug administration"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1208,
+        "end": 1216,
+        "evidence": "120 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1326,
+        "end": 1344,
+        "evidence": "within the first 2"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1343,
+        "end": 1350,
+        "evidence": "2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1422,
+        "end": 1430,
+        "evidence": "negative"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1446,
+        "end": 1450,
+        "evidence": "≤ 72"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1446,
+        "end": 1456,
+        "evidence": "≤ 72 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1448,
+        "end": 1456,
+        "evidence": "72 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1457,
+        "end": 1462,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1483,
+        "end": 1492,
+        "evidence": "Effective"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1624,
+        "end": 1628,
+        "evidence": "IUD)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1666,
+        "end": 1669,
+        "evidence": ">12"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1666,
+        "end": 1675,
+        "evidence": ">12 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1667,
+        "end": 1675,
+        "evidence": "12 weeks"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 2,
+    "cache_keys": [
+      "fe5b407583ab393e5ef5fb20625c1025784a9df0abf962820635382e01cc4231",
+      "72cf30eb27a375293b142f4603f2249bd6175200c05b0987ba3092b5ba5a6ffd",
+      "8840f7a69fdbd245e4e0c0f9e9a9090d1a397b17ba6d2d1ff031c8e86b6670ec"
+    ]
+  },
+  {
+    "record_id": "NCT02316886_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 142,
+        "end": 172,
+        "evidence": "more than or equal to 3 target"
+      },
+      {
+        "kind": "Temporal",
+        "start": 397,
+        "end": 410,
+        "evidence": "within 1 year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 404,
+        "end": 410,
+        "evidence": "1 year"
+      },
+      {
+        "kind": "Temporal",
+        "start": 428,
+        "end": 432,
+        "evidence": "less"
+      },
+      {
+        "kind": "Temporal",
+        "start": 428,
+        "end": 445,
+        "evidence": "less than 2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 438,
+        "end": 445,
+        "evidence": "2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 538,
+        "end": 546,
+        "evidence": "pregnant"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "5a7bdbd33ce876775af40be101ea5b3e79e79561b31efbedddb73d9dbca36d58"
+    ]
+  },
+  {
+    "record_id": "NCT02316886_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "d3b9017f15028ae5db3363bacbd899226d3a26a0c82abc0bb7f92a732ea30018"
+    ]
+  },
+  {
+    "record_id": "NCT02339974_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 125,
+        "end": 130,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1512,
+        "end": 1515,
+        "evidence": "all"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1602,
+        "end": 1608,
+        "evidence": "Recent"
+      },
+      {
+        "kind": "Value",
+        "start": 110,
+        "end": 118,
+        "evidence": "Evidence"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "36ca8e2a2397a50b7f30e0cee1f5b8c7ff6a0395f3e1bebfa0ca822f2f51b690",
+      "f2d4d70c3bb9d0b2c272e5b388acd30c0af06c6ad6fde9e6357f17d5e2a247f5",
+      "71f44ac1b1ba0249c1bb104be86602e24ea5adf40a242ba1d64f8070fff2bef3"
+    ]
+  },
+  {
+    "record_id": "NCT02339974_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 1124,
+        "end": 1131,
+        "evidence": "Frailty"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1578,
+        "end": 1581,
+        "evidence": "all"
+      },
+      {
+        "kind": "Value",
+        "start": 1413,
+        "end": 1415,
+        "evidence": "At"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "de698165cf0a5dce4883950f27bf64f16c48d0ef5958266da299cbb8d53e8fc7",
+      "e75d18a31cbfb5f01ca752e7ab68228a949a2017fdd4d83dd2ecd5f45a84bfa5",
+      "8196ad75832a37aa495e24f52a54ac3eb4c03008ea9b5a5a804d091a824e0d1f"
+    ]
+  },
+  {
+    "record_id": "NCT02348918_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 1091,
+        "end": 1096,
+        "evidence": ">8.00"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1091,
+        "end": 1097,
+        "evidence": ">8.00D"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1098,
+        "end": 1100,
+        "evidence": "at"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1098,
+        "end": 1110,
+        "evidence": "at screening"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1231,
+        "end": 1238,
+        "evidence": "Chronic"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1242,
+        "end": 1251,
+        "evidence": "recurrent"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1603,
+        "end": 1617,
+        "evidence": "pregnancy test"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1618,
+        "end": 1638,
+        "evidence": "during the screening"
+      },
+      {
+        "kind": "Measurement",
+        "start": 1655,
+        "end": 1661,
+        "evidence": "female"
+      },
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 6,
+        "evidence": "Active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 166,
+        "end": 174,
+        "evidence": "systolic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 175,
+        "end": 184,
+        "evidence": ">180 mmHg"
+      },
+      {
+        "kind": "Temporal",
+        "start": 175,
+        "end": 187,
+        "evidence": ">180 mmHg or"
+      },
+      {
+        "kind": "Temporal",
+        "start": 188,
+        "end": 198,
+        "evidence": "> 160 mmHg"
+      },
+      {
+        "kind": "Temporal",
+        "start": 204,
+        "end": 228,
+        "evidence": "consecutive measurements"
+      },
+      {
+        "kind": "Temporal",
+        "start": 232,
+        "end": 241,
+        "evidence": "diastolic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 242,
+        "end": 252,
+        "evidence": "> 100 mmHg"
+      },
+      {
+        "kind": "Temporal",
+        "start": 290,
+        "end": 306,
+        "evidence": "HgA1c blood test"
+      },
+      {
+        "kind": "Temporal",
+        "start": 307,
+        "end": 313,
+        "evidence": "> 10.0"
+      },
+      {
+        "kind": "Temporal",
+        "start": 314,
+        "end": 319,
+        "evidence": "Focal"
+      },
+      {
+        "kind": "Temporal",
+        "start": 408,
+        "end": 457,
+        "evidence": "within the last 90 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 424,
+        "end": 431,
+        "evidence": "90 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 432,
+        "end": 437,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 534,
+        "end": 583,
+        "evidence": "within the last 45 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 550,
+        "end": 557,
+        "evidence": "45 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 899,
+        "end": 948,
+        "evidence": "within the last 90 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 915,
+        "end": 922,
+        "evidence": "90 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 923,
+        "end": 928,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 950,
+        "end": 953,
+        "evidence": "YAG"
+      },
+      {
+        "kind": "Temporal",
+        "start": 987,
+        "end": 1028,
+        "evidence": "in last 30 days prior to study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 995,
+        "end": 1002,
+        "evidence": "30 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1588,
+        "end": 1596,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1597,
+        "end": 1602,
+        "evidence": "urine"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1663,
+        "end": 1672,
+        "evidence": "Currently"
+      },
+      {
+        "kind": "Value",
+        "start": 1003,
+        "end": 1008,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Value",
+        "start": 1261,
+        "end": 1268,
+        "evidence": "Ongoing"
+      },
+      {
+        "kind": "Value",
+        "start": 1560,
+        "end": 1578,
+        "evidence": "less than 60 years"
+      },
+      {
+        "kind": "Value",
+        "start": 1560,
+        "end": 1582,
+        "evidence": "less than 60 years old"
+      },
+      {
+        "kind": "Value",
+        "start": 1570,
+        "end": 1578,
+        "evidence": "60 years"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 0,
+    "cache_keys": [
+      "7bf3422518a0a01189af52f6aeffe92e284abbd390d43b5aca8aa7bc8f4b5b3e",
+      "69ea2b44642cde3787fa7f7f38bea0e85bf12bf2277366d7dde64b77b83b7b5f",
+      "6f6c47c9c1abdc80273871a51646132150a757b04d7f745ed2879c8783599da0"
+    ]
+  },
+  {
+    "record_id": "NCT02348918_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 790,
+        "end": 793,
+        "evidence": "all"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "b5bb4c2b03c28e414a1f6b849229585b505e871bb6403154a4c969d29d9d7935",
+      "f3b1e635111614248b3c8113262f4ccd1cacd77c6830238533e2dca659092910"
+    ]
+  },
+  {
+    "record_id": "NCT02399033_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02399033_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 724,
+        "end": 727,
+        "evidence": "All"
+      },
+      {
+        "kind": "Temporal",
+        "start": 765,
+        "end": 793,
+        "evidence": "during the treatment process"
+      },
+      {
+        "kind": "Temporal",
+        "start": 798,
+        "end": 800,
+        "evidence": "in"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "a9f1b3d02300b227ad8dc95074ec9e168c3ee5eba2d0b87dbd66ba02cf90a970",
+      "c03d12d042cad8d8a5bdbb35937fb366e695c145a89b0753e40692d7c3a43f0f"
+    ]
+  },
+  {
+    "record_id": "NCT02406495_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 2,
+    "failed_requests": 2,
+    "cache_keys": [
+      "bfe96b8939b0601a9c104cfccaa404ee156f19650a0a1c414399304e41081c7c",
+      "25f26c36359a46be734331642e9177006343d08867d8d96e0c7011da924b3d4b"
+    ]
+  },
+  {
+    "record_id": "NCT02406495_inc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 797,
+        "end": 799,
+        "evidence": "at"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "eab54cc431f1691aeadc96ee6e18f12bfdf7887c2ad5c2e3e200ee220affe752",
+      "e24b2d63fccf2cf8b35ffeb8e0dc0f82dd1e60eb7048e820dcfa60b544d95154"
+    ]
+  },
+  {
+    "record_id": "NCT02415257_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "65fc65d1792648219f769782154c7670cd3d1399947269f7bd275d9e8d0d0159"
+    ]
+  },
+  {
+    "record_id": "NCT02415257_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02416869_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02416869_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 18,
+        "end": 21,
+        "evidence": "ASA"
+      },
+      {
+        "kind": "Value",
+        "start": 18,
+        "end": 23,
+        "evidence": "ASA I"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "b88d13bf8177f854ee2b098bcb7ba1490eba8922f9d4d4160addfb95e164e4ae"
+    ]
+  },
+  {
+    "record_id": "NCT02420015_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 40,
+        "end": 60,
+        "evidence": "in the past 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 52,
+        "end": 60,
+        "evidence": "6 months"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "15a80c5ae1d24b496bee7ebd97f7cfc99ecca51e4050f02de7b345a21a0ba4aa"
+    ]
+  },
+  {
+    "record_id": "NCT02420015_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "a2e9648fde55cdd76aa590307b3c5dcf271fccf716ea064bd14b6544d2ff6f07"
+    ]
+  },
+  {
+    "record_id": "NCT02425774_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 149,
+        "end": 156,
+        "evidence": "chronic"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "915ca05c976641b3671a39497630d24f837af98868c847730136a1fbe4b43e01"
+    ]
+  },
+  {
+    "record_id": "NCT02425774_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02429765_exc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02429765_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 8,
+        "evidence": "Moderate"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "5bd349329949855f15e59871fdac982f14a4236f323016ba1467e292e3391402"
+    ]
+  },
+  {
+    "record_id": "NCT02464865_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 22,
+        "end": 29,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Value",
+        "start": 60,
+        "end": 69,
+        "evidence": "metabolic"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "84b206ffef9445523a47c2d2f7ac7e21f17bf3bd91462b8ad4c9d1f6ebcb7fb8"
+    ]
+  },
+  {
+    "record_id": "NCT02464865_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 26,
+        "end": 27,
+        "evidence": ">"
+      },
+      {
+        "kind": "Value",
+        "start": 35,
+        "end": 47,
+        "evidence": "+ 3 standard"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "1401e0fd6367a365630ed9349d25e9b8f5d08f6e676bd873d1e4292ab98d7b03"
+    ]
+  },
+  {
+    "record_id": "NCT02469610_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 8,
+        "evidence": "Previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8e92c5107125a89c1614a96521aa7e7a74a15a3f69adf26e31868c2c1ab611fa"
+    ]
+  },
+  {
+    "record_id": "NCT02469610_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 34,
+        "end": 47,
+        "evidence": "Over 18 years"
+      },
+      {
+        "kind": "Value",
+        "start": 34,
+        "end": 38,
+        "evidence": "Over"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e99d7efb91962205dcfd2fc8519560af03eb13207e9bc993a3ea7c8bf63d852c"
+    ]
+  },
+  {
+    "record_id": "NCT02553226_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "a69cf7afae0779ce31d065172b42eb37bed5bf691165d8b21be338072cd4120d"
+    ]
+  },
+  {
+    "record_id": "NCT02553226_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02560766_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 793,
+        "end": 800,
+        "evidence": "bipolar"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1089,
+        "end": 1098,
+        "evidence": "screening"
+      },
+      {
+        "kind": "Value",
+        "start": 1086,
+        "end": 1098,
+        "evidence": "at screening"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 2,
+    "cache_keys": [
+      "f1d02cc50757c96a56ca11166dfb4df754e803fa43fd3a4a807930120b8ca793",
+      "cf6a565cab582a3cbe477a5538598962ca0d1e7ef450712661a8e33598469a6e",
+      "7727da59dac09d6219db21bd6272dc902dc80b480f411b99f9912f7596da7626"
+    ]
+  },
+  {
+    "record_id": "NCT02560766_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "b20a9cdfbfca8ac29aca4a2980ef30ccc53a336b1f0ff979bfb2e7ce382ca194"
+    ]
+  },
+  {
+    "record_id": "NCT02570347_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "78df5eabb31bfaeea93e444ffd7347dfcdc70aff2bb27d7dd6a2ad488d7a1f01"
+    ]
+  },
+  {
+    "record_id": "NCT02570347_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 0,
+        "end": 3,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Temporal",
+        "start": 4,
+        "end": 15,
+        "evidence": "18-65 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 7,
+        "end": 15,
+        "evidence": "65 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 107,
+        "end": 111,
+        "evidence": "Less"
+      },
+      {
+        "kind": "Temporal",
+        "start": 107,
+        "end": 119,
+        "evidence": "Less than 24"
+      },
+      {
+        "kind": "Temporal",
+        "start": 107,
+        "end": 125,
+        "evidence": "Less than 24 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 117,
+        "end": 125,
+        "evidence": "24 hours"
+      },
+      {
+        "kind": "Temporal",
+        "start": 138,
+        "end": 141,
+        "evidence": "AND"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "9a876e7be9ee7d6f85d0ce5ced42e0cf52ca798ecfa98525d05d9e618af6c409"
+    ]
+  },
+  {
+    "record_id": "NCT02632266_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 16,
+        "end": 19,
+        "evidence": "<28"
+      },
+      {
+        "kind": "Measurement",
+        "start": 30,
+        "end": 33,
+        "evidence": ">34"
+      },
+      {
+        "kind": "Temporal",
+        "start": 17,
+        "end": 25,
+        "evidence": "28 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 16,
+        "end": 25,
+        "evidence": "<28 weeks"
+      },
+      {
+        "kind": "Value",
+        "start": 30,
+        "end": 39,
+        "evidence": ">34 weeks"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "5eb7c684f7c882160ce4449ebbba248e7423c20f407912de531b0af7c72d6089"
+    ]
+  },
+  {
+    "record_id": "NCT02632266_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "a7e42303f5ddadc930e93ab021aa9f00fa5366af92f19e550026307cd3d1ffd7"
+    ]
+  },
+  {
+    "record_id": "NCT02668978_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 88,
+        "end": 105,
+        "evidence": "more than 10 lung"
+      },
+      {
+        "kind": "Value",
+        "start": 237,
+        "end": 243,
+        "evidence": "active"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "58c83050ce241c0044399c265bd7550fc0cf0a9814777fb2f951b5840c89ca38"
+    ]
+  },
+  {
+    "record_id": "NCT02668978_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 18,
+        "end": 21,
+        "evidence": "age"
+      },
+      {
+        "kind": "Value",
+        "start": 9,
+        "end": 13,
+        "evidence": "over"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "9cdd9a0135f1772f77047ee9cee2ddb25b44193c17062ab221d6094afb612678"
+    ]
+  },
+  {
+    "record_id": "NCT02715466_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 18,
+        "end": 21,
+        "evidence": "HES"
+      },
+      {
+        "kind": "Temporal",
+        "start": 45,
+        "end": 50,
+        "evidence": "> 500"
+      },
+      {
+        "kind": "Temporal",
+        "start": 45,
+        "end": 53,
+        "evidence": "> 500 ml"
+      },
+      {
+        "kind": "Temporal",
+        "start": 75,
+        "end": 113,
+        "evidence": "within the 24 h prior to randomization"
+      },
+      {
+        "kind": "Temporal",
+        "start": 91,
+        "end": 96,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 130,
+        "end": 150,
+        "evidence": "within the next 48 h"
+      },
+      {
+        "kind": "Temporal",
+        "start": 184,
+        "end": 187,
+        "evidence": "ASA"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "c80fc3e6036201827578431f724beb9926ab87e5bf576b137bbe7263a1a8b17f"
+    ]
+  },
+  {
+    "record_id": "NCT02715466_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "71406a032be734d7a29cf7594c98cbeac98947fde399e2a40aec2f8bb75f732b"
+    ]
+  },
+  {
+    "record_id": "NCT02754583_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 62,
+        "end": 68,
+        "evidence": "3-hour"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "08d9b9b84ba89938ee34fab9881c0b7c108569c4b2dcf48f512ee00324cef03c"
+    ]
+  },
+  {
+    "record_id": "NCT02754583_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 39,
+        "end": 55,
+        "evidence": "within the study"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e410900db051fb13e5d891cbc08eac482a474b2024c32e556533796086cbeffb"
+    ]
+  },
+  {
+    "record_id": "NCT02823808_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 11,
+        "end": 17,
+        "evidence": "weight"
+      },
+      {
+        "kind": "Temporal",
+        "start": 60,
+        "end": 67,
+        "evidence": "glucose"
+      },
+      {
+        "kind": "Temporal",
+        "start": 126,
+        "end": 150,
+        "evidence": "within the past 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 137,
+        "end": 150,
+        "evidence": "past 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 142,
+        "end": 150,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 152,
+        "end": 160,
+        "evidence": "Previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 152,
+        "end": 170,
+        "evidence": "Previous treatment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 243,
+        "end": 249,
+        "evidence": "in the"
+      },
+      {
+        "kind": "Temporal",
+        "start": 243,
+        "end": 266,
+        "evidence": "in the previous 6 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 250,
+        "end": 258,
+        "evidence": "previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 250,
+        "end": 271,
+        "evidence": "previous 6 weeks\r\nThe"
+      },
+      {
+        "kind": "Temporal",
+        "start": 259,
+        "end": 266,
+        "evidence": "6 weeks"
+      },
+      {
+        "kind": "Temporal",
+        "start": 287,
+        "end": 325,
+        "evidence": "within the 3 months prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 298,
+        "end": 306,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 298,
+        "end": 325,
+        "evidence": "3 months prior to screening"
+      },
+      {
+        "kind": "Temporal",
+        "start": 307,
+        "end": 312,
+        "evidence": "prior"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "9810b6698ed2befaf86803384925c32b5cc5416bdf3a25f39d0defab76d06b52"
+    ]
+  },
+  {
+    "record_id": "NCT02823808_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 86,
+        "end": 95,
+        "evidence": "12 months"
+      },
+      {
+        "kind": "Measurement",
+        "start": 101,
+        "end": 106,
+        "evidence": "HbA1c"
+      },
+      {
+        "kind": "Temporal",
+        "start": 66,
+        "end": 95,
+        "evidence": "within the previous 12 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 77,
+        "end": 85,
+        "evidence": "previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 101,
+        "end": 113,
+        "evidence": "HbA1c levels"
+      },
+      {
+        "kind": "Temporal",
+        "start": 117,
+        "end": 126,
+        "evidence": "8.0-12.0%"
+      },
+      {
+        "kind": "Value",
+        "start": 66,
+        "end": 76,
+        "evidence": "within the"
+      },
+      {
+        "kind": "Value",
+        "start": 77,
+        "end": 95,
+        "evidence": "previous 12 months"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e889c63d500ab8403ea33205928d126b631171178d36e2067342b137ce79c941"
+    ]
+  },
+  {
+    "record_id": "NCT02837783_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "6e26d58ed510ef469e7c1f1c22561d9c887f177dc59e623ee1e8f06ede534db0"
+    ]
+  },
+  {
+    "record_id": "NCT02837783_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 8,
+        "end": 13,
+        "evidence": "meets"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "1ccf465261355940aa0c361877969a5e9075a2785b60c3e9e79b953e21804b92"
+    ]
+  },
+  {
+    "record_id": "NCT02872090_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 48,
+        "end": 56,
+        "evidence": "previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "81a480396ddc7a9f319dc5903b74155dcfb78256a451855cdb2a40806bd0585f"
+    ]
+  },
+  {
+    "record_id": "NCT02872090_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "ed5d30fa498391b6bff73b92e93e7f815c91d663a453183e92743e6ae0feba65"
+    ]
+  },
+  {
+    "record_id": "NCT02897856_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 256,
+        "end": 269,
+        "evidence": "consciousness"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "6e050212976a1bfcff0c0c6822598a09a8e68a35b609ee68f744e4e75300b1d3"
+    ]
+  },
+  {
+    "record_id": "NCT02897856_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "24d0f2b510c9b2d176cfb137e6ca4a7b93bceb631a253e504e113d7f3882107a"
+    ]
+  },
+  {
+    "record_id": "NCT02900443_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 120,
+        "end": 128,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Measurement",
+        "start": 129,
+        "end": 147,
+        "evidence": "Anti-Mitochondrial"
+      },
+      {
+        "kind": "Measurement",
+        "start": 204,
+        "end": 212,
+        "evidence": "findings"
+      },
+      {
+        "kind": "Measurement",
+        "start": 261,
+        "end": 266,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Measurement",
+        "start": 346,
+        "end": 349,
+        "evidence": "INR"
+      },
+      {
+        "kind": "Measurement",
+        "start": 350,
+        "end": 355,
+        "evidence": "> 1.5"
+      },
+      {
+        "kind": "Temporal",
+        "start": 492,
+        "end": 499,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 949,
+        "end": 954,
+        "evidence": "trial"
+      },
+      {
+        "kind": "Value",
+        "start": 97,
+        "end": 111,
+        "evidence": "Paris criteria"
+      },
+      {
+        "kind": "Value",
+        "start": 166,
+        "end": 170,
+        "evidence": "past"
+      },
+      {
+        "kind": "Value",
+        "start": 358,
+        "end": 365,
+        "evidence": "Current"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 0,
+    "cache_keys": [
+      "f2780a8e8bb64567e4de8dfec4806834ba7079a200aa64e39fc3422d029da04c",
+      "888ea507cc22c9e7d482758d9da56daedce64cfd4ab75034b2acc65d15893a96"
+    ]
+  },
+  {
+    "record_id": "NCT02900443_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "03615a1cb285c079ca2da6101dfb5e0dcec93a22cea4285fccc06a32e837f1e7"
+    ]
+  },
+  {
+    "record_id": "NCT02908919_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 45,
+        "end": 51,
+        "evidence": "active"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "7f0b47bac3176a42de4beeadc9f26391cd98fc19e6dac49612e625802f535a71"
+    ]
+  },
+  {
+    "record_id": "NCT02908919_inc",
+    "schema_valid": true,
+    "items": [],
+    "request_count": 0,
+    "failed_requests": 0,
+    "cache_keys": []
+  },
+  {
+    "record_id": "NCT02951832_exc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "6451cc204076cc22e2c4360c484baed4c19ab2b77d17570a66648a518636f8cf"
+    ]
+  },
+  {
+    "record_id": "NCT02951832_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 11,
+        "end": 16,
+        "evidence": "20-49"
+      },
+      {
+        "kind": "Temporal",
+        "start": 85,
+        "end": 92,
+        "evidence": "between"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "7ac21a71d62f1341c162c306f0dea2d292a19d786d1ceafc9efa7bb8d0a2b157"
+    ]
+  },
+  {
+    "record_id": "NCT02961582_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 300,
+        "end": 308,
+        "evidence": "Previous"
+      },
+      {
+        "kind": "Temporal",
+        "start": 501,
+        "end": 513,
+        "evidence": "during study"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "6a01d048c2d0bd910aa7bc15cc746d5c2838026a37c324819199584f1e590e37"
+    ]
+  },
+  {
+    "record_id": "NCT02961582_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "593521131296a7d9e817830da05dbdd7e215d6034c4152df9bd24ebdab0cf1c2"
+    ]
+  },
+  {
+    "record_id": "NCT02970773_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 753,
+        "end": 761,
+        "evidence": "platelet"
+      },
+      {
+        "kind": "Measurement",
+        "start": 753,
+        "end": 767,
+        "evidence": "platelet count"
+      },
+      {
+        "kind": "Measurement",
+        "start": 828,
+        "end": 830,
+        "evidence": "II"
+      },
+      {
+        "kind": "Measurement",
+        "start": 833,
+        "end": 836,
+        "evidence": "VII"
+      },
+      {
+        "kind": "Measurement",
+        "start": 841,
+        "end": 842,
+        "evidence": "X"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "20659d4c5aa08ad702c53558184d2c4c8a97ed91fca297050ad4e13648e834d4",
+      "e788f7b9a35ceec00590dc5f7360c38a245adbda8ea7e48bfad740d76e6e60fb"
+    ]
+  },
+  {
+    "record_id": "NCT02970773_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 31,
+        "end": 41,
+        "evidence": "at least 3"
+      },
+      {
+        "kind": "Measurement",
+        "start": 75,
+        "end": 92,
+        "evidence": "Body mass index ("
+      },
+      {
+        "kind": "Temporal",
+        "start": 31,
+        "end": 48,
+        "evidence": "at least 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 54,
+        "end": 73,
+        "evidence": "from 18 to 74 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 65,
+        "end": 73,
+        "evidence": "74 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 75,
+        "end": 90,
+        "evidence": "Body mass index"
+      },
+      {
+        "kind": "Temporal",
+        "start": 75,
+        "end": 96,
+        "evidence": "Body mass index (BMI)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 92,
+        "end": 95,
+        "evidence": "BMI"
+      },
+      {
+        "kind": "Temporal",
+        "start": 92,
+        "end": 96,
+        "evidence": "BMI)"
+      },
+      {
+        "kind": "Temporal",
+        "start": 97,
+        "end": 115,
+        "evidence": "from 18 to 35kg/m2"
+      },
+      {
+        "kind": "Temporal",
+        "start": 102,
+        "end": 112,
+        "evidence": "18 to 35kg"
+      },
+      {
+        "kind": "Value",
+        "start": 50,
+        "end": 53,
+        "evidence": "Age"
+      },
+      {
+        "kind": "Value",
+        "start": 59,
+        "end": 73,
+        "evidence": "18 to 74 years"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "448b295df8bff636fa33c8d74b9ef0c32adeed4b4cb8a2ca34885c40e469830c"
+    ]
+  },
+  {
+    "record_id": "NCT03140423_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 41,
+        "end": 55,
+        "evidence": "average length"
+      },
+      {
+        "kind": "Temporal",
+        "start": 67,
+        "end": 78,
+        "evidence": "less than 2"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "8137c43d1ea84f2177b35b105345c14c676d2dc723e6019bb05a991f5754a15c"
+    ]
+  },
+  {
+    "record_id": "NCT03140423_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 28,
+        "end": 31,
+        "evidence": "all"
+      },
+      {
+        "kind": "Temporal",
+        "start": 162,
+        "end": 165,
+        "evidence": "All"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "0cdcfa97f0cf3014bc93fe17ab3162926afac1b052099412ec4b987c1ac34b77"
+    ]
+  },
+  {
+    "record_id": "NCT03173092_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 33,
+        "end": 37,
+        "evidence": "that"
+      },
+      {
+        "kind": "Temporal",
+        "start": 42,
+        "end": 46,
+        "evidence": "less"
+      },
+      {
+        "kind": "Temporal",
+        "start": 65,
+        "end": 68,
+        "evidence": "<=]"
+      },
+      {
+        "kind": "Temporal",
+        "start": 69,
+        "end": 74,
+        "evidence": "Grade"
+      },
+      {
+        "kind": "Temporal",
+        "start": 118,
+        "end": 123,
+        "evidence": "prior"
+      },
+      {
+        "kind": "Temporal",
+        "start": 153,
+        "end": 185,
+        "evidence": "within 14 days before enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 160,
+        "end": 167,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 233,
+        "evidence": "within 14 days before enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 201,
+        "end": 265,
+        "evidence": "within 14 days before enrollment (if the involved field is small"
+      },
+      {
+        "kind": "Temporal",
+        "start": 208,
+        "end": 215,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 267,
+        "end": 273,
+        "evidence": "7 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 315,
+        "end": 322,
+        "evidence": "between"
+      },
+      {
+        "kind": "Temporal",
+        "start": 483,
+        "end": 497,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 483,
+        "end": 521,
+        "evidence": "within 14 days before study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 490,
+        "end": 497,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 536,
+        "end": 543,
+        "evidence": "current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 735,
+        "end": 745,
+        "evidence": "within the"
+      },
+      {
+        "kind": "Temporal",
+        "start": 735,
+        "end": 759,
+        "evidence": "within the past 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 746,
+        "end": 759,
+        "evidence": "past 6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 751,
+        "end": 759,
+        "evidence": "6 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 762,
+        "end": 770,
+        "evidence": "Systemic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 782,
+        "end": 796,
+        "evidence": "within 14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 782,
+        "end": 813,
+        "evidence": "within 14 days before the first"
+      },
+      {
+        "kind": "Temporal",
+        "start": 782,
+        "end": 830,
+        "evidence": "within 14 days before the first dose of ixazomib"
+      },
+      {
+        "kind": "Temporal",
+        "start": 789,
+        "end": 796,
+        "evidence": "14 days"
+      },
+      {
+        "kind": "Temporal",
+        "start": 855,
+        "end": 859,
+        "evidence": "P450"
+      },
+      {
+        "kind": "Temporal",
+        "start": 891,
+        "end": 902,
+        "evidence": "rifapentine"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1002,
+        "end": 1009,
+        "evidence": "Ongoing"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1013,
+        "end": 1019,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1040,
+        "end": 1046,
+        "evidence": "active"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1057,
+        "end": 1063,
+        "evidence": "B or C"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1119,
+        "end": 1127,
+        "evidence": "positive"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1151,
+        "end": 1154,
+        "evidence": "for"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1174,
+        "end": 1188,
+        "evidence": "within 2 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1174,
+        "end": 1212,
+        "evidence": "within 2 years before study enrollment"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1174,
+        "end": 1260,
+        "evidence": "within 2 years before study enrollment or previously diagnosed with another malignancy"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1181,
+        "end": 1188,
+        "evidence": "2 years"
+      }
+    ],
+    "request_count": 3,
+    "failed_requests": 1,
+    "cache_keys": [
+      "e6bb0734ec90087c43bcdfa08f1a7076ce0ff21e3600542a37231cd8d77c9aff",
+      "3aae8694d7f090be007fdaabfe871486498f209d8b0838510dd08b75a2741729",
+      "04d36c99065ae74dcec706b52466176b61bcd7391fc31ce9f682d318de8911cc"
+    ]
+  },
+  {
+    "record_id": "NCT03173092_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "1b59a1dea5f142da08e09bc8042c7cff65b1a4cf00d93e5c072f77863577926a"
+    ]
+  },
+  {
+    "record_id": "NCT03256864_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 321,
+        "end": 331,
+        "evidence": "within the"
+      },
+      {
+        "kind": "Temporal",
+        "start": 321,
+        "end": 344,
+        "evidence": "within the past 5 years"
+      },
+      {
+        "kind": "Temporal",
+        "start": 332,
+        "end": 336,
+        "evidence": "past"
+      },
+      {
+        "kind": "Temporal",
+        "start": 332,
+        "end": 338,
+        "evidence": "past 5"
+      },
+      {
+        "kind": "Temporal",
+        "start": 337,
+        "end": 344,
+        "evidence": "5 years"
+      },
+      {
+        "kind": "Value",
+        "start": 94,
+        "end": 104,
+        "evidence": "previously"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "c3f6c973c2d3b441628d9f40f2135b5dbf246b1bdf417dd07c3bf0f7fcaf29f6"
+    ]
+  },
+  {
+    "record_id": "NCT03256864_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "f1e92683ae2c59552ebad5976b739b086449c60d193a02751f4dbd3ac65e4e6c"
+    ]
+  },
+  {
+    "record_id": "NCT03260881_exc",
+    "schema_valid": false,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 854,
+        "end": 859,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 863,
+        "end": 870,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 992,
+        "end": 999,
+        "evidence": "chronic"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1004,
+        "end": 1009,
+        "evidence": "acute"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1121,
+        "end": 1128,
+        "evidence": "Current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1161,
+        "end": 1176,
+        "evidence": "in the 3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1161,
+        "end": 1193,
+        "evidence": "in the 3 months prior this study"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1168,
+        "end": 1176,
+        "evidence": "3 months"
+      },
+      {
+        "kind": "Temporal",
+        "start": 1177,
+        "end": 1182,
+        "evidence": "prior"
+      }
+    ],
+    "request_count": 2,
+    "failed_requests": 1,
+    "cache_keys": [
+      "155e530eea7e30ed80bb58f36cd668e1fcb34c5791a17b409be77333235f0b06",
+      "d57ad05b28b3c00d94c5f12dec289e04db1d09854babd360d240db9afdd29edc"
+    ]
+  },
+  {
+    "record_id": "NCT03260881_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "72f2805be5f13fb778996123c01a045550e7444663700f8563ae90aa2187c969"
+    ]
+  },
+  {
+    "record_id": "NCT03305666_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Value",
+        "start": 70,
+        "end": 73,
+        "evidence": "Age"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "e9f06f9cbdd90e66b197ff68d4437a108d6a3a3d25803cb0735c8f578c5526e4"
+    ]
+  },
+  {
+    "record_id": "NCT03305666_inc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 20,
+        "end": 24,
+        "evidence": "SSRF"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "0ce270f0a30a4ce32a43710c309793d88206597fd8338adf9a9e0c9e6a6f57da"
+    ]
+  },
+  {
+    "record_id": "NCT03347513_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Measurement",
+        "start": 31,
+        "end": 41,
+        "evidence": "hemoglobin"
+      },
+      {
+        "kind": "Temporal",
+        "start": 42,
+        "end": 53,
+        "evidence": "< 8.0 g/dL)"
+      },
+      {
+        "kind": "Value",
+        "start": 42,
+        "end": 52,
+        "evidence": "< 8.0 g/dL"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "db7cad7769e1818fcc7d2206489f1c3d0250e7815ce919ec83c2622cda1ff6c5"
+    ]
+  },
+  {
+    "record_id": "NCT03347513_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "17a7ecd73d075289ff7b0d4fc2334f9a78adeb31e19ecdaaa09d8cd19e0e9e84"
+    ]
+  },
+  {
+    "record_id": "NCT03479502_exc",
+    "schema_valid": true,
+    "items": [
+      {
+        "kind": "Temporal",
+        "start": 238,
+        "end": 245,
+        "evidence": "current"
+      },
+      {
+        "kind": "Temporal",
+        "start": 275,
+        "end": 283,
+        "evidence": "previous"
+      }
+    ],
+    "request_count": 1,
+    "failed_requests": 0,
+    "cache_keys": [
+      "c024ff27bb91dca7acfd62f5682437260a65391f86f468c8e653cd94d6b867fd"
+    ]
+  },
+  {
+    "record_id": "NCT03479502_inc",
+    "schema_valid": false,
+    "items": [],
+    "request_count": 1,
+    "failed_requests": 1,
+    "cache_keys": [
+      "a6ffcc48f912ac2b79642aa69d3fe8ec08f47c159eb07e535a3a8bc4095dd7ba"
+    ]
+  }
+]

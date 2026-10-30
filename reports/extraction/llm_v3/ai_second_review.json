@@ -1,0 +1,6294 @@
+{
+  "title": "AI 二次复核：12 份冻结样本",
+  "reviewer": "Codex (AI)",
+  "reviewed_at": "2026-10-30T10:58:48.411585+00:00",
+  "review_round": 2,
+  "review_type": "AI_secondary_review",
+  "is_human_review": false,
+  "reviewed_cases": 12,
+  "blinded": false,
+  "method": "AI逐条阅读12份A/B原文及输出，并核对CHIA原始标注；数值匹配由脚本复算，不作独立临床判定。",
+  "scope": "Frozen CHIA matched-prefix A/B outputs",
+  "human_review_completed_cases": 0,
+  "clinical_eligibility_logic_validated": false,
+  "input_sha256": {
+    "human_review_packet.json": "a4fe0fdc88dc1114bdde28283b3af1465b7901d8a7428af6d8028f344adbc68f",
+    "ai_second_review_notes.json": "7e0fc412d7ddcf0ddbc0757dde948f6d570e59c36b87cacb0cc7434897f7061d",
+    "human_review_key.json": "708f8b2da2835c29ba789a275daab6320d88117f55b19ee6e07bd75bbb2ac408",
+    "fresh_evaluation.json": "9c2a3310ef6bf09fefe4451771d3a030e6a911661b826bfaf46cff1666a60f6e",
+    "fresh_predictions.json": "d090e411165dc800aa35954a7a27b10a6107ab1cfd76d3d4c1765dfb1b3a5997"
+  },
+  "verification": {
+    "frozen_code_unchanged": true,
+    "predictions_unchanged": true,
+    "ai_evidence_quotes_verified": 37,
+    "human_packet_unchanged": true
+  },
+  "aggregate": {
+    "original_llm": {
+      "tp": 10,
+      "fp": 31,
+      "fn": 63,
+      "precision": 0.24390243902439024,
+      "recall": 0.136986301369863,
+      "f1": 0.17543859649122806,
+      "exact_documents": 0
+    },
+    "llm_v3": {
+      "tp": 37,
+      "fp": 114,
+      "fn": 36,
+      "precision": 0.24503311258278146,
+      "recall": 0.5068493150684932,
+      "f1": 0.33035714285714285,
+      "exact_documents": 1
+    }
+  },
+  "cases": [
+    {
+      "case_id": "review-01",
+      "record_id": "NCT03119766_exc",
+      "source": "Organic diseases of the digestive system (gastro-oesophageal reflux disease (GERD), ulcer, chronic pancreatitis, cholelithiasis, fatty liver disease, hepatitis, cirrhosis of liver, etc.) .\r\nDiagnosis of other functional diseases of the digestive system, such as dyskinesia of cystic duct or gallbladder, irritable bowel syndrome, etc.\r\nDiscontinuation of proton pump inhibitors, propulsives, antispasmodics, antacids, or bismuth preparations less than 7 days prior to randomization.\r\nH. Pylori eradication within 2 months before study entry.\r\nIntestinal infection within 2 months before study entry.\r\nKnown history of/suspected malignant neoplasm of various sites.\r\nPrior diagnosis of a class IV cardiovascular disease (according to the New York Heart Association, 1964), hypothyroidism, diabetes mellitus, chronic kidney disease (С3-5), or disease of liver with portal hypertension and/or severe decompensation (Child-Pugh score > 6).\r\nOther severe coexisting morbidity which, in the investigator's opinion, can prevent the patient from participating in the study.\r\nAllergy/intolerance to any of the components of medications used in the treatment.\r\nPregnancy, breast-feeding.\r\nPatients who, from investigator's point of view, will fail to comply with the observation requirements of the trial or with the dosing regimen of the investigational drugs.\r\nPlanned hospitalization during the study period, for any diagnostic or treatment procedures.\r\nDrug addiction, alcohol use in the amount over 2 units of alcohol a day, mental diseases.\r\nIntake of medicines listed in the section 'Prohibited concomitant treatment' for 1 month prior to the enrollment in the trial.\r\nParticipation in other clinical trials within 3 months to the enrollment in this study.\r\nPatient is related to the research staff of",
+      "gold": [
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              442,
+              481
+            ]
+          ],
+          "source_fragments": [
+            "less than 7 days prior to randomization"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              506,
+              540
+            ]
+          ],
+          "source_fragments": [
+            "within 2 months before study entry"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              564,
+              598
+            ]
+          ],
+          "source_fragments": [
+            "within 2 months before study entry"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              737,
+              763
+            ]
+          ],
+          "source_fragments": [
+            "New York Heart Association"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              687,
+              695
+            ]
+          ],
+          "source_fragments": [
+            "class IV"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              831,
+              832
+            ]
+          ],
+          "source_fragments": [
+            "С"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              832,
+              835
+            ]
+          ],
+          "source_fragments": [
+            "3-5"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              913,
+              929
+            ]
+          ],
+          "source_fragments": [
+            "Child-Pugh score"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              930,
+              933
+            ]
+          ],
+          "source_fragments": [
+            "> 6"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              950,
+              960
+            ]
+          ],
+          "source_fragments": [
+            "coexisting"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1377,
+              1400
+            ]
+          ],
+          "source_fragments": [
+            "during the study period"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              1463,
+              1474
+            ]
+          ],
+          "source_fragments": [
+            "alcohol use"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              1489,
+              1518
+            ]
+          ],
+          "source_fragments": [
+            "over 2 units of alcohol a day"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1619,
+              1663
+            ]
+          ],
+          "source_fragments": [
+            "1 month prior to the enrollment in the trial"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-01",
+        "finding": "A把gastro-oesophageal中的子串age当成Measurement；虽然字符能在原文中找到，但不是独立实体。B补回两个重复时间窗和Child-Pugh score等实体，同时把多种疾病名称、单字母或缩写片段归入Measurement，误报很多。",
+        "boundary_and_omissions": "B的> 6)多包含右括号；for 1 month prior to the enrollment in the trial比金标准多包含for；New York Heart Association等目标实体仍遗漏。",
+        "context": "这是一份排除标准。抽到疾病名或阈值并不等于已解析排除逻辑，不能据此生成患者入组结论。",
+        "evidence_quotes": [
+          "gastro-oesophageal reflux disease (GERD)",
+          "Child-Pugh score > 6",
+          "within 2 months before study entry"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 14,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "age",
+            "start": 55,
+            "end": 58,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                442,
+                481
+              ]
+            ],
+            "source_fragments": [
+              "less than 7 days prior to randomization"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                506,
+                540
+              ]
+            ],
+            "source_fragments": [
+              "within 2 months before study entry"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                564,
+                598
+              ]
+            ],
+            "source_fragments": [
+              "within 2 months before study entry"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                737,
+                763
+              ]
+            ],
+            "source_fragments": [
+              "New York Heart Association"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                687,
+                695
+              ]
+            ],
+            "source_fragments": [
+              "class IV"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                831,
+                832
+              ]
+            ],
+            "source_fragments": [
+              "С"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                832,
+                835
+              ]
+            ],
+            "source_fragments": [
+              "3-5"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                913,
+                929
+              ]
+            ],
+            "source_fragments": [
+              "Child-Pugh score"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                930,
+                933
+              ]
+            ],
+            "source_fragments": [
+              "> 6"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                950,
+                960
+              ]
+            ],
+            "source_fragments": [
+              "coexisting"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1377,
+                1400
+              ]
+            ],
+            "source_fragments": [
+              "during the study period"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                1463,
+                1474
+              ]
+            ],
+            "source_fragments": [
+              "alcohol use"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                1489,
+                1518
+              ]
+            ],
+            "source_fragments": [
+              "over 2 units of alcohol a day"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1619,
+                1663
+              ]
+            ],
+            "source_fragments": [
+              "1 month prior to the enrollment in the trial"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 5,
+          "fp": 37,
+          "fn": 9,
+          "precision": 0.11904761904761904,
+          "recall": 0.35714285714285715,
+          "f1": 0.17857142857142858
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 26,
+          "type_overlap": 4,
+          "boundary_overlap": 7,
+          "exact": 5
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 42,
+            "end": 60,
+            "evidence": "gastro-oesophageal",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 42,
+            "end": 82,
+            "evidence": "gastro-oesophageal reflux disease (GERD)",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 77,
+            "end": 81,
+            "evidence": "GERD",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 91,
+            "end": 111,
+            "evidence": "chronic pancreatitis",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 113,
+            "end": 127,
+            "evidence": "cholelithiasis",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 129,
+            "end": 148,
+            "evidence": "fatty liver disease",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 150,
+            "end": 159,
+            "evidence": "hepatitis",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 161,
+            "end": 179,
+            "evidence": "cirrhosis of liver",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 304,
+            "end": 328,
+            "evidence": "irritable bowel syndrome",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 484,
+            "end": 485,
+            "evidence": "H",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 554,
+            "end": 563,
+            "evidence": "infection",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 628,
+            "end": 646,
+            "evidence": "malignant neoplasm",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 693,
+            "end": 695,
+            "evidence": "IV",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    687,
+                    695
+                  ]
+                ],
+                "source_fragments": [
+                  "class IV"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 696,
+            "end": 718,
+            "evidence": "cardiovascular disease",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 772,
+            "end": 786,
+            "evidence": "hypothyroidism",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 788,
+            "end": 805,
+            "evidence": "diabetes mellitus",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 807,
+            "end": 829,
+            "evidence": "chronic kidney disease",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 831,
+            "end": 835,
+            "evidence": "С3-5",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    831,
+                    832
+                  ]
+                ],
+                "source_fragments": [
+                  "С"
+                ]
+              },
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    832,
+                    835
+                  ]
+                ],
+                "source_fragments": [
+                  "3-5"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 863,
+            "end": 882,
+            "evidence": "portal hypertension",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 897,
+            "end": 911,
+            "evidence": "decompensation",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 913,
+            "end": 929,
+            "evidence": "Child-Pugh score",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    913,
+                    929
+                  ]
+                ],
+                "source_fragments": [
+                  "Child-Pugh score"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 429,
+            "end": 441,
+            "evidence": "preparations",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 442,
+            "end": 481,
+            "evidence": "less than 7 days prior to randomization",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    442,
+                    481
+                  ]
+                ],
+                "source_fragments": [
+                  "less than 7 days prior to randomization"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 506,
+            "end": 540,
+            "evidence": "within 2 months before study entry",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    506,
+                    540
+                  ]
+                ],
+                "source_fragments": [
+                  "within 2 months before study entry"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 564,
+            "end": 598,
+            "evidence": "within 2 months before study entry",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    564,
+                    598
+                  ]
+                ],
+                "source_fragments": [
+                  "within 2 months before study entry"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 666,
+            "end": 671,
+            "evidence": "Prior",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1013,
+            "end": 1020,
+            "evidence": "prevent",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1377,
+            "end": 1400,
+            "evidence": "during the study period",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1377,
+                    1400
+                  ]
+                ],
+                "source_fragments": [
+                  "during the study period"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1489,
+            "end": 1501,
+            "evidence": "over 2 units",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    1489,
+                    1518
+                  ]
+                ],
+                "source_fragments": [
+                  "over 2 units of alcohol a day"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1592,
+            "end": 1613,
+            "evidence": "concomitant treatment",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1615,
+            "end": 1663,
+            "evidence": "for 1 month prior to the enrollment in the trial",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1619,
+                    1663
+                  ]
+                ],
+                "source_fragments": [
+                  "1 month prior to the enrollment in the trial"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1705,
+            "end": 1752,
+            "evidence": "within 3 months to the enrollment in this study",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 442,
+            "end": 451,
+            "evidence": "less than",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    442,
+                    481
+                  ]
+                ],
+                "source_fragments": [
+                  "less than 7 days prior to randomization"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 571,
+            "end": 579,
+            "evidence": "2 months",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    564,
+                    598
+                  ]
+                ],
+                "source_fragments": [
+                  "within 2 months before study entry"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 666,
+            "end": 671,
+            "evidence": "Prior",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 693,
+            "end": 695,
+            "evidence": "IV",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    687,
+                    695
+                  ]
+                ],
+                "source_fragments": [
+                  "class IV"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 807,
+            "end": 814,
+            "evidence": "chronic",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 831,
+            "end": 835,
+            "evidence": "С3-5",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    831,
+                    832
+                  ]
+                ],
+                "source_fragments": [
+                  "С"
+                ]
+              },
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    832,
+                    835
+                  ]
+                ],
+                "source_fragments": [
+                  "3-5"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 913,
+            "end": 933,
+            "evidence": "Child-Pugh score > 6",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    913,
+                    929
+                  ]
+                ],
+                "source_fragments": [
+                  "Child-Pugh score"
+                ]
+              },
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    930,
+                    933
+                  ]
+                ],
+                "source_fragments": [
+                  "> 6"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Scope"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 930,
+            "end": 934,
+            "evidence": "> 6)",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    930,
+                    933
+                  ]
+                ],
+                "source_fragments": [
+                  "> 6"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1489,
+            "end": 1501,
+            "evidence": "over 2 units",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    1489,
+                    1518
+                  ]
+                ],
+                "source_fragments": [
+                  "over 2 units of alcohol a day"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1581,
+            "end": 1591,
+            "evidence": "Prohibited",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                737,
+                763
+              ]
+            ],
+            "source_fragments": [
+              "New York Heart Association"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                687,
+                695
+              ]
+            ],
+            "source_fragments": [
+              "class IV"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                831,
+                832
+              ]
+            ],
+            "source_fragments": [
+              "С"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                832,
+                835
+              ]
+            ],
+            "source_fragments": [
+              "3-5"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                930,
+                933
+              ]
+            ],
+            "source_fragments": [
+              "> 6"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                950,
+                960
+              ]
+            ],
+            "source_fragments": [
+              "coexisting"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                1463,
+                1474
+              ]
+            ],
+            "source_fragments": [
+              "alcohol use"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                1489,
+                1518
+              ]
+            ],
+            "source_fragments": [
+              "over 2 units of alcohol a day"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1619,
+                1663
+              ]
+            ],
+            "source_fragments": [
+              "1 month prior to the enrollment in the trial"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-02",
+      "record_id": "NCT01312012_inc",
+      "source": "pregnant women in 30 to 32 weeks of gestation, with positive HBsAg and HBeAg,serum viral load above 8log10 copies per mL\r\n",
+      "gold": [
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              18,
+              32
+            ]
+          ],
+          "source_fragments": [
+            "30 to 32 weeks"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              36,
+              45
+            ]
+          ],
+          "source_fragments": [
+            "gestation"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              61,
+              66
+            ]
+          ],
+          "source_fragments": [
+            "HBsAg"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              71,
+              76
+            ]
+          ],
+          "source_fragments": [
+            "HBeAg"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              52,
+              60
+            ]
+          ],
+          "source_fragments": [
+            "positive"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              77,
+              93
+            ]
+          ],
+          "source_fragments": [
+            "serum viral load"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              94,
+              120
+            ]
+          ],
+          "source_fragments": [
+            "above 8log10 copies per mL"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-02",
+        "finding": "A和B都保留HBsAg、HBeAg及serum viral load。B补出positive，但同时保留截断的serum viral，与完整实体重复。两组都把30 to 32 weeks标为Temporal；这条记录的金标准将其标为Value，gestation标为Measurement。",
+        "boundary_and_omissions": "B的in 30 to 32 weeks边界多了in；B漏掉gestation，两组都漏掉above 8log10 copies per mL。这条样本中新组合的精确F1低于旧模型，不能只展示改善样例。",
+        "context": "孕周在本条语料中是测量值，不是相对事件时间窗；应依据上下文和已固定的任务标签判断。",
+        "evidence_quotes": [
+          "30 to 32 weeks of gestation",
+          "positive HBsAg and HBeAg",
+          "serum viral load above 8log10 copies per mL"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 4,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.6666666666666666,
+          "recall": 0.5714285714285714,
+          "f1": 0.6153846153846154
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 1,
+          "exact": 4,
+          "type_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "pregnant women",
+            "start": 0,
+            "end": 14,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "gestation",
+            "start": 36,
+            "end": 45,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    36,
+                    45
+                  ]
+                ],
+                "source_fragments": [
+                  "gestation"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "HBsAg",
+            "start": 61,
+            "end": 66,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    61,
+                    66
+                  ]
+                ],
+                "source_fragments": [
+                  "HBsAg"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "HBeAg",
+            "start": 71,
+            "end": 76,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    71,
+                    76
+                  ]
+                ],
+                "source_fragments": [
+                  "HBeAg"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "serum viral load",
+            "start": 77,
+            "end": 93,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    77,
+                    93
+                  ]
+                ],
+                "source_fragments": [
+                  "serum viral load"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "30 to 32 weeks",
+            "start": 18,
+            "end": 32,
+            "numeric_literals": [
+              "30",
+              "32"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    18,
+                    32
+                  ]
+                ],
+                "source_fragments": [
+                  "30 to 32 weeks"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Value"
+            ]
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                18,
+                32
+              ]
+            ],
+            "source_fragments": [
+              "30 to 32 weeks"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                52,
+                60
+              ]
+            ],
+            "source_fragments": [
+              "positive"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                94,
+                120
+              ]
+            ],
+            "source_fragments": [
+              "above 8log10 copies per mL"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 4,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.5714285714285714,
+          "recall": 0.5714285714285714,
+          "f1": 0.5714285714285714
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "exact": 4,
+          "boundary_overlap": 2,
+          "type_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 61,
+            "end": 66,
+            "evidence": "HBsAg",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    61,
+                    66
+                  ]
+                ],
+                "source_fragments": [
+                  "HBsAg"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 71,
+            "end": 76,
+            "evidence": "HBeAg",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    71,
+                    76
+                  ]
+                ],
+                "source_fragments": [
+                  "HBeAg"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 77,
+            "end": 88,
+            "evidence": "serum viral",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    77,
+                    93
+                  ]
+                ],
+                "source_fragments": [
+                  "serum viral load"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 77,
+            "end": 93,
+            "evidence": "serum viral load",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    77,
+                    93
+                  ]
+                ],
+                "source_fragments": [
+                  "serum viral load"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 18,
+            "end": 32,
+            "evidence": "30 to 32 weeks",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    18,
+                    32
+                  ]
+                ],
+                "source_fragments": [
+                  "30 to 32 weeks"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Value"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 15,
+            "end": 32,
+            "evidence": "in 30 to 32 weeks",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    18,
+                    32
+                  ]
+                ],
+                "source_fragments": [
+                  "30 to 32 weeks"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 52,
+            "end": 60,
+            "evidence": "positive",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    52,
+                    60
+                  ]
+                ],
+                "source_fragments": [
+                  "positive"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                18,
+                32
+              ]
+            ],
+            "source_fragments": [
+              "30 to 32 weeks"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                36,
+                45
+              ]
+            ],
+            "source_fragments": [
+              "gestation"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                94,
+                120
+              ]
+            ],
+            "source_fragments": [
+              "above 8log10 copies per mL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-03",
+      "record_id": "NCT03335904_exc",
+      "source": "history of hypertension\r\nknown impaired renal function\r\nliver disease\r\nheart failure\r\nmyocardial infarction\r\ncoronary artery disease\r\nsmoked within the past year\r\napnea hypopnea index > 5 events per hour\r\n",
+      "gold": [
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              141,
+              161
+            ]
+          ],
+          "source_fragments": [
+            "within the past year"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              163,
+              183
+            ]
+          ],
+          "source_fragments": [
+            "apnea hypopnea index"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              184,
+              203
+            ]
+          ],
+          "source_fragments": [
+            "> 5 events per hour"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-03",
+        "finding": "A找到完整的within the past year，但又输出较短的past，并把同一时间窗重复标为Value。B没有保留实体。",
+        "boundary_and_omissions": "A把> 5 events per hour截成> 5；两组都未完整抽出apnea hypopnea index及其数值。renal function在这条记录的目标金标准中未标为Measurement，其临床合理性没有在本复核中裁定。",
+        "context": "时间窗、指数名称和单位构成不同信息；仅保留数字5会丢失每小时事件数的量纲。",
+        "evidence_quotes": [
+          "within the past year",
+          "apnea hypopnea index > 5 events per hour",
+          "impaired renal function"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 1,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.2,
+          "recall": 0.3333333333333333,
+          "f1": 0.25
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 1,
+          "exact": 1,
+          "boundary_overlap": 2,
+          "type_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 40,
+            "end": 54,
+            "evidence": "renal function",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 141,
+            "end": 161,
+            "evidence": "within the past year",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    141,
+                    161
+                  ]
+                ],
+                "source_fragments": [
+                  "within the past year"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 152,
+            "end": 156,
+            "evidence": "past",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    141,
+                    161
+                  ]
+                ],
+                "source_fragments": [
+                  "within the past year"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 141,
+            "end": 161,
+            "evidence": "within the past year",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    141,
+                    161
+                  ]
+                ],
+                "source_fragments": [
+                  "within the past year"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Temporal"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 184,
+            "end": 187,
+            "evidence": "> 5",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    184,
+                    203
+                  ]
+                ],
+                "source_fragments": [
+                  "> 5 events per hour"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                163,
+                183
+              ]
+            ],
+            "source_fragments": [
+              "apnea hypopnea index"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                184,
+                203
+              ]
+            ],
+            "source_fragments": [
+              "> 5 events per hour"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {},
+        "prediction_checks": [],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                141,
+                161
+              ]
+            ],
+            "source_fragments": [
+              "within the past year"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                163,
+                183
+              ]
+            ],
+            "source_fragments": [
+              "apnea hypopnea index"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                184,
+                203
+              ]
+            ],
+            "source_fragments": [
+              "> 5 events per hour"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-04",
+      "record_id": "NCT02901106_exc",
+      "source": "pregnant or breastfeeding woman\r\npatient with a measure of legal protection\r\nsubject unaffiliated insurance\r\n",
+      "gold": [],
+      "ai_notes": {
+        "case_id": "review-04",
+        "finding": "金标准没有Measurement、Value、Temporal目标实体。B的空输出与本任务金标准完全一致。A将妊娠/哺乳状态、法律保护和保险相关描述当成Measurement，不符合本任务标签。",
+        "boundary_and_omissions": "B没有本任务范围内的误报或漏报；这不表示这些资格条件不存在或不重要。",
+        "context": "本轮仅评估三个实体类别，不对法律条款或妊娠状态做资格判断。",
+        "evidence_quotes": [
+          "pregnant or breastfeeding woman",
+          "measure of legal protection",
+          "unaffiliated insurance"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "pregnant or breastfeeding",
+            "start": 0,
+            "end": 25,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "with a measure of legal protection",
+            "start": 41,
+            "end": 75,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "unaffiliated insurance",
+            "start": 85,
+            "end": 107,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": []
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": true,
+        "error_patterns": {},
+        "prediction_checks": [],
+        "missing_gold": []
+      }
+    },
+    {
+      "case_id": "review-05",
+      "record_id": "NCT00396734_inc",
+      "source": "Methadone-maintained cocaine-dependent patients use between 1g to 2g a day; 1 to 3 times a week \n",
+      "gold": [],
+      "ai_notes": {
+        "case_id": "review-05",
+        "finding": "两组都将用量或频次当成目标实体。核对完整.ann后，1g to 2g a day和1 to 3 times a week实际标为Multiplier，cocaine-dependent标为Condition，因此本任务的目标金标准为空。",
+        "boundary_and_omissions": "B还产生明显未完成的片段between 1g to。两组在精确基准上都有3个误报；不能把金标准没有目标实体直接解释为原文没有数量信息。",
+        "context": "出现数字和时间单位并不足以决定Value或Temporal标签；药物用量/频次需要遵循语料类别范围。",
+        "evidence_quotes": [
+          "between 1g to 2g a day",
+          "1 to 3 times a week",
+          "cocaine-dependent"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "cocaine-dependent",
+            "start": 21,
+            "end": 38,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Value",
+            "evidence": "1g to 2g",
+            "start": 60,
+            "end": 68,
+            "numeric_literals": [
+              "1",
+              "2"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "1 to 3 times a week",
+            "start": 76,
+            "end": 95,
+            "numeric_literals": [
+              "1",
+              "3"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Multiplier"
+            ]
+          }
+        ],
+        "missing_gold": []
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Temporal",
+            "start": 76,
+            "end": 95,
+            "evidence": "1 to 3 times a week",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Multiplier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 52,
+            "end": 65,
+            "evidence": "between 1g to",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 52,
+            "end": 74,
+            "evidence": "between 1g to 2g a day",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": []
+      }
+    },
+    {
+      "case_id": "review-06",
+      "record_id": "NCT03253796_exc",
+      "source": "Has bilateral sacroiliitis Grade 2 or unilateral sacroiliitis Grade 3 or Grade 4\r\nIs a nursing or pregnant female, or intends to become pregnant within 6 months after receiving trial medication\r\nIntends to donate eggs (female participants) or sperm (male participants) while receiving trial medication or within 6 months after trial medication\r\nHas any clinically significant condition or situation that would interfere with the trial evaluations or participation in the trial\r\nHas ever received any cytotoxic drugs, including chlorambucil, cyclophosphamide, nitrogen mustard, or other alkylating agents\r\n• Disease-modifying anti-rheumatic drugs (30 days off drug)\r\n• Live vaccinations (3 months off drug)\r\n• Investigational medications (30 days or 5 half-lives off drug, whichever is longer)\r\n• Bacille Calmette-Guerin (BCG) vaccination (12 months off drug)\r\nHas any systemic inflammatory condition, including psoriatic arthritis, active Lyme disease, systemic lupus erythematosus, infectious arthritis, vasculitis, parvovirus infection, rheumatoid arthritis, active uveitis, or active IBD\r\nHas a history of latent or active granulomatous infection prior to Screening\r\nHad a nontuberculous mycobacterial infection or opportunistic infection within 6 months prior to Screening\r\nHas a history of an infected joint prosthesis, or has received antibiotics for a suspected infection of a joint prosthesis, if that prosthesis has not been removed or replaced\r\nHad a serious infection, has been hospitalized for an infection, or has been treated with IV antibiotics for an infection within 2 months prior to Baseline\r\nHad a history of, or ongoing, chronic or recurrent infectious disease\r\nIs known to be infected with human immunodeficiency virus (HIV) or seropositive for hepatitis C virus (HCV)\r\nHas had",
+      "gold": [
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              145,
+              193
+            ]
+          ],
+          "source_fragments": [
+            "within 6 months after receiving trial medication"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              269,
+              301
+            ]
+          ],
+          "source_fragments": [
+            "while receiving trial medication"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              305,
+              343
+            ]
+          ],
+          "source_fragments": [
+            "within 6 months after trial medication"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              647,
+              663
+            ]
+          ],
+          "source_fragments": [
+            "30 days off drug"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              687,
+              704
+            ]
+          ],
+          "source_fragments": [
+            "3 months off drug"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              738,
+              745
+            ],
+            [
+              762,
+              770
+            ]
+          ],
+          "source_fragments": [
+            "30 days",
+            "off drug"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              749,
+              770
+            ]
+          ],
+          "source_fragments": [
+            "5 half-lives off drug"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              839,
+              857
+            ]
+          ],
+          "source_fragments": [
+            "12 months off drug"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1150,
+              1168
+            ]
+          ],
+          "source_fragments": [
+            "prior to Screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1242,
+              1276
+            ]
+          ],
+          "source_fragments": [
+            "within 6 months prior to Screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1577,
+              1610
+            ]
+          ],
+          "source_fragments": [
+            "within 2 months prior to Baseline"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1633,
+              1640
+            ]
+          ],
+          "source_fragments": [
+            "ongoing"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-06",
+        "finding": "B补回多个完整时间窗，召回显著高于A，但把疾病名、Live、Investigational、whichever和IV等片段误当Measurement，并输出多余的active等标签。",
+        "boundary_and_omissions": "两组输出30 days or 5 half-lives off drug，未对应金标准中的不连续30 days | off drug及另一条5 half-lives off drug。B仍漏掉while receiving trial medication和12 months off drug等完整时间片段。",
+        "context": "原文含whichever is longer以及多个不同排除条件。当前连续片段抽取不能表示取较长值的逻辑；不能把已复制的文本视为完整规则。",
+        "evidence_quotes": [
+          "30 days or 5 half-lives off drug, whichever is longer",
+          "while receiving trial medication",
+          "12 months off drug"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 10,
+          "precision": 0.2857142857142857,
+          "recall": 0.16666666666666666,
+          "f1": 0.21052631578947367
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 2,
+          "type_overlap": 1,
+          "exact": 2,
+          "boundary_overlap": 2
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "nursing",
+            "start": 87,
+            "end": 94,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Value",
+            "evidence": "Grade 3",
+            "start": 62,
+            "end": 69,
+            "numeric_literals": [
+              "3"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "evidence": "while receiving trial medication",
+            "start": 269,
+            "end": 301,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    269,
+                    301
+                  ]
+                ],
+                "source_fragments": [
+                  "while receiving trial medication"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Temporal"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "30 days off drug",
+            "start": 647,
+            "end": 663,
+            "numeric_literals": [
+              "30"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    647,
+                    663
+                  ]
+                ],
+                "source_fragments": [
+                  "30 days off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "3 months off drug",
+            "start": 687,
+            "end": 704,
+            "numeric_literals": [
+              "3"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    687,
+                    704
+                  ]
+                ],
+                "source_fragments": [
+                  "3 months off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "30 days or 5 half-lives off drug",
+            "start": 738,
+            "end": 770,
+            "numeric_literals": [
+              "30",
+              "5"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    738,
+                    745
+                  ],
+                  [
+                    762,
+                    770
+                  ]
+                ],
+                "source_fragments": [
+                  "30 days",
+                  "off drug"
+                ]
+              },
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    749,
+                    770
+                  ]
+                ],
+                "source_fragments": [
+                  "5 half-lives off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Scope"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "within 2 months",
+            "start": 1577,
+            "end": 1592,
+            "numeric_literals": [
+              "2"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1577,
+                    1610
+                  ]
+                ],
+                "source_fragments": [
+                  "within 2 months prior to Baseline"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                145,
+                193
+              ]
+            ],
+            "source_fragments": [
+              "within 6 months after receiving trial medication"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                269,
+                301
+              ]
+            ],
+            "source_fragments": [
+              "while receiving trial medication"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                305,
+                343
+              ]
+            ],
+            "source_fragments": [
+              "within 6 months after trial medication"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                738,
+                745
+              ],
+              [
+                762,
+                770
+              ]
+            ],
+            "source_fragments": [
+              "30 days",
+              "off drug"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                749,
+                770
+              ]
+            ],
+            "source_fragments": [
+              "5 half-lives off drug"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                839,
+                857
+              ]
+            ],
+            "source_fragments": [
+              "12 months off drug"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1150,
+                1168
+              ]
+            ],
+            "source_fragments": [
+              "prior to Screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1242,
+                1276
+              ]
+            ],
+            "source_fragments": [
+              "within 6 months prior to Screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1577,
+                1610
+              ]
+            ],
+            "source_fragments": [
+              "within 2 months prior to Baseline"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1633,
+                1640
+              ]
+            ],
+            "source_fragments": [
+              "ongoing"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 8,
+          "fp": 24,
+          "fn": 4,
+          "precision": 0.25,
+          "recall": 0.6666666666666666,
+          "f1": 0.36363636363636365
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 21,
+          "boundary_overlap": 2,
+          "exact": 8,
+          "type_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 14,
+            "end": 26,
+            "evidence": "sacroiliitis",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 49,
+            "end": 61,
+            "evidence": "sacroiliitis",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 668,
+            "end": 672,
+            "evidence": "Live",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 709,
+            "end": 724,
+            "evidence": "Investigational",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 772,
+            "end": 781,
+            "evidence": "whichever",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1545,
+            "end": 1547,
+            "evidence": "IV",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1712,
+            "end": 1740,
+            "evidence": "human immunodeficiency virus",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1712,
+            "end": 1745,
+            "evidence": "human immunodeficiency virus (HIV",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1750,
+            "end": 1762,
+            "evidence": "seropositive",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1786,
+            "end": 1789,
+            "evidence": "HCV",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1786,
+            "end": 1790,
+            "evidence": "HCV)",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 145,
+            "end": 166,
+            "evidence": "within 6 months after",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    145,
+                    193
+                  ]
+                ],
+                "source_fragments": [
+                  "within 6 months after receiving trial medication"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 145,
+            "end": 193,
+            "evidence": "within 6 months after receiving trial medication",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    145,
+                    193
+                  ]
+                ],
+                "source_fragments": [
+                  "within 6 months after receiving trial medication"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 305,
+            "end": 343,
+            "evidence": "within 6 months after trial medication",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    305,
+                    343
+                  ]
+                ],
+                "source_fragments": [
+                  "within 6 months after trial medication"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 647,
+            "end": 663,
+            "evidence": "30 days off drug",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    647,
+                    663
+                  ]
+                ],
+                "source_fragments": [
+                  "30 days off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 687,
+            "end": 704,
+            "evidence": "3 months off drug",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    687,
+                    704
+                  ]
+                ],
+                "source_fragments": [
+                  "3 months off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 738,
+            "end": 770,
+            "evidence": "30 days or 5 half-lives off drug",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    738,
+                    745
+                  ],
+                  [
+                    762,
+                    770
+                  ]
+                ],
+                "source_fragments": [
+                  "30 days",
+                  "off drug"
+                ]
+              },
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    749,
+                    770
+                  ]
+                ],
+                "source_fragments": [
+                  "5 half-lives off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Scope"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 932,
+            "end": 938,
+            "evidence": "active",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 1061,
+            "end": 1067,
+            "evidence": "active",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1080,
+            "end": 1086,
+            "evidence": "active",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1119,
+            "end": 1125,
+            "evidence": "active",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 1150,
+            "end": 1168,
+            "evidence": "prior to Screening",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1150,
+                    1168
+                  ]
+                ],
+                "source_fragments": [
+                  "prior to Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1242,
+            "end": 1276,
+            "evidence": "within 6 months prior to Screening",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1242,
+                    1276
+                  ]
+                ],
+                "source_fragments": [
+                  "within 6 months prior to Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1577,
+            "end": 1610,
+            "evidence": "within 2 months prior to Baseline",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1577,
+                    1610
+                  ]
+                ],
+                "source_fragments": [
+                  "within 2 months prior to Baseline"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1633,
+            "end": 1640,
+            "evidence": "ongoing",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1633,
+                    1640
+                  ]
+                ],
+                "source_fragments": [
+                  "ongoing"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1653,
+            "end": 1662,
+            "evidence": "recurrent",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 1763,
+            "end": 1766,
+            "evidence": "for",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 27,
+            "end": 34,
+            "evidence": "Grade 2",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 62,
+            "end": 69,
+            "evidence": "Grade 3",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 73,
+            "end": 80,
+            "evidence": "Grade 4",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 839,
+            "end": 841,
+            "evidence": "12",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    839,
+                    857
+                  ]
+                ],
+                "source_fragments": [
+                  "12 months off drug"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1754,
+            "end": 1762,
+            "evidence": "positive",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                269,
+                301
+              ]
+            ],
+            "source_fragments": [
+              "while receiving trial medication"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                738,
+                745
+              ],
+              [
+                762,
+                770
+              ]
+            ],
+            "source_fragments": [
+              "30 days",
+              "off drug"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                749,
+                770
+              ]
+            ],
+            "source_fragments": [
+              "5 half-lives off drug"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                839,
+                857
+              ]
+            ],
+            "source_fragments": [
+              "12 months off drug"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-07",
+      "record_id": "NCT02092467_exc",
+      "source": "Current or recent infection\r\nClinically significant laboratory abnormalities\r\nPregnancy\r\n",
+      "gold": [
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              11,
+              17
+            ]
+          ],
+          "source_fragments": [
+            "recent"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              0,
+              7
+            ]
+          ],
+          "source_fragments": [
+            "Current"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-07",
+        "finding": "A正确保留Current，但把Current or recent整体作为Temporal，同时把整条感染描述、实验室异常和Pregnancy当成Value。B把infection和laboratory abnormalities当成Measurement。",
+        "boundary_and_omissions": "金标准分别标Current与recent；A漏掉独立的recent，B两者都漏掉。Clinically significant也不是这条记录的Temporal金标准。",
+        "context": "状态修饰词与其修饰的疾病/妊娠条件需要区分，不能用整条criterion替代实体。",
+        "evidence_quotes": [
+          "Current or recent infection",
+          "Clinically significant laboratory abnormalities",
+          "Pregnancy"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.16666666666666666,
+          "recall": 0.5,
+          "f1": 0.25
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "exact": 1,
+          "boundary_overlap": 1,
+          "no_target_overlap": 3,
+          "type_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Temporal",
+            "start": 0,
+            "end": 7,
+            "evidence": "Current",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    0,
+                    7
+                  ]
+                ],
+                "source_fragments": [
+                  "Current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 0,
+            "end": 17,
+            "evidence": "Current or recent",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    11,
+                    17
+                  ]
+                ],
+                "source_fragments": [
+                  "recent"
+                ]
+              },
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    0,
+                    7
+                  ]
+                ],
+                "source_fragments": [
+                  "Current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Scope"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 29,
+            "end": 51,
+            "evidence": "Clinically significant",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 0,
+            "end": 27,
+            "evidence": "Current or recent infection",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    11,
+                    17
+                  ]
+                ],
+                "source_fragments": [
+                  "recent"
+                ]
+              },
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    0,
+                    7
+                  ]
+                ],
+                "source_fragments": [
+                  "Current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 29,
+            "end": 76,
+            "evidence": "Clinically significant laboratory abnormalities",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 78,
+            "end": 87,
+            "evidence": "Pregnancy",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                11,
+                17
+              ]
+            ],
+            "source_fragments": [
+              "recent"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 2
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "infection",
+            "start": 18,
+            "end": 27,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "laboratory abnormalities",
+            "start": 52,
+            "end": 76,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                11,
+                17
+              ]
+            ],
+            "source_fragments": [
+              "recent"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                0,
+                7
+              ]
+            ],
+            "source_fragments": [
+              "Current"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-08",
+      "record_id": "NCT01313676_inc",
+      "source": "Type of subject: outpatient. \nInformed consent: Subjects must give their signed and dated written informed consent to participate. \nGender: Male or female. Female subjects must be post-menopausal or using a highly effective method for avoidance of pregnancy. The decision to include or exclude women of childbearing potential may be made at the discretion of the investigator in accordance with local practice in relation to adequate contraception. \nAge: >=40 and <=80 years of age at Screening (Visit 1). \nTobacco use: Subjects with a current or prior history of >=10 pack-years of cigarette smoking at screening (Visit 1). Previous smokers are defined as those who have stopped smoking for at least 6 months prior to Visit 1. \nAirflow Obstruction: \nSubjects with a measured post-albuterol/salbutamol forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio of <=0.70 at Screening (Visit 1). \nSubjects with a measured post-albuterol/salbutamol FEV1 >=50 and <=70% of predicted normal values calculated using NHANES III reference equations [Hankinson, 1999; Hankinson, 2010] at Screening (Visit 1). \nPost-bronchodilator spirometry will be performed approximately 15 minutes after the subject has self-administered 4 inhalations (i.e., total 400mcg) of albuterol/salbutamol via a metered dose inhaler (MDI )with a valved-holding chamber. The FEV1/FVC ratio and FEV1 percent predicted values will be calculated. \nSymptoms of COPD: Subjects must score 2 or higher on the modified Medical Research Council Dyspnea scale (Visit 1) \nCardiovascular disease: \nFor patients >= 40 years of age: any one of the following: \nEstablished (i.e. by clinical signs or imaging studies) coronary artery disease (CAD) Established (i.e. by clinical signs or imaging studies) peripheral vascular",
+      "gold": [
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              455,
+              474
+            ]
+          ],
+          "source_fragments": [
+            ">=40 and <=80 years"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              482,
+              494
+            ]
+          ],
+          "source_fragments": [
+            "at Screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              601,
+              613
+            ]
+          ],
+          "source_fragments": [
+            "at screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              547,
+              552
+            ]
+          ],
+          "source_fragments": [
+            "prior"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              536,
+              543
+            ]
+          ],
+          "source_fragments": [
+            "current"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              688,
+              726
+            ]
+          ],
+          "source_fragments": [
+            "for at least 6 months prior to Visit 1"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              776,
+              801
+            ]
+          ],
+          "source_fragments": [
+            "post-albuterol/salbutamol"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              802,
+              878
+            ]
+          ],
+          "source_fragments": [
+            "forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              882,
+              888
+            ]
+          ],
+          "source_fragments": [
+            "<=0.70"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              889,
+              901
+            ]
+          ],
+          "source_fragments": [
+            "at Screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              939,
+              964
+            ]
+          ],
+          "source_fragments": [
+            "post-albuterol/salbutamol"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              965,
+              969
+            ]
+          ],
+          "source_fragments": [
+            "FEV1"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              970,
+              1011
+            ]
+          ],
+          "source_fragments": [
+            ">=50 and <=70% of predicted normal values"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1095,
+              1107
+            ]
+          ],
+          "source_fragments": [
+            "at Screening"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1120,
+              1139
+            ]
+          ],
+          "source_fragments": [
+            "Post-bronchodilator"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              1169,
+              1199
+            ]
+          ],
+          "source_fragments": [
+            "approximately 15 minutes after"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              1463,
+              1480
+            ]
+          ],
+          "source_fragments": [
+            "score 2 or higher"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              1488,
+              1535
+            ]
+          ],
+          "source_fragments": [
+            "modified Medical Research Council Dyspnea scale"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              1585,
+              1596
+            ]
+          ],
+          "source_fragments": [
+            ">= 40 years"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-08",
+        "finding": "A恢复了多个重复的at Screening、完整年龄范围及<=0.70；B把年龄范围拆成>=40与<=80，且没有任何完整目标匹配。A仍产生age、NHANES、reference等不匹配Measurement。",
+        "boundary_and_omissions": "A把长肺功能测量名称截断；>=50 and <=70% of predicted normal缺少values；for at least 6 months prior to Visit 1漏for；score 2 or higher漏score。缩写和长复合实体仍是难点。",
+        "context": "原文同时有年龄、吸烟暴露、肺功能、给药步骤及临床评分。分段改善了覆盖，但没有可靠区分所有测量、剂量和时间描述。",
+        "evidence_quotes": [
+          ">=40 and <=80 years",
+          ">=50 and <=70% of predicted normal values",
+          "for at least 6 months prior to Visit 1",
+          "score 2 or higher"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 7,
+          "fp": 24,
+          "fn": 12,
+          "precision": 0.22580645161290322,
+          "recall": 0.3684210526315789,
+          "f1": 0.28
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 11,
+          "boundary_overlap": 11,
+          "exact": 7,
+          "type_overlap": 2
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 478,
+            "end": 481,
+            "evidence": "age",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Person"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "start": 802,
+            "end": 831,
+            "evidence": "forced expiratory volume in 1",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    802,
+                    878
+                  ]
+                ],
+                "source_fragments": [
+                  "forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 847,
+            "end": 868,
+            "evidence": "forced vital capacity",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    802,
+                    878
+                  ]
+                ],
+                "source_fragments": [
+                  "forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1029,
+            "end": 1035,
+            "evidence": "NHANES",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1040,
+            "end": 1049,
+            "evidence": "reference",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1255,
+            "end": 1267,
+            "evidence": "total 400mcg",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1361,
+            "end": 1369,
+            "evidence": "FEV1/FVC",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 1380,
+            "end": 1392,
+            "evidence": "FEV1 percent",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 338,
+            "end": 340,
+            "evidence": "at",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 482,
+            "end": 494,
+            "evidence": "at Screening",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    482,
+                    494
+                  ]
+                ],
+                "source_fragments": [
+                  "at Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 482,
+            "end": 496,
+            "evidence": "at Screening (",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    482,
+                    494
+                  ]
+                ],
+                "source_fragments": [
+                  "at Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 536,
+            "end": 543,
+            "evidence": "current",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    536,
+                    543
+                  ]
+                ],
+                "source_fragments": [
+                  "current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 547,
+            "end": 563,
+            "evidence": "prior history of",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    547,
+                    552
+                  ]
+                ],
+                "source_fragments": [
+                  "prior"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 601,
+            "end": 615,
+            "evidence": "at screening (",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    601,
+                    613
+                  ]
+                ],
+                "source_fragments": [
+                  "at screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 625,
+            "end": 633,
+            "evidence": "Previous",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 688,
+            "end": 691,
+            "evidence": "for",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    688,
+                    726
+                  ]
+                ],
+                "source_fragments": [
+                  "for at least 6 months prior to Visit 1"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 692,
+            "end": 726,
+            "evidence": "at least 6 months prior to Visit 1",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    688,
+                    726
+                  ]
+                ],
+                "source_fragments": [
+                  "for at least 6 months prior to Visit 1"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 710,
+            "end": 726,
+            "evidence": "prior to Visit 1",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    688,
+                    726
+                  ]
+                ],
+                "source_fragments": [
+                  "for at least 6 months prior to Visit 1"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 889,
+            "end": 901,
+            "evidence": "at Screening",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    889,
+                    901
+                  ]
+                ],
+                "source_fragments": [
+                  "at Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1095,
+            "end": 1107,
+            "evidence": "at Screening",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1095,
+                    1107
+                  ]
+                ],
+                "source_fragments": [
+                  "at Screening"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1194,
+            "end": 1203,
+            "evidence": "after the",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1169,
+                    1199
+                  ]
+                ],
+                "source_fragments": [
+                  "approximately 15 minutes after"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 1585,
+            "end": 1596,
+            "evidence": ">= 40 years",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    1585,
+                    1596
+                  ]
+                ],
+                "source_fragments": [
+                  ">= 40 years"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": [
+              "Value"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 140,
+            "end": 144,
+            "evidence": "Male",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Person"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 180,
+            "end": 195,
+            "evidence": "post-menopausal",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 455,
+            "end": 474,
+            "evidence": ">=40 and <=80 years",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    455,
+                    474
+                  ]
+                ],
+                "source_fragments": [
+                  ">=40 and <=80 years"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 564,
+            "end": 579,
+            "evidence": ">=10 pack-years",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Multiplier"
+            ]
+          },
+          {
+            "kind": "Value",
+            "start": 882,
+            "end": 888,
+            "evidence": "<=0.70",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    882,
+                    888
+                  ]
+                ],
+                "source_fragments": [
+                  "<=0.70"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 970,
+            "end": 1004,
+            "evidence": ">=50 and <=70% of predicted normal",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    970,
+                    1011
+                  ]
+                ],
+                "source_fragments": [
+                  ">=50 and <=70% of predicted normal values"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1183,
+            "end": 1185,
+            "evidence": "15",
+            "source_quote_verified": true,
+            "benchmark_verdict": "type_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    1169,
+                    1199
+                  ]
+                ],
+                "source_fragments": [
+                  "approximately 15 minutes after"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1469,
+            "end": 1480,
+            "evidence": "2 or higher",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    1463,
+                    1480
+                  ]
+                ],
+                "source_fragments": [
+                  "score 2 or higher"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 1585,
+            "end": 1596,
+            "evidence": ">= 40 years",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    1585,
+                    1596
+                  ]
+                ],
+                "source_fragments": [
+                  ">= 40 years"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                601,
+                613
+              ]
+            ],
+            "source_fragments": [
+              "at screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                547,
+                552
+              ]
+            ],
+            "source_fragments": [
+              "prior"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                688,
+                726
+              ]
+            ],
+            "source_fragments": [
+              "for at least 6 months prior to Visit 1"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                776,
+                801
+              ]
+            ],
+            "source_fragments": [
+              "post-albuterol/salbutamol"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                802,
+                878
+              ]
+            ],
+            "source_fragments": [
+              "forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                939,
+                964
+              ]
+            ],
+            "source_fragments": [
+              "post-albuterol/salbutamol"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                965,
+                969
+              ]
+            ],
+            "source_fragments": [
+              "FEV1"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                970,
+                1011
+              ]
+            ],
+            "source_fragments": [
+              ">=50 and <=70% of predicted normal values"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1120,
+                1139
+              ]
+            ],
+            "source_fragments": [
+              "Post-bronchodilator"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1169,
+                1199
+              ]
+            ],
+            "source_fragments": [
+              "approximately 15 minutes after"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                1463,
+                1480
+              ]
+            ],
+            "source_fragments": [
+              "score 2 or higher"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                1488,
+                1535
+              ]
+            ],
+            "source_fragments": [
+              "modified Medical Research Council Dyspnea scale"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 6,
+          "fn": 19,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 3,
+          "boundary_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "Age",
+            "start": 450,
+            "end": 453,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Person"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "FEV1/FVC ratio",
+            "start": 1361,
+            "end": 1375,
+            "numeric_literals": [
+              "1"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "FEV1 percent predicted values",
+            "start": 1380,
+            "end": 1409,
+            "numeric_literals": [
+              "1"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": ">=40",
+            "start": 455,
+            "end": 459,
+            "numeric_literals": [
+              "40"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    455,
+                    474
+                  ]
+                ],
+                "source_fragments": [
+                  ">=40 and <=80 years"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": "<=80",
+            "start": 464,
+            "end": 468,
+            "numeric_literals": [
+              "80"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    455,
+                    474
+                  ]
+                ],
+                "source_fragments": [
+                  ">=40 and <=80 years"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": ">=50 and <=70%",
+            "start": 970,
+            "end": 984,
+            "numeric_literals": [
+              "50",
+              "70"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    970,
+                    1011
+                  ]
+                ],
+                "source_fragments": [
+                  ">=50 and <=70% of predicted normal values"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                455,
+                474
+              ]
+            ],
+            "source_fragments": [
+              ">=40 and <=80 years"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                482,
+                494
+              ]
+            ],
+            "source_fragments": [
+              "at Screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                601,
+                613
+              ]
+            ],
+            "source_fragments": [
+              "at screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                547,
+                552
+              ]
+            ],
+            "source_fragments": [
+              "prior"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                536,
+                543
+              ]
+            ],
+            "source_fragments": [
+              "current"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                688,
+                726
+              ]
+            ],
+            "source_fragments": [
+              "for at least 6 months prior to Visit 1"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                776,
+                801
+              ]
+            ],
+            "source_fragments": [
+              "post-albuterol/salbutamol"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                802,
+                878
+              ]
+            ],
+            "source_fragments": [
+              "forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                882,
+                888
+              ]
+            ],
+            "source_fragments": [
+              "<=0.70"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                889,
+                901
+              ]
+            ],
+            "source_fragments": [
+              "at Screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                939,
+                964
+              ]
+            ],
+            "source_fragments": [
+              "post-albuterol/salbutamol"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                965,
+                969
+              ]
+            ],
+            "source_fragments": [
+              "FEV1"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                970,
+                1011
+              ]
+            ],
+            "source_fragments": [
+              ">=50 and <=70% of predicted normal values"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1095,
+                1107
+              ]
+            ],
+            "source_fragments": [
+              "at Screening"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1120,
+                1139
+              ]
+            ],
+            "source_fragments": [
+              "Post-bronchodilator"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                1169,
+                1199
+              ]
+            ],
+            "source_fragments": [
+              "approximately 15 minutes after"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                1463,
+                1480
+              ]
+            ],
+            "source_fragments": [
+              "score 2 or higher"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                1488,
+                1535
+              ]
+            ],
+            "source_fragments": [
+              "modified Medical Research Council Dyspnea scale"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                1585,
+                1596
+              ]
+            ],
+            "source_fragments": [
+              ">= 40 years"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-09",
+      "record_id": "NCT03471117_exc",
+      "source": "Allergy to Glitazones\r\nMyocardial infarction\r\nHeart failure\r\nAngina\r\nHistory of kidney stones\r\nLiver disease (abnormal liver enzymes)\r\nAnemia (hemoglobin <8 g/dl)\r\nCancer with current treatment\r\nPrevious organ transplantation\r\nImmunosuppressant therapy\r\nHuman immunodeficiency virus infection\r\nPregnancy or lactating\r\nCurrent tobacco use\r\nDilantin and oral contraceptive usage due to potential drug interaction with glitazones\r\nSelf-identified history of hypoglycemia\r\n",
+      "gold": [
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              119,
+              132
+            ]
+          ],
+          "source_fragments": [
+            "liver enzymes"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              110,
+              118
+            ]
+          ],
+          "source_fragments": [
+            "abnormal"
+          ]
+        },
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              143,
+              153
+            ]
+          ],
+          "source_fragments": [
+            "hemoglobin"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              154,
+              161
+            ]
+          ],
+          "source_fragments": [
+            "<8 g/dl"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              176,
+              183
+            ]
+          ],
+          "source_fragments": [
+            "current"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              195,
+              203
+            ]
+          ],
+          "source_fragments": [
+            "Previous"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              318,
+              325
+            ]
+          ],
+          "source_fragments": [
+            "Current"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-09",
+        "finding": "B正确抽取hemoglobin、<8 g/dl和三个Temporal位置，比A的空输出覆盖更多。B把Human immunodeficiency virus当成Measurement，并把abnormal liver作为Value。",
+        "boundary_and_omissions": "正确边界应分为Value abnormal及Measurement liver enzymes，B两者都未精确完成。",
+        "context": "current、Previous和Current大小写及各自位置均需保留；疾病名称出现本身不能证明它是测量名称。",
+        "evidence_quotes": [
+          "abnormal liver enzymes",
+          "hemoglobin <8 g/dl",
+          "Human immunodeficiency virus infection"
+        ]
+      },
+      "A": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 7,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {},
+        "prediction_checks": [],
+        "missing_gold": [
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                119,
+                132
+              ]
+            ],
+            "source_fragments": [
+              "liver enzymes"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                110,
+                118
+              ]
+            ],
+            "source_fragments": [
+              "abnormal"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                143,
+                153
+              ]
+            ],
+            "source_fragments": [
+              "hemoglobin"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                154,
+                161
+              ]
+            ],
+            "source_fragments": [
+              "<8 g/dl"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                176,
+                183
+              ]
+            ],
+            "source_fragments": [
+              "current"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                195,
+                203
+              ]
+            ],
+            "source_fragments": [
+              "Previous"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                318,
+                325
+              ]
+            ],
+            "source_fragments": [
+              "Current"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1": 0.7142857142857143
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "exact": 5,
+          "no_target_overlap": 1,
+          "boundary_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 143,
+            "end": 153,
+            "evidence": "hemoglobin",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    143,
+                    153
+                  ]
+                ],
+                "source_fragments": [
+                  "hemoglobin"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 254,
+            "end": 282,
+            "evidence": "Human immunodeficiency virus",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 176,
+            "end": 183,
+            "evidence": "current",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    176,
+                    183
+                  ]
+                ],
+                "source_fragments": [
+                  "current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 195,
+            "end": 203,
+            "evidence": "Previous",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    195,
+                    203
+                  ]
+                ],
+                "source_fragments": [
+                  "Previous"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 318,
+            "end": 325,
+            "evidence": "Current",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    318,
+                    325
+                  ]
+                ],
+                "source_fragments": [
+                  "Current"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 110,
+            "end": 124,
+            "evidence": "abnormal liver",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    119,
+                    132
+                  ]
+                ],
+                "source_fragments": [
+                  "liver enzymes"
+                ]
+              },
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    110,
+                    118
+                  ]
+                ],
+                "source_fragments": [
+                  "abnormal"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 154,
+            "end": 161,
+            "evidence": "<8 g/dl",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    154,
+                    161
+                  ]
+                ],
+                "source_fragments": [
+                  "<8 g/dl"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                119,
+                132
+              ]
+            ],
+            "source_fragments": [
+              "liver enzymes"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                110,
+                118
+              ]
+            ],
+            "source_fragments": [
+              "abnormal"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-10",
+      "record_id": "NCT02872935_exc",
+      "source": "Non- English speakers\r\nHeight < 4' 11\"\r\nBMI >40 Kg/ mm\r\nAntiemetic drug use in the 24 hours prior to cesarean delivery,\r\nHypertensive diseases of pregnancy\r\nChronic hypertension receiving antihypertensive treatment\r\nAny other physical or psychiatric condition that may impair their ability to cooperate with study data collection.\r\n",
+      "gold": [
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              23,
+              29
+            ]
+          ],
+          "source_fragments": [
+            "Height"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              30,
+              38
+            ]
+          ],
+          "source_fragments": [
+            "< 4' 11\""
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              44,
+              54
+            ]
+          ],
+          "source_fragments": [
+            ">40 Kg/ mm"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              76,
+              118
+            ]
+          ],
+          "source_fragments": [
+            "in the 24 hours prior to cesarean delivery"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-10",
+        "finding": "A和B都保留Height及>40 Kg/ mm；A把身高阈值拆成< 4'和11\"，时间窗也截断。B完整保留时间窗，但多抽了疾病和整条排除条件。",
+        "boundary_and_omissions": "应保留完整< 4' 11\"及in the 24 hours prior to cesarean delivery。BMI在这条.ann中明确为Observation，不能因为它通常是测量指标就修改本次金标准。",
+        "context": "原文BMI单位写作Kg/ mm；本任务必须原样保留并标出可疑源文本，不能默默改成更常见单位。",
+        "evidence_quotes": [
+          "Height < 4' 11\"",
+          ">40 Kg/ mm",
+          "in the 24 hours prior to cesarean delivery"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 2,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "exact": 2,
+          "no_target_overlap": 1,
+          "boundary_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 23,
+            "end": 29,
+            "evidence": "Height",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    23,
+                    29
+                  ]
+                ],
+                "source_fragments": [
+                  "Height"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 40,
+            "end": 43,
+            "evidence": "BMI",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Observation"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 76,
+            "end": 109,
+            "evidence": "in the 24 hours prior to cesarean",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    76,
+                    118
+                  ]
+                ],
+                "source_fragments": [
+                  "in the 24 hours prior to cesarean delivery"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 30,
+            "end": 34,
+            "evidence": "< 4'",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    30,
+                    38
+                  ]
+                ],
+                "source_fragments": [
+                  "< 4' 11\""
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 35,
+            "end": 38,
+            "evidence": "11\"",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    30,
+                    38
+                  ]
+                ],
+                "source_fragments": [
+                  "< 4' 11\""
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 44,
+            "end": 54,
+            "evidence": ">40 Kg/ mm",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    44,
+                    54
+                  ]
+                ],
+                "source_fragments": [
+                  ">40 Kg/ mm"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                30,
+                38
+              ]
+            ],
+            "source_fragments": [
+              "< 4' 11\""
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                76,
+                118
+              ]
+            ],
+            "source_fragments": [
+              "in the 24 hours prior to cesarean delivery"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 3,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.375,
+          "recall": 0.75,
+          "f1": 0.5
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "exact": 3,
+          "no_target_overlap": 5
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "Height",
+            "start": 23,
+            "end": 29,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    23,
+                    29
+                  ]
+                ],
+                "source_fragments": [
+                  "Height"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "BMI",
+            "start": 40,
+            "end": 43,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Observation"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "Hypertensive diseases of pregnancy",
+            "start": 121,
+            "end": 155,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "Chronic hypertension receiving antihypertensive treatment",
+            "start": 157,
+            "end": 214,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "evidence": "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection",
+            "start": 216,
+            "end": 329,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": ">40 Kg/ mm",
+            "start": 44,
+            "end": 54,
+            "numeric_literals": [
+              "40"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    44,
+                    54
+                  ]
+                ],
+                "source_fragments": [
+                  ">40 Kg/ mm"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": "receiving antihypertensive treatment",
+            "start": 178,
+            "end": 214,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "in the 24 hours prior to cesarean delivery",
+            "start": 76,
+            "end": 118,
+            "numeric_literals": [
+              "24"
+            ],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    76,
+                    118
+                  ]
+                ],
+                "source_fragments": [
+                  "in the 24 hours prior to cesarean delivery"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                30,
+                38
+              ]
+            ],
+            "source_fragments": [
+              "< 4' 11\""
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "review-11",
+      "record_id": "NCT02621541_inc",
+      "source": "suspicion of nonfunctional P-NET on primary CT (i.e hypervascularity) or MRI\r\nsigned informed consent\r\n",
+      "gold": [],
+      "ai_notes": {
+        "case_id": "review-11",
+        "finding": "完整标注中nonfunctional P-NET和hypervascularity属于Condition，CT/MRI属于Procedure，signed informed consent属于Informed_consent，因此三个目标类别的金标准为空。A把hypervascularity当Measurement；B将疾病/影像征象和知情同意混入Measurement、Value、Temporal。",
+        "boundary_and_omissions": "A有1个、B有3个基准误报。签署同意书的动作不是此处的Temporal实体。",
+        "context": "必须区分本次三个目标标签与完整临床信息，不应把所有医学概念强制分配到这三类。",
+        "evidence_quotes": [
+          "nonfunctional P-NET",
+          "hypervascularity",
+          "signed informed consent"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 52,
+            "end": 68,
+            "evidence": "hypervascularity",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          }
+        ],
+        "missing_gold": []
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 3
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "P-NET",
+            "start": 27,
+            "end": 32,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "evidence": "hypervascularity",
+            "start": 52,
+            "end": 68,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "signed informed consent",
+            "start": 78,
+            "end": 101,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Informed_consent"
+            ]
+          }
+        ],
+        "missing_gold": []
+      }
+    },
+    {
+      "case_id": "review-12",
+      "record_id": "NCT02445339_exc",
+      "source": "Active opioid dependence\r\nAcute or chronic pain requiring opioid treatment\r\nAcute liver injury (liver aminotransferase concentrations >5 times the upper limit of normal)\r\nHealth condition considered unsafe for inclusion (at discretion of PI and/or attending physician)\r\nLack of capacity or willingness to consent\r\nCurrently prescribed pharmacotherapy for alcohol dependence (not including treatment of acute alcohol withdrawal syndrome)\r\nPrevious significant adverse reaction to naltrexone or diluent\r\nPregnant, nursing, or not using effective methods of birth control\r\nPrisoners (as defined by Office of Human Research Protection) at the time of enrollment ARE NOT ELIGIBLE for study entry. However, subjects who become prisoners after being enrolled will be included and not be withdrawn from the study. Patients on parole or probation are eligible for enrollment.\r\n",
+      "gold": [
+        {
+          "kind": "Measurement",
+          "spans": [
+            [
+              96,
+              133
+            ]
+          ],
+          "source_fragments": [
+            "liver aminotransferase concentrations"
+          ]
+        },
+        {
+          "kind": "Value",
+          "spans": [
+            [
+              134,
+              168
+            ]
+          ],
+          "source_fragments": [
+            ">5 times the upper limit of normal"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              314,
+              323
+            ]
+          ],
+          "source_fragments": [
+            "Currently"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              438,
+              446
+            ]
+          ],
+          "source_fragments": [
+            "Previous"
+          ]
+        },
+        {
+          "kind": "Temporal",
+          "spans": [
+            [
+              632,
+              657
+            ]
+          ],
+          "source_fragments": [
+            "at the time of enrollment"
+          ]
+        }
+      ],
+      "ai_notes": {
+        "case_id": "review-12",
+        "finding": "A补出完整liver aminotransferase concentrations、>5 times the upper limit of normal、Previous和at the time of enrollment，但也保留不完整短版本及无关组织名称。B只精确抽到at the time of enrollment。",
+        "boundary_and_omissions": "A漏掉Currently，并把Human Research Protection误当Measurement；Active、Acute、at、for不匹配此处的Temporal金标准。",
+        "context": "原文同时规定入组时的囚犯排除与入组后的例外，并有not including用药范围。当前输出没有解析这些否定/例外，不能据片段推断患者资格。",
+        "evidence_quotes": [
+          "liver aminotransferase concentrations >5 times the upper limit of normal",
+          "not including treatment of acute alcohol withdrawal syndrome",
+          "subjects who become prisoners after being enrolled will be included"
+        ]
+      },
+      "A": {
+        "system": "llm_v3",
+        "metrics": {
+          "tp": 4,
+          "fp": 7,
+          "fn": 1,
+          "precision": 0.36363636363636365,
+          "recall": 0.8,
+          "f1": 0.5
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "boundary_overlap": 2,
+          "exact": 4,
+          "no_target_overlap": 5
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "start": 96,
+            "end": 118,
+            "evidence": "liver aminotransferase",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    96,
+                    133
+                  ]
+                ],
+                "source_fragments": [
+                  "liver aminotransferase concentrations"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 96,
+            "end": 133,
+            "evidence": "liver aminotransferase concentrations",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Measurement",
+                "spans": [
+                  [
+                    96,
+                    133
+                  ]
+                ],
+                "source_fragments": [
+                  "liver aminotransferase concentrations"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Measurement",
+            "start": 605,
+            "end": 630,
+            "evidence": "Human Research Protection",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 0,
+            "end": 6,
+            "evidence": "Active",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Qualifier"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "start": 76,
+            "end": 81,
+            "evidence": "Acute",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 221,
+            "end": 223,
+            "evidence": "at",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 438,
+            "end": 446,
+            "evidence": "Previous",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    438,
+                    446
+                  ]
+                ],
+                "source_fragments": [
+                  "Previous"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 632,
+            "end": 657,
+            "evidence": "at the time of enrollment",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    632,
+                    657
+                  ]
+                ],
+                "source_fragments": [
+                  "at the time of enrollment"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Temporal",
+            "start": 675,
+            "end": 678,
+            "evidence": "for",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 134,
+            "end": 142,
+            "evidence": ">5 times",
+            "source_quote_verified": true,
+            "benchmark_verdict": "boundary_overlap",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    134,
+                    168
+                  ]
+                ],
+                "source_fragments": [
+                  ">5 times the upper limit of normal"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          },
+          {
+            "kind": "Value",
+            "start": 134,
+            "end": 168,
+            "evidence": ">5 times the upper limit of normal",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Value",
+                "spans": [
+                  [
+                    134,
+                    168
+                  ]
+                ],
+                "source_fragments": [
+                  ">5 times the upper limit of normal"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                314,
+                323
+              ]
+            ],
+            "source_fragments": [
+              "Currently"
+            ]
+          }
+        ]
+      },
+      "B": {
+        "system": "original_llm",
+        "metrics": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1": 0.2857142857142857
+        },
+        "exact_document": false,
+        "error_patterns": {
+          "no_target_overlap": 1,
+          "exact": 1
+        },
+        "prediction_checks": [
+          {
+            "kind": "Measurement",
+            "evidence": "alcohol dependence",
+            "start": 355,
+            "end": 373,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "no_target_overlap",
+            "overlapping_target_gold": [],
+            "other_exact_annotation_types": [
+              "Condition"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "evidence": "at the time of enrollment",
+            "start": 632,
+            "end": 657,
+            "numeric_literals": [],
+            "status": "source_span_supported",
+            "source_quote_verified": true,
+            "benchmark_verdict": "exact",
+            "overlapping_target_gold": [
+              {
+                "kind": "Temporal",
+                "spans": [
+                  [
+                    632,
+                    657
+                  ]
+                ],
+                "source_fragments": [
+                  "at the time of enrollment"
+                ]
+              }
+            ],
+            "other_exact_annotation_types": []
+          }
+        ],
+        "missing_gold": [
+          {
+            "kind": "Measurement",
+            "spans": [
+              [
+                96,
+                133
+              ]
+            ],
+            "source_fragments": [
+              "liver aminotransferase concentrations"
+            ]
+          },
+          {
+            "kind": "Value",
+            "spans": [
+              [
+                134,
+                168
+              ]
+            ],
+            "source_fragments": [
+              ">5 times the upper limit of normal"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                314,
+                323
+              ]
+            ],
+            "source_fragments": [
+              "Currently"
+            ]
+          },
+          {
+            "kind": "Temporal",
+            "spans": [
+              [
+                438,
+                446
+              ]
+            ],
+            "source_fragments": [
+              "Previous"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

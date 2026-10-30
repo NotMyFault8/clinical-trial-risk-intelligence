@@ -99,6 +99,18 @@ lines+=[f"Near-duplicate filtering removes {ev['drift']['near_duplicate_test_cou
         '- [AACT historical flat-file catalog](https://aact.ctti-clinicaltrials.org/snapshots) — selected archive URLs and hashes are in configs/snapshots.json.',
         '- [CHIA paper](https://doi.org/10.1038/s41597-020-00620-0) and [versioned annotations](https://doi.org/10.6084/m9.figshare.11855817.v2), CC BY 4.0.',
         '- [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) and [MiniLM model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). Pinned revisions and undocumented training-cutoff limits are recorded.']
+v3_path=ROOT/'reports/extraction/llm_v3/fresh_evaluation.json'
+if v3_path.exists():
+    v3=json.loads(v3_path.read_text())
+    current=v3['scores']['llm_v3']['matched_prefix'];previous=v3['scores']['original_llm']['matched_prefix']
+    ner=v3['scores']['token_ner']['matched_prefix']
+    update=[
+        '## Revised local extractor: new CHIA holdout (2026-10-30)',
+        f"A separately frozen, previously unused CHIA sample contains {current['records']} documents / {current['trials']} trials. Both primary systems receive the same maximum 1,800-character source prefix. The selected pipeline uses Qwen {v3['model']}, {v3['mode']} output, {v3['fusion']} fusion, criterion-aware windows, development-trained NER/lexicon and two retrieved training examples. Selection and fusion use grouped development folds; fresh outputs are saved before fresh gold is read.",
+        f"Original versus revised document schema validity: **{previous['document_schema_valid_rate']:.1%} → {current['document_schema_valid_rate']:.1%}**; precision: **{previous['micro']['precision']:.1%} → {current['micro']['precision']:.1%}**; exact span F1: **{previous['micro']['f1']:.1%} → {current['micro']['f1']:.1%}**. Token NER without LLM scores {ner['micro']['f1']:.1%} F1 on this same sample. This new sample is distinct from the historical 310-document test above.",
+        "The precision difference's 95% group-bootstrap interval is [-3.52, +10.98] percentage points, which includes zero; the F1 difference interval is [+15.90, +28.26] points. Completely exact documents are 7/100 for the revised combination versus 8/100 for the original. LLM-only revised F1 is 26.5%; the union's gain cannot be attributed entirely to the LLM. The frozen combination does not outperform NER alone on this holdout.",
+        f"Semantic release passed: **{v3['semantic_release_passed']}**. Schema validity is a format check; it does not establish clinical correctness. **AI secondary review / AI 二次复核: 12/12 completed by Codex (AI)**, with [per-span findings and omissions](extraction/llm_v3/ai_second_review.md). This unblinded AI review is not counted as human or clinical sign-off; real human review remains 0/12 with forms retained. The original downstream risk model and deterministic serving reports remain unchanged. See the [full V3 report](extraction/llm_v3/summary.md), including ablations, error counts, group-bootstrap intervals and full-text secondary scores."]
+    at=lines.index('## Generated reports');lines[at:at]=update
 document='\n\n'.join(lines)+'\n'
 document=re.sub(r'(?m)(^\|[^\n]*\|)\n\n(?=\|)',r'\1\n',document)
 (ROOT/'reports/research_report.md').write_text(document)

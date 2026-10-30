@@ -1,15 +1,16 @@
 # Reproducing the local research project
 
-**Repository readiness:** the [repository audit](../reports/github_repository_audit_2026-10-07.md)
-identifies unresolved blockers, including the missing data package and the
-holdout output guard. The commands below describe the intended workflow; a clean
-checkout cannot yet execute it end to end.
+**Repository readiness:** the missing data package and ignore-rule conflict in
+the [historical audit](../reports/github_repository_audit_2026-10-07.md) were fixed
+in `4cb6985`, and main CI passed at `62f5407`. External data/model artifacts and
+remaining audit checks are still required for full end-to-end reproduction.
 
 Use Python 3.12. The measured environment is pinned in `requirements-macos.lock`;
 the tested container has its separate Linux lock. Mac text generation uses Apple
 Silicon and MLX. The serving container uses cached features and needs no GPU.
-No execution dates/times are written to project manifests; source dates and
-measured duration/latency remain part of the evidence.
+Source dates and measured duration/latency remain part of the evidence. The
+[V3 extraction protocol](extraction_v3_protocol.md) additionally records execution
+and freeze timestamps to establish that selection preceded held-out scoring.
 
 ## Environment and sources
 

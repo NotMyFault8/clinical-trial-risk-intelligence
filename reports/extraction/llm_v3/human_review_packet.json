@@ -1,0 +1,1539 @@
+{
+  "status": "pending_real_human_review",
+  "completed_cases": 0,
+  "sampling": "12 trials by SHA256(human-v3:<trial>); one document per trial by record-ID hash",
+  "scope": "CHIA external benchmark; does not satisfy target-cohort clinical review",
+  "instruction": "A real reviewer must fill scores. Do not substitute AI review for human adjudication. Avoid the key until scores are frozen.",
+  "cases": [
+    {
+      "case_id": "review-01",
+      "record_id": "NCT03119766_exc",
+      "source": "Organic diseases of the digestive system (gastro-oesophageal reflux disease (GERD), ulcer, chronic pancreatitis, cholelithiasis, fatty liver disease, hepatitis, cirrhosis of liver, etc.) .\r\nDiagnosis of other functional diseases of the digestive system, such as dyskinesia of cystic duct or gallbladder, irritable bowel syndrome, etc.\r\nDiscontinuation of proton pump inhibitors, propulsives, antispasmodics, antacids, or bismuth preparations less than 7 days prior to randomization.\r\nH. Pylori eradication within 2 months before study entry.\r\nIntestinal infection within 2 months before study entry.\r\nKnown history of/suspected malignant neoplasm of various sites.\r\nPrior diagnosis of a class IV cardiovascular disease (according to the New York Heart Association, 1964), hypothyroidism, diabetes mellitus, chronic kidney disease (С3-5), or disease of liver with portal hypertension and/or severe decompensation (Child-Pugh score > 6).\r\nOther severe coexisting morbidity which, in the investigator's opinion, can prevent the patient from participating in the study.\r\nAllergy/intolerance to any of the components of medications used in the treatment.\r\nPregnancy, breast-feeding.\r\nPatients who, from investigator's point of view, will fail to comply with the observation requirements of the trial or with the dosing regimen of the investigational drugs.\r\nPlanned hospitalization during the study period, for any diagnostic or treatment procedures.\r\nDrug addiction, alcohol use in the amount over 2 units of alcohol a day, mental diseases.\r\nIntake of medicines listed in the section 'Prohibited concomitant treatment' for 1 month prior to the enrollment in the trial.\r\nParticipation in other clinical trials within 3 months to the enrollment in this study.\r\nPatient is related to the research staff of",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 2277,
+      "A": [
+        {
+          "kind": "Measurement",
+          "evidence": "age",
+          "start": 55,
+          "end": 58,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "start": 42,
+          "end": 60,
+          "evidence": "gastro-oesophageal"
+        },
+        {
+          "kind": "Measurement",
+          "start": 42,
+          "end": 82,
+          "evidence": "gastro-oesophageal reflux disease (GERD)"
+        },
+        {
+          "kind": "Measurement",
+          "start": 77,
+          "end": 81,
+          "evidence": "GERD"
+        },
+        {
+          "kind": "Measurement",
+          "start": 91,
+          "end": 111,
+          "evidence": "chronic pancreatitis"
+        },
+        {
+          "kind": "Measurement",
+          "start": 113,
+          "end": 127,
+          "evidence": "cholelithiasis"
+        },
+        {
+          "kind": "Measurement",
+          "start": 129,
+          "end": 148,
+          "evidence": "fatty liver disease"
+        },
+        {
+          "kind": "Measurement",
+          "start": 150,
+          "end": 159,
+          "evidence": "hepatitis"
+        },
+        {
+          "kind": "Measurement",
+          "start": 161,
+          "end": 179,
+          "evidence": "cirrhosis of liver"
+        },
+        {
+          "kind": "Measurement",
+          "start": 304,
+          "end": 328,
+          "evidence": "irritable bowel syndrome"
+        },
+        {
+          "kind": "Measurement",
+          "start": 484,
+          "end": 485,
+          "evidence": "H"
+        },
+        {
+          "kind": "Measurement",
+          "start": 554,
+          "end": 563,
+          "evidence": "infection"
+        },
+        {
+          "kind": "Measurement",
+          "start": 628,
+          "end": 646,
+          "evidence": "malignant neoplasm"
+        },
+        {
+          "kind": "Measurement",
+          "start": 693,
+          "end": 695,
+          "evidence": "IV"
+        },
+        {
+          "kind": "Measurement",
+          "start": 696,
+          "end": 718,
+          "evidence": "cardiovascular disease"
+        },
+        {
+          "kind": "Measurement",
+          "start": 772,
+          "end": 786,
+          "evidence": "hypothyroidism"
+        },
+        {
+          "kind": "Measurement",
+          "start": 788,
+          "end": 805,
+          "evidence": "diabetes mellitus"
+        },
+        {
+          "kind": "Measurement",
+          "start": 807,
+          "end": 829,
+          "evidence": "chronic kidney disease"
+        },
+        {
+          "kind": "Measurement",
+          "start": 831,
+          "end": 835,
+          "evidence": "С3-5"
+        },
+        {
+          "kind": "Measurement",
+          "start": 863,
+          "end": 882,
+          "evidence": "portal hypertension"
+        },
+        {
+          "kind": "Measurement",
+          "start": 897,
+          "end": 911,
+          "evidence": "decompensation"
+        },
+        {
+          "kind": "Measurement",
+          "start": 913,
+          "end": 929,
+          "evidence": "Child-Pugh score"
+        },
+        {
+          "kind": "Temporal",
+          "start": 429,
+          "end": 441,
+          "evidence": "preparations"
+        },
+        {
+          "kind": "Temporal",
+          "start": 442,
+          "end": 481,
+          "evidence": "less than 7 days prior to randomization"
+        },
+        {
+          "kind": "Temporal",
+          "start": 506,
+          "end": 540,
+          "evidence": "within 2 months before study entry"
+        },
+        {
+          "kind": "Temporal",
+          "start": 564,
+          "end": 598,
+          "evidence": "within 2 months before study entry"
+        },
+        {
+          "kind": "Temporal",
+          "start": 666,
+          "end": 671,
+          "evidence": "Prior"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1013,
+          "end": 1020,
+          "evidence": "prevent"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1377,
+          "end": 1400,
+          "evidence": "during the study period"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1489,
+          "end": 1501,
+          "evidence": "over 2 units"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1592,
+          "end": 1613,
+          "evidence": "concomitant treatment"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1615,
+          "end": 1663,
+          "evidence": "for 1 month prior to the enrollment in the trial"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1705,
+          "end": 1752,
+          "evidence": "within 3 months to the enrollment in this study"
+        },
+        {
+          "kind": "Value",
+          "start": 442,
+          "end": 451,
+          "evidence": "less than"
+        },
+        {
+          "kind": "Value",
+          "start": 571,
+          "end": 579,
+          "evidence": "2 months"
+        },
+        {
+          "kind": "Value",
+          "start": 666,
+          "end": 671,
+          "evidence": "Prior"
+        },
+        {
+          "kind": "Value",
+          "start": 693,
+          "end": 695,
+          "evidence": "IV"
+        },
+        {
+          "kind": "Value",
+          "start": 807,
+          "end": 814,
+          "evidence": "chronic"
+        },
+        {
+          "kind": "Value",
+          "start": 831,
+          "end": 835,
+          "evidence": "С3-5"
+        },
+        {
+          "kind": "Value",
+          "start": 913,
+          "end": 933,
+          "evidence": "Child-Pugh score > 6"
+        },
+        {
+          "kind": "Value",
+          "start": 930,
+          "end": 934,
+          "evidence": "> 6)"
+        },
+        {
+          "kind": "Value",
+          "start": 1489,
+          "end": 1501,
+          "evidence": "over 2 units"
+        },
+        {
+          "kind": "Value",
+          "start": 1581,
+          "end": 1591,
+          "evidence": "Prohibited"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-02",
+      "record_id": "NCT01312012_inc",
+      "source": "pregnant women in 30 to 32 weeks of gestation, with positive HBsAg and HBeAg,serum viral load above 8log10 copies per mL\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 122,
+      "A": [
+        {
+          "kind": "Measurement",
+          "evidence": "pregnant women",
+          "start": 0,
+          "end": 14,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "gestation",
+          "start": 36,
+          "end": 45,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "HBsAg",
+          "start": 61,
+          "end": 66,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "HBeAg",
+          "start": 71,
+          "end": 76,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "serum viral load",
+          "start": 77,
+          "end": 93,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "30 to 32 weeks",
+          "start": 18,
+          "end": 32,
+          "numeric_literals": [
+            "30",
+            "32"
+          ],
+          "status": "source_span_supported"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "start": 61,
+          "end": 66,
+          "evidence": "HBsAg"
+        },
+        {
+          "kind": "Measurement",
+          "start": 71,
+          "end": 76,
+          "evidence": "HBeAg"
+        },
+        {
+          "kind": "Measurement",
+          "start": 77,
+          "end": 88,
+          "evidence": "serum viral"
+        },
+        {
+          "kind": "Measurement",
+          "start": 77,
+          "end": 93,
+          "evidence": "serum viral load"
+        },
+        {
+          "kind": "Temporal",
+          "start": 18,
+          "end": 32,
+          "evidence": "30 to 32 weeks"
+        },
+        {
+          "kind": "Value",
+          "start": 15,
+          "end": 32,
+          "evidence": "in 30 to 32 weeks"
+        },
+        {
+          "kind": "Value",
+          "start": 52,
+          "end": 60,
+          "evidence": "positive"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-03",
+      "record_id": "NCT03335904_exc",
+      "source": "history of hypertension\r\nknown impaired renal function\r\nliver disease\r\nheart failure\r\nmyocardial infarction\r\ncoronary artery disease\r\nsmoked within the past year\r\napnea hypopnea index > 5 events per hour\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 205,
+      "A": [
+        {
+          "kind": "Measurement",
+          "start": 40,
+          "end": 54,
+          "evidence": "renal function"
+        },
+        {
+          "kind": "Temporal",
+          "start": 141,
+          "end": 161,
+          "evidence": "within the past year"
+        },
+        {
+          "kind": "Temporal",
+          "start": 152,
+          "end": 156,
+          "evidence": "past"
+        },
+        {
+          "kind": "Value",
+          "start": 141,
+          "end": 161,
+          "evidence": "within the past year"
+        },
+        {
+          "kind": "Value",
+          "start": 184,
+          "end": 187,
+          "evidence": "> 5"
+        }
+      ],
+      "B": [],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-04",
+      "record_id": "NCT02901106_exc",
+      "source": "pregnant or breastfeeding woman\r\npatient with a measure of legal protection\r\nsubject unaffiliated insurance\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 109,
+      "A": [
+        {
+          "kind": "Measurement",
+          "evidence": "pregnant or breastfeeding",
+          "start": 0,
+          "end": 25,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "with a measure of legal protection",
+          "start": 41,
+          "end": 75,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "unaffiliated insurance",
+          "start": 85,
+          "end": 107,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        }
+      ],
+      "B": [],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-05",
+      "record_id": "NCT00396734_inc",
+      "source": "Methadone-maintained cocaine-dependent patients use between 1g to 2g a day; 1 to 3 times a week \n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 97,
+      "A": [
+        {
+          "kind": "Measurement",
+          "evidence": "cocaine-dependent",
+          "start": 21,
+          "end": 38,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "1g to 2g",
+          "start": 60,
+          "end": 68,
+          "numeric_literals": [
+            "1",
+            "2"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "1 to 3 times a week",
+          "start": 76,
+          "end": 95,
+          "numeric_literals": [
+            "1",
+            "3"
+          ],
+          "status": "source_span_supported"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Temporal",
+          "start": 76,
+          "end": 95,
+          "evidence": "1 to 3 times a week"
+        },
+        {
+          "kind": "Value",
+          "start": 52,
+          "end": 65,
+          "evidence": "between 1g to"
+        },
+        {
+          "kind": "Value",
+          "start": 52,
+          "end": 74,
+          "evidence": "between 1g to 2g a day"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-06",
+      "record_id": "NCT03253796_exc",
+      "source": "Has bilateral sacroiliitis Grade 2 or unilateral sacroiliitis Grade 3 or Grade 4\r\nIs a nursing or pregnant female, or intends to become pregnant within 6 months after receiving trial medication\r\nIntends to donate eggs (female participants) or sperm (male participants) while receiving trial medication or within 6 months after trial medication\r\nHas any clinically significant condition or situation that would interfere with the trial evaluations or participation in the trial\r\nHas ever received any cytotoxic drugs, including chlorambucil, cyclophosphamide, nitrogen mustard, or other alkylating agents\r\n• Disease-modifying anti-rheumatic drugs (30 days off drug)\r\n• Live vaccinations (3 months off drug)\r\n• Investigational medications (30 days or 5 half-lives off drug, whichever is longer)\r\n• Bacille Calmette-Guerin (BCG) vaccination (12 months off drug)\r\nHas any systemic inflammatory condition, including psoriatic arthritis, active Lyme disease, systemic lupus erythematosus, infectious arthritis, vasculitis, parvovirus infection, rheumatoid arthritis, active uveitis, or active IBD\r\nHas a history of latent or active granulomatous infection prior to Screening\r\nHad a nontuberculous mycobacterial infection or opportunistic infection within 6 months prior to Screening\r\nHas a history of an infected joint prosthesis, or has received antibiotics for a suspected infection of a joint prosthesis, if that prosthesis has not been removed or replaced\r\nHad a serious infection, has been hospitalized for an infection, or has been treated with IV antibiotics for an infection within 2 months prior to Baseline\r\nHad a history of, or ongoing, chronic or recurrent infectious disease\r\nIs known to be infected with human immunodeficiency virus (HIV) or seropositive for hepatitis C virus (HCV)\r\nHas had",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 2718,
+      "A": [
+        {
+          "kind": "Measurement",
+          "evidence": "nursing",
+          "start": 87,
+          "end": 94,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "Grade 3",
+          "start": 62,
+          "end": 69,
+          "numeric_literals": [
+            "3"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "while receiving trial medication",
+          "start": 269,
+          "end": 301,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "30 days off drug",
+          "start": 647,
+          "end": 663,
+          "numeric_literals": [
+            "30"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "3 months off drug",
+          "start": 687,
+          "end": 704,
+          "numeric_literals": [
+            "3"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "30 days or 5 half-lives off drug",
+          "start": 738,
+          "end": 770,
+          "numeric_literals": [
+            "30",
+            "5"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "within 2 months",
+          "start": 1577,
+          "end": 1592,
+          "numeric_literals": [
+            "2"
+          ],
+          "status": "source_span_supported"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "start": 14,
+          "end": 26,
+          "evidence": "sacroiliitis"
+        },
+        {
+          "kind": "Measurement",
+          "start": 49,
+          "end": 61,
+          "evidence": "sacroiliitis"
+        },
+        {
+          "kind": "Measurement",
+          "start": 668,
+          "end": 672,
+          "evidence": "Live"
+        },
+        {
+          "kind": "Measurement",
+          "start": 709,
+          "end": 724,
+          "evidence": "Investigational"
+        },
+        {
+          "kind": "Measurement",
+          "start": 772,
+          "end": 781,
+          "evidence": "whichever"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1545,
+          "end": 1547,
+          "evidence": "IV"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1712,
+          "end": 1740,
+          "evidence": "human immunodeficiency virus"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1712,
+          "end": 1745,
+          "evidence": "human immunodeficiency virus (HIV"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1750,
+          "end": 1762,
+          "evidence": "seropositive"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1786,
+          "end": 1789,
+          "evidence": "HCV"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1786,
+          "end": 1790,
+          "evidence": "HCV)"
+        },
+        {
+          "kind": "Temporal",
+          "start": 145,
+          "end": 166,
+          "evidence": "within 6 months after"
+        },
+        {
+          "kind": "Temporal",
+          "start": 145,
+          "end": 193,
+          "evidence": "within 6 months after receiving trial medication"
+        },
+        {
+          "kind": "Temporal",
+          "start": 305,
+          "end": 343,
+          "evidence": "within 6 months after trial medication"
+        },
+        {
+          "kind": "Temporal",
+          "start": 647,
+          "end": 663,
+          "evidence": "30 days off drug"
+        },
+        {
+          "kind": "Temporal",
+          "start": 687,
+          "end": 704,
+          "evidence": "3 months off drug"
+        },
+        {
+          "kind": "Temporal",
+          "start": 738,
+          "end": 770,
+          "evidence": "30 days or 5 half-lives off drug"
+        },
+        {
+          "kind": "Temporal",
+          "start": 932,
+          "end": 938,
+          "evidence": "active"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1061,
+          "end": 1067,
+          "evidence": "active"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1080,
+          "end": 1086,
+          "evidence": "active"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1119,
+          "end": 1125,
+          "evidence": "active"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1150,
+          "end": 1168,
+          "evidence": "prior to Screening"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1242,
+          "end": 1276,
+          "evidence": "within 6 months prior to Screening"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1577,
+          "end": 1610,
+          "evidence": "within 2 months prior to Baseline"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1633,
+          "end": 1640,
+          "evidence": "ongoing"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1653,
+          "end": 1662,
+          "evidence": "recurrent"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1763,
+          "end": 1766,
+          "evidence": "for"
+        },
+        {
+          "kind": "Value",
+          "start": 27,
+          "end": 34,
+          "evidence": "Grade 2"
+        },
+        {
+          "kind": "Value",
+          "start": 62,
+          "end": 69,
+          "evidence": "Grade 3"
+        },
+        {
+          "kind": "Value",
+          "start": 73,
+          "end": 80,
+          "evidence": "Grade 4"
+        },
+        {
+          "kind": "Value",
+          "start": 839,
+          "end": 841,
+          "evidence": "12"
+        },
+        {
+          "kind": "Value",
+          "start": 1754,
+          "end": 1762,
+          "evidence": "positive"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-07",
+      "record_id": "NCT02092467_exc",
+      "source": "Current or recent infection\r\nClinically significant laboratory abnormalities\r\nPregnancy\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 89,
+      "A": [
+        {
+          "kind": "Temporal",
+          "start": 0,
+          "end": 7,
+          "evidence": "Current"
+        },
+        {
+          "kind": "Temporal",
+          "start": 0,
+          "end": 17,
+          "evidence": "Current or recent"
+        },
+        {
+          "kind": "Temporal",
+          "start": 29,
+          "end": 51,
+          "evidence": "Clinically significant"
+        },
+        {
+          "kind": "Value",
+          "start": 0,
+          "end": 27,
+          "evidence": "Current or recent infection"
+        },
+        {
+          "kind": "Value",
+          "start": 29,
+          "end": 76,
+          "evidence": "Clinically significant laboratory abnormalities"
+        },
+        {
+          "kind": "Value",
+          "start": 78,
+          "end": 87,
+          "evidence": "Pregnancy"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "evidence": "infection",
+          "start": 18,
+          "end": 27,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "laboratory abnormalities",
+          "start": 52,
+          "end": 76,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-08",
+      "record_id": "NCT01313676_inc",
+      "source": "Type of subject: outpatient. \nInformed consent: Subjects must give their signed and dated written informed consent to participate. \nGender: Male or female. Female subjects must be post-menopausal or using a highly effective method for avoidance of pregnancy. The decision to include or exclude women of childbearing potential may be made at the discretion of the investigator in accordance with local practice in relation to adequate contraception. \nAge: >=40 and <=80 years of age at Screening (Visit 1). \nTobacco use: Subjects with a current or prior history of >=10 pack-years of cigarette smoking at screening (Visit 1). Previous smokers are defined as those who have stopped smoking for at least 6 months prior to Visit 1. \nAirflow Obstruction: \nSubjects with a measured post-albuterol/salbutamol forced expiratory volume in 1 second (FEV1)/(forced vital capacity)FVC ratio of <=0.70 at Screening (Visit 1). \nSubjects with a measured post-albuterol/salbutamol FEV1 >=50 and <=70% of predicted normal values calculated using NHANES III reference equations [Hankinson, 1999; Hankinson, 2010] at Screening (Visit 1). \nPost-bronchodilator spirometry will be performed approximately 15 minutes after the subject has self-administered 4 inhalations (i.e., total 400mcg) of albuterol/salbutamol via a metered dose inhaler (MDI )with a valved-holding chamber. The FEV1/FVC ratio and FEV1 percent predicted values will be calculated. \nSymptoms of COPD: Subjects must score 2 or higher on the modified Medical Research Council Dyspnea scale (Visit 1) \nCardiovascular disease: \nFor patients >= 40 years of age: any one of the following: \nEstablished (i.e. by clinical signs or imaging studies) coronary artery disease (CAD) Established (i.e. by clinical signs or imaging studies) peripheral vascular",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 2094,
+      "A": [
+        {
+          "kind": "Measurement",
+          "start": 478,
+          "end": 481,
+          "evidence": "age"
+        },
+        {
+          "kind": "Measurement",
+          "start": 802,
+          "end": 831,
+          "evidence": "forced expiratory volume in 1"
+        },
+        {
+          "kind": "Measurement",
+          "start": 847,
+          "end": 868,
+          "evidence": "forced vital capacity"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1029,
+          "end": 1035,
+          "evidence": "NHANES"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1040,
+          "end": 1049,
+          "evidence": "reference"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1255,
+          "end": 1267,
+          "evidence": "total 400mcg"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1361,
+          "end": 1369,
+          "evidence": "FEV1/FVC"
+        },
+        {
+          "kind": "Measurement",
+          "start": 1380,
+          "end": 1392,
+          "evidence": "FEV1 percent"
+        },
+        {
+          "kind": "Temporal",
+          "start": 338,
+          "end": 340,
+          "evidence": "at"
+        },
+        {
+          "kind": "Temporal",
+          "start": 482,
+          "end": 494,
+          "evidence": "at Screening"
+        },
+        {
+          "kind": "Temporal",
+          "start": 482,
+          "end": 496,
+          "evidence": "at Screening ("
+        },
+        {
+          "kind": "Temporal",
+          "start": 536,
+          "end": 543,
+          "evidence": "current"
+        },
+        {
+          "kind": "Temporal",
+          "start": 547,
+          "end": 563,
+          "evidence": "prior history of"
+        },
+        {
+          "kind": "Temporal",
+          "start": 601,
+          "end": 615,
+          "evidence": "at screening ("
+        },
+        {
+          "kind": "Temporal",
+          "start": 625,
+          "end": 633,
+          "evidence": "Previous"
+        },
+        {
+          "kind": "Temporal",
+          "start": 688,
+          "end": 691,
+          "evidence": "for"
+        },
+        {
+          "kind": "Temporal",
+          "start": 692,
+          "end": 726,
+          "evidence": "at least 6 months prior to Visit 1"
+        },
+        {
+          "kind": "Temporal",
+          "start": 710,
+          "end": 726,
+          "evidence": "prior to Visit 1"
+        },
+        {
+          "kind": "Temporal",
+          "start": 889,
+          "end": 901,
+          "evidence": "at Screening"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1095,
+          "end": 1107,
+          "evidence": "at Screening"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1194,
+          "end": 1203,
+          "evidence": "after the"
+        },
+        {
+          "kind": "Temporal",
+          "start": 1585,
+          "end": 1596,
+          "evidence": ">= 40 years"
+        },
+        {
+          "kind": "Value",
+          "start": 140,
+          "end": 144,
+          "evidence": "Male"
+        },
+        {
+          "kind": "Value",
+          "start": 180,
+          "end": 195,
+          "evidence": "post-menopausal"
+        },
+        {
+          "kind": "Value",
+          "start": 455,
+          "end": 474,
+          "evidence": ">=40 and <=80 years"
+        },
+        {
+          "kind": "Value",
+          "start": 564,
+          "end": 579,
+          "evidence": ">=10 pack-years"
+        },
+        {
+          "kind": "Value",
+          "start": 882,
+          "end": 888,
+          "evidence": "<=0.70"
+        },
+        {
+          "kind": "Value",
+          "start": 970,
+          "end": 1004,
+          "evidence": ">=50 and <=70% of predicted normal"
+        },
+        {
+          "kind": "Value",
+          "start": 1183,
+          "end": 1185,
+          "evidence": "15"
+        },
+        {
+          "kind": "Value",
+          "start": 1469,
+          "end": 1480,
+          "evidence": "2 or higher"
+        },
+        {
+          "kind": "Value",
+          "start": 1585,
+          "end": 1596,
+          "evidence": ">= 40 years"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "evidence": "Age",
+          "start": 450,
+          "end": 453,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "FEV1/FVC ratio",
+          "start": 1361,
+          "end": 1375,
+          "numeric_literals": [
+            "1"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "FEV1 percent predicted values",
+          "start": 1380,
+          "end": 1409,
+          "numeric_literals": [
+            "1"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": ">=40",
+          "start": 455,
+          "end": 459,
+          "numeric_literals": [
+            "40"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "<=80",
+          "start": 464,
+          "end": 468,
+          "numeric_literals": [
+            "80"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": ">=50 and <=70%",
+          "start": 970,
+          "end": 984,
+          "numeric_literals": [
+            "50",
+            "70"
+          ],
+          "status": "source_span_supported"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-09",
+      "record_id": "NCT03471117_exc",
+      "source": "Allergy to Glitazones\r\nMyocardial infarction\r\nHeart failure\r\nAngina\r\nHistory of kidney stones\r\nLiver disease (abnormal liver enzymes)\r\nAnemia (hemoglobin <8 g/dl)\r\nCancer with current treatment\r\nPrevious organ transplantation\r\nImmunosuppressant therapy\r\nHuman immunodeficiency virus infection\r\nPregnancy or lactating\r\nCurrent tobacco use\r\nDilantin and oral contraceptive usage due to potential drug interaction with glitazones\r\nSelf-identified history of hypoglycemia\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 469,
+      "A": [],
+      "B": [
+        {
+          "kind": "Measurement",
+          "start": 143,
+          "end": 153,
+          "evidence": "hemoglobin"
+        },
+        {
+          "kind": "Measurement",
+          "start": 254,
+          "end": 282,
+          "evidence": "Human immunodeficiency virus"
+        },
+        {
+          "kind": "Temporal",
+          "start": 176,
+          "end": 183,
+          "evidence": "current"
+        },
+        {
+          "kind": "Temporal",
+          "start": 195,
+          "end": 203,
+          "evidence": "Previous"
+        },
+        {
+          "kind": "Temporal",
+          "start": 318,
+          "end": 325,
+          "evidence": "Current"
+        },
+        {
+          "kind": "Value",
+          "start": 110,
+          "end": 124,
+          "evidence": "abnormal liver"
+        },
+        {
+          "kind": "Value",
+          "start": 154,
+          "end": 161,
+          "evidence": "<8 g/dl"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-10",
+      "record_id": "NCT02872935_exc",
+      "source": "Non- English speakers\r\nHeight < 4' 11\"\r\nBMI >40 Kg/ mm\r\nAntiemetic drug use in the 24 hours prior to cesarean delivery,\r\nHypertensive diseases of pregnancy\r\nChronic hypertension receiving antihypertensive treatment\r\nAny other physical or psychiatric condition that may impair their ability to cooperate with study data collection.\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 332,
+      "A": [
+        {
+          "kind": "Measurement",
+          "start": 23,
+          "end": 29,
+          "evidence": "Height"
+        },
+        {
+          "kind": "Measurement",
+          "start": 40,
+          "end": 43,
+          "evidence": "BMI"
+        },
+        {
+          "kind": "Temporal",
+          "start": 76,
+          "end": 109,
+          "evidence": "in the 24 hours prior to cesarean"
+        },
+        {
+          "kind": "Value",
+          "start": 30,
+          "end": 34,
+          "evidence": "< 4'"
+        },
+        {
+          "kind": "Value",
+          "start": 35,
+          "end": 38,
+          "evidence": "11\""
+        },
+        {
+          "kind": "Value",
+          "start": 44,
+          "end": 54,
+          "evidence": ">40 Kg/ mm"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "evidence": "Height",
+          "start": 23,
+          "end": 29,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "BMI",
+          "start": 40,
+          "end": 43,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "Hypertensive diseases of pregnancy",
+          "start": 121,
+          "end": 155,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "Chronic hypertension receiving antihypertensive treatment",
+          "start": 157,
+          "end": 214,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Measurement",
+          "evidence": "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection",
+          "start": 216,
+          "end": 329,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": ">40 Kg/ mm",
+          "start": 44,
+          "end": 54,
+          "numeric_literals": [
+            "40"
+          ],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "receiving antihypertensive treatment",
+          "start": 178,
+          "end": 214,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "in the 24 hours prior to cesarean delivery",
+          "start": 76,
+          "end": 118,
+          "numeric_literals": [
+            "24"
+          ],
+          "status": "source_span_supported"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-11",
+      "record_id": "NCT02621541_inc",
+      "source": "suspicion of nonfunctional P-NET on primary CT (i.e hypervascularity) or MRI\r\nsigned informed consent\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 103,
+      "A": [
+        {
+          "kind": "Measurement",
+          "start": 52,
+          "end": 68,
+          "evidence": "hypervascularity"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "evidence": "P-NET",
+          "start": 27,
+          "end": 32,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Value",
+          "evidence": "hypervascularity",
+          "start": 52,
+          "end": 68,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "signed informed consent",
+          "start": 78,
+          "end": 101,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    },
+    {
+      "case_id": "review-12",
+      "record_id": "NCT02445339_exc",
+      "source": "Active opioid dependence\r\nAcute or chronic pain requiring opioid treatment\r\nAcute liver injury (liver aminotransferase concentrations >5 times the upper limit of normal)\r\nHealth condition considered unsafe for inclusion (at discretion of PI and/or attending physician)\r\nLack of capacity or willingness to consent\r\nCurrently prescribed pharmacotherapy for alcohol dependence (not including treatment of acute alcohol withdrawal syndrome)\r\nPrevious significant adverse reaction to naltrexone or diluent\r\nPregnant, nursing, or not using effective methods of birth control\r\nPrisoners (as defined by Office of Human Research Protection) at the time of enrollment ARE NOT ELIGIBLE for study entry. However, subjects who become prisoners after being enrolled will be included and not be withdrawn from the study. Patients on parole or probation are eligible for enrollment.\r\n",
+      "review_scope": "matched original input prefix",
+      "original_source_characters": 868,
+      "A": [
+        {
+          "kind": "Measurement",
+          "start": 96,
+          "end": 118,
+          "evidence": "liver aminotransferase"
+        },
+        {
+          "kind": "Measurement",
+          "start": 96,
+          "end": 133,
+          "evidence": "liver aminotransferase concentrations"
+        },
+        {
+          "kind": "Measurement",
+          "start": 605,
+          "end": 630,
+          "evidence": "Human Research Protection"
+        },
+        {
+          "kind": "Temporal",
+          "start": 0,
+          "end": 6,
+          "evidence": "Active"
+        },
+        {
+          "kind": "Temporal",
+          "start": 76,
+          "end": 81,
+          "evidence": "Acute"
+        },
+        {
+          "kind": "Temporal",
+          "start": 221,
+          "end": 223,
+          "evidence": "at"
+        },
+        {
+          "kind": "Temporal",
+          "start": 438,
+          "end": 446,
+          "evidence": "Previous"
+        },
+        {
+          "kind": "Temporal",
+          "start": 632,
+          "end": 657,
+          "evidence": "at the time of enrollment"
+        },
+        {
+          "kind": "Temporal",
+          "start": 675,
+          "end": 678,
+          "evidence": "for"
+        },
+        {
+          "kind": "Value",
+          "start": 134,
+          "end": 142,
+          "evidence": ">5 times"
+        },
+        {
+          "kind": "Value",
+          "start": 134,
+          "end": 168,
+          "evidence": ">5 times the upper limit of normal"
+        }
+      ],
+      "B": [
+        {
+          "kind": "Measurement",
+          "evidence": "alcohol dependence",
+          "start": 355,
+          "end": 373,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        },
+        {
+          "kind": "Temporal",
+          "evidence": "at the time of enrollment",
+          "start": 632,
+          "end": 657,
+          "numeric_literals": [],
+          "status": "source_span_supported"
+        }
+      ],
+      "reviewer_name": null,
+      "domain_expertise": null,
+      "reviewed_at": null,
+      "A_type_correct": null,
+      "A_boundary_correct": null,
+      "B_type_correct": null,
+      "B_boundary_correct": null,
+      "missing_entities": null,
+      "negation_context_preserved": null,
+      "notes": null,
+      "preferred": null
+    }
+  ]
+}

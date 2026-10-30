@@ -1,0 +1,614 @@
+{
+  "created_at": "2026-10-30T10:01:27.974379+00:00",
+  "source_sha256": "b51ec05ba42a3805daf9581dd22a305986f7c5ae3ca4dad36b70d37970fb69b2",
+  "selection": "50 unused near-duplicate components, ordered by SHA256(llm-v3-fresh-2026-10-30:<group>)",
+  "annotations_read_for_selection": false,
+  "similarity_threshold": 0.9,
+  "excluded_historical_trials": 205,
+  "excluded_historical_groups": 200,
+  "groups": 50,
+  "trials": 50,
+  "records": 100,
+  "members": [
+    {
+      "record_id": "NCT00396734_exc",
+      "nct_id": "NCT00396734",
+      "group": "NCT00396734",
+      "text_sha256": "cd739c191973a6935219eb9871d1df9222eaebeb3a417aa21c23d8047b37cb66"
+    },
+    {
+      "record_id": "NCT00396734_inc",
+      "nct_id": "NCT00396734",
+      "group": "NCT00396734",
+      "text_sha256": "6054f27027a8e1bc6601526d453a020c16c6193be34e4ebc72bb9916d305b09c"
+    },
+    {
+      "record_id": "NCT00576173_exc",
+      "nct_id": "NCT00576173",
+      "group": "NCT00576173",
+      "text_sha256": "a443b196dc4e818fb79c0398c098637819c181928babd8b9c56ef0530eea51e1"
+    },
+    {
+      "record_id": "NCT00576173_inc",
+      "nct_id": "NCT00576173",
+      "group": "NCT00576173",
+      "text_sha256": "f898cf0e76d31b902160401be412bf4811fe993ee14521e4592482c88c146e15"
+    },
+    {
+      "record_id": "NCT00959569_exc",
+      "nct_id": "NCT00959569",
+      "group": "NCT00959569",
+      "text_sha256": "ee06dd86b86b1189aab841f30cefc2965eb0857f72bf8e732360c3a0b284ba3f"
+    },
+    {
+      "record_id": "NCT00959569_inc",
+      "nct_id": "NCT00959569",
+      "group": "NCT00959569",
+      "text_sha256": "b23e0e01b5ef6e355d2ceb42917aaafe2c2e9d34cb567ae1e845dd4be9c8ea6a"
+    },
+    {
+      "record_id": "NCT01184638_exc",
+      "nct_id": "NCT01184638",
+      "group": "NCT01184638",
+      "text_sha256": "dd0d47a4a87e57bfdb3a8e2a377790c3e15f1e1595e5e1a8f954c58ce8a048bd"
+    },
+    {
+      "record_id": "NCT01184638_inc",
+      "nct_id": "NCT01184638",
+      "group": "NCT01184638",
+      "text_sha256": "53c3100384a677cc4ac0a01d46fdb68652a1510eb46efaa10c4ee4d882857947"
+    },
+    {
+      "record_id": "NCT01205334_exc",
+      "nct_id": "NCT01205334",
+      "group": "NCT01205334",
+      "text_sha256": "6ad398d404b35a8c6ad23708068ec0a24162bd282dff4bdc044f9f19928bb8e6"
+    },
+    {
+      "record_id": "NCT01205334_inc",
+      "nct_id": "NCT01205334",
+      "group": "NCT01205334",
+      "text_sha256": "9c2d805247af776e0e754bfe2d58da7282e0d819dee178d2ceec47389a4dbd96"
+    },
+    {
+      "record_id": "NCT01312012_exc",
+      "nct_id": "NCT01312012",
+      "group": "NCT01312012",
+      "text_sha256": "0cdeef34479a849943590a13a0a69b31007445f4292b97ee708412ed700d89b7"
+    },
+    {
+      "record_id": "NCT01312012_inc",
+      "nct_id": "NCT01312012",
+      "group": "NCT01312012",
+      "text_sha256": "2d6bef55327b000c8398ec678b3f0ae73f9cdf9ea932b107572797101ffa5123"
+    },
+    {
+      "record_id": "NCT01313676_exc",
+      "nct_id": "NCT01313676",
+      "group": "NCT01313676",
+      "text_sha256": "30e44cf32b1135154acb568486d304d47dd3cda9fb9347bb32c82b5e7bd2fc11"
+    },
+    {
+      "record_id": "NCT01313676_inc",
+      "nct_id": "NCT01313676",
+      "group": "NCT01313676",
+      "text_sha256": "b661d30950cadc7ecb55e687ed7472355109044754bc9f2714850f02bb58c4ba"
+    },
+    {
+      "record_id": "NCT01352598_exc",
+      "nct_id": "NCT01352598",
+      "group": "NCT01352598",
+      "text_sha256": "9cd5b64e0a1f63a8609962b1a87b12b826b5c24a33eeaccf19d309c008727b55"
+    },
+    {
+      "record_id": "NCT01352598_inc",
+      "nct_id": "NCT01352598",
+      "group": "NCT01352598",
+      "text_sha256": "e9601710ace546dc996c62cc7fe9c79aaaeec08e4149a135a08cfba324d9a4e5"
+    },
+    {
+      "record_id": "NCT01401335_exc",
+      "nct_id": "NCT01401335",
+      "group": "NCT01401335",
+      "text_sha256": "d3c3ac15720c81c9cf50b19cbd61682effd644308d47df9a006d80d77198986a"
+    },
+    {
+      "record_id": "NCT01401335_inc",
+      "nct_id": "NCT01401335",
+      "group": "NCT01401335",
+      "text_sha256": "c09fbbaeaf744782e37445dc3763cf2c9780356d719835b4412f8a8becbd5590"
+    },
+    {
+      "record_id": "NCT01501201_exc",
+      "nct_id": "NCT01501201",
+      "group": "NCT01501201",
+      "text_sha256": "d5d28abec6e598411890e74424d1ca037e144eb2354072e21f6c2bb41b5f5bcb"
+    },
+    {
+      "record_id": "NCT01501201_inc",
+      "nct_id": "NCT01501201",
+      "group": "NCT01501201",
+      "text_sha256": "46d31a9d3a27c95e6a3afdce64b057af26d007221ca9f2588e115d260ec4a707"
+    },
+    {
+      "record_id": "NCT01518946_exc",
+      "nct_id": "NCT01518946",
+      "group": "NCT01518946",
+      "text_sha256": "4e525cf6c104d6ff3f555f248759f49b14ce9c19e53d2db80eca671d211743d8"
+    },
+    {
+      "record_id": "NCT01518946_inc",
+      "nct_id": "NCT01518946",
+      "group": "NCT01518946",
+      "text_sha256": "fd2923ee6f27390289004b181b6775d8b6e7ffb5ffc87b24ec5c5cd5d8ce4a8a"
+    },
+    {
+      "record_id": "NCT02019628_exc",
+      "nct_id": "NCT02019628",
+      "group": "NCT02019628",
+      "text_sha256": "c68fb8ea4c974f001f2d4d23163047ecf1626aebf88999cea4de64ed140f4d29"
+    },
+    {
+      "record_id": "NCT02019628_inc",
+      "nct_id": "NCT02019628",
+      "group": "NCT02019628",
+      "text_sha256": "189b052e5993a47327376e35ba1e2513000485eb1a218ff8e83fa954dc08b6ff"
+    },
+    {
+      "record_id": "NCT02034019_exc",
+      "nct_id": "NCT02034019",
+      "group": "NCT02034019",
+      "text_sha256": "4aadd2244f016326d35ebd9c3db3a16a464d85e6ac5de7f09c63d8d787939628"
+    },
+    {
+      "record_id": "NCT02034019_inc",
+      "nct_id": "NCT02034019",
+      "group": "NCT02034019",
+      "text_sha256": "077e09811d07f912f751dc2b876fcb84751c08a2f642a249341d03eb476ffca7"
+    },
+    {
+      "record_id": "NCT02092467_exc",
+      "nct_id": "NCT02092467",
+      "group": "NCT02092467",
+      "text_sha256": "9a0a49f1ca8ac4072dbf27ecc832e1b3522bdd266269fbcf25fd4899d85bbbc1"
+    },
+    {
+      "record_id": "NCT02092467_inc",
+      "nct_id": "NCT02092467",
+      "group": "NCT02092467",
+      "text_sha256": "a70494b318d43786a66f69923f6c29a750dd0de979bb9c7707160b9e8c7bd968"
+    },
+    {
+      "record_id": "NCT02219880_exc",
+      "nct_id": "NCT02219880",
+      "group": "NCT02219880",
+      "text_sha256": "9cd5b64e0a1f63a8609962b1a87b12b826b5c24a33eeaccf19d309c008727b55"
+    },
+    {
+      "record_id": "NCT02219880_inc",
+      "nct_id": "NCT02219880",
+      "group": "NCT02219880",
+      "text_sha256": "86c6266c76cd528e992c24e26d48dcc4107a98c3d4ebc0d9a74fb6c54757a98d"
+    },
+    {
+      "record_id": "NCT02334631_exc",
+      "nct_id": "NCT02334631",
+      "group": "NCT02334631",
+      "text_sha256": "18fd9c2267bdc1f95d9a0fddc3dc2582bc25c19667467d80c031cad329e6b371"
+    },
+    {
+      "record_id": "NCT02334631_inc",
+      "nct_id": "NCT02334631",
+      "group": "NCT02334631",
+      "text_sha256": "e7f039c98bad69b4786a804986565b2d5846288f6f95f390c01f0783aa23e977"
+    },
+    {
+      "record_id": "NCT02365870_exc",
+      "nct_id": "NCT02365870",
+      "group": "NCT02365870",
+      "text_sha256": "91f6269c69332bff2ebaea1839e73931493559e38533efc2868cb578638793d5"
+    },
+    {
+      "record_id": "NCT02365870_inc",
+      "nct_id": "NCT02365870",
+      "group": "NCT02365870",
+      "text_sha256": "1ffadd04ac7ef37286bb1fb68a2ab85212473d6d2bb5453f32ab4af506a882cd"
+    },
+    {
+      "record_id": "NCT02445339_exc",
+      "nct_id": "NCT02445339",
+      "group": "NCT02445339",
+      "text_sha256": "75b35830a7a8fbc8bfa3227f2652419d346c2dfde332269105940803d1a59554"
+    },
+    {
+      "record_id": "NCT02445339_inc",
+      "nct_id": "NCT02445339",
+      "group": "NCT02445339",
+      "text_sha256": "baa85283f354e230cd52b69c6ba1c0a5742b16c0e72937c6c1cd9a1263ffdf44"
+    },
+    {
+      "record_id": "NCT02519777_exc",
+      "nct_id": "NCT02519777",
+      "group": "NCT02519777",
+      "text_sha256": "6d18f136a836163ca9ed1bf9dee2f13ea7e36e01cf22e9933d70f3c9295b4574"
+    },
+    {
+      "record_id": "NCT02519777_inc",
+      "nct_id": "NCT02519777",
+      "group": "NCT02519777",
+      "text_sha256": "ca2566a0136b084d283240f433642fea3f2348a553906699f6da324bbf51ae6c"
+    },
+    {
+      "record_id": "NCT02550028_exc",
+      "nct_id": "NCT02550028",
+      "group": "NCT02550028",
+      "text_sha256": "470a87d8132d19104c76915ff041e0c119c46863b436f00b12f56e2ca9e8d5a5"
+    },
+    {
+      "record_id": "NCT02550028_inc",
+      "nct_id": "NCT02550028",
+      "group": "NCT02550028",
+      "text_sha256": "542cbd985d9c5891093d74aed6c6d15f4e761bb125f6d4aa711447be49698a0b"
+    },
+    {
+      "record_id": "NCT02600000_exc",
+      "nct_id": "NCT02600000",
+      "group": "NCT02600000",
+      "text_sha256": "c5d0450eb014b25aa22ad86557e49b63f9ea66366284370f7951fdf0039e93bd"
+    },
+    {
+      "record_id": "NCT02600000_inc",
+      "nct_id": "NCT02600000",
+      "group": "NCT02600000",
+      "text_sha256": "9b5c55774ed918148811fe25166c1283cd1b406ef6418ca18ebcad82f9ece7bb"
+    },
+    {
+      "record_id": "NCT02620904_exc",
+      "nct_id": "NCT02620904",
+      "group": "NCT02620904",
+      "text_sha256": "c124c2fc7c9bd44ccba59ffa0f3bca8357ead0ed3d2b40d97d63737c96ae0c52"
+    },
+    {
+      "record_id": "NCT02620904_inc",
+      "nct_id": "NCT02620904",
+      "group": "NCT02620904",
+      "text_sha256": "e0757d56c361d148c39b7c64ea746825ee3ebb93a70f9bffd405af773220c3b3"
+    },
+    {
+      "record_id": "NCT02621489_exc",
+      "nct_id": "NCT02621489",
+      "group": "NCT02621489",
+      "text_sha256": "141d3f31b85349cabb1fa3252472363fe0b75d0d2f257d802e92624652c6fd9c"
+    },
+    {
+      "record_id": "NCT02621489_inc",
+      "nct_id": "NCT02621489",
+      "group": "NCT02621489",
+      "text_sha256": "8186715ded4fb71544ca663a5c36bdfe1e67013118fba0b0df7f2f3726837a43"
+    },
+    {
+      "record_id": "NCT02621541_exc",
+      "nct_id": "NCT02621541",
+      "group": "NCT02621541",
+      "text_sha256": "78c4e40f3b133e29269dddd3cc8d3aadf9f0ac253b4d51c9fc1383ca53f92b27"
+    },
+    {
+      "record_id": "NCT02621541_inc",
+      "nct_id": "NCT02621541",
+      "group": "NCT02621541",
+      "text_sha256": "3bbd19c7b880af58dbb192a5c524f32e48173e50f6054c208007a70bf4b3fd62"
+    },
+    {
+      "record_id": "NCT02692651_exc",
+      "nct_id": "NCT02692651",
+      "group": "NCT02692651",
+      "text_sha256": "61ffff36be2faa0864553b0cb0333021799269f3e75687b0a4aa54e19c77686e"
+    },
+    {
+      "record_id": "NCT02692651_inc",
+      "nct_id": "NCT02692651",
+      "group": "NCT02692651",
+      "text_sha256": "a2f2baa92c76a1ffd99e9167c6400ce0845ced7f7a84136f19755f05b1958cc0"
+    },
+    {
+      "record_id": "NCT02704754_exc",
+      "nct_id": "NCT02704754",
+      "group": "NCT02704754",
+      "text_sha256": "1c839171806ac848afc667c90ab1c8344b79b57680fdfc21e480bbda0faeb5e5"
+    },
+    {
+      "record_id": "NCT02704754_inc",
+      "nct_id": "NCT02704754",
+      "group": "NCT02704754",
+      "text_sha256": "b3fc2a510f6c1c87c1fa68c14ec655e6fdac824f958d166d851d36a9a261ec4b"
+    },
+    {
+      "record_id": "NCT02726009_exc",
+      "nct_id": "NCT02726009",
+      "group": "NCT02726009",
+      "text_sha256": "3cc20840fbfa65074f380094a673706b0a1331231e75600633962db2c2801c98"
+    },
+    {
+      "record_id": "NCT02726009_inc",
+      "nct_id": "NCT02726009",
+      "group": "NCT02726009",
+      "text_sha256": "99aff44438c1b7a59c0bb32ed82a8b4979ffbe167378490f285d47252e1c00fc"
+    },
+    {
+      "record_id": "NCT02733159_exc",
+      "nct_id": "NCT02733159",
+      "group": "NCT02733159",
+      "text_sha256": "5870ca262f5b543c0e66c1017f4697995abb7d77dc97ef21f5d43c7bce684d1e"
+    },
+    {
+      "record_id": "NCT02733159_inc",
+      "nct_id": "NCT02733159",
+      "group": "NCT02733159",
+      "text_sha256": "9b2962f2a855584c4490793c13d7d0d221263858b04371cb7d6da5a8be8275ad"
+    },
+    {
+      "record_id": "NCT02868437_exc",
+      "nct_id": "NCT02868437",
+      "group": "NCT02868437",
+      "text_sha256": "8b0c5e3b1fba077eb000809a159f4be6080b8f19945163d72badddbd050852fd"
+    },
+    {
+      "record_id": "NCT02868437_inc",
+      "nct_id": "NCT02868437",
+      "group": "NCT02868437",
+      "text_sha256": "e423c3efb494785025287f059f0fd51857dcd2706db91633d271ea916cf403ec"
+    },
+    {
+      "record_id": "NCT02872935_exc",
+      "nct_id": "NCT02872935",
+      "group": "NCT02872935",
+      "text_sha256": "0567afa00f768e4904248aabf283cbdc5a95b1d8bb1ff5ca4927c461b1428fe3"
+    },
+    {
+      "record_id": "NCT02872935_inc",
+      "nct_id": "NCT02872935",
+      "group": "NCT02872935",
+      "text_sha256": "6da109b387f476a081cbb0316d0e7e4d6f1ef689f048edd8a531799a3c94f23b"
+    },
+    {
+      "record_id": "NCT02901106_exc",
+      "nct_id": "NCT02901106",
+      "group": "NCT02901106",
+      "text_sha256": "6cbebd07dd15a2f70f2ee3e28c00b061e63d5108ac655ff43b310f56d9de8a19"
+    },
+    {
+      "record_id": "NCT02901106_inc",
+      "nct_id": "NCT02901106",
+      "group": "NCT02901106",
+      "text_sha256": "040c1fdd90a30026b6529af522a40c40e4bbf8ec1218e264b966f6bb2fa60b3f"
+    },
+    {
+      "record_id": "NCT02904785_exc",
+      "nct_id": "NCT02904785",
+      "group": "NCT02904785",
+      "text_sha256": "cf06d73bab368d6156dce3b51f9fc88dfbf28c36301471e664cd56d9acd17c7b"
+    },
+    {
+      "record_id": "NCT02904785_inc",
+      "nct_id": "NCT02904785",
+      "group": "NCT02904785",
+      "text_sha256": "66b93642eb7a954596a23702f87328683216f53ca82dcfbee7288552734326c3"
+    },
+    {
+      "record_id": "NCT02905890_exc",
+      "nct_id": "NCT02905890",
+      "group": "NCT02905890",
+      "text_sha256": "46a224e1d135ebd37fb0da52721ef9b79530dc503141385357e094fc991b3c9c"
+    },
+    {
+      "record_id": "NCT02905890_inc",
+      "nct_id": "NCT02905890",
+      "group": "NCT02905890",
+      "text_sha256": "54bd714d521036f58537830b484539f36ea69f92fa3ddd5c701042c6bd4efea8"
+    },
+    {
+      "record_id": "NCT02934269_exc",
+      "nct_id": "NCT02934269",
+      "group": "NCT02934269",
+      "text_sha256": "cb25909d8d133decb9e4a0ae981988ae76476b49677707491de2aceb08897eeb"
+    },
+    {
+      "record_id": "NCT02934269_inc",
+      "nct_id": "NCT02934269",
+      "group": "NCT02934269",
+      "text_sha256": "0a57ab9fbf8cb433e8e3e82ccabacd504706d9f413566027de845a5577e0247c"
+    },
+    {
+      "record_id": "NCT02964715_exc",
+      "nct_id": "NCT02964715",
+      "group": "NCT02964715",
+      "text_sha256": "0712e4fc09ba7e02e9158a978c289fb0fcbebba00d146419d142f96e5162effc"
+    },
+    {
+      "record_id": "NCT02964715_inc",
+      "nct_id": "NCT02964715",
+      "group": "NCT02964715",
+      "text_sha256": "81c58b3db1772b858966643b6d9d6dcf0af0c9435fd4038e6a1581d6f49c88dc"
+    },
+    {
+      "record_id": "NCT02973035_exc",
+      "nct_id": "NCT02973035",
+      "group": "NCT02973035",
+      "text_sha256": "71d07682bb5184756bebe194d63b527cb1e4fc09d67bdf6ff399589fb6878a1c"
+    },
+    {
+      "record_id": "NCT02973035_inc",
+      "nct_id": "NCT02973035",
+      "group": "NCT02973035",
+      "text_sha256": "6d9df720cf46c7ba35a240106043f5790507c1c695a5ab16983c6cdd28e45199"
+    },
+    {
+      "record_id": "NCT03062358_exc",
+      "nct_id": "NCT03062358",
+      "group": "NCT03062358",
+      "text_sha256": "5ddae6e02e4e3e76904efa1e2958406f274a5affc77a7bfb6fb7fa39607c94ab"
+    },
+    {
+      "record_id": "NCT03062358_inc",
+      "nct_id": "NCT03062358",
+      "group": "NCT03062358",
+      "text_sha256": "f66a9b04319a1cf6cc0ba05d5527926150a1a4e3e78ed74be3ed3b347c44e2e1"
+    },
+    {
+      "record_id": "NCT03097068_exc",
+      "nct_id": "NCT03097068",
+      "group": "NCT03097068",
+      "text_sha256": "6f986ccdb5fc61fb38c2437e924f75953a2cc6d8bb0ed8b949c7a8f296d6a448"
+    },
+    {
+      "record_id": "NCT03097068_inc",
+      "nct_id": "NCT03097068",
+      "group": "NCT03097068",
+      "text_sha256": "9a2c2d20785e502b552f8b706cb3b7f0a787ed4c9aa69543930e3901086af7b9"
+    },
+    {
+      "record_id": "NCT03119766_exc",
+      "nct_id": "NCT03119766",
+      "group": "NCT03119766",
+      "text_sha256": "d1607e263db26d162d01b8fe5b0ee4897620bf1da602a26eea8fe66afa7c4202"
+    },
+    {
+      "record_id": "NCT03119766_inc",
+      "nct_id": "NCT03119766",
+      "group": "NCT03119766",
+      "text_sha256": "39b698433f6d561c38881a94eb6a49459fe64c7b5bb7b99f9d22fbd3a7be6639"
+    },
+    {
+      "record_id": "NCT03126214_exc",
+      "nct_id": "NCT03126214",
+      "group": "NCT03126214",
+      "text_sha256": "9bf97a36232ad108d77232567dfd242eae86dd6ea40a54c130d64b564039a01b"
+    },
+    {
+      "record_id": "NCT03126214_inc",
+      "nct_id": "NCT03126214",
+      "group": "NCT03126214",
+      "text_sha256": "193c6852c51aa70f301c61c99669bd9216b5d3bcbc6fb0904b79cdb5cf7c0146"
+    },
+    {
+      "record_id": "NCT03185130_exc",
+      "nct_id": "NCT03185130",
+      "group": "NCT03185130",
+      "text_sha256": "15f668a08cfd67e63f8bc685dec0371be138a781a552c65c2f9e42e1e54b6412"
+    },
+    {
+      "record_id": "NCT03185130_inc",
+      "nct_id": "NCT03185130",
+      "group": "NCT03185130",
+      "text_sha256": "1c6e93e70fc44b56e5fc2f762554e2303f0a9edb9fd2f565c772a9eb986f2715"
+    },
+    {
+      "record_id": "NCT03253796_exc",
+      "nct_id": "NCT03253796",
+      "group": "NCT03253796",
+      "text_sha256": "b0c62e4229f3553dbb1d4f39809391f659c017e6efb449f0506418268b851afb"
+    },
+    {
+      "record_id": "NCT03253796_inc",
+      "nct_id": "NCT03253796",
+      "group": "NCT03253796",
+      "text_sha256": "74888ff3f2e33bcf1e38fffa50fde3fb4aa829d552cd707400d1ca2df9d82881"
+    },
+    {
+      "record_id": "NCT03260790_exc",
+      "nct_id": "NCT03260790",
+      "group": "NCT03260790",
+      "text_sha256": "e7659ef227b79a9ce8c08363eab22f0efeccd4189d5eebc1c06193c72d51574e"
+    },
+    {
+      "record_id": "NCT03260790_inc",
+      "nct_id": "NCT03260790",
+      "group": "NCT03260790",
+      "text_sha256": "0d9cd8f9c70d6da507bfe2a38cd2bd5fe7527c724790ff4fea9471dfaf91cf23"
+    },
+    {
+      "record_id": "NCT03335904_exc",
+      "nct_id": "NCT03335904",
+      "group": "NCT03335904",
+      "text_sha256": "2e38f4d1c9fe30be5983fa6ee106fca58f8da58058b2283626406a90a4aeb2d2"
+    },
+    {
+      "record_id": "NCT03335904_inc",
+      "nct_id": "NCT03335904",
+      "group": "NCT03335904",
+      "text_sha256": "033148ff4f0b040a173e6863936f993c4c8c39b0cf503d5c0ecc5e4a7a89f756"
+    },
+    {
+      "record_id": "NCT03364036_exc",
+      "nct_id": "NCT03364036",
+      "group": "NCT03364036",
+      "text_sha256": "f84b5e209b7558e2190f7a62285a4384574b106b812b1b2ec5ce17a2243c9424"
+    },
+    {
+      "record_id": "NCT03364036_inc",
+      "nct_id": "NCT03364036",
+      "group": "NCT03364036",
+      "text_sha256": "6c5bdddd2dcf5f61fa2d37bd42bcf7ad25745e649101f3baa79b956ddb0b1735"
+    },
+    {
+      "record_id": "NCT03444142_exc",
+      "nct_id": "NCT03444142",
+      "group": "NCT03444142",
+      "text_sha256": "68c90970b8ca8996e53df2c55d8c5128d9dc39938a32f8fc5d8b20e0a6009e67"
+    },
+    {
+      "record_id": "NCT03444142_inc",
+      "nct_id": "NCT03444142",
+      "group": "NCT03444142",
+      "text_sha256": "489581d79b4975e9cedc2349393985e1c2d54e399793085204fbafce91d10be8"
+    },
+    {
+      "record_id": "NCT03471117_exc",
+      "nct_id": "NCT03471117",
+      "group": "NCT03471117",
+      "text_sha256": "8de5ba1bbc47fd03cf81aba174eeb621b9801ff79e396b188465781694a162a1"
+    },
+    {
+      "record_id": "NCT03471117_inc",
+      "nct_id": "NCT03471117",
+      "group": "NCT03471117",
+      "text_sha256": "29a123e3468462b836d88dc41203a075dcb6146edf7563e447128c7121862d46"
+    },
+    {
+      "record_id": "NCT03506009_exc",
+      "nct_id": "NCT03506009",
+      "group": "NCT03506009",
+      "text_sha256": "5022d6a7ce91060656836a667a2d3866ce38462bdad50d6d4ff7468d51fba2fc"
+    },
+    {
+      "record_id": "NCT03506009_inc",
+      "nct_id": "NCT03506009",
+      "group": "NCT03506009",
+      "text_sha256": "ccd4bb8aeb6d053a104a2325a9f1b1a6c07ccbd654b96dab230785e12976404a"
+    },
+    {
+      "record_id": "NCT03532620_exc",
+      "nct_id": "NCT03532620",
+      "group": "NCT03532620",
+      "text_sha256": "e02d001f3bedd93ae7f67355d8a5e54ff011dedab23a5002b258f7c4056147aa"
+    },
+    {
+      "record_id": "NCT03532620_inc",
+      "nct_id": "NCT03532620",
+      "group": "NCT03532620",
+      "text_sha256": "04d753602a4691eca2147bc74b2bc08d6ffe4dc12f9363ba1e190504a3720e96"
+    },
+    {
+      "record_id": "NCT03639519_exc",
+      "nct_id": "NCT03639519",
+      "group": "NCT03639519",
+      "text_sha256": "f61a071b697e56c31cbb90afdd87178193e5f6a567b2ee1f702e646a4451669d"
+    },
+    {
+      "record_id": "NCT03639519_inc",
+      "nct_id": "NCT03639519",
+      "group": "NCT03639519",
+      "text_sha256": "dfbf5919e2fda7ef178f7ced9008628471b085ba23e0ccf9111e3601e32b5986"
+    }
+  ]
+}
