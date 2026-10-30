@@ -53,7 +53,7 @@ precision improvement is uncertain: the paired 95% interval is -3.52 to +10.98
 percentage points. Only 7/100 documents have a completely correct entity set,
 versus 8/100 for the original. Exact copied text does not establish correct labels.
 
-**AI secondary review / AI 二次复核: 12/12 completed by Codex (AI).**
+**AI secondary review: 12/12 cases completed by Codex (AI).**
 [Per-case findings](reports/extraction/llm_v3/ai_second_review.md) identify type
 confusion, truncated boundaries, duplicate spans and omissions. This is an
 unblinded AI review. Human review remains **0/12**, with its worksheet retained;

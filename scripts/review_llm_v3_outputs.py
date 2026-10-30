@@ -14,12 +14,12 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "reports/extraction/llm_v3"
 KINDS = {"Measurement", "Value", "Temporal"}
-LABELS = {"original_llm": "旧版 LLM", "llm_v3": "新版 LLM + NER"}
+LABELS = {"original_llm": "Original LLM", "llm_v3": "Revised LLM + NER"}
 VERDICTS = {
-    "exact": "类型及完整边界匹配",
-    "boundary_overlap": "同类型重叠，边界不匹配",
-    "type_overlap": "与其他目标类型重叠",
-    "no_target_overlap": "未匹配目标金标准",
+    "exact": "exact type and full boundary match",
+    "boundary_overlap": "same type overlaps, but boundary differs",
+    "type_overlap": "overlaps an entity with another target type",
+    "no_target_overlap": "no overlap with target gold",
 }
 
 
@@ -132,7 +132,7 @@ def main():
     aggregate = {system: {**metrics(c["tp"], c["fp"], c["fn"]),
                           "exact_documents": c["exact_documents"]}
                  for system, c in totals.items()}
-    review = {"title": "AI 二次复核：12 份冻结样本", "reviewer": "Codex (AI)",
+    review = {"title": "AI secondary review: 12 frozen cases", "reviewer": "Codex (AI)",
               "reviewed_at": datetime.now(timezone.utc).isoformat(), "review_round": 2,
               "review_type": "AI_secondary_review", "is_human_review": False,
               "reviewed_cases": len(cases), "blinded": False,
@@ -145,52 +145,52 @@ def main():
                                "ai_evidence_quotes_verified": sum(len(n["evidence_quotes"]) for n in note_map.values()),
                                "human_packet_unchanged": digest(packet_path) == packet_hash},
               "aggregate": aggregate, "cases": cases}
-    lines = ["# AI 二次复核：12 份冻结样本", "",
-             "**复核者：Codex（AI）。已复核 12/12；真人审核仍为 0/12。**", "",
-             "本报告保留人工审核流程，另行记录 AI 对原文、A/B 输出和 CHIA 标注的逐条复核。这里已揭示 A/B 系统身份，属于非盲法 AI 复核。类型和边界的数字是对既有金标准的脚本复算；文字解释是 AI 判断，不能当作真人或独立临床签核。", "",
-             "复核只使用冻结后的预测，没有改动模型、提示词、金标准或实验分数。原人工审核表的身份、时间和评分字段保持原状。", "",
-             "Markdown 展示统一换行并省略行尾空格；字符位置以 JSON 中保留的原始文本为准。", "",
-             "## 这 12 份样本的核对结果", "",
-             "| 系统 | 正确 TP | 误报 FP | 遗漏 FN | 精确率 | 召回率 | 精确片段 F1 | 完全匹配文档 |",
+    lines = ["# AI Secondary Review: 12 Frozen Cases", "",
+             "**Reviewer: Codex (AI). Cases reviewed: 12/12. Human review remains 0/12.**", "",
+             "This report preserves the human-review process and separately records an AI review of the source text, A/B outputs and CHIA annotations. The A/B system identities are disclosed, so this is an unblinded AI review. Type and boundary counts are recomputed from the existing gold by script; the written interpretations are AI judgments, not human or independent clinical sign-off.", "",
+             "The review used frozen predictions and did not change the model, prompts, gold or experiment scores. Reviewer identity, date and score fields in the human review packet remain unfilled.", "",
+             "Markdown display normalizes line endings and trims trailing whitespace. Character offsets refer to the original text preserved in the JSON record.", "",
+             "## Results for the 12 reviewed cases", "",
+             "| System | Correct TP | False positives FP | Misses FN | Precision | Recall | Exact span F1 | Completely exact documents |",
              "|---|---:|---:|---:|---:|---:|---:|---:|"]
     for system, m in aggregate.items():
         lines.append(f"| {LABELS[system]} | {m['tp']} | {m['fp']} | {m['fn']} | {m['precision']:.1%} | {m['recall']:.1%} | {m['f1']:.1%} | {m['exact_documents']}/12 |")
-    lines += ["", "这是预先抽取的 12 份复核子集，不能代替 [100 份文档的主结果](summary.md)。完全匹配要求整个实体集合一致，包含无目标实体的文档。空金标准与空预测的 F1 按评分实现记为 0，另用完全匹配标志表示该文档成功。所有保留片段均能回溯到原文，但原文匹配不等于语义正确。", "",
-              "主要问题：疾病/观察结果与 Measurement 混淆；数值、单位及时间窗截断；完整片段与短片段同时出现；Multiplier、Observation 等任务外标签被强制分配到三个目标类别。新版在 review-02、review-10 的精确 F1 低于旧版。否定、AND/OR、例外与患者资格没有得到验证。", "",
-              "[保留的真人审核表](human_review.md) · [未填写的人类评分记录](human_review_packet.json) · [机器可读 AI 二次复核](ai_second_review.json)", ""]
+    lines += ["", "This prespecified 12-document subset does not replace the [100-document primary result](summary.md). A completely exact document must have an exact predicted entity set, including documents with no target gold. The scoring implementation assigns F1=0 when both gold and predictions are empty; the separate exact-document flag shows whether the empty sets match. All retained spans can be traced to the source, but quotation support does not establish semantic correctness.", "",
+              "Main errors include disease or observation terms mislabeled as Measurement; truncated values, units and time windows; duplicate short and complete spans; and forcing labels outside the three target categories, such as Multiplier and Observation, into a target category. The revised system has lower exact F1 than the original on review-02 and review-10. Negation, AND/OR scope, exceptions and patient eligibility were not evaluated.", "",
+              "[Retained human review worksheet](human_review.md) · [Unfilled human review packet](human_review_packet.json) · [Machine-readable AI secondary review](ai_second_review.json)", ""]
     for case in cases:
         display_source = "\n".join(line.rstrip() for line in case["source"].splitlines())
         lines += [f"## {case['case_id']} — {case['record_id']}", "", "```text", display_source, "```", "",
-                  "| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |",
+                  "| Output | System | TP / FP / FN | Exact span F1 | Completely exact |",
                   "|---|---|---|---:|---|"]
         for label in ("A", "B"):
             result = case[label]; m = result["metrics"]
-            lines.append(f"| {label} | {LABELS[result['system']]} | {m['tp']} / {m['fp']} / {m['fn']} | {m['f1']:.1%} | {'是' if result['exact_document'] else '否'} |")
+            lines.append(f"| {label} | {LABELS[result['system']]} | {m['tp']} / {m['fp']} / {m['fn']} | {m['f1']:.1%} | {'Yes' if result['exact_document'] else 'No'} |")
         note = case["ai_notes"]
-        lines += ["", "**AI 类型复核：** " + note["finding"], "",
-                  "**边界与遗漏：** " + note["boundary_and_omissions"], "",
-                  "**上下文限制：** " + note["context"], ""]
+        lines += ["", "**AI type review:** " + note["finding"], "",
+                  "**Boundaries and omissions:** " + note["boundary_and_omissions"], "",
+                  "**Context and limitations:** " + note["context"], ""]
         for label in ("A", "B"):
             result = case[label]
-            lines += [f"### {label} 逐片段核对", "", "| 类型 | 字符位置 | 原文片段 | 金标准匹配 |", "|---|---|---|---|"]
+            lines += [f"### {label} span-by-span comparison", "", "| Type | Character offsets | Source text | Gold comparison |", "|---|---|---|---|"]
             for item in result["prediction_checks"]:
                 verdict = VERDICTS[item["benchmark_verdict"]]
                 if item["other_exact_annotation_types"]:
-                    verdict += "；完整标注类型：" + ", ".join(item["other_exact_annotation_types"])
+                    verdict += "; full annotation type: " + ", ".join(item["other_exact_annotation_types"])
                 lines.append(f"| {item['kind']} | {item['start']}:{item['end']} | {shown(item['evidence'])} | {verdict} |")
             if not result["prediction_checks"]:
-                lines.append("| — | — | 无保留输出 | — |")
-            lines += ["", "遗漏的目标实体：", ""]
-            lines += [f"- {g['kind']} {g['spans']}: {shown(g['source_fragments'])}" for g in result["missing_gold"]] or ["- 无。"]
+                lines.append("| — | — | No retained predictions | — |")
+            lines += ["", "Missed target entities:", ""]
+            lines += [f"- {g['kind']} {g['spans']}: {shown(g['source_fragments'])}" for g in result["missing_gold"]] or ["- None."]
             lines.append("")
-    lines += ["## 后续改进顺序（尚未运行）", "",
-              "1. 在开发集补充标签排除规则与困难反例，区分 Person、Condition、Observation、Multiplier 与三个目标标签，避免见到医学词或数字就强制分类。保留语料差异记录，不事后改测试金标准。",
-              "2. 以同一开发集上的 NER 为基线，比较候选重排、按类型筛选和边界校正，检验 LLM 是否有独立增益。当前直接取并集增加了误报，不能因召回提高就默认采用。",
-              "3. 在开发集验证完整单位/运算符边界、重复短片段去重及词内子串拒绝；另测受约束的 JSON 输出和更合理的生成预算。规则需检查缩写与标点反例，不能只针对这 12 份样本修补。",
-              "4. 将否定、条件关系、时间比较与例外作为单独标注和评估的任务。完成开发后再冻结方案，用新的未使用样本评估，另行记录真实人工审核。", "",
-              "## 范围与来源", "",
-              "标签冲突依据原始 CHIA 标注记录，不把与语料不一致直接解释为临床事实错误。可能的标注不一致和可疑源单位保持原样，不在复核后修改测试答案。下一轮开发需要新的冻结方案与评估样本。", "",
-              "原文和金标准来自 Kury et al., CHIA v2，CC BY 4.0：[论文](https://doi.org/10.1038/s41597-020-00620-0) · [数据](https://doi.org/10.6084/m9.figshare.11855817.v2)。AI 解释、模型预测和本复核表为派生成果。"]
+    lines += ["## Recommended next steps (not yet run)", "",
+              "1. Add label-exclusion rules and hard negative examples to development data. Distinguish Person, Condition, Observation and Multiplier from the three target labels instead of assigning every medical term or number to a target category. Record corpus disagreements without editing test gold after evaluation.",
+              "2. Use NER on the same development folds as the baseline. Compare candidate reranking, type filtering and boundary correction to test whether the LLM contributes independently. The current union adds false positives and should not be selected by recall alone.",
+              "3. On development data, evaluate complete unit/operator boundaries, duplicate short-span removal and rejection of substrings inside words. Also test constrained JSON output and an appropriate generation budget. Check rules against abbreviation and punctuation counterexamples instead of patching only these 12 cases.",
+              "4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample; record actual human review separately.", "",
+              "## Scope and sources", "",
+              "Type comparisons follow the original CHIA annotations; disagreement with the corpus is not automatically a clinical error. Potential annotation issues and suspicious source units are retained, and test gold is not changed after review. Further development requires a new freeze and evaluation sample.", "",
+              "Source text and gold annotations are from Kury et al., CHIA v2, CC BY 4.0: [paper](https://doi.org/10.1038/s41597-020-00620-0) · [dataset](https://doi.org/10.6084/m9.figshare.11855817.v2). AI interpretations, model predictions and this review are derived work."]
     (OUT / "ai_second_review.json").write_text(json.dumps(review, ensure_ascii=False, indent=2) + "\n")
     (OUT / "ai_second_review.md").write_text("\n".join(lines) + "\n")
     print(json.dumps({"reviewed_cases": len(cases), "aggregate": aggregate, "verification": review["verification"]}, ensure_ascii=False, indent=2))

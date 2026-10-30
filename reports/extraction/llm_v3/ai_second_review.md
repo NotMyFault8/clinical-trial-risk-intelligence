@@ -1,25 +1,25 @@
-# AI 二次复核：12 份冻结样本
+# AI Secondary Review: 12 Frozen Cases
 
-**复核者：Codex（AI）。已复核 12/12；真人审核仍为 0/12。**
+**Reviewer: Codex (AI). Cases reviewed: 12/12. Human review remains 0/12.**
 
-本报告保留人工审核流程，另行记录 AI 对原文、A/B 输出和 CHIA 标注的逐条复核。这里已揭示 A/B 系统身份，属于非盲法 AI 复核。类型和边界的数字是对既有金标准的脚本复算；文字解释是 AI 判断，不能当作真人或独立临床签核。
+This report preserves the human-review process and separately records an AI review of the source text, A/B outputs and CHIA annotations. The A/B system identities are disclosed, so this is an unblinded AI review. Type and boundary counts are recomputed from the existing gold by script; the written interpretations are AI judgments, not human or independent clinical sign-off.
 
-复核只使用冻结后的预测，没有改动模型、提示词、金标准或实验分数。原人工审核表的身份、时间和评分字段保持原状。
+The review used frozen predictions and did not change the model, prompts, gold or experiment scores. Reviewer identity, date and score fields in the human review packet remain unfilled.
 
-Markdown 展示统一换行并省略行尾空格；字符位置以 JSON 中保留的原始文本为准。
+Markdown display normalizes line endings and trims trailing whitespace. Character offsets refer to the original text preserved in the JSON record.
 
-## 这 12 份样本的核对结果
+## Results for the 12 reviewed cases
 
-| 系统 | 正确 TP | 误报 FP | 遗漏 FN | 精确率 | 召回率 | 精确片段 F1 | 完全匹配文档 |
+| System | Correct TP | False positives FP | Misses FN | Precision | Recall | Exact span F1 | Completely exact documents |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 旧版 LLM | 10 | 31 | 63 | 24.4% | 13.7% | 17.5% | 0/12 |
-| 新版 LLM + NER | 37 | 114 | 36 | 24.5% | 50.7% | 33.0% | 1/12 |
+| Original LLM | 10 | 31 | 63 | 24.4% | 13.7% | 17.5% | 0/12 |
+| Revised LLM + NER | 37 | 114 | 36 | 24.5% | 50.7% | 33.0% | 1/12 |
 
-这是预先抽取的 12 份复核子集，不能代替 [100 份文档的主结果](summary.md)。完全匹配要求整个实体集合一致，包含无目标实体的文档。空金标准与空预测的 F1 按评分实现记为 0，另用完全匹配标志表示该文档成功。所有保留片段均能回溯到原文，但原文匹配不等于语义正确。
+This prespecified 12-document subset does not replace the [100-document primary result](summary.md). A completely exact document must have an exact predicted entity set, including documents with no target gold. The scoring implementation assigns F1=0 when both gold and predictions are empty; the separate exact-document flag shows whether the empty sets match. All retained spans can be traced to the source, but quotation support does not establish semantic correctness.
 
-主要问题：疾病/观察结果与 Measurement 混淆；数值、单位及时间窗截断；完整片段与短片段同时出现；Multiplier、Observation 等任务外标签被强制分配到三个目标类别。新版在 review-02、review-10 的精确 F1 低于旧版。否定、AND/OR、例外与患者资格没有得到验证。
+Main errors include disease or observation terms mislabeled as Measurement; truncated values, units and time windows; duplicate short and complete spans; and forcing labels outside the three target categories, such as Multiplier and Observation, into a target category. The revised system has lower exact F1 than the original on review-02 and review-10. Negation, AND/OR scope, exceptions and patient eligibility were not evaluated.
 
-[保留的真人审核表](human_review.md) · [未填写的人类评分记录](human_review_packet.json) · [机器可读 AI 二次复核](ai_second_review.json)
+[Retained human review worksheet](human_review.md) · [Unfilled human review packet](human_review_packet.json) · [Machine-readable AI secondary review](ai_second_review.json)
 
 ## review-01 — NCT03119766_exc
 
@@ -42,24 +42,24 @@ Participation in other clinical trials within 3 months to the enrollment in this
 Patient is related to the research staff of
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 0 / 1 / 14 | 0.0% | 否 |
-| B | 新版 LLM + NER | 5 / 37 / 9 | 17.9% | 否 |
+| A | Original LLM | 0 / 1 / 14 | 0.0% | No |
+| B | Revised LLM + NER | 5 / 37 / 9 | 17.9% | No |
 
-**AI 类型复核：** A把gastro-oesophageal中的子串age当成Measurement；虽然字符能在原文中找到，但不是独立实体。B补回两个重复时间窗和Child-Pugh score等实体，同时把多种疾病名称、单字母或缩写片段归入Measurement，误报很多。
+**AI type review:** A labels the substring age inside gastro-oesophageal as a Measurement. Although the characters occur in the source, they are not a standalone entity. B recovers two repeated time windows and Child-Pugh score, but produces many false positives by labeling disease names, a single letter and abbreviations as Measurements.
 
-**边界与遗漏：** B的> 6)多包含右括号；for 1 month prior to the enrollment in the trial比金标准多包含for；New York Heart Association等目标实体仍遗漏。
+**Boundaries and omissions:** B includes an extra closing parenthesis in > 6) and an extra for at the start of for 1 month prior to the enrollment in the trial. It still misses target entities such as New York Heart Association.
 
-**上下文限制：** 这是一份排除标准。抽到疾病名或阈值并不等于已解析排除逻辑，不能据此生成患者入组结论。
+**Context and limitations:** This is an exclusion criterion. Extracting a disease name or threshold does not parse the exclusion logic and cannot support a patient eligibility decision.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 55:58 | "age" | 未匹配目标金标准 |
+| Measurement | 55:58 | "age" | no overlap with target gold |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[442, 481]]: ["less than 7 days prior to randomization"]
 - Temporal [[506, 540]]: ["within 2 months before study entry"]
@@ -76,54 +76,54 @@ Patient is related to the research staff of
 - Value [[1489, 1518]]: ["over 2 units of alcohol a day"]
 - Temporal [[1619, 1663]]: ["1 month prior to the enrollment in the trial"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 42:60 | "gastro-oesophageal" | 未匹配目标金标准 |
-| Measurement | 42:82 | "gastro-oesophageal reflux disease (GERD)" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 77:81 | "GERD" | 未匹配目标金标准 |
-| Measurement | 91:111 | "chronic pancreatitis" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 113:127 | "cholelithiasis" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 129:148 | "fatty liver disease" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 150:159 | "hepatitis" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 161:179 | "cirrhosis of liver" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 304:328 | "irritable bowel syndrome" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 484:485 | "H" | 未匹配目标金标准 |
-| Measurement | 554:563 | "infection" | 未匹配目标金标准 |
-| Measurement | 628:646 | "malignant neoplasm" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 693:695 | "IV" | 与其他目标类型重叠 |
-| Measurement | 696:718 | "cardiovascular disease" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 772:786 | "hypothyroidism" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 788:805 | "diabetes mellitus" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 807:829 | "chronic kidney disease" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 831:835 | "С3-5" | 同类型重叠，边界不匹配 |
-| Measurement | 863:882 | "portal hypertension" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 897:911 | "decompensation" | 未匹配目标金标准 |
-| Measurement | 913:929 | "Child-Pugh score" | 类型及完整边界匹配 |
-| Temporal | 429:441 | "preparations" | 未匹配目标金标准 |
-| Temporal | 442:481 | "less than 7 days prior to randomization" | 类型及完整边界匹配 |
-| Temporal | 506:540 | "within 2 months before study entry" | 类型及完整边界匹配 |
-| Temporal | 564:598 | "within 2 months before study entry" | 类型及完整边界匹配 |
-| Temporal | 666:671 | "Prior" | 未匹配目标金标准 |
-| Temporal | 1013:1020 | "prevent" | 未匹配目标金标准 |
-| Temporal | 1377:1400 | "during the study period" | 类型及完整边界匹配 |
-| Temporal | 1489:1501 | "over 2 units" | 与其他目标类型重叠 |
-| Temporal | 1592:1613 | "concomitant treatment" | 未匹配目标金标准 |
-| Temporal | 1615:1663 | "for 1 month prior to the enrollment in the trial" | 同类型重叠，边界不匹配 |
-| Temporal | 1705:1752 | "within 3 months to the enrollment in this study" | 未匹配目标金标准 |
-| Value | 442:451 | "less than" | 与其他目标类型重叠 |
-| Value | 571:579 | "2 months" | 与其他目标类型重叠 |
-| Value | 666:671 | "Prior" | 未匹配目标金标准 |
-| Value | 693:695 | "IV" | 同类型重叠，边界不匹配 |
-| Value | 807:814 | "chronic" | 未匹配目标金标准 |
-| Value | 831:835 | "С3-5" | 同类型重叠，边界不匹配 |
-| Value | 913:933 | "Child-Pugh score > 6" | 同类型重叠，边界不匹配；完整标注类型：Scope |
-| Value | 930:934 | "> 6)" | 同类型重叠，边界不匹配 |
-| Value | 1489:1501 | "over 2 units" | 同类型重叠，边界不匹配 |
-| Value | 1581:1591 | "Prohibited" | 未匹配目标金标准 |
+| Measurement | 42:60 | "gastro-oesophageal" | no overlap with target gold |
+| Measurement | 42:82 | "gastro-oesophageal reflux disease (GERD)" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 77:81 | "GERD" | no overlap with target gold |
+| Measurement | 91:111 | "chronic pancreatitis" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 113:127 | "cholelithiasis" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 129:148 | "fatty liver disease" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 150:159 | "hepatitis" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 161:179 | "cirrhosis of liver" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 304:328 | "irritable bowel syndrome" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 484:485 | "H" | no overlap with target gold |
+| Measurement | 554:563 | "infection" | no overlap with target gold |
+| Measurement | 628:646 | "malignant neoplasm" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 693:695 | "IV" | overlaps an entity with another target type |
+| Measurement | 696:718 | "cardiovascular disease" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 772:786 | "hypothyroidism" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 788:805 | "diabetes mellitus" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 807:829 | "chronic kidney disease" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 831:835 | "С3-5" | same type overlaps, but boundary differs |
+| Measurement | 863:882 | "portal hypertension" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 897:911 | "decompensation" | no overlap with target gold |
+| Measurement | 913:929 | "Child-Pugh score" | exact type and full boundary match |
+| Temporal | 429:441 | "preparations" | no overlap with target gold |
+| Temporal | 442:481 | "less than 7 days prior to randomization" | exact type and full boundary match |
+| Temporal | 506:540 | "within 2 months before study entry" | exact type and full boundary match |
+| Temporal | 564:598 | "within 2 months before study entry" | exact type and full boundary match |
+| Temporal | 666:671 | "Prior" | no overlap with target gold |
+| Temporal | 1013:1020 | "prevent" | no overlap with target gold |
+| Temporal | 1377:1400 | "during the study period" | exact type and full boundary match |
+| Temporal | 1489:1501 | "over 2 units" | overlaps an entity with another target type |
+| Temporal | 1592:1613 | "concomitant treatment" | no overlap with target gold |
+| Temporal | 1615:1663 | "for 1 month prior to the enrollment in the trial" | same type overlaps, but boundary differs |
+| Temporal | 1705:1752 | "within 3 months to the enrollment in this study" | no overlap with target gold |
+| Value | 442:451 | "less than" | overlaps an entity with another target type |
+| Value | 571:579 | "2 months" | overlaps an entity with another target type |
+| Value | 666:671 | "Prior" | no overlap with target gold |
+| Value | 693:695 | "IV" | same type overlaps, but boundary differs |
+| Value | 807:814 | "chronic" | no overlap with target gold |
+| Value | 831:835 | "С3-5" | same type overlaps, but boundary differs |
+| Value | 913:933 | "Child-Pugh score > 6" | same type overlaps, but boundary differs; full annotation type: Scope |
+| Value | 930:934 | "> 6)" | same type overlaps, but boundary differs |
+| Value | 1489:1501 | "over 2 units" | same type overlaps, but boundary differs |
+| Value | 1581:1591 | "Prohibited" | no overlap with target gold |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Measurement [[737, 763]]: ["New York Heart Association"]
 - Value [[687, 695]]: ["class IV"]
@@ -141,47 +141,47 @@ Patient is related to the research staff of
 pregnant women in 30 to 32 weeks of gestation, with positive HBsAg and HBeAg,serum viral load above 8log10 copies per mL
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 4 / 2 / 3 | 61.5% | 否 |
-| B | 新版 LLM + NER | 4 / 3 / 3 | 57.1% | 否 |
+| A | Original LLM | 4 / 2 / 3 | 61.5% | No |
+| B | Revised LLM + NER | 4 / 3 / 3 | 57.1% | No |
 
-**AI 类型复核：** A和B都保留HBsAg、HBeAg及serum viral load。B补出positive，但同时保留截断的serum viral，与完整实体重复。两组都把30 to 32 weeks标为Temporal；这条记录的金标准将其标为Value，gestation标为Measurement。
+**AI type review:** A and B both retain HBsAg, HBeAg and serum viral load. B adds positive but also returns a truncated serum viral span alongside the complete entity. Both label 30 to 32 weeks as Temporal; in this record, the gold labels the phrase as Value and gestation as Measurement.
 
-**边界与遗漏：** B的in 30 to 32 weeks边界多了in；B漏掉gestation，两组都漏掉above 8log10 copies per mL。这条样本中新组合的精确F1低于旧模型，不能只展示改善样例。
+**Boundaries and omissions:** B includes an extra in in in 30 to 32 weeks and misses gestation. Both systems miss above 8log10 copies per mL. The revised combination has a lower exact F1 than the original on this case, so the report should not show only examples that improved.
 
-**上下文限制：** 孕周在本条语料中是测量值，不是相对事件时间窗；应依据上下文和已固定的任务标签判断。
+**Context and limitations:** Here, gestational age is labeled as a measurement value, not a relative event-time window. The fixed task labels and context govern this comparison.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 0:14 | "pregnant women" | 未匹配目标金标准 |
-| Measurement | 36:45 | "gestation" | 类型及完整边界匹配 |
-| Measurement | 61:66 | "HBsAg" | 类型及完整边界匹配 |
-| Measurement | 71:76 | "HBeAg" | 类型及完整边界匹配 |
-| Measurement | 77:93 | "serum viral load" | 类型及完整边界匹配 |
-| Temporal | 18:32 | "30 to 32 weeks" | 与其他目标类型重叠；完整标注类型：Value |
+| Measurement | 0:14 | "pregnant women" | no overlap with target gold |
+| Measurement | 36:45 | "gestation" | exact type and full boundary match |
+| Measurement | 61:66 | "HBsAg" | exact type and full boundary match |
+| Measurement | 71:76 | "HBeAg" | exact type and full boundary match |
+| Measurement | 77:93 | "serum viral load" | exact type and full boundary match |
+| Temporal | 18:32 | "30 to 32 weeks" | overlaps an entity with another target type; full annotation type: Value |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Value [[18, 32]]: ["30 to 32 weeks"]
 - Value [[52, 60]]: ["positive"]
 - Value [[94, 120]]: ["above 8log10 copies per mL"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 61:66 | "HBsAg" | 类型及完整边界匹配 |
-| Measurement | 71:76 | "HBeAg" | 类型及完整边界匹配 |
-| Measurement | 77:88 | "serum viral" | 同类型重叠，边界不匹配 |
-| Measurement | 77:93 | "serum viral load" | 类型及完整边界匹配 |
-| Temporal | 18:32 | "30 to 32 weeks" | 与其他目标类型重叠；完整标注类型：Value |
-| Value | 15:32 | "in 30 to 32 weeks" | 同类型重叠，边界不匹配 |
-| Value | 52:60 | "positive" | 类型及完整边界匹配 |
+| Measurement | 61:66 | "HBsAg" | exact type and full boundary match |
+| Measurement | 71:76 | "HBeAg" | exact type and full boundary match |
+| Measurement | 77:88 | "serum viral" | same type overlaps, but boundary differs |
+| Measurement | 77:93 | "serum viral load" | exact type and full boundary match |
+| Temporal | 18:32 | "30 to 32 weeks" | overlaps an entity with another target type; full annotation type: Value |
+| Value | 15:32 | "in 30 to 32 weeks" | same type overlaps, but boundary differs |
+| Value | 52:60 | "positive" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Value [[18, 32]]: ["30 to 32 weeks"]
 - Measurement [[36, 45]]: ["gestation"]
@@ -200,39 +200,39 @@ smoked within the past year
 apnea hypopnea index > 5 events per hour
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 1 / 4 / 2 | 25.0% | 否 |
-| B | 旧版 LLM | 0 / 0 / 3 | 0.0% | 否 |
+| A | Revised LLM + NER | 1 / 4 / 2 | 25.0% | No |
+| B | Original LLM | 0 / 0 / 3 | 0.0% | No |
 
-**AI 类型复核：** A找到完整的within the past year，但又输出较短的past，并把同一时间窗重复标为Value。B没有保留实体。
+**AI type review:** A returns the full within the past year, then also returns the shorter past and labels the same window as Value. B retains no entities.
 
-**边界与遗漏：** A把> 5 events per hour截成> 5；两组都未完整抽出apnea hypopnea index及其数值。renal function在这条记录的目标金标准中未标为Measurement，其临床合理性没有在本复核中裁定。
+**Boundaries and omissions:** A truncates > 5 events per hour to > 5. Neither system fully extracts apnea hypopnea index and its value. Renal function is not labeled Measurement in this record's target gold; this review does not independently judge whether that annotation is clinically appropriate.
 
-**上下文限制：** 时间窗、指数名称和单位构成不同信息；仅保留数字5会丢失每小时事件数的量纲。
+**Context and limitations:** The time window, index name and unit convey different information. Keeping only 5 loses the per-hour event rate.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 40:54 | "renal function" | 未匹配目标金标准 |
-| Temporal | 141:161 | "within the past year" | 类型及完整边界匹配 |
-| Temporal | 152:156 | "past" | 同类型重叠，边界不匹配 |
-| Value | 141:161 | "within the past year" | 与其他目标类型重叠；完整标注类型：Temporal |
-| Value | 184:187 | "> 5" | 同类型重叠，边界不匹配 |
+| Measurement | 40:54 | "renal function" | no overlap with target gold |
+| Temporal | 141:161 | "within the past year" | exact type and full boundary match |
+| Temporal | 152:156 | "past" | same type overlaps, but boundary differs |
+| Value | 141:161 | "within the past year" | overlaps an entity with another target type; full annotation type: Temporal |
+| Value | 184:187 | "> 5" | same type overlaps, but boundary differs |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Measurement [[163, 183]]: ["apnea hypopnea index"]
 - Value [[184, 203]]: ["> 5 events per hour"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| — | — | 无保留输出 | — |
+| — | — | No retained predictions | — |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[141, 161]]: ["within the past year"]
 - Measurement [[163, 183]]: ["apnea hypopnea index"]
@@ -246,38 +246,38 @@ patient with a measure of legal protection
 subject unaffiliated insurance
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 0 / 3 / 0 | 0.0% | 否 |
-| B | 新版 LLM + NER | 0 / 0 / 0 | 0.0% | 是 |
+| A | Original LLM | 0 / 3 / 0 | 0.0% | No |
+| B | Revised LLM + NER | 0 / 0 / 0 | 0.0% | Yes |
 
-**AI 类型复核：** 金标准没有Measurement、Value、Temporal目标实体。B的空输出与本任务金标准完全一致。A将妊娠/哺乳状态、法律保护和保险相关描述当成Measurement，不符合本任务标签。
+**AI type review:** The gold contains no target Measurement, Value or Temporal entities. B's empty output is an exact document match under this task's gold. A labels descriptions of pregnancy or breastfeeding, legal protection and insurance as Measurements, which do not match the target labels.
 
-**边界与遗漏：** B没有本任务范围内的误报或漏报；这不表示这些资格条件不存在或不重要。
+**Boundaries and omissions:** B has no false positives or false negatives within the scope of this task. This does not mean these eligibility conditions are absent or unimportant.
 
-**上下文限制：** 本轮仅评估三个实体类别，不对法律条款或妊娠状态做资格判断。
+**Context and limitations:** This review scores only three entity categories; it does not decide eligibility based on legal clauses or pregnancy status.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 0:25 | "pregnant or breastfeeding" | 未匹配目标金标准 |
-| Measurement | 41:75 | "with a measure of legal protection" | 未匹配目标金标准 |
-| Measurement | 85:107 | "unaffiliated insurance" | 未匹配目标金标准 |
+| Measurement | 0:25 | "pregnant or breastfeeding" | no overlap with target gold |
+| Measurement | 41:75 | "with a measure of legal protection" | no overlap with target gold |
+| Measurement | 85:107 | "unaffiliated insurance" | no overlap with target gold |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| — | — | 无保留输出 | — |
+| — | — | No retained predictions | — |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
 ## review-05 — NCT00396734_inc
 
@@ -285,40 +285,40 @@ subject unaffiliated insurance
 Methadone-maintained cocaine-dependent patients use between 1g to 2g a day; 1 to 3 times a week
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 0 / 3 / 0 | 0.0% | 否 |
-| B | 新版 LLM + NER | 0 / 3 / 0 | 0.0% | 否 |
+| A | Original LLM | 0 / 3 / 0 | 0.0% | No |
+| B | Revised LLM + NER | 0 / 3 / 0 | 0.0% | No |
 
-**AI 类型复核：** 两组都将用量或频次当成目标实体。核对完整.ann后，1g to 2g a day和1 to 3 times a week实际标为Multiplier，cocaine-dependent标为Condition，因此本任务的目标金标准为空。
+**AI type review:** Both systems label quantity or frequency as a target entity. The complete annotation file labels 1g to 2g a day and 1 to 3 times a week as Multiplier, and cocaine-dependent as Condition. The target gold is therefore empty for this task.
 
-**边界与遗漏：** B还产生明显未完成的片段between 1g to。两组在精确基准上都有3个误报；不能把金标准没有目标实体直接解释为原文没有数量信息。
+**Boundaries and omissions:** B also returns the clearly incomplete span between 1g to. Both systems have three benchmark false positives; an empty target gold must not be described as an absence of quantity information in the source.
 
-**上下文限制：** 出现数字和时间单位并不足以决定Value或Temporal标签；药物用量/频次需要遵循语料类别范围。
+**Context and limitations:** Numbers and time units alone do not determine Value or Temporal labels. Medication dose and frequency must follow the corpus label scope.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 21:38 | "cocaine-dependent" | 未匹配目标金标准；完整标注类型：Condition |
-| Value | 60:68 | "1g to 2g" | 未匹配目标金标准 |
-| Temporal | 76:95 | "1 to 3 times a week" | 未匹配目标金标准；完整标注类型：Multiplier |
+| Measurement | 21:38 | "cocaine-dependent" | no overlap with target gold; full annotation type: Condition |
+| Value | 60:68 | "1g to 2g" | no overlap with target gold |
+| Temporal | 76:95 | "1 to 3 times a week" | no overlap with target gold; full annotation type: Multiplier |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Temporal | 76:95 | "1 to 3 times a week" | 未匹配目标金标准；完整标注类型：Multiplier |
-| Value | 52:65 | "between 1g to" | 未匹配目标金标准 |
-| Value | 52:74 | "between 1g to 2g a day" | 未匹配目标金标准 |
+| Temporal | 76:95 | "1 to 3 times a week" | no overlap with target gold; full annotation type: Multiplier |
+| Value | 52:65 | "between 1g to" | no overlap with target gold |
+| Value | 52:74 | "between 1g to 2g a day" | no overlap with target gold |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
 ## review-06 — NCT03253796_exc
 
@@ -342,30 +342,30 @@ Is known to be infected with human immunodeficiency virus (HIV) or seropositive 
 Has had
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 2 / 5 / 10 | 21.1% | 否 |
-| B | 新版 LLM + NER | 8 / 24 / 4 | 36.4% | 否 |
+| A | Original LLM | 2 / 5 / 10 | 21.1% | No |
+| B | Revised LLM + NER | 8 / 24 / 4 | 36.4% | No |
 
-**AI 类型复核：** B补回多个完整时间窗，召回显著高于A，但把疾病名、Live、Investigational、whichever和IV等片段误当Measurement，并输出多余的active等标签。
+**AI type review:** B recovers several complete time windows and has much higher recall than A, but mislabels disease names and fragments such as Live, Investigational, whichever and IV as Measurement and emits extra Temporal predictions such as active.
 
-**边界与遗漏：** 两组输出30 days or 5 half-lives off drug，未对应金标准中的不连续30 days | off drug及另一条5 half-lives off drug。B仍漏掉while receiving trial medication和12 months off drug等完整时间片段。
+**Boundaries and omissions:** Both systems return 30 days or 5 half-lives off drug, which does not match the gold's discontinuous 30 days | off drug and separate 5 half-lives off drug spans. B still misses complete windows including while receiving trial medication and 12 months off drug.
 
-**上下文限制：** 原文含whichever is longer以及多个不同排除条件。当前连续片段抽取不能表示取较长值的逻辑；不能把已复制的文本视为完整规则。
+**Context and limitations:** The source includes whichever is longer and several distinct exclusion conditions. Contiguous span extraction cannot represent the longer-of rule; copied text alone is not a complete rule.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 87:94 | "nursing" | 未匹配目标金标准；完整标注类型：Condition |
-| Value | 62:69 | "Grade 3" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Value | 269:301 | "while receiving trial medication" | 与其他目标类型重叠；完整标注类型：Temporal |
-| Temporal | 647:663 | "30 days off drug" | 类型及完整边界匹配 |
-| Temporal | 687:704 | "3 months off drug" | 类型及完整边界匹配 |
-| Temporal | 738:770 | "30 days or 5 half-lives off drug" | 同类型重叠，边界不匹配；完整标注类型：Scope |
-| Temporal | 1577:1592 | "within 2 months" | 同类型重叠，边界不匹配 |
+| Measurement | 87:94 | "nursing" | no overlap with target gold; full annotation type: Condition |
+| Value | 62:69 | "Grade 3" | no overlap with target gold; full annotation type: Qualifier |
+| Value | 269:301 | "while receiving trial medication" | overlaps an entity with another target type; full annotation type: Temporal |
+| Temporal | 647:663 | "30 days off drug" | exact type and full boundary match |
+| Temporal | 687:704 | "3 months off drug" | exact type and full boundary match |
+| Temporal | 738:770 | "30 days or 5 half-lives off drug" | same type overlaps, but boundary differs; full annotation type: Scope |
+| Temporal | 1577:1592 | "within 2 months" | same type overlaps, but boundary differs |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[145, 193]]: ["within 6 months after receiving trial medication"]
 - Temporal [[269, 301]]: ["while receiving trial medication"]
@@ -378,44 +378,44 @@ Has had
 - Temporal [[1577, 1610]]: ["within 2 months prior to Baseline"]
 - Temporal [[1633, 1640]]: ["ongoing"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 14:26 | "sacroiliitis" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 49:61 | "sacroiliitis" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 668:672 | "Live" | 未匹配目标金标准 |
-| Measurement | 709:724 | "Investigational" | 未匹配目标金标准 |
-| Measurement | 772:781 | "whichever" | 未匹配目标金标准 |
-| Measurement | 1545:1547 | "IV" | 未匹配目标金标准 |
-| Measurement | 1712:1740 | "human immunodeficiency virus" | 未匹配目标金标准 |
-| Measurement | 1712:1745 | "human immunodeficiency virus (HIV" | 未匹配目标金标准 |
-| Measurement | 1750:1762 | "seropositive" | 未匹配目标金标准 |
-| Measurement | 1786:1789 | "HCV" | 未匹配目标金标准 |
-| Measurement | 1786:1790 | "HCV)" | 未匹配目标金标准 |
-| Temporal | 145:166 | "within 6 months after" | 同类型重叠，边界不匹配 |
-| Temporal | 145:193 | "within 6 months after receiving trial medication" | 类型及完整边界匹配 |
-| Temporal | 305:343 | "within 6 months after trial medication" | 类型及完整边界匹配 |
-| Temporal | 647:663 | "30 days off drug" | 类型及完整边界匹配 |
-| Temporal | 687:704 | "3 months off drug" | 类型及完整边界匹配 |
-| Temporal | 738:770 | "30 days or 5 half-lives off drug" | 同类型重叠，边界不匹配；完整标注类型：Scope |
-| Temporal | 932:938 | "active" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Temporal | 1061:1067 | "active" | 未匹配目标金标准 |
-| Temporal | 1080:1086 | "active" | 未匹配目标金标准 |
-| Temporal | 1119:1125 | "active" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Temporal | 1150:1168 | "prior to Screening" | 类型及完整边界匹配 |
-| Temporal | 1242:1276 | "within 6 months prior to Screening" | 类型及完整边界匹配 |
-| Temporal | 1577:1610 | "within 2 months prior to Baseline" | 类型及完整边界匹配 |
-| Temporal | 1633:1640 | "ongoing" | 类型及完整边界匹配 |
-| Temporal | 1653:1662 | "recurrent" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Temporal | 1763:1766 | "for" | 未匹配目标金标准 |
-| Value | 27:34 | "Grade 2" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Value | 62:69 | "Grade 3" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Value | 73:80 | "Grade 4" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Value | 839:841 | "12" | 与其他目标类型重叠 |
-| Value | 1754:1762 | "positive" | 未匹配目标金标准 |
+| Measurement | 14:26 | "sacroiliitis" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 49:61 | "sacroiliitis" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 668:672 | "Live" | no overlap with target gold |
+| Measurement | 709:724 | "Investigational" | no overlap with target gold |
+| Measurement | 772:781 | "whichever" | no overlap with target gold |
+| Measurement | 1545:1547 | "IV" | no overlap with target gold |
+| Measurement | 1712:1740 | "human immunodeficiency virus" | no overlap with target gold |
+| Measurement | 1712:1745 | "human immunodeficiency virus (HIV" | no overlap with target gold |
+| Measurement | 1750:1762 | "seropositive" | no overlap with target gold |
+| Measurement | 1786:1789 | "HCV" | no overlap with target gold |
+| Measurement | 1786:1790 | "HCV)" | no overlap with target gold |
+| Temporal | 145:166 | "within 6 months after" | same type overlaps, but boundary differs |
+| Temporal | 145:193 | "within 6 months after receiving trial medication" | exact type and full boundary match |
+| Temporal | 305:343 | "within 6 months after trial medication" | exact type and full boundary match |
+| Temporal | 647:663 | "30 days off drug" | exact type and full boundary match |
+| Temporal | 687:704 | "3 months off drug" | exact type and full boundary match |
+| Temporal | 738:770 | "30 days or 5 half-lives off drug" | same type overlaps, but boundary differs; full annotation type: Scope |
+| Temporal | 932:938 | "active" | no overlap with target gold; full annotation type: Qualifier |
+| Temporal | 1061:1067 | "active" | no overlap with target gold |
+| Temporal | 1080:1086 | "active" | no overlap with target gold |
+| Temporal | 1119:1125 | "active" | no overlap with target gold; full annotation type: Qualifier |
+| Temporal | 1150:1168 | "prior to Screening" | exact type and full boundary match |
+| Temporal | 1242:1276 | "within 6 months prior to Screening" | exact type and full boundary match |
+| Temporal | 1577:1610 | "within 2 months prior to Baseline" | exact type and full boundary match |
+| Temporal | 1633:1640 | "ongoing" | exact type and full boundary match |
+| Temporal | 1653:1662 | "recurrent" | no overlap with target gold; full annotation type: Qualifier |
+| Temporal | 1763:1766 | "for" | no overlap with target gold |
+| Value | 27:34 | "Grade 2" | no overlap with target gold; full annotation type: Qualifier |
+| Value | 62:69 | "Grade 3" | no overlap with target gold; full annotation type: Qualifier |
+| Value | 73:80 | "Grade 4" | no overlap with target gold; full annotation type: Qualifier |
+| Value | 839:841 | "12" | overlaps an entity with another target type |
+| Value | 1754:1762 | "positive" | no overlap with target gold |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[269, 301]]: ["while receiving trial medication"]
 - Temporal [[738, 745], [762, 770]]: ["30 days", "off drug"]
@@ -430,40 +430,40 @@ Clinically significant laboratory abnormalities
 Pregnancy
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 1 / 5 / 1 | 25.0% | 否 |
-| B | 旧版 LLM | 0 / 2 / 2 | 0.0% | 否 |
+| A | Revised LLM + NER | 1 / 5 / 1 | 25.0% | No |
+| B | Original LLM | 0 / 2 / 2 | 0.0% | No |
 
-**AI 类型复核：** A正确保留Current，但把Current or recent整体作为Temporal，同时把整条感染描述、实验室异常和Pregnancy当成Value。B把infection和laboratory abnormalities当成Measurement。
+**AI type review:** A correctly retains Current but also labels the whole Current or recent phrase as Temporal and labels the full infection description, laboratory abnormalities and Pregnancy as Value. B labels infection and laboratory abnormalities as Measurement.
 
-**边界与遗漏：** 金标准分别标Current与recent；A漏掉独立的recent，B两者都漏掉。Clinically significant也不是这条记录的Temporal金标准。
+**Boundaries and omissions:** The gold labels Current and recent separately. A misses the standalone recent span; B misses both. Clinically significant is not a Temporal gold span in this record.
 
-**上下文限制：** 状态修饰词与其修饰的疾病/妊娠条件需要区分，不能用整条criterion替代实体。
+**Context and limitations:** State modifiers need to be distinguished from the disease or pregnancy condition they modify. Returning the entire criterion does not replace the individual entities.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Temporal | 0:7 | "Current" | 类型及完整边界匹配 |
-| Temporal | 0:17 | "Current or recent" | 同类型重叠，边界不匹配；完整标注类型：Scope |
-| Temporal | 29:51 | "Clinically significant" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Value | 0:27 | "Current or recent infection" | 与其他目标类型重叠 |
-| Value | 29:76 | "Clinically significant laboratory abnormalities" | 未匹配目标金标准 |
-| Value | 78:87 | "Pregnancy" | 未匹配目标金标准；完整标注类型：Condition |
+| Temporal | 0:7 | "Current" | exact type and full boundary match |
+| Temporal | 0:17 | "Current or recent" | same type overlaps, but boundary differs; full annotation type: Scope |
+| Temporal | 29:51 | "Clinically significant" | no overlap with target gold; full annotation type: Qualifier |
+| Value | 0:27 | "Current or recent infection" | overlaps an entity with another target type |
+| Value | 29:76 | "Clinically significant laboratory abnormalities" | no overlap with target gold |
+| Value | 78:87 | "Pregnancy" | no overlap with target gold; full annotation type: Condition |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[11, 17]]: ["recent"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 18:27 | "infection" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 52:76 | "laboratory abnormalities" | 未匹配目标金标准；完整标注类型：Condition |
+| Measurement | 18:27 | "infection" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 52:76 | "laboratory abnormalities" | no overlap with target gold; full annotation type: Condition |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[11, 17]]: ["recent"]
 - Temporal [[0, 7]]: ["Current"]
@@ -486,54 +486,54 @@ For patients >= 40 years of age: any one of the following:
 Established (i.e. by clinical signs or imaging studies) coronary artery disease (CAD) Established (i.e. by clinical signs or imaging studies) peripheral vascular
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 7 / 24 / 12 | 28.0% | 否 |
-| B | 旧版 LLM | 0 / 6 / 19 | 0.0% | 否 |
+| A | Revised LLM + NER | 7 / 24 / 12 | 28.0% | No |
+| B | Original LLM | 0 / 6 / 19 | 0.0% | No |
 
-**AI 类型复核：** A恢复了多个重复的at Screening、完整年龄范围及<=0.70；B把年龄范围拆成>=40与<=80，且没有任何完整目标匹配。A仍产生age、NHANES、reference等不匹配Measurement。
+**AI type review:** A recovers several repeated at Screening spans, the full age range and <=0.70. B splits the age range into >=40 and <=80 and has no complete target match. A still emits unmatched Measurements such as age, NHANES and reference.
 
-**边界与遗漏：** A把长肺功能测量名称截断；>=50 and <=70% of predicted normal缺少values；for at least 6 months prior to Visit 1漏for；score 2 or higher漏score。缩写和长复合实体仍是难点。
+**Boundaries and omissions:** A truncates the long lung-function measurement name; omits values from >=50 and <=70% of predicted normal values; omits for from for at least 6 months prior to Visit 1; and omits score from score 2 or higher. Abbreviations and long compound entities remain difficult.
 
-**上下文限制：** 原文同时有年龄、吸烟暴露、肺功能、给药步骤及临床评分。分段改善了覆盖，但没有可靠区分所有测量、剂量和时间描述。
+**Context and limitations:** The source combines age, smoking exposure, lung function, a dosing procedure and a clinical score. Segmentation improves coverage but does not reliably distinguish all measurement, dose and timing descriptions.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 478:481 | "age" | 未匹配目标金标准；完整标注类型：Person |
-| Measurement | 802:831 | "forced expiratory volume in 1" | 同类型重叠，边界不匹配 |
-| Measurement | 847:868 | "forced vital capacity" | 同类型重叠，边界不匹配 |
-| Measurement | 1029:1035 | "NHANES" | 未匹配目标金标准 |
-| Measurement | 1040:1049 | "reference" | 未匹配目标金标准 |
-| Measurement | 1255:1267 | "total 400mcg" | 未匹配目标金标准 |
-| Measurement | 1361:1369 | "FEV1/FVC" | 未匹配目标金标准 |
-| Measurement | 1380:1392 | "FEV1 percent" | 未匹配目标金标准 |
-| Temporal | 338:340 | "at" | 未匹配目标金标准 |
-| Temporal | 482:494 | "at Screening" | 类型及完整边界匹配 |
-| Temporal | 482:496 | "at Screening (" | 同类型重叠，边界不匹配 |
-| Temporal | 536:543 | "current" | 类型及完整边界匹配 |
-| Temporal | 547:563 | "prior history of" | 同类型重叠，边界不匹配 |
-| Temporal | 601:615 | "at screening (" | 同类型重叠，边界不匹配 |
-| Temporal | 625:633 | "Previous" | 未匹配目标金标准 |
-| Temporal | 688:691 | "for" | 同类型重叠，边界不匹配 |
-| Temporal | 692:726 | "at least 6 months prior to Visit 1" | 同类型重叠，边界不匹配 |
-| Temporal | 710:726 | "prior to Visit 1" | 同类型重叠，边界不匹配 |
-| Temporal | 889:901 | "at Screening" | 类型及完整边界匹配 |
-| Temporal | 1095:1107 | "at Screening" | 类型及完整边界匹配 |
-| Temporal | 1194:1203 | "after the" | 同类型重叠，边界不匹配 |
-| Temporal | 1585:1596 | ">= 40 years" | 与其他目标类型重叠；完整标注类型：Value |
-| Value | 140:144 | "Male" | 未匹配目标金标准；完整标注类型：Person |
-| Value | 180:195 | "post-menopausal" | 未匹配目标金标准 |
-| Value | 455:474 | ">=40 and <=80 years" | 类型及完整边界匹配 |
-| Value | 564:579 | ">=10 pack-years" | 未匹配目标金标准；完整标注类型：Multiplier |
-| Value | 882:888 | "<=0.70" | 类型及完整边界匹配 |
-| Value | 970:1004 | ">=50 and <=70% of predicted normal" | 同类型重叠，边界不匹配 |
-| Value | 1183:1185 | "15" | 与其他目标类型重叠 |
-| Value | 1469:1480 | "2 or higher" | 同类型重叠，边界不匹配 |
-| Value | 1585:1596 | ">= 40 years" | 类型及完整边界匹配 |
+| Measurement | 478:481 | "age" | no overlap with target gold; full annotation type: Person |
+| Measurement | 802:831 | "forced expiratory volume in 1" | same type overlaps, but boundary differs |
+| Measurement | 847:868 | "forced vital capacity" | same type overlaps, but boundary differs |
+| Measurement | 1029:1035 | "NHANES" | no overlap with target gold |
+| Measurement | 1040:1049 | "reference" | no overlap with target gold |
+| Measurement | 1255:1267 | "total 400mcg" | no overlap with target gold |
+| Measurement | 1361:1369 | "FEV1/FVC" | no overlap with target gold |
+| Measurement | 1380:1392 | "FEV1 percent" | no overlap with target gold |
+| Temporal | 338:340 | "at" | no overlap with target gold |
+| Temporal | 482:494 | "at Screening" | exact type and full boundary match |
+| Temporal | 482:496 | "at Screening (" | same type overlaps, but boundary differs |
+| Temporal | 536:543 | "current" | exact type and full boundary match |
+| Temporal | 547:563 | "prior history of" | same type overlaps, but boundary differs |
+| Temporal | 601:615 | "at screening (" | same type overlaps, but boundary differs |
+| Temporal | 625:633 | "Previous" | no overlap with target gold |
+| Temporal | 688:691 | "for" | same type overlaps, but boundary differs |
+| Temporal | 692:726 | "at least 6 months prior to Visit 1" | same type overlaps, but boundary differs |
+| Temporal | 710:726 | "prior to Visit 1" | same type overlaps, but boundary differs |
+| Temporal | 889:901 | "at Screening" | exact type and full boundary match |
+| Temporal | 1095:1107 | "at Screening" | exact type and full boundary match |
+| Temporal | 1194:1203 | "after the" | same type overlaps, but boundary differs |
+| Temporal | 1585:1596 | ">= 40 years" | overlaps an entity with another target type; full annotation type: Value |
+| Value | 140:144 | "Male" | no overlap with target gold; full annotation type: Person |
+| Value | 180:195 | "post-menopausal" | no overlap with target gold |
+| Value | 455:474 | ">=40 and <=80 years" | exact type and full boundary match |
+| Value | 564:579 | ">=10 pack-years" | no overlap with target gold; full annotation type: Multiplier |
+| Value | 882:888 | "<=0.70" | exact type and full boundary match |
+| Value | 970:1004 | ">=50 and <=70% of predicted normal" | same type overlaps, but boundary differs |
+| Value | 1183:1185 | "15" | overlaps an entity with another target type |
+| Value | 1469:1480 | "2 or higher" | same type overlaps, but boundary differs |
+| Value | 1585:1596 | ">= 40 years" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[601, 613]]: ["at screening"]
 - Temporal [[547, 552]]: ["prior"]
@@ -548,18 +548,18 @@ Established (i.e. by clinical signs or imaging studies) coronary artery disease 
 - Value [[1463, 1480]]: ["score 2 or higher"]
 - Measurement [[1488, 1535]]: ["modified Medical Research Council Dyspnea scale"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 450:453 | "Age" | 未匹配目标金标准；完整标注类型：Person |
-| Measurement | 1361:1375 | "FEV1/FVC ratio" | 未匹配目标金标准 |
-| Measurement | 1380:1409 | "FEV1 percent predicted values" | 未匹配目标金标准 |
-| Value | 455:459 | ">=40" | 同类型重叠，边界不匹配 |
-| Value | 464:468 | "<=80" | 同类型重叠，边界不匹配 |
-| Value | 970:984 | ">=50 and <=70%" | 同类型重叠，边界不匹配 |
+| Measurement | 450:453 | "Age" | no overlap with target gold; full annotation type: Person |
+| Measurement | 1361:1375 | "FEV1/FVC ratio" | no overlap with target gold |
+| Measurement | 1380:1409 | "FEV1 percent predicted values" | no overlap with target gold |
+| Value | 455:459 | ">=40" | same type overlaps, but boundary differs |
+| Value | 464:468 | "<=80" | same type overlaps, but boundary differs |
+| Value | 970:984 | ">=50 and <=70%" | same type overlaps, but boundary differs |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Value [[455, 474]]: [">=40 and <=80 years"]
 - Temporal [[482, 494]]: ["at Screening"]
@@ -601,24 +601,24 @@ Dilantin and oral contraceptive usage due to potential drug interaction with gli
 Self-identified history of hypoglycemia
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 旧版 LLM | 0 / 0 / 7 | 0.0% | 否 |
-| B | 新版 LLM + NER | 5 / 2 / 2 | 71.4% | 否 |
+| A | Original LLM | 0 / 0 / 7 | 0.0% | No |
+| B | Revised LLM + NER | 5 / 2 / 2 | 71.4% | No |
 
-**AI 类型复核：** B正确抽取hemoglobin、<8 g/dl和三个Temporal位置，比A的空输出覆盖更多。B把Human immunodeficiency virus当成Measurement，并把abnormal liver作为Value。
+**AI type review:** B correctly extracts hemoglobin, <8 g/dl and three Temporal spans, recovering more target spans than A's empty output. B labels Human immunodeficiency virus as Measurement and abnormal liver as Value.
 
-**边界与遗漏：** 正确边界应分为Value abnormal及Measurement liver enzymes，B两者都未精确完成。
+**Boundaries and omissions:** The gold separates Value abnormal from Measurement liver enzymes; B matches neither complete span.
 
-**上下文限制：** current、Previous和Current大小写及各自位置均需保留；疾病名称出现本身不能证明它是测量名称。
+**Context and limitations:** Current and Previous appear at separate locations and must retain their source casing. A disease name is not automatically a measurement.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| — | — | 无保留输出 | — |
+| — | — | No retained predictions | — |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Measurement [[119, 132]]: ["liver enzymes"]
 - Value [[110, 118]]: ["abnormal"]
@@ -628,19 +628,19 @@ Self-identified history of hypoglycemia
 - Temporal [[195, 203]]: ["Previous"]
 - Temporal [[318, 325]]: ["Current"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 143:153 | "hemoglobin" | 类型及完整边界匹配 |
-| Measurement | 254:282 | "Human immunodeficiency virus" | 未匹配目标金标准 |
-| Temporal | 176:183 | "current" | 类型及完整边界匹配 |
-| Temporal | 195:203 | "Previous" | 类型及完整边界匹配 |
-| Temporal | 318:325 | "Current" | 类型及完整边界匹配 |
-| Value | 110:124 | "abnormal liver" | 同类型重叠，边界不匹配 |
-| Value | 154:161 | "<8 g/dl" | 类型及完整边界匹配 |
+| Measurement | 143:153 | "hemoglobin" | exact type and full boundary match |
+| Measurement | 254:282 | "Human immunodeficiency virus" | no overlap with target gold |
+| Temporal | 176:183 | "current" | exact type and full boundary match |
+| Temporal | 195:203 | "Previous" | exact type and full boundary match |
+| Temporal | 318:325 | "Current" | exact type and full boundary match |
+| Value | 110:124 | "abnormal liver" | same type overlaps, but boundary differs |
+| Value | 154:161 | "<8 g/dl" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Measurement [[119, 132]]: ["liver enzymes"]
 - Value [[110, 118]]: ["abnormal"]
@@ -657,47 +657,47 @@ Chronic hypertension receiving antihypertensive treatment
 Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection.
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 2 / 4 / 2 | 40.0% | 否 |
-| B | 旧版 LLM | 3 / 5 / 1 | 50.0% | 否 |
+| A | Revised LLM + NER | 2 / 4 / 2 | 40.0% | No |
+| B | Original LLM | 3 / 5 / 1 | 50.0% | No |
 
-**AI 类型复核：** A和B都保留Height及>40 Kg/ mm；A把身高阈值拆成< 4'和11"，时间窗也截断。B完整保留时间窗，但多抽了疾病和整条排除条件。
+**AI type review:** A and B both retain Height and >40 Kg/ mm. A splits the height cutoff into < 4' and 11" and truncates the time window. B retains the full time window but adds disease spans and the full exclusion clause.
 
-**边界与遗漏：** 应保留完整< 4' 11"及in the 24 hours prior to cesarean delivery。BMI在这条.ann中明确为Observation，不能因为它通常是测量指标就修改本次金标准。
+**Boundaries and omissions:** The complete spans are < 4' 11" and in the 24 hours prior to cesarean delivery. In this annotation file, BMI is explicitly Observation; its label is not changed based on a different common convention.
 
-**上下文限制：** 原文BMI单位写作Kg/ mm；本任务必须原样保留并标出可疑源文本，不能默默改成更常见单位。
+**Context and limitations:** The source writes the BMI unit as Kg/ mm. Preserve the suspicious source wording rather than silently changing it to a more common unit.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 23:29 | "Height" | 类型及完整边界匹配 |
-| Measurement | 40:43 | "BMI" | 未匹配目标金标准；完整标注类型：Observation |
-| Temporal | 76:109 | "in the 24 hours prior to cesarean" | 同类型重叠，边界不匹配 |
-| Value | 30:34 | "< 4'" | 同类型重叠，边界不匹配 |
-| Value | 35:38 | "11\"" | 同类型重叠，边界不匹配 |
-| Value | 44:54 | ">40 Kg/ mm" | 类型及完整边界匹配 |
+| Measurement | 23:29 | "Height" | exact type and full boundary match |
+| Measurement | 40:43 | "BMI" | no overlap with target gold; full annotation type: Observation |
+| Temporal | 76:109 | "in the 24 hours prior to cesarean" | same type overlaps, but boundary differs |
+| Value | 30:34 | "< 4'" | same type overlaps, but boundary differs |
+| Value | 35:38 | "11\"" | same type overlaps, but boundary differs |
+| Value | 44:54 | ">40 Kg/ mm" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Value [[30, 38]]: ["< 4' 11\""]
 - Temporal [[76, 118]]: ["in the 24 hours prior to cesarean delivery"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 23:29 | "Height" | 类型及完整边界匹配 |
-| Measurement | 40:43 | "BMI" | 未匹配目标金标准；完整标注类型：Observation |
-| Measurement | 121:155 | "Hypertensive diseases of pregnancy" | 未匹配目标金标准；完整标注类型：Condition |
-| Measurement | 157:214 | "Chronic hypertension receiving antihypertensive treatment" | 未匹配目标金标准 |
-| Measurement | 216:329 | "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection" | 未匹配目标金标准 |
-| Value | 44:54 | ">40 Kg/ mm" | 类型及完整边界匹配 |
-| Value | 178:214 | "receiving antihypertensive treatment" | 未匹配目标金标准 |
-| Temporal | 76:118 | "in the 24 hours prior to cesarean delivery" | 类型及完整边界匹配 |
+| Measurement | 23:29 | "Height" | exact type and full boundary match |
+| Measurement | 40:43 | "BMI" | no overlap with target gold; full annotation type: Observation |
+| Measurement | 121:155 | "Hypertensive diseases of pregnancy" | no overlap with target gold; full annotation type: Condition |
+| Measurement | 157:214 | "Chronic hypertension receiving antihypertensive treatment" | no overlap with target gold |
+| Measurement | 216:329 | "Any other physical or psychiatric condition that may impair their ability to cooperate with study data collection" | no overlap with target gold |
+| Value | 44:54 | ">40 Kg/ mm" | exact type and full boundary match |
+| Value | 178:214 | "receiving antihypertensive treatment" | no overlap with target gold |
+| Temporal | 76:118 | "in the 24 hours prior to cesarean delivery" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Value [[30, 38]]: ["< 4' 11\""]
 
@@ -708,38 +708,38 @@ suspicion of nonfunctional P-NET on primary CT (i.e hypervascularity) or MRI
 signed informed consent
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 0 / 1 / 0 | 0.0% | 否 |
-| B | 旧版 LLM | 0 / 3 / 0 | 0.0% | 否 |
+| A | Revised LLM + NER | 0 / 1 / 0 | 0.0% | No |
+| B | Original LLM | 0 / 3 / 0 | 0.0% | No |
 
-**AI 类型复核：** 完整标注中nonfunctional P-NET和hypervascularity属于Condition，CT/MRI属于Procedure，signed informed consent属于Informed_consent，因此三个目标类别的金标准为空。A把hypervascularity当Measurement；B将疾病/影像征象和知情同意混入Measurement、Value、Temporal。
+**AI type review:** The full annotation labels nonfunctional P-NET and hypervascularity as Condition, CT/MRI as Procedure, and signed informed consent as Informed_consent, so the target gold is empty. A labels hypervascularity as Measurement; B places disease/imaging findings and informed consent under Measurement, Value or Temporal.
 
-**边界与遗漏：** A有1个、B有3个基准误报。签署同意书的动作不是此处的Temporal实体。
+**Boundaries and omissions:** A has one and B has three benchmark false positives. Signing consent is not a Temporal entity in this record.
 
-**上下文限制：** 必须区分本次三个目标标签与完整临床信息，不应把所有医学概念强制分配到这三类。
+**Context and limitations:** Distinguish the three target labels from the full clinical annotation; do not force every medical concept into one of those categories.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 52:68 | "hypervascularity" | 未匹配目标金标准；完整标注类型：Condition |
+| Measurement | 52:68 | "hypervascularity" | no overlap with target gold; full annotation type: Condition |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 27:32 | "P-NET" | 未匹配目标金标准 |
-| Value | 52:68 | "hypervascularity" | 未匹配目标金标准；完整标注类型：Condition |
-| Temporal | 78:101 | "signed informed consent" | 未匹配目标金标准；完整标注类型：Informed_consent |
+| Measurement | 27:32 | "P-NET" | no overlap with target gold |
+| Value | 52:68 | "hypervascularity" | no overlap with target gold; full annotation type: Condition |
+| Temporal | 78:101 | "signed informed consent" | no overlap with target gold; full annotation type: Informed_consent |
 
-遗漏的目标实体：
+Missed target entities:
 
-- 无。
+- None.
 
 ## review-12 — NCT02445339_exc
 
@@ -755,60 +755,60 @@ Pregnant, nursing, or not using effective methods of birth control
 Prisoners (as defined by Office of Human Research Protection) at the time of enrollment ARE NOT ELIGIBLE for study entry. However, subjects who become prisoners after being enrolled will be included and not be withdrawn from the study. Patients on parole or probation are eligible for enrollment.
 ```
 
-| 输出 | 系统 | TP / FP / FN | 精确片段 F1 | 完全匹配 |
+| Output | System | TP / FP / FN | Exact span F1 | Completely exact |
 |---|---|---|---:|---|
-| A | 新版 LLM + NER | 4 / 7 / 1 | 50.0% | 否 |
-| B | 旧版 LLM | 1 / 1 / 4 | 28.6% | 否 |
+| A | Revised LLM + NER | 4 / 7 / 1 | 50.0% | No |
+| B | Original LLM | 1 / 1 / 4 | 28.6% | No |
 
-**AI 类型复核：** A补出完整liver aminotransferase concentrations、>5 times the upper limit of normal、Previous和at the time of enrollment，但也保留不完整短版本及无关组织名称。B只精确抽到at the time of enrollment。
+**AI type review:** A recovers the full liver aminotransferase concentrations span, >5 times the upper limit of normal, Previous and at the time of enrollment, but also retains incomplete shorter spans and an unrelated organization name. B exactly matches only at the time of enrollment.
 
-**边界与遗漏：** A漏掉Currently，并把Human Research Protection误当Measurement；Active、Acute、at、for不匹配此处的Temporal金标准。
+**Boundaries and omissions:** A misses Currently and labels Human Research Protection as Measurement. Active, Acute, at and for do not match the Temporal gold for this record.
 
-**上下文限制：** 原文同时规定入组时的囚犯排除与入组后的例外，并有not including用药范围。当前输出没有解析这些否定/例外，不能据片段推断患者资格。
+**Context and limitations:** The source has both an exclusion for prisoners at enrollment and an exception for people imprisoned after enrollment, along with a not including medication clause. The current outputs do not parse negation or exceptions; they cannot determine patient eligibility.
 
-### A 逐片段核对
+### A span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 96:118 | "liver aminotransferase" | 同类型重叠，边界不匹配 |
-| Measurement | 96:133 | "liver aminotransferase concentrations" | 类型及完整边界匹配 |
-| Measurement | 605:630 | "Human Research Protection" | 未匹配目标金标准 |
-| Temporal | 0:6 | "Active" | 未匹配目标金标准；完整标注类型：Qualifier |
-| Temporal | 76:81 | "Acute" | 未匹配目标金标准 |
-| Temporal | 221:223 | "at" | 未匹配目标金标准 |
-| Temporal | 438:446 | "Previous" | 类型及完整边界匹配 |
-| Temporal | 632:657 | "at the time of enrollment" | 类型及完整边界匹配 |
-| Temporal | 675:678 | "for" | 未匹配目标金标准 |
-| Value | 134:142 | ">5 times" | 同类型重叠，边界不匹配 |
-| Value | 134:168 | ">5 times the upper limit of normal" | 类型及完整边界匹配 |
+| Measurement | 96:118 | "liver aminotransferase" | same type overlaps, but boundary differs |
+| Measurement | 96:133 | "liver aminotransferase concentrations" | exact type and full boundary match |
+| Measurement | 605:630 | "Human Research Protection" | no overlap with target gold |
+| Temporal | 0:6 | "Active" | no overlap with target gold; full annotation type: Qualifier |
+| Temporal | 76:81 | "Acute" | no overlap with target gold |
+| Temporal | 221:223 | "at" | no overlap with target gold |
+| Temporal | 438:446 | "Previous" | exact type and full boundary match |
+| Temporal | 632:657 | "at the time of enrollment" | exact type and full boundary match |
+| Temporal | 675:678 | "for" | no overlap with target gold |
+| Value | 134:142 | ">5 times" | same type overlaps, but boundary differs |
+| Value | 134:168 | ">5 times the upper limit of normal" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Temporal [[314, 323]]: ["Currently"]
 
-### B 逐片段核对
+### B span-by-span comparison
 
-| 类型 | 字符位置 | 原文片段 | 金标准匹配 |
+| Type | Character offsets | Source text | Gold comparison |
 |---|---|---|---|
-| Measurement | 355:373 | "alcohol dependence" | 未匹配目标金标准；完整标注类型：Condition |
-| Temporal | 632:657 | "at the time of enrollment" | 类型及完整边界匹配 |
+| Measurement | 355:373 | "alcohol dependence" | no overlap with target gold; full annotation type: Condition |
+| Temporal | 632:657 | "at the time of enrollment" | exact type and full boundary match |
 
-遗漏的目标实体：
+Missed target entities:
 
 - Measurement [[96, 133]]: ["liver aminotransferase concentrations"]
 - Value [[134, 168]]: [">5 times the upper limit of normal"]
 - Temporal [[314, 323]]: ["Currently"]
 - Temporal [[438, 446]]: ["Previous"]
 
-## 后续改进顺序（尚未运行）
+## Recommended next steps (not yet run)
 
-1. 在开发集补充标签排除规则与困难反例，区分 Person、Condition、Observation、Multiplier 与三个目标标签，避免见到医学词或数字就强制分类。保留语料差异记录，不事后改测试金标准。
-2. 以同一开发集上的 NER 为基线，比较候选重排、按类型筛选和边界校正，检验 LLM 是否有独立增益。当前直接取并集增加了误报，不能因召回提高就默认采用。
-3. 在开发集验证完整单位/运算符边界、重复短片段去重及词内子串拒绝；另测受约束的 JSON 输出和更合理的生成预算。规则需检查缩写与标点反例，不能只针对这 12 份样本修补。
-4. 将否定、条件关系、时间比较与例外作为单独标注和评估的任务。完成开发后再冻结方案，用新的未使用样本评估，另行记录真实人工审核。
+1. Add label-exclusion rules and hard negative examples to development data. Distinguish Person, Condition, Observation and Multiplier from the three target labels instead of assigning every medical term or number to a target category. Record corpus disagreements without editing test gold after evaluation.
+2. Use NER on the same development folds as the baseline. Compare candidate reranking, type filtering and boundary correction to test whether the LLM contributes independently. The current union adds false positives and should not be selected by recall alone.
+3. On development data, evaluate complete unit/operator boundaries, duplicate short-span removal and rejection of substrings inside words. Also test constrained JSON output and an appropriate generation budget. Check rules against abbreviation and punctuation counterexamples instead of patching only these 12 cases.
+4. Annotate and evaluate negation, conditional relations, temporal comparisons and exceptions as separate tasks. Freeze a new protocol after development and evaluate it on a new unused sample; record actual human review separately.
 
-## 范围与来源
+## Scope and sources
 
-标签冲突依据原始 CHIA 标注记录，不把与语料不一致直接解释为临床事实错误。可能的标注不一致和可疑源单位保持原样，不在复核后修改测试答案。下一轮开发需要新的冻结方案与评估样本。
+Type comparisons follow the original CHIA annotations; disagreement with the corpus is not automatically a clinical error. Potential annotation issues and suspicious source units are retained, and test gold is not changed after review. Further development requires a new freeze and evaluation sample.
 
-原文和金标准来自 Kury et al., CHIA v2，CC BY 4.0：[论文](https://doi.org/10.1038/s41597-020-00620-0) · [数据](https://doi.org/10.6084/m9.figshare.11855817.v2)。AI 解释、模型预测和本复核表为派生成果。
+Source text and gold annotations are from Kury et al., CHIA v2, CC BY 4.0: [paper](https://doi.org/10.1038/s41597-020-00620-0) · [dataset](https://doi.org/10.6084/m9.figshare.11855817.v2). AI interpretations, model predictions and this review are derived work.

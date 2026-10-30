@@ -104,8 +104,8 @@ missing entities and context errors. This CHIA review does not itself satisfy th
 separate target-cohort clinical review gate. A Codex/LLM inspection is labeled
 AI-assisted review and cannot fill human reviewer scores or sign-off.
 
-At the user's request, all 12 cases now have a separate **AI secondary review /
-AI 二次复核**, authored by Codex (AI) after evaluation. It is unblinded and pairs
+At the user's request, all 12 cases now have a separate **AI secondary review**,
+authored by Codex (AI) after evaluation. It is unblinded and pairs
 qualitative type/boundary/context findings with exact gold-match counts and
 verified source quotes. The [review](../reports/extraction/llm_v3/ai_second_review.md)
 and its JSON record retain all omissions and regressions. Human review stays
