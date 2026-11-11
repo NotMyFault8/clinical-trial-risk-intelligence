@@ -27,7 +27,7 @@ The LLM extractor remains below its release thresholds and has not been clinical
 validated. Free-form report generation is withheld; the local application uses
 deterministic evidence reports. Analyst-usefulness evaluation remains incomplete.
 
-## Revised extraction experiment — 2026-10-30
+## Revised extraction experiment
 
 A frozen local experiment evaluates 100 previously unused CHIA documents from
 50 trial groups. Both primary systems see the same maximum 1,800-character
